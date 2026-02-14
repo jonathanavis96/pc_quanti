@@ -149,11 +149,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **Refs:** `brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md`
 
 ### 1.2 Brand & Design System Setup
-- [ ] **1.2.1** Create Tailwind config with PC Quanti brand colors
+- [x] **1.2.1** Create Tailwind config with PC Quanti brand colors
   - **Goal:** Define primary blue (#2C02D9), neutrals, typography tokens
   - **AC:**
-    - [ ] `tailwind.config.ts` exports a custom color token for `#2C02D9` (e.g. `pc-cta` or `pc-blue`)
-    - [ ] The `Button` component uses that token for primary CTA styling
+    - [x] `tailwind.config.ts` exports a custom color token for `#2C02D9` (e.g. `pc-cta` or `pc-blue`)
+    - [x] The `Button` component uses that token for primary CTA styling
   - **If Blocked:** Use Tailwind default theme temporarily, refine later
   - **Skill refs:** `brain/skills/domains/websites/design/color-system.md`
 

@@ -121,3 +121,4 @@ Started: 2026-02-14
 **Commit:** `feat(design-audit): complete UI/UX audit with 3-phase implementation plan`
 
 | 2026-02-14 17:44 | 1.1.0a | Run design-only UI/UX audit | Comprehensive design audit applying Jobs/Ive principles, identified 9 key areas for improvement, created phased implementation plan (18-20h estimated) |
+| 1.2.1 | 2026-02-14 | Added PC Quanti brand colors (pc-blue #2C02D9 + variants, pc-neutral scale) to tailwind.config.ts; created Button component with primary/secondary/outline variants using brand tokens; updated home page demo |
