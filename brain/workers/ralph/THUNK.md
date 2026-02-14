@@ -294,3 +294,4 @@ Started: 2026-02-14
 - **Verification:** Build passes, `/contact` route renders successfully
 - **Next:** Task 2.6.2 will implement GitHub Pages-compatible submission (Formspree or mailto fallback)
 | 2.6.2 | Implement GitHub Pages-compatible contact submission | 2026-02-14 | Verified Formspree integration + mailto fallback already implemented |
+| 2.6.3 | Add contact info display | 2026-02-14 | Contact details already implemented with email (info@pcquanti.com), phone placeholder, and location display. All links clickable and functional. Build passes. |

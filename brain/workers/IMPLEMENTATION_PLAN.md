@@ -365,7 +365,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Keep the form UI and make the primary CTA a mailto link
   - **Notes:** Avoid Next.js API routes if hosting on GitHub Pages static export
 
-- [ ] **2.6.3** Add contact info display
+- [x] **2.6.3** Add contact info display
   - **Goal:** Show email, phone, address (if applicable) on Contact page
   - **AC:** Contact details render, clickable email/phone links
   - **If Blocked:** Email only if phone/address not provided
