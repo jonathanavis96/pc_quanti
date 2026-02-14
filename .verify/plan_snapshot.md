@@ -506,7 +506,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **Skill refs:** `brain/skills/domains/marketing/seo/schema-markup.md`
 
 ### 4.2 Technical SEO
-- [x] **4.2.1** Implement sitemap.xml (App Router)
+- [ ] **4.2.1** Implement sitemap.xml (App Router)
   - **Goal:** Provide a sitemap for crawlers
   - **AC:** `/sitemap.xml` is accessible and includes key routes (Home, About, Services, Contact)
   - **If Blocked:** Use `next-sitemap` package
