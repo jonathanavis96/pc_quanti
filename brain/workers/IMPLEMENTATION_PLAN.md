@@ -309,7 +309,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Minimal footer with email/phone only
 
 ### 2.4 About Page
-- [ ] **2.4.1** Build Phil's story section
+- [x] **2.4.1** Build Phil's story section
   - **Goal:** Narrative about background, nuclear experience, why PC Quanti
   - **AC:** `/about` page renders, includes headshot or placeholder, responsive
   - **If Blocked:** Use placeholder bio, flag for Phil review
