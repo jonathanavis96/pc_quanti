@@ -2,7 +2,9 @@
 
 ## Overview
 
-Professional, clean, and crisp visual system for PC Quanti project management consultancy website. Emphasizes trust, expertise, and accessibility while avoiding overly corporate or cluttered aesthetics.
+Professional, clean, and crisp visual system for PC Quanti project
+management consultancy website. Emphasizes trust, expertise, and
+accessibility while avoiding overly corporate or cluttered aesthetics.
 
 **Token source:** `tailwind.config.ts`  
 **Naming scheme:** Tailwind custom theme extensions
@@ -77,7 +79,8 @@ colors: {
 ### Spacing + Layout
 
 **Spacing scale (Tailwind defaults extended):**
-- Use Tailwind's default spacing scale: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 64
+- Use Tailwind's default spacing scale: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12,
+  16, 20, 24, 32, 40, 48, 64
 
 **Container widths:**
 - Max content width: 1280px
