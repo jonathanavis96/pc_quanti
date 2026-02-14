@@ -73,7 +73,7 @@
 - [x] **0.6.2** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md` passes (no MD013 errors)
 
-- [ ] **0.6.3** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
+- [x] **0.6.3** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md` passes (no MD013 errors)
 
 ### 0.7 Fix MD032 (blanks-around-lists) errors in pc-quanti-mvp design pack

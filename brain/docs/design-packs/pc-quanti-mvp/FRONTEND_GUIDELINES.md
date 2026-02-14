@@ -2,7 +2,11 @@
 
 ## Architecture Overview
 
-PC Quanti is a **statically-generated marketing website** built with Next.js 14+ (App Router), TypeScript, and Tailwind CSS. It uses file-based routing, server-side rendering for SEO, and minimal client-side JavaScript. Components follow a simple, functional pattern with local state only (no global state management needed for MVP). Deployed as static HTML to GitHub Pages.
+PC Quanti is a **statically-generated marketing website** built with Next.js
+14+ (App Router), TypeScript, and Tailwind CSS. It uses file-based routing,
+server-side rendering for SEO, and minimal client-side JavaScript. Components
+follow a simple, functional pattern with local state only (no global state
+management needed for MVP). Deployed as static HTML to GitHub Pages.
 
 **Token source:** `tailwind.config.ts`  
 **Styling system:** Tailwind CSS (utility-first)
@@ -36,9 +40,12 @@ app/
 
 ### Component organization rules
 
-- **UI primitives** (`src/components/ui/`): Reusable, unstyled/lightly-styled components (Button, Input, Card)
-- **Sections** (`src/components/sections/`): Page-specific composed sections (Hero, ServicesOverview, ContactForm)
-- **Layout** (`src/components/layout/`): Persistent navigation, headers, footers
+- **UI primitives** (`src/components/ui/`): Reusable, unstyled/lightly-styled
+  components (Button, Input, Card)
+- **Sections** (`src/components/sections/`): Page-specific composed sections
+  (Hero, ServicesOverview, ContactForm)
+- **Layout** (`src/components/layout/`): Persistent navigation, headers,
+  footers
 
 ### Naming conventions
 
@@ -57,7 +64,8 @@ app/
 **Example:**
 ```tsx
 // ✅ Correct
-<button className="bg-pc-blue text-white px-6 py-3 rounded-md hover:bg-pc-blue-dark transition-colors">
+<button className="bg-pc-blue text-white px-6 py-3 rounded-md
+  hover:bg-pc-blue-dark transition-colors">
   Contact Us
 </button>
 
@@ -101,7 +109,8 @@ Use Tailwind's mobile-first breakpoint system:
 
 **Source of truth:** `tailwind.config.ts`
 
-All design tokens (colors, spacing, typography, shadows) are defined in Tailwind config and referenced via utility classes.
+All design tokens (colors, spacing, typography, shadows) are defined in
+Tailwind config and referenced via utility classes.
 
 ### How components reference tokens
 
@@ -135,7 +144,8 @@ All design tokens (colors, spacing, typography, shadows) are defined in Tailwind
 ### What is forbidden
 
 **Absolutely forbidden:**
-- Inline `style` prop for colors, spacing, typography (except for dynamic values like transforms)
+- Inline `style` prop for colors, spacing, typography (except for dynamic
+  values like transforms)
 - Hardcoded hex colors in JSX
 - Ad-hoc spacing values (use Tailwind scale)
 - CSS files per component (use `globals.css` only for base styles)
@@ -203,9 +213,11 @@ All design tokens (colors, spacing, typography, shadows) are defined in Tailwind
 
 **MVP approach:** Local component state only (`useState`, `useReducer`)
 
-No global state library needed. If contact form needs validation, use React Hook Form or simple controlled inputs.
+No global state library needed. If contact form needs validation, use React
+Hook Form or simple controlled inputs.
 
-**Future:** If adding user authentication or complex interactions, consider Zustand or React Context.
+**Future:** If adding user authentication or complex interactions, consider
+Zustand or React Context.
 
 ---
 

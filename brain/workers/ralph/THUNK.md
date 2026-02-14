@@ -378,3 +378,4 @@ Started: 2026-02-14
 | 2026-02-14 | 3.3.1 | Add analytics integration hooks + manual steps (GA) | Created Analytics component, updated layout, added docs/analytics.md with setup instructions |
 | 2026-02-14 | 0.6.1 | Fix MD013 in APP_FLOW.md | Fixed 6 line-length violations by breaking long lines at appropriate points to stay under 80 characters |
 | 2026-02-14T17:30:33Z | 0.6.2 | Fix MD013 in DESIGN_SYSTEM.md | Fixed 2 line-length violations by wrapping long lines |
+| 2026-02-14T17:32:41Z | 0.6.3 | Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md | Wrapped 8 long lines to comply with 80-char limit |
