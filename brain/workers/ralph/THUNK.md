@@ -68,3 +68,4 @@ Started: 2026-02-14
 | 0.2.1 | Fix MD013 in brain/cortex/IMPLEMENTATION_PLAN.md | 2026-02-14 | Wrapped long line (144 chars) at line 9 into two lines to comply with 80-char limit |
 | 0.2.2 | Fix MD013 in brain/cortex/THOUGHTS.md | 2026-02-14 | Wrapped 2 long lines (124 and 104 chars) at lines 7 and 18 to comply with 80-char MD013 limit |
 | 0.3.1 | Fix MD032 in brain/cortex/THOUGHTS.md | 2026-02-14 | Added blank line after "**Key Objectives:**" to surround list properly (MD032 compliance) |
+| 0.4.1 | Fix MD029 in brain/docs/design-packs/README.md | 2026-02-14 | File already compliant - no MD029 errors found |

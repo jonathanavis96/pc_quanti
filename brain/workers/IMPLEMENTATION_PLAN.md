@@ -57,7 +57,7 @@
 
 ### 0.4 Fix MD029 (ol-prefix) errors
 
-- [ ] **0.4.1** Fix MD029 in brain/docs/design-packs/README.md
+- [x] **0.4.1** Fix MD029 in brain/docs/design-packs/README.md
   - **AC:** `markdownlint brain/docs/design-packs/README.md` passes (no MD029 errors)
 
 ---
