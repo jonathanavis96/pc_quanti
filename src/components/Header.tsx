@@ -71,15 +71,15 @@ export function Header() {
       }`}
     >
       <Container maxWidth="xl">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
             <Image
               src="/logo.webp"
               alt="PC Quanti logo"
-              width={160}
-              height={64}
+              width={220}
+              height={80}
               priority
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
