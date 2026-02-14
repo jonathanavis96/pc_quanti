@@ -331,7 +331,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `/services/project-management` renders, includes CTA to Contact
   - **If Blocked:** Use generic description if Phil's copy not ready
 
-- [ ] **2.5.2** Build Quantity Surveying detail page
+- [x] **2.5.2** Build Quantity Surveying detail page
   - **Goal:** Describe QS services, cost management, contract support
   - **AC:** `/services/quantity-surveying` renders, includes CTA
   - **If Blocked:** Use generic description
