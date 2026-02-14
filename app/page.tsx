@@ -167,9 +167,65 @@ export default function Home() {
           </Container>
         </section>
 
+        {/* How It Works Section */}
+        <section className="py-16 md:py-24 bg-white">
+          <Container maxWidth="lg">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">
+                How It Works
+              </h2>
+              <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
+                Getting started with PC Quanti is straightforward. We focus on understanding your needs and delivering results quickly.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-pc-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  1
+                </div>
+                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
+                  Initial Consultation
+                </h3>
+                <p className="text-pc-neutral-600">
+                  Reach out via our contact form or phone. We'll discuss your project scope, timeline, and specific requirements.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-pc-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  2
+                </div>
+                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
+                  Tailored Proposal
+                </h3>
+                <p className="text-pc-neutral-600">
+                  We prepare a clear proposal outlining our approach, deliverables, and resource allocation from our trusted network.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-pc-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  3
+                </div>
+                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
+                  Project Delivery
+                </h3>
+                <p className="text-pc-neutral-600">
+                  Our team mobilizes quickly, delivering expert project management with regular updates and transparent communication.
+                </p>
+              </div>
+            </div>
+            <div className="text-center">
+              <Link href="/contact">
+                <Button variant="primary" size="lg">
+                  Start a Conversation
+                </Button>
+              </Link>
+            </div>
+          </Container>
+        </section>
+
         {/* Trust Markers / Credibility Section */}
         {/* TODO(DESIGN): Review layout and visual hierarchy for credibility markers */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-pc-neutral-50">
           <Container maxWidth="lg">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-pc-neutral-900 mb-8">

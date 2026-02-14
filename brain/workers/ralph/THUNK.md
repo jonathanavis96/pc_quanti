@@ -208,3 +208,4 @@ Started: 2026-02-14
 - Follows objection-handler pattern for addressing "Can I trust you?" friction
 
 | 2026-02-14 | 2.3.3 | Build trust bar component | TrustBar component already exists and is integrated in app/page.tsx with credibility markers (15+ Years, Sectors, Locations, Accreditations). Verified build passes. |
+| 2026-02-14 | 2.3.4 | Build "How it works" section | Created 3-step process section (Initial Consultation, Tailored Proposal, Project Delivery) with numbered badges and CTA to /contact. Build passes. |

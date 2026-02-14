@@ -288,7 +288,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use a simple text line under the hero (no logos needed)
   - **Skill refs:** `brain/skills/domains/websites/architecture/section-composer.md`, `brain/skills/domains/websites/copywriting/objection-handler.md`
 
-- [ ] **2.3.4** Build "How it works" section
+- [x] **2.3.4** Build "How it works" section
   - **Goal:** Make engagement steps clear and reduce uncertainty
   - **AC:** Section exists with 3-5 steps and a CTA to Contact
   - **If Blocked:** Use a 3-step numbered list
