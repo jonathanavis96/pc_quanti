@@ -474,7 +474,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Code supports GA ID via env var (no secret committed) and `docs/analytics.md` contains setup + verification steps
   - **If Blocked:** Document a no-analytics MVP and add later
 
-- [ ] **3.3.2** Document GSC verification + sitemap submission (human action)
+- [x] **3.3.2** Document GSC verification + sitemap submission (human action)
   - **Goal:** Make it easy for a human to verify ownership and submit sitemap
   - **AC:** `docs/search-console.md` contains verification methods (DNS / HTML tag) and submission steps
   - **If Blocked:** Defer actual verification, but keep docs ready

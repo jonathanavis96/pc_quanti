@@ -399,3 +399,5 @@ Started: 2026-02-14
 | 2026-02-14 19:43 | 0.11.1 | Fixed MD031 errors in FRONTEND_GUIDELINES.md | Added blank lines before 6 fenced code blocks |
 | 2026-02-14 19:44 | 0.12.1 | Fixed MD032 errors in FRONTEND_GUIDELINES.md | Added blank lines before 9 lists following bold headings |
 | 2026-02-14 19:47:07 | 0.13.1 | Fix MD013, MD022, MD032, and MD009 in LESSONS.md | Wrapped long lines, added blank lines around headings and lists, removed trailing space, specified language for code fence |
+
+| 3.3.2 | 2026-02-14 | Created `docs/search-console.md` with comprehensive GSC verification methods (DNS, HTML tag, file upload, GA, GTM) and sitemap submission steps. Includes troubleshooting, testing commands, and ongoing maintenance guidance. |
