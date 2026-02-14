@@ -6,9 +6,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contract Administration",
   description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex industrial projects.",
+  alternates: {
+    canonical: "/services/contract-administration",
+  },
   openGraph: {
     title: "Contract Administration | PC Quanti",
     description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex industrial projects.",
+    url: "/services/contract-administration",
   },
 };
 

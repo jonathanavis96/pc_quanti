@@ -6,9 +6,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Project Management",
   description: "End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning with expert project management consultancy.",
+  alternates: {
+    canonical: "/services/project-management",
+  },
   openGraph: {
     title: "Project Management | PC Quanti",
     description: "End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning with expert project management consultancy.",
+    url: "/services/project-management",
   },
 };
 

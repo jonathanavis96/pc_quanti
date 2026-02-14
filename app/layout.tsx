@@ -13,16 +13,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://pcquanti.com"),
   title: {
     default: "PC Quanti | Expert Project Management for Nuclear & Industrial Sectors",
     template: "%s | PC Quanti",
   },
   description: "Lean, trusted project management consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "PC Quanti | Expert Project Management for Nuclear & Industrial Sectors",
     description: "Lean, trusted project management consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
     type: "website",
     locale: "en_GB",
+    url: "/",
   },
   twitter: {
     card: "summary_large_image",

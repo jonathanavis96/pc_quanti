@@ -6,9 +6,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Project Controls",
   description: "Scheduling, cost control, and risk management to deliver certainty in complex environments. Expert project controls for nuclear and industrial sectors.",
+  alternates: {
+    canonical: "/services/project-controls",
+  },
   openGraph: {
     title: "Project Controls | PC Quanti",
     description: "Scheduling, cost control, and risk management to deliver certainty in complex environments. Expert project controls for nuclear and industrial sectors.",
+    url: "/services/project-controls",
   },
 };
 
