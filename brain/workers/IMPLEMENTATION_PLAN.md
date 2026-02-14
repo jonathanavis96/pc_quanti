@@ -265,7 +265,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use simple show/hide (no animation)
 
 ### 2.2 Services Hub (central feature)
-- [ ] **2.2.1** Build services overview page (`/services`)
+- [x] **2.2.1** Build services overview page (`/services`)
   - **Goal:** Central hub listing 5 services in a crisp, scannable layout
   - **AC:** Page renders; 5 service cards/rows link to detail pages; primary CTA visible
   - **If Blocked:** Use text-only list first, style later

@@ -156,3 +156,4 @@ Started: 2026-02-14
 - `src/components/Header.tsx` - Added mobile menu state and UI
 
 **Build:** ✓ Passed
+| 2026-02-14 | 2.2.1 | Build services overview page (`/services`) | Created `app/services/page.tsx` with 5 service cards (PM, QS, Contract Admin, Claims, Project Controls). Central hub links to detail pages, includes primary CTA to /contact. Responsive layout using Card component. |
