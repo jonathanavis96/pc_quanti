@@ -58,7 +58,7 @@ export default function ServicesPage() {
           <div className="mb-12 md:mb-16 text-center">
             <Link 
               href="/" 
-              className="text-pc-blue hover:underline mb-4 inline-block"
+              className="text-pc-blue hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
             >
               ← Back to Home
             </Link>
@@ -76,7 +76,7 @@ export default function ServicesPage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="block group"
+                className="block group focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-lg"
               >
                 <Card variant="elevated" className="hover:border-pc-blue transition-all duration-200">
                   <div className="flex items-start gap-6">
