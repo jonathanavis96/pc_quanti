@@ -517,7 +517,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `/robots.txt` is accessible and includes a `Sitemap:` line
   - **If Blocked:** Provide a permissive default, refine later
 
-- [ ] **4.2.3** Configure canonical URLs
+- [x] **4.2.3** Configure canonical URLs
   - **Goal:** Prevent duplicate content issues
   - **AC:** Canonical link tags in `<head>`, point to primary domain
   - **If Blocked:** Defer if no duplicate content risk
