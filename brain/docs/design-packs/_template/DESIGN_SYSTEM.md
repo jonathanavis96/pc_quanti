@@ -4,8 +4,8 @@
 
 The canonical **visual language + token system** for the project.
 
-**Rule of thumb:** if a UI value is visible (color, size, radius, spacing, shadow), it should come
-from a token defined here.
+**Rule of thumb:** if a UI value is visible (color, size, radius, spacing,
+shadow), it should come from a token defined here.
 
 ## Setup (how to start)
 

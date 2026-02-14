@@ -60,3 +60,4 @@ Started: 2026-02-14
 | 2026-02-14 17:10:00 | 0.1.5 | Fix MD013 in brain/docs/brain-sync.md | COMPLETED |
 
 | 0.1.6 | Fix MD013 in brain/docs/design-packs/_template/APP_FLOW.md | 2026-02-14 | Wrapped long lines at 80 chars (lines 5 and 7) |
+| 0.1.7 | Fix MD013 in brain/docs/design-packs/_template/DESIGN_SYSTEM.md | 2026-02-14 | Wrapped long line at 80 chars (line 7) |
