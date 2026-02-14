@@ -631,3 +631,35 @@ Started: 2026-02-14
 
 **Next:** Task 5.3.1 - Run Lighthouse performance audit
 
+
+---
+
+### Task 5.3.1 - Run Lighthouse performance audit
+
+**Date:** 2026-02-14
+
+**Actions:**
+- Installed Lighthouse CLI globally
+- Built production Next.js static export
+- Served static files from `out/` directory on port 3000
+- Executed Lighthouse audits on all 9 pages (desktop + mobile = 18 total audits)
+- Pages audited: home, about, contact, services, project-management, quantity-surveying, contract-administration, project-controls, claims-management
+- Created Python analysis script to parse JSON results and generate summary
+
+**Results:**
+- Desktop Average: 99.2/100 (Target: 90+) - ✅ PASS
+- Mobile Average: 91.4/100 (Target: 80+) - ✅ PASS
+- All 9 pages passing on both desktop and mobile (18/18 audits passing)
+- Core Web Vitals: Perfect CLS (0), excellent FCP/LCP/TBT/SI on all pages
+- Zero performance warnings detected
+- Detailed results saved to `.lighthouse/performance-summary.md`
+
+**AC Status:** ✅ ALL MET
+- Desktop 90+: ✅ (99.2 average)
+- Mobile 80+: ✅ (91.4 average)
+- No performance warnings: ✅
+- Core Web Vitals pass: ✅
+
+**Verification:** Lighthouse CLI audits confirm site exceeds all performance targets
+
+**Next:** Task 5.3.2 - Optimize image loading (lazy load, WebP)
