@@ -65,3 +65,4 @@ Started: 2026-02-14
 | 0.1.9 | Fix MD013 and MD029 in brain/docs/design-packs/README.md | 2026-02-14 | Fixed 4 MD013 line-length errors (lines 3, 24, 56) and 1 MD029 ordered list error (line 31) |
 | 0.1.10 | Fix MD013 in brain/docs/design/README.md | 2026-02-14 | Wrapped long line at 80 chars (line 3) |
 | 0.1.11 | Fix MD013 in brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md | 2026-02-14 | Wrapped all long lines (>80 chars) to comply with MD013 line-length rule. All 43 violations resolved. |
+| 0.2.1 | Fix MD013 in brain/cortex/IMPLEMENTATION_PLAN.md | 2026-02-14 | Wrapped long line (144 chars) at line 9 into two lines to comply with 80-char limit |

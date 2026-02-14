@@ -44,7 +44,7 @@
 
 ### 0.2 Fix MD013 (line-length) errors in brain/cortex
 
-- [ ] **0.2.1** Fix MD013 in brain/cortex/IMPLEMENTATION_PLAN.md
+- [x] **0.2.1** Fix MD013 in brain/cortex/IMPLEMENTATION_PLAN.md
   - **AC:** `markdownlint brain/cortex/IMPLEMENTATION_PLAN.md` passes (no MD013 errors)
 
 - [ ] **0.2.2** Fix MD013 in brain/cortex/THOUGHTS.md
