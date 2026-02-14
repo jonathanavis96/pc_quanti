@@ -78,3 +78,5 @@ Started: 2026-02-14
 **How:** Restored proper Tailwind v4 config; verified all three commands pass
 **Result:** ✅ `npm run lint`, `npx tsc --noEmit`, `npm run build` all succeed
 **Commit:** `feat(quality): add CI-like local gates (lint/typecheck/build)`
+
+| 2026-02-14 17:31 | 1.0.3 | Add baseline App Router UX pages | Created not-found.tsx, error.tsx, loading.tsx with proper Next.js patterns and fixed linting |

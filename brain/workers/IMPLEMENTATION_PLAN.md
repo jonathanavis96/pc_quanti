@@ -123,7 +123,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
     - `npm run build`
   - **If Blocked:** Fix errors; do not defer quality gates
 
-- [ ] **1.0.3** Add baseline App Router UX pages (not-found / error / loading)
+- [x] **1.0.3** Add baseline App Router UX pages (not-found / error / loading)
   - **Goal:** Avoid ugly defaults and improve perceived quality
   - **AC:** `src/app/not-found.tsx` exists; `src/app/error.tsx` exists; `src/app/loading.tsx` exists
   - **If Blocked:** Implement minimal versions first, improve later
