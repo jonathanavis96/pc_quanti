@@ -92,6 +92,7 @@ Use Tailwind's mobile-first breakpoint system:
 ```
 
 **Breakpoints:**
+
 - `sm:` 640px
 - `md:` 768px
 - `lg:` 1024px
@@ -148,6 +149,7 @@ Tailwind config and referenced via utility classes.
 ### What is forbidden
 
 **Absolutely forbidden:**
+
 - Inline `style` prop for colors, spacing, typography (except for dynamic
   values like transforms)
 - Hardcoded hex colors in JSX
@@ -155,6 +157,7 @@ Tailwind config and referenced via utility classes.
 - CSS files per component (use `globals.css` only for base styles)
 
 **Allowed exceptions:**
+
 - Dynamic inline styles for CSS variables or computed transforms
 - Third-party library overrides (with comment explaining why)
 
@@ -165,6 +168,7 @@ Tailwind config and referenced via utility classes.
 ### Keyboard navigation
 
 **Hard rules:**
+
 - All interactive elements must be keyboard accessible
 - Use semantic HTML (`<button>`, `<a>`, `<nav>`) over `<div onClick>`
 - Implement visible focus states on all interactive elements
@@ -181,6 +185,7 @@ Tailwind config and referenced via utility classes.
 ### Color contrast
 
 **WCAG AA minimum:**
+
 - Normal text: 4.5:1 contrast ratio
 - Large text (18px+ or 14px+ bold): 3:1 contrast ratio
 - Primary CTA blue (#2C02D9) on white: 6.8:1 ✓
@@ -190,6 +195,7 @@ Tailwind config and referenced via utility classes.
 ### ARIA patterns
 
 **Minimal ARIA in MVP** (prefer semantic HTML):
+
 - Use `<nav>`, `<main>`, `<header>`, `<footer>` for landmark regions
 - Add `aria-label` to icon-only buttons
 - Use `aria-current="page"` for active navigation links
@@ -230,17 +236,20 @@ Zustand or React Context.
 ## 6) Performance Budgets
 
 **Lighthouse targets:**
+
 - Performance: 90+ (desktop), 80+ (mobile)
 - Accessibility: 100
 - Best Practices: 95+
 - SEO: 100
 
 **Bundle size:**
+
 - First Contentful Paint (FCP): < 1.8s
 - Largest Contentful Paint (LCP): < 2.5s
 - Total Blocking Time (TBT): < 200ms
 
 **Optimization strategies:**
+
 - Use Next.js `<Image>` component for all images (automatic optimization)
 - Lazy-load below-the-fold content
 - Minimize third-party scripts (analytics only)
