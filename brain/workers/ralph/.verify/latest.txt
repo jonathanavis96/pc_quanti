@@ -1,6 +1,6 @@
 Ralph Verifier Report
-Time: 2026-02-14 19:05:54
-Git:  049b992
+Time: 2026-02-14 19:09:40
+Git:  f792d6e
 AC:   /home/grafe/code/pc-quanti/brain/workers/ralph/rules/AC.rules
 Approvals: /home/grafe/code/pc-quanti/brain/workers/ralph/rules/MANUAL_APPROVALS.rules
 ------------------------------------------------------------
@@ -13,7 +13,7 @@ Approvals: /home/grafe/code/pc-quanti/brain/workers/ralph/rules/MANUAL_APPROVALS
   desc: Implementation plan contains at least one task
   cmd:  grep -cE '^\s*- \[ \]' ../IMPLEMENTATION_PLAN.md
   exit: 0
-  stdout: 57
+  stdout: 56
 [PASS] Placeholders.1
   desc: No template placeholders remain in brain/cortex
   cmd:  grep -R "{{PROJECT_NAME}}\\|{{PROJECT_PURPOSE}}\\|{{TECH_STACK}}\\|{{PROJECT_TYPE}}\\|{{PROJECT_GOALS}}\\|{{SUCCESS_CRITERIA}}\\|{{TIMESTAMP}}" -n ../../cortex
