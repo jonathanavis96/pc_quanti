@@ -195,7 +195,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **Skill refs:** `brain/skills/domains/websites/discovery/requirements-distiller.md`, `brain/skills/domains/websites/discovery/audience-mapping.md`, `brain/skills/domains/websites/discovery/scope-control.md`
 
 ### 1.4 Sitemap & Content Strategy
-- [ ] **1.4.1** Finalize sitemap structure
+- [x] **1.4.1** Finalize sitemap structure
   - **Goal:** Define all pages: Home, About, Services (5 sub-pages), Sectors (optional), Contact
   - **AC:** Sitemap documented in `docs/sitemap.md` (or existing doc), planned routes listed (creation of routes can happen in Phase 1)
   - **If Blocked:** Start with Home/About/Contact, add Services/Sectors in Phase 1
