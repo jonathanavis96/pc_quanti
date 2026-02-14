@@ -414,7 +414,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use formspree.io or similar service
 
 ### 3.3 Analytics & Monitoring
-- [ ] **3.3.1** Add analytics integration hooks + manual steps (GA)
+- [x] **3.3.1** Add analytics integration hooks + manual steps (GA)
   - **Goal:** Ensure analytics can be enabled without code changes later
   - **AC:** Code supports GA ID via env var (no secret committed) and `docs/analytics.md` contains setup + verification steps
   - **If Blocked:** Document a no-analytics MVP and add later

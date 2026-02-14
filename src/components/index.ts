@@ -1,3 +1,5 @@
+export { Analytics } from './Analytics';
+
 export { Button } from './Button';
 export type { ButtonProps } from './Button';
 

@@ -375,3 +375,4 @@ Started: 2026-02-14
 - **Verified:** No secrets committed (all vars are examples/commented)
 - **AC Met:** ✅ docs/email-provider.md documents supported options + required env vars (no secrets committed)
 - **Next:** Task 3.3.1 will add analytics integration hooks
+| 2026-02-14 | 3.3.1 | Add analytics integration hooks + manual steps (GA) | Created Analytics component, updated layout, added docs/analytics.md with setup instructions |
