@@ -24,7 +24,7 @@
 - [x] **0.1.5** Fix MD013 in brain/docs/brain-sync.md
   - **AC:** `markdownlint brain/docs/brain-sync.md` passes (no MD013 errors)
 
-- [ ] **0.1.6** Fix MD013 in brain/docs/design-packs/_template/APP_FLOW.md
+- [x] **0.1.6** Fix MD013 in brain/docs/design-packs/_template/APP_FLOW.md
   - **AC:** `markdownlint brain/docs/design-packs/_template/APP_FLOW.md` passes (no MD013 errors)
 
 - [ ] **0.1.7** Fix MD013 in brain/docs/design-packs/_template/DESIGN_SYSTEM.md
