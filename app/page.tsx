@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/src/components/Button";
 import { Card } from "@/src/components/Card";
 import { Container } from "@/src/components/Container";
@@ -89,9 +90,11 @@ export default function Home() {
                 <p className="text-pc-neutral-600 mb-4">
                   Professional project leadership from initiation through closeout, with proven experience in complex nuclear and industrial environments.
                 </p>
-                <Button variant="outline" size="sm">
-                  Learn More
-                </Button>
+                <Link href="/services/project-management">
+                  <Button variant="outline" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </Card>
 
               {/* Service 2: Quantity Surveying */}
@@ -103,9 +106,11 @@ export default function Home() {
                 <p className="text-pc-neutral-600 mb-4">
                   Accurate cost estimation, budget control, and commercial management to keep projects on track financially.
                 </p>
-                <Button variant="outline" size="sm">
-                  Learn More
-                </Button>
+                <Link href="/services/quantity-surveying">
+                  <Button variant="outline" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </Card>
 
               {/* Service 3: Contract Administration */}
@@ -117,9 +122,11 @@ export default function Home() {
                 <p className="text-pc-neutral-600 mb-4">
                   Expert contract management ensuring compliance, mitigating risks, and maintaining smooth stakeholder relationships.
                 </p>
-                <Button variant="outline" size="sm">
-                  Learn More
-                </Button>
+                <Link href="/services/contract-administration">
+                  <Button variant="outline" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </Card>
 
               {/* Service 4: Claims Management */}
@@ -131,9 +138,11 @@ export default function Home() {
                 <p className="text-pc-neutral-600 mb-4">
                   Specialist support for contract claims, disputes, and negotiations, protecting your project interests.
                 </p>
-                <Button variant="outline" size="sm">
-                  Learn More
-                </Button>
+                <Link href="/services/claims-management">
+                  <Button variant="outline" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </Card>
 
               {/* Service 5: Project Controls */}
@@ -145,9 +154,11 @@ export default function Home() {
                 <p className="text-pc-neutral-600 mb-4">
                   Integrated planning, scheduling, and performance monitoring to deliver projects on time and within budget.
                 </p>
-                <Button variant="outline" size="sm">
-                  Learn More
-                </Button>
+                <Link href="/services/project-controls">
+                  <Button variant="outline" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </Card>
             </div>
           </Container>
