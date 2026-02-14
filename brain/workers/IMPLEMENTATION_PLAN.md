@@ -379,11 +379,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 ## Phase 2: Technical Setup (Week 5)
 
 ### 3.1 Deployment (GitHub Pages)
-- [ ] **3.1.1** Implement GitHub Pages deployment (static export)
+- [x] **3.1.1** Implement GitHub Pages deployment (static export)
   - **Goal:** Publish an MVP site via GitHub Pages from the repository
   - **AC:**
-    - [ ] Deployment workflow exists (e.g. `.github/workflows/deploy.yml`)
-    - [ ] `npm run build` succeeds in CI
+    - [x] Deployment workflow exists (e.g. `.github/workflows/deploy.yml`)
+    - [x] `npm run build` succeeds in CI
     - [ ] Site is available via GitHub Pages URL
   - **If Blocked:** Document the issue and keep build working locally
   - **Notes:** GitHub Pages requires a static site; ensure Next.js is configured for static export

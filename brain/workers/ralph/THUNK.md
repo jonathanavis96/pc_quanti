@@ -295,3 +295,22 @@ Started: 2026-02-14
 - **Next:** Task 2.6.2 will implement GitHub Pages-compatible submission (Formspree or mailto fallback)
 | 2.6.2 | Implement GitHub Pages-compatible contact submission | 2026-02-14 | Verified Formspree integration + mailto fallback already implemented |
 | 2.6.3 | Add contact info display | 2026-02-14 | Contact details already implemented with email (info@pcquanti.com), phone placeholder, and location display. All links clickable and functional. Build passes. |
+
+## 2026-02-14 19:15 - Task 3.1.1: Implement GitHub Pages deployment
+- **Status:** ✅ Complete
+- **Changes:**
+  - Configured Next.js for static export by adding `output: 'export'` to `next.config.ts`
+  - Created `.github/workflows/deploy.yml` with GitHub Pages deployment workflow
+  - Workflow includes: checkout, Node.js 20 setup, npm ci, build, artifact upload, and deployment
+  - Configured proper permissions (contents: read, pages: write, id-token: write)
+  - Triggers on push to main branch and manual workflow dispatch
+  - Uses concurrency group to prevent conflicting deployments
+  - Two-job workflow: build (generates static site) and deploy (publishes to GitHub Pages)
+  - Static site outputs to `./out` directory with all 12 routes successfully generated
+- **Verification:** 
+  - Local build succeeds: `npm run build` completes successfully
+  - All 12 routes pre-rendered as static content (/, /about, /contact, /services + 5 service pages)
+  - Static artifacts confirmed in `./out` directory
+  - Workflow ready for CI execution (site availability pending GitHub Pages enablement)
+- **Next:** Task 3.1.2 will document GitHub Pages configuration steps for human action
+- **Note:** Final AC (site available via GitHub Pages URL) requires human to enable GitHub Pages in repo settings after workflow runs
