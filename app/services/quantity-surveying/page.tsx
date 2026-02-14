@@ -47,7 +47,7 @@ export default function QuantitySurveyingPage() {
                 PC Quanti provides specialist quantity surveying services for complex industrial projects, with particular expertise in nuclear and mining sectors. We deliver rigorous cost control, procurement support, and contract administration without the bloated overhead of large consultancies.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach combines deep technical understanding of industrial environments with practical commercial acumen. Whether you're managing tender processes, controlling project costs, or negotiating final accounts, we bring clarity and precision to every engagement.
+                Our approach combines deep technical understanding of industrial environments with practical commercial acumen. Whether you&apos;re managing tender processes, controlling project costs, or negotiating final accounts, we bring clarity and precision to every engagement.
               </p>
             </Card>
           </div>

@@ -3,29 +3,29 @@ import { Container } from "./Container";
 
 export function Footer() {
   return (
-    <footer className="border-t border-pc-neutral-200 bg-pc-neutral-50">
+    <footer className="bg-pc-neutral-900 text-white">
       <Container maxWidth="xl">
         <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
             {/* Company Info */}
             <div>
-              <h3 className="text-lg font-semibold text-pc-neutral-900 mb-4">PC Quanti</h3>
-              <p className="text-pc-neutral-600 mb-4">
-                Professional project management and quantity surveying services across South Africa.
+              <p className="text-pc-neutral-200">
+                Professional project management and quantity surveying services across South Africa and the United Kingdom.
               </p>
-              <div className="space-y-2">
-                <p className="text-pc-neutral-600">
-                  <a 
-                    href="mailto:phil@pcquanti.co.za" 
-                    className="hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              <div className="mt-6 space-y-2 text-pc-neutral-200">
+                <p>
+                  <span className="font-semibold text-white">Email:</span>{" "}
+                  <a
+                    href="mailto:info@pcquanti.com"
+                    className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                   >
-                    phil@pcquanti.co.za
+                    info@pcquanti.com
                   </a>
                 </p>
-                <p className="text-pc-neutral-600">
-                  <a 
-                    href="tel:+27823456789" 
-                    className="hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+                <p>
+                  <a
+                    href="tel:+27823456789"
+                    className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                   >
                     +27 82 345 6789
                   </a>
@@ -35,29 +35,29 @@ export function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold text-pc-neutral-900 mb-4">Quick Links</h3>
-              <nav className="space-y-2">
-                <Link 
-                  href="/" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+              <nav className="space-y-2 text-pc-neutral-200">
+                <Link
+                  href="/"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                 >
                   Home
                 </Link>
-                <Link 
-                  href="/services" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+                <Link
+                  href="/services"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                 >
                   Services
                 </Link>
-                <Link 
-                  href="/about" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+                <Link
+                  href="/about"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                 >
                   About
                 </Link>
-                <Link 
-                  href="/contact" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+                <Link
+                  href="/contact"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                 >
                   Contact
                 </Link>
@@ -66,33 +66,45 @@ export function Footer() {
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-semibold text-pc-neutral-900 mb-4">Services</h3>
-              <nav className="space-y-2">
-                <Link 
-                  href="/services#project-management" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
+              <nav className="space-y-2 text-pc-neutral-200">
+                <Link
+                  href="/services/project-management"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                 >
                   Project Management
                 </Link>
-                <Link 
-                  href="/services#quantity-surveying" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+                <Link
+                  href="/services/quantity-surveying"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                 >
                   Quantity Surveying
                 </Link>
-                <Link 
-                  href="/services#contract-admin" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+                <Link
+                  href="/services/contract-administration"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
                 >
                   Contract Administration
+                </Link>
+                <Link
+                  href="/services/claims-management"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
+                >
+                  Claims Management
+                </Link>
+                <Link
+                  href="/services/project-controls"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
+                >
+                  Project Controls
                 </Link>
               </nav>
             </div>
           </div>
 
           {/* Bottom Bar */}
-          <div className="mt-8 pt-8 border-t border-pc-neutral-200">
-            <p className="text-center text-pc-neutral-600 text-sm">
+          <div className="mt-10 pt-8 border-t border-pc-neutral-700">
+            <p className="text-center text-pc-neutral-300 text-sm">
               © {new Date().getFullYear()} PC Quanti. All rights reserved.
             </p>
           </div>

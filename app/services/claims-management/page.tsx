@@ -47,7 +47,7 @@ export default function ClaimsManagementPage() {
                 PC Quanti provides specialist claims management services for nuclear, mining, and industrial projects. We help clients prepare, assess, and resolve contractual claims through rigorous analysis, clear documentation, and commercially astute strategies.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach combines forensic attention to detail with practical commercial awareness. Whether you're pursuing a delay and disruption claim, defending against contractor claims, or seeking early dispute resolution, we bring clarity, evidence, and expertise to every engagement.
+                Our approach combines forensic attention to detail with practical commercial awareness. Whether you&apos;re pursuing a delay and disruption claim, defending against contractor claims, or seeking early dispute resolution, we bring clarity, evidence, and expertise to every engagement.
               </p>
             </Card>
           </div>

@@ -47,7 +47,7 @@ export default function ContractAdministrationPage() {
                 PC Quanti provides specialist contract administration services for complex industrial projects. We ensure contractual obligations are met, documentation is maintained to the highest standards, and compliance requirements are rigorously managed throughout the project lifecycle.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach combines meticulous attention to contractual detail with practical understanding of project delivery realities. Whether you're managing NEC, FIDIC, or bespoke contract forms, we bring clarity, accuracy, and commercial awareness to every engagement.
+                Our approach combines meticulous attention to contractual detail with practical understanding of project delivery realities. Whether you&apos;re managing NEC, FIDIC, or bespoke contract forms, we bring clarity, accuracy, and commercial awareness to every engagement.
               </p>
             </Card>
           </div>

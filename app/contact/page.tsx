@@ -1,8 +1,6 @@
 'use client';
 
 import { Container } from "@/src/components/Container";
-import { Header } from "@/src/components/Header";
-import { Footer } from "@/src/components/Footer";
 import { Button } from "@/src/components/Button";
 import { useState, FormEvent } from "react";
 
@@ -153,9 +151,7 @@ export default function ContactPage() {
   };
 
   return (
-    <>
-      <Header />
-      <main className="py-16 sm:py-24">
+    <main className="py-16 sm:py-24">
         <Container maxWidth="lg">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
@@ -386,7 +382,5 @@ export default function ContactPage() {
           </div>
         </Container>
       </main>
-      <Footer />
-    </>
   );
 }

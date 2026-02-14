@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button } from './Button';
 import { Container } from './Container';
 
@@ -20,13 +21,19 @@ const navItems: NavItem[] = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [underline, setUnderline] = useState({ left: 0, width: 0 });
-  const [hoveredHref, setHoveredHref] = useState<string | null>(null);
-  const [isUnderlineVisible, setIsUnderlineVisible] = useState(false);
+  const [underline, setUnderline] = useState({ left: 0, width: 0, opacity: 0 });
   const navRef = useRef<HTMLDivElement | null>(null);
   const linkRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
+
+  const activeHref = useMemo(() => {
+    if (!pathname) return '/';
+    if (pathname === '/') return '/';
+    const match = navItems.find((item) => pathname.startsWith(item.href) && item.href !== '/');
+    return match?.href ?? '/';
+  }, [pathname]);
 
   const updateUnderline = (href: string) => {
     const link = linkRefs.current[href];
@@ -39,8 +46,13 @@ export function Header() {
     setUnderline({
       left: linkRect.left - containerRect.left,
       width: linkRect.width,
+      opacity: 1,
     });
   };
+
+  useEffect(() => {
+    updateUnderline(activeHref);
+  }, [activeHref]);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 8);
@@ -50,100 +62,74 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    const handleResize = () => {
-      if (hoveredHref) {
-        updateUnderline(hoveredHref);
-      }
-    };
+    const handleResize = () => updateUnderline(activeHref);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [hoveredHref]);
+  }, [activeHref]);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header
+    <header 
       className={`sticky top-0 z-50 border-b transition-colors duration-200 ${
-        isScrolled
-          ? 'bg-pc-blue/90 backdrop-blur border-transparent'
-          : 'bg-pc-blue border-transparent'
+        isScrolled 
+          ? 'bg-white/80 backdrop-blur border-pc-neutral-200' 
+          : 'bg-white border-pc-neutral-200'
       }`}
     >
       <Container maxWidth="xl">
         <div className="flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
             <Image
               src="/logo.webp"
               alt="PC Quanti logo"
-              width={160}
-              height={64}
+              width={50}
+              height={50}
               priority
-              className="h-12 w-auto"
             />
+            <span className="text-xl font-semibold text-pc-neutral-900">PC Quanti</span>
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:block relative" ref={navRef}>
-            <nav
-              className="flex items-center gap-20"
-              aria-label="Main navigation"
-              onMouseLeave={() => {
-                setHoveredHref(null);
-                setIsUnderlineVisible(false);
-              }}
-            >
+            <nav className="flex items-center gap-8" aria-label="Main navigation">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  ref={(el) => {
-                    linkRefs.current[item.href] = el;
-                  }}
-                  className="text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-pc-blue rounded-sm px-4 py-3"
-                  onMouseEnter={() => {
-                    setHoveredHref(item.href);
-                    updateUnderline(item.href);
-                    setIsUnderlineVisible(true);
-                  }}
+                  ref={(el) => { linkRefs.current[item.href] = el; }}
+                  className={`text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-2 py-2 ${
+                    activeHref === item.href ? 'text-pc-blue' : ''
+                  }`}
+                  onMouseEnter={() => updateUnderline(item.href)}
+                  onMouseLeave={() => updateUnderline(activeHref)}
                 >
                   {item.label}
                 </Link>
               ))}
             </nav>
 
+            {/* Simple visible underline - testing first */}
             <motion.div
-              className="absolute bottom-0 h-0.5 bg-white pointer-events-none"
-              style={{
-                left: underline.left,
+              className="absolute bottom-0 h-0.5 bg-pc-blue pointer-events-none"
+              style={{ left: underline.left, width: underline.width }}
+              animate={{ 
+                left: underline.left, 
                 width: underline.width,
-                transformOrigin: isUnderlineVisible ? 'left' : 'right',
+                opacity: underline.opacity 
               }}
-              animate={{
-                left: underline.left,
-                width: underline.width,
-                scaleX: isUnderlineVisible ? 1 : 0,
-              }}
-              transition={{
-                left: { duration: 0.7, ease: [0.2, 0.8, 0.2, 1] },
-                width: { duration: 0.7, ease: [0.2, 0.8, 0.2, 1] },
-                scaleX: {
-                  duration: isUnderlineVisible ? 0.7 : 0.2,
-                  ease: [0.2, 0.8, 0.2, 1],
-                },
-              }}
+              transition={{ duration: 0.2, ease: [0.2, 0.8, 0.2, 1] }}
             />
           </div>
 
+          {/* Desktop CTA Button */}
           <Link href="/contact" className="hidden md:block">
-            <Button
-              variant="primary"
-              size="md"
-              className="bg-white text-pc-blue hover:bg-white/90 active:bg-white"
-            >
-              Contact Us
-            </Button>
+            <Button variant="primary" size="md">Contact Us</Button>
           </Link>
 
+          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-pc-neutral-900 hover:text-pc-blue focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
             onClick={toggleMobileMenu}
@@ -162,6 +148,7 @@ export function Header() {
           </button>
         </div>
 
+        {/* Mobile Navigation Menu */}
         {mobileMenuOpen && (
           <nav className="md:hidden pb-4" aria-label="Mobile navigation">
             <div className="flex flex-col gap-4">
@@ -169,16 +156,14 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-3 py-3"
+                  className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1 py-2"
                   onClick={closeMobileMenu}
                 >
                   {item.label}
                 </Link>
               ))}
               <Link href="/contact" onClick={closeMobileMenu}>
-                <Button variant="primary" size="md" className="w-full">
-                  Contact Us
-                </Button>
+                <Button variant="primary" size="md" className="w-full">Contact Us</Button>
               </Link>
             </div>
           </nav>
