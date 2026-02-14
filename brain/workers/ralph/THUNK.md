@@ -66,3 +66,4 @@ Started: 2026-02-14
 | 0.1.10 | Fix MD013 in brain/docs/design/README.md | 2026-02-14 | Wrapped long line at 80 chars (line 3) |
 | 0.1.11 | Fix MD013 in brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md | 2026-02-14 | Wrapped all long lines (>80 chars) to comply with MD013 line-length rule. All 43 violations resolved. |
 | 0.2.1 | Fix MD013 in brain/cortex/IMPLEMENTATION_PLAN.md | 2026-02-14 | Wrapped long line (144 chars) at line 9 into two lines to comply with 80-char limit |
+| 0.2.2 | Fix MD013 in brain/cortex/THOUGHTS.md | 2026-02-14 | Wrapped 2 long lines (124 and 104 chars) at lines 7 and 18 to comply with 80-char MD013 limit |

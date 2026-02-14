@@ -47,7 +47,7 @@
 - [x] **0.2.1** Fix MD013 in brain/cortex/IMPLEMENTATION_PLAN.md
   - **AC:** `markdownlint brain/cortex/IMPLEMENTATION_PLAN.md` passes (no MD013 errors)
 
-- [ ] **0.2.2** Fix MD013 in brain/cortex/THOUGHTS.md
+- [x] **0.2.2** Fix MD013 in brain/cortex/THOUGHTS.md
   - **AC:** `markdownlint brain/cortex/THOUGHTS.md` passes (no MD013 errors)
 
 ### 0.3 Fix MD032 (blanks-around-lists) errors
