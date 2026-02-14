@@ -314,3 +314,18 @@ Started: 2026-02-14
   - Workflow ready for CI execution (site availability pending GitHub Pages enablement)
 - **Next:** Task 3.1.2 will document GitHub Pages configuration steps for human action
 - **Note:** Final AC (site available via GitHub Pages URL) requires human to enable GitHub Pages in repo settings after workflow runs
+
+## 2026-02-14 19:16 - Task 3.1.2: Document GitHub Pages configuration steps
+
+- **Task:** Document GitHub Pages configuration steps (human action)
+- **Changes:**
+  - Created `docs/deployment.md` with comprehensive GitHub Pages setup guide
+  - Included step-by-step instructions for enabling Pages in repo settings
+  - Added validation checklist (12 items) for post-deployment verification
+  - Documented GitHub Pages URL format and troubleshooting section
+  - Provided references to Next.js static export and GitHub Pages docs
+- **AC Met:**
+  - ✅ `docs/deployment.md` exists with enabling Pages instructions
+  - ✅ Selecting source (GitHub Actions) documented
+  - ✅ Validation checklist included (homepage, navigation, assets, forms, etc.)
+- **Next:** Task 3.1.3 will document custom domain setup (defer until details known)

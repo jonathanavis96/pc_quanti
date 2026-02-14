@@ -389,7 +389,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **Notes:** GitHub Pages requires a static site; ensure Next.js is configured for static export
   - **Skill refs:** `brain/skills/domains/websites/launch/deployment.md`
 
-- [ ] **3.1.2** Document GitHub Pages configuration steps (human action)
+- [x] **3.1.2** Document GitHub Pages configuration steps (human action)
   - **Goal:** Make it trivial to enable Pages in repo settings
   - **AC:** `docs/deployment.md` includes: enabling Pages, selecting branch/artifact, and validation checklist
   - **If Blocked:** Keep workflow in repo; a human can enable Pages later
