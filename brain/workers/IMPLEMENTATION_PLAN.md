@@ -13,193 +13,358 @@
 **Timeline:** ~8 weeks  
 **Scope:** Website design, build, deployment, SEO foundation (no ongoing marketing)
 
+### Ralph guidance: use Brain skills library
+
+When implementing tasks, consult relevant skills under `brain/skills/` (open only what you need):
+
+- Tailwind + design system:
+  - `brain/skills/domains/websites/design/color-system.md`
+  - `brain/skills/domains/websites/design/typography-system.md`
+  - `brain/skills/domains/websites/design/spacing-layout.md`
+- React component patterns:
+  - `brain/skills/domains/frontend/react-patterns.md`
+  - `brain/skills/domains/frontend/component-architecture.md`
+- Accessibility & QA:
+  - `brain/skills/domains/websites/qa/accessibility.md`
+  - `brain/skills/domains/websites/qa/visual-qa.md`
+- SEO:
+  - `brain/skills/domains/marketing/seo/seo-audit.md`
+  - `brain/skills/domains/marketing/seo/schema-markup.md`
+- Deployment / launch:
+  - `brain/skills/domains/websites/launch/deployment.md`
+- Debugging playbooks:
+  - `brain/skills/playbooks/investigate-test-failures.md`
+  - `brain/skills/playbooks/debug-ralph-stuck.md`
+- Ralph operations:
+  - `brain/skills/domains/ralph/ralph-patterns.md`
+  - `brain/skills/domains/ralph/thread-search-patterns.md`
+
+### Ralph guidance: verifiability
+
+If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS, GA/GSC, email provider):
+
+- Add **repo-verifiable** outputs (docs + code/config placeholders).
+- Include a **Manual Steps** section listing exact steps a human must do.
+- If blocked by credentials, mark task as `[?]` and continue.
+
 ---
 
 ## Phase 0: Discovery & Design (Weeks 1-2)
 
-### 1.1 Brand & Design System Setup
-- [ ] **1.1.1** Create Tailwind config with PC Quanti brand colors
-  - **Goal:** Define primary blue (#2C02D9), secondary colors, typography scale
-  - **AC:** `tailwind.config.ts` exports custom theme with `pc-blue`, `pc-gray`, font families
+### 1.0 Repo readiness & quality gates (do first)
+
+- [ ] **1.0.1** Verify Next.js app boots locally
+  - **Goal:** Confirm project installs and dev server runs
+  - **AC:** `npm install` succeeds; `npm run dev` starts without errors
+  - **If Blocked:** Document error + fix root cause before proceeding (see `brain/skills/playbooks/investigate-test-failures.md`)
+
+- [ ] **1.0.2** Add CI-like local gates (lint / typecheck / build)
+  - **Goal:** Ensure baseline quality gates exist early
+  - **AC:** These commands succeed locally:
+    - `npm run lint`
+    - `npx tsc --noEmit`
+    - `npm run build`
+  - **If Blocked:** Fix errors; do not defer quality gates
+
+- [ ] **1.0.3** Add baseline App Router UX pages (not-found / error / loading)
+  - **Goal:** Avoid ugly defaults and improve perceived quality
+  - **AC:** `src/app/not-found.tsx` exists; `src/app/error.tsx` exists; `src/app/loading.tsx` exists
+  - **If Blocked:** Implement minimal versions first, improve later
+
+### 1.1 Design Pack (canonical UX inputs)
+
+- [ ] **1.1.0** Create PC Quanti Design Pack (MVP)
+  - **Goal:** Capture canonical UX/UI constraints so implementation stays crisp and consistent
+  - **AC:** A new pack exists under `brain/docs/design-packs/pc-quanti-mvp/` containing:
+    - [ ] `DESIGN_SYSTEM.md` (tokens + rules; CTA color anchored on #2C02D9)
+    - [ ] `FRONTEND_GUIDELINES.md` (component structure, token usage rules, accessibility baseline)
+    - [ ] `APP_FLOW.md` (treat as site map + page behaviors/journeys)
+    - [ ] `TECH_STACK.md` (Next.js + Tailwind + GitHub Pages static constraints)
+    - [ ] (Optional) `PRD.md` (invariants + out-of-scope)
+    - [ ] (Optional) `LESSONS.md` (append-only decisions)
+  - **If Blocked:** Copy `_template/` verbatim first, then fill incrementally
+  - **Refs:** `brain/docs/design-packs/README.md`, `brain/docs/design-packs/_template/*`
+
+- [ ] **1.1.0a** (Optional) Run design-only UI/UX audit using the Design Pack
+  - **Goal:** Sanity check “crisp / not cluttered / services-centric” before heavy buildout
+  - **AC:** Audit output saved under `brain/artifacts/design-audits/pc-quanti-mvp/<YYYY-MM-DD_HHMMSS>.md`
+  - **If Blocked:** Skip audit and proceed with MVP implementation
+  - **Refs:** `brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md`
+
+### 1.2 Brand & Design System Setup
+- [ ] **1.2.1** Create Tailwind config with PC Quanti brand colors
+  - **Goal:** Define primary blue (#2C02D9), neutrals, typography tokens
+  - **AC:**
+    - [ ] `tailwind.config.ts` exports a custom color token for `#2C02D9` (e.g. `pc-cta` or `pc-blue`)
+    - [ ] The `Button` component uses that token for primary CTA styling
   - **If Blocked:** Use Tailwind default theme temporarily, refine later
+  - **Skill refs:** `brain/skills/domains/websites/design/color-system.md`
 
-- [ ] **1.1.2** Set up typography system (Inter or Manrope font)
+- [ ] **1.2.2** Set up typography system (Inter or Manrope font)
   - **Goal:** Import Google Fonts, configure font weights/sizes in Tailwind
-  - **AC:** Fonts load on all pages, `font-sans` class uses chosen typeface
+  - **AC:** Fonts load on all pages, `font-sans` uses chosen typeface
   - **If Blocked:** Use system fonts as fallback
+  - **Skill refs:** `brain/skills/domains/websites/design/typography-system.md`
 
-- [ ] **1.1.3** Create component library foundations
+- [ ] **1.2.3** Create component library foundations
   - **Goal:** Build reusable Button, Card, Container components
-  - **AC:** Components in `src/components/`, TypeScript props, Storybook or demo page
+  - **AC:** Components in `src/components/`, TypeScript props; at least one page uses each
   - **If Blocked:** Inline components first, extract to library later
+  - **Skill refs:** `brain/skills/domains/frontend/component-architecture.md`, `brain/skills/domains/frontend/react-patterns.md`
 
-### 1.2 Sitemap & Content Strategy
-- [ ] **1.2.1** Finalize sitemap structure
+- [ ] **1.2.4** Confirm logo usage rules (simple + not overpowering)
+  - **Goal:** Keep branding concise and aligned with Phil preferences
+  - **AC:** Documented in `docs/requirements.md` (or Design Pack):
+    - [ ] Avoid overly detailed/geometric mark that overpowers the name
+    - [ ] Avoid generic arch/house clip-art feel
+    - [ ] Ensure “Project Services” (or equivalent) is readable in logo lockup if included
+  - **If Blocked:** Keep existing logo for MVP, refine post-launch
+
+### 1.3 Requirements, Audience & Scope (keep MVP crisp)
+
+- [ ] **1.3.1** Create a 1-page requirements + scope summary (PC Quanti MVP)
+  - **Goal:** Turn Phil’s preferences into explicit requirements and guardrails
+  - **AC:** `docs/requirements.md` includes:
+    - [ ] Primary goal (conversion event)
+    - [ ] Primary audience + pain/desire/action map
+    - [ ] Trust barriers + what evidence will be shown
+    - [ ] MoSCoW scope (Must/Should/Could/Won’t)
+    - [ ] Reference sites + what to emulate/avoid (HPC preferred)
+    - [ ] Content constraints (generic examples due to confidentiality)
+    - [ ] Services naming decision: “Project Management” vs “Project Services”
+    - [ ] Primary contact email: `info@pcquanti.co.za`
+    - [ ] Target market is B2B; UK market expansion is a priority
+  - **If Blocked:** Use best-guess placeholders and add `TODO(PHIL)` questions
+  - **Skill refs:** `brain/skills/domains/websites/discovery/requirements-distiller.md`, `brain/skills/domains/websites/discovery/audience-mapping.md`, `brain/skills/domains/websites/discovery/scope-control.md`
+
+### 1.4 Sitemap & Content Strategy
+- [ ] **1.4.1** Finalize sitemap structure
   - **Goal:** Define all pages: Home, About, Services (5 sub-pages), Sectors (optional), Contact
-  - **AC:** Sitemap documented in `docs/sitemap.md`, routes created in `src/app/`
+  - **AC:** Sitemap documented in `docs/sitemap.md` (or existing doc), planned routes listed (creation of routes can happen in Phase 1)
   - **If Blocked:** Start with Home/About/Contact, add Services/Sectors in Phase 1
+  - **Skill refs:** `brain/skills/domains/websites/architecture/sitemap-builder.md`
 
-- [ ] **1.2.2** Write or approve copy for core pages
-  - **Goal:** Draft Home hero, About story, Services descriptions, Contact form labels
-  - **AC:** Copy approved by Phil (or placeholder approved by Jono), saved in `docs/copy.md`
-  - **If Blocked:** Use Lorem ipsum placeholders, flag for Phil review
+- [ ] **1.4.2** Draft copy placeholders for core pages
+  - **Goal:** Ensure every section has human-readable placeholder copy (not Lorem ipsum)
+  - **AC:** Copy placeholders saved in `docs/copy.md` (or inline in components) with clear `TODO(PHIL): approve/replace` markers
+  - **If Blocked:** Use minimal, professional placeholders and mark TODOs clearly
+  - **Skill refs:** `brain/skills/domains/marketing/content/copywriting.md`
 
-- [ ] **1.2.3** Define CTAs and conversion paths
+- [ ] **1.4.3** Define CTAs and conversion paths
   - **Goal:** Map user journeys (visitor → Contact Us, visitor → View Services → Contact)
   - **AC:** CTA placement documented, primary = "Contact Us", secondary = "View Services"
   - **If Blocked:** Default to Contact Us on all pages
 
-### 1.3 Design Mockups (Optional)
-- [ ] **1.3.1** Create Figma/wireframe mockups for Home page
-  - **Goal:** Visualize hero section, services grid, footer layout
-  - **AC:** Mockup approved by Phil or Jono
-  - **If Blocked:** Skip mockups, build directly in code with iterative review
+### 1.5 Design Mockups (Optional)
+- [ ] **1.5.1** Create code-first wireframe (repo-verifiable)
+  - **Goal:** Provide a quick UI baseline without requiring Figma access
+  - **AC:** Home page sections exist with placeholder styling and a simple visual hierarchy; TODO markers note where design feedback is needed
+  - **If Blocked:** Skip and iterate directly in Phase 1
 
 ---
 
-## Phase 1: Core Website Build (Weeks 3-4)
+## Phase 1: MVP Website Build (Weeks 3-4)
 
-### 2.1 Home Page
-- [ ] **2.1.1** Build hero section
+### MVP definition (Phil preferences)
+
+**MVP goal:** A crisp, uncluttered, easy-to-navigate brochure site with **Services as the central feature**.
+
+**Reference sites (Phil):**
+
+- Preferred: https://hattinghpc.co.za/services/ (crisp, not cluttered, easy to navigate)
+- Secondary reference: https://cbec.co.za/ (avoid “lumpy” pronounced boxes)
+
+**Business constraints:**
+
+- Much work has been for a single client in the last 5 years; case studies/testimonials may need to be **generic** due to confidentiality.
+- Nuclear is a key sector, but branding should **not scream nuclear**; the site should still feel relevant to other industries.
+
+**MVP must include:**
+
+- Home (`/`): concise hero + primary CTA, services preview, credibility snippet
+- Services hub (`/services`): central navigation destination listing all services clearly
+- Service detail pages (x5): simple sections + CTA
+- Contact (`/contact`): basic form (or mailto fallback)
+- About (`/about`): short, scannable bio + differentiators
+
+**Design preferences:**
+
+- CTA/button color uses **#2C02D9** (exposed as a Tailwind token, used by `Button`)
+- Simple, concise header/logo usage; avoid clutter; prefer a style similar to the HPC site
+- Use generic (not Lorem ipsum) placeholder content where Phil-specific copy is missing
+
+---
+
+### 2.1 Header/Navigation (keep it simple)
+- [ ] **2.1.1** Build desktop navigation
+  - **Goal:** Simple logo + clear nav links (Home, Services, About, Contact)
+  - **AC:** Header renders on all pages; Services link is prominent
+  - **If Blocked:** Use a minimal top nav with no dropdown
+
+- [ ] **2.1.2** Build mobile navigation
+  - **Goal:** Hamburger menu with the same links, easy to use
+  - **AC:** Menu opens/closes; closes on link click; no layout shift
+  - **If Blocked:** Use simple show/hide (no animation)
+
+### 2.2 Services Hub (central feature)
+- [ ] **2.2.1** Build services overview page (`/services`)
+  - **Goal:** Central hub listing 5 services in a crisp, scannable layout
+  - **AC:** Page renders; 5 service cards/rows link to detail pages; primary CTA visible
+  - **If Blocked:** Use text-only list first, style later
+
+### 2.3 Home Page
+
+- [ ] **2.3.1** Build hero section
   - **Goal:** Headline + subheadline + CTA button, background image or gradient
   - **AC:** Hero renders on `/`, responsive on mobile/tablet/desktop, CTA links to `/contact`
   - **If Blocked:** Use solid color background if no approved image
 
-- [ ] **2.1.2** Build services overview section
+- [ ] **2.3.2** Build services preview section (links to Services hub)
   - **Goal:** Grid of 5 service cards (PM, QS, Contract Admin, Claims, Project Controls)
   - **AC:** Cards link to `/services/[service-slug]`, icons or placeholders, responsive grid
   - **If Blocked:** Text-only list if no icons available
 
-- [ ] **2.1.3** Build trust/credibility section
-  - **Goal:** Show Phil's experience, sectors served, differentiators
-  - **AC:** Section renders below services, includes stats or bullet points
-  - **If Blocked:** Defer to About page if content not ready
+- [ ] **2.3.3** Build trust bar (above the fold or immediately after hero)
+  - **Goal:** Reduce “can I trust you?” friction fast
+  - **AC:** A compact trust strip exists (e.g. “Years experience”, “Key sectors”, “Accreditations” placeholders) and is visible near the top
+  - **If Blocked:** Use a simple text line under the hero (no logos needed)
+  - **Skill refs:** `brain/skills/domains/websites/architecture/section-composer.md`, `brain/skills/domains/websites/copywriting/objection-handler.md`
 
-- [ ] **2.1.4** Build footer
+- [ ] **2.3.4** Build "How it works" section
+  - **Goal:** Make engagement steps clear and reduce uncertainty
+  - **AC:** Section exists with 3-5 steps and a CTA to Contact
+  - **If Blocked:** Use a 3-step numbered list
+
+- [ ] **2.3.5** Build FAQ preview (3-4 Q&As)
+  - **Goal:** Handle top objections without clutter
+  - **AC:** FAQ preview exists and includes a CTA (“Still have questions?” “Contact”)
+  - **If Blocked:** Add placeholder Q&As with `TODO(PHIL)` markers
+
+- [ ] **2.3.6** Build footer
   - **Goal:** Contact info, nav links, social media icons (if applicable)
   - **AC:** Footer component in `src/components/Footer.tsx`, renders on all pages via layout
   - **If Blocked:** Minimal footer with email/phone only
 
-### 2.2 About Page
-- [ ] **2.2.1** Build Phil's story section
+### 2.4 About Page
+- [ ] **2.4.1** Build Phil's story section
   - **Goal:** Narrative about background, nuclear experience, why PC Quanti
   - **AC:** `/about` page renders, includes headshot or placeholder, responsive
   - **If Blocked:** Use placeholder bio, flag for Phil review
 
-- [ ] **2.2.2** Build differentiators section
+- [ ] **2.4.2** Build differentiators section
   - **Goal:** Lean model, scarce skills access, on-ground delivery, sector versatility
   - **AC:** 4 key differentiators displayed (cards or list), icons optional
   - **If Blocked:** Text-only list if no icons
 
-- [ ] **2.2.3** Build credentials/certifications section (if applicable)
+- [ ] **2.4.3** Build credentials/certifications section (if applicable)
   - **Goal:** Display relevant certs, memberships, affiliations
   - **AC:** Section renders if Phil provides details, otherwise skip
   - **If Blocked:** Skip if no content available
 
-### 2.3 Services Pages
-- [ ] **2.3.1** Build services overview page (`/services`)
-  - **Goal:** Introduction to all 5 services, links to detail pages
-  - **AC:** Page renders, nav links work, responsive
-  - **If Blocked:** Inline all service descriptions if sub-pages not ready
+### 2.5 Service Detail Pages
 
-- [ ] **2.3.2** Build Project Management detail page
+- [ ] **2.5.1** Build Project Management detail page
   - **Goal:** Describe PM services, typical deliverables, sectors served
   - **AC:** `/services/project-management` renders, includes CTA to Contact
   - **If Blocked:** Use generic description if Phil's copy not ready
 
-- [ ] **2.3.3** Build Quantity Surveying detail page
+- [ ] **2.5.2** Build Quantity Surveying detail page
   - **Goal:** Describe QS services, cost management, contract support
   - **AC:** `/services/quantity-surveying` renders, includes CTA
   - **If Blocked:** Use generic description
 
-- [ ] **2.3.4** Build Contract Administration detail page
+- [ ] **2.5.3** Build Contract Administration detail page
   - **Goal:** Describe contract admin, compliance, documentation
   - **AC:** `/services/contract-administration` renders, includes CTA
   - **If Blocked:** Use generic description
 
-- [ ] **2.3.5** Build Claims Management detail page
+- [ ] **2.5.4** Build Claims Management detail page
   - **Goal:** Describe claims services, dispute resolution, forensic analysis
   - **AC:** `/services/claims-management` renders, includes CTA
   - **If Blocked:** Use generic description
 
-- [ ] **2.3.6** Build Project Controls detail page
+- [ ] **2.5.5** Build Project Controls detail page
   - **Goal:** Describe project controls, scheduling, risk management
   - **AC:** `/services/project-controls` renders, includes CTA
   - **If Blocked:** Use generic description
 
-### 2.4 Contact Page
-- [ ] **2.4.1** Build contact form
-  - **Goal:** Name, email, phone, enquiry type dropdown, message textarea
+### 2.6 Contact Page
+- [ ] **2.6.1** Build contact form
+  - **Goal:** “Request services” style enquiry flow (service dropdown/checklist) + name, email, phone, message
   - **AC:** Form renders on `/contact`, client-side validation, submit button
   - **If Blocked:** Use mailto link if form backend not ready
 
-- [ ] **2.4.2** Set up form submission handler
-  - **Goal:** API route to send email or save to database
-  - **AC:** Form submits to `/api/contact`, sends email to Phil's address, returns success/error
-  - **If Blocked:** Use Formspree or similar third-party service
+- [ ] **2.6.2** Implement GitHub Pages-compatible contact submission
+  - **Goal:** Make the contact path work on static hosting
+  - **AC:** One of the following works end-to-end:
+    - [ ] Formspree (or similar) integration, OR
+    - [ ] mailto fallback with prefilled subject/body
+  - **If Blocked:** Keep the form UI and make the primary CTA a mailto link
+  - **Notes:** Avoid Next.js API routes if hosting on GitHub Pages static export
 
-- [ ] **2.4.3** Add contact info display
+- [ ] **2.6.3** Add contact info display
   - **Goal:** Show email, phone, address (if applicable) on Contact page
   - **AC:** Contact details render, clickable email/phone links
   - **If Blocked:** Email only if phone/address not provided
 
-### 2.5 Header/Navigation
-- [ ] **2.5.1** Build desktop navigation
-  - **Goal:** Logo + nav links (Home, About, Services dropdown, Contact)
-  - **AC:** Header component in `src/components/Header.tsx`, renders on all pages
-  - **If Blocked:** Flat nav (no dropdown) if styling complex
+### 2.x Navigation
 
-- [ ] **2.5.2** Build mobile navigation
-  - **Goal:** Hamburger menu, drawer/slide-out nav
-  - **AC:** Nav works on mobile/tablet, closes on link click
-  - **If Blocked:** Use simple toggle show/hide if drawer animation too complex
+(Implemented earlier in Phase 1 to match the “crisp and easy to navigate” requirement.)
 
 ---
 
 ## Phase 2: Technical Setup (Week 5)
 
-### 3.1 Deployment
-- [ ] **3.1.1** Deploy to Vercel (or Phil's preferred host)
-  - **Goal:** Site accessible at temporary Vercel URL
-  - **AC:** `npm run build` succeeds, deployed to `pc-quanti.vercel.app` or similar
-  - **If Blocked:** Deploy to Netlify if Vercel issues
+### 3.1 Deployment (GitHub Pages)
+- [ ] **3.1.1** Implement GitHub Pages deployment (static export)
+  - **Goal:** Publish an MVP site via GitHub Pages from the repository
+  - **AC:**
+    - [ ] Deployment workflow exists (e.g. `.github/workflows/deploy.yml`)
+    - [ ] `npm run build` succeeds in CI
+    - [ ] Site is available via GitHub Pages URL
+  - **If Blocked:** Document the issue and keep build working locally
+  - **Notes:** GitHub Pages requires a static site; ensure Next.js is configured for static export
+  - **Skill refs:** `brain/skills/domains/websites/launch/deployment.md`
 
-- [ ] **3.1.2** Set up custom domain
-  - **Goal:** Configure `pcquanti.co.uk` (or Phil's chosen domain) to point to deployment
-  - **AC:** Domain resolves, SSL certificate active
-  - **If Blocked:** Wait for Phil to purchase domain, use Vercel URL temporarily
+- [ ] **3.1.2** Document GitHub Pages configuration steps (human action)
+  - **Goal:** Make it trivial to enable Pages in repo settings
+  - **AC:** `docs/deployment.md` includes: enabling Pages, selecting branch/artifact, and validation checklist
+  - **If Blocked:** Keep workflow in repo; a human can enable Pages later
 
-- [ ] **3.1.3** Configure environment variables
-  - **Goal:** Store API keys, form endpoints, analytics IDs in `.env.local`
-  - **AC:** Secrets not committed to Git, loaded in production via Vercel dashboard
-  - **If Blocked:** Hardcode non-sensitive defaults, add secrets later
+- [ ] **3.1.3** Custom domain (defer until details known)
+  - **Goal:** Keep a placeholder plan without blocking MVP launch
+  - **AC:** `docs/domain-setup.md` exists with placeholders (domain name, registrar, DNS provider) and a checklist of required info
+  - **If Blocked:** Leave as placeholders; proceed with GitHub Pages default domain
 
 ### 3.2 Email & Communication
-- [ ] **3.2.1** Set up email forwarding
-  - **Goal:** `contact@pcquanti.co.uk` forwards to Phil's personal email
-  - **AC:** Test email sent and received
-  - **If Blocked:** Use Phil's personal email directly in Contact form
+- [ ] **3.2.1** Document email setup / forwarding / Outlook usage (human action)
+  - **Goal:** Ensure Phil can use Outlook while sending/receiving as `info@pcquanti.co.za` (current domain is `pcquanti.co.za`, email hosted with Afrihost)
+  - **AC:** `docs/email-forwarding.md` includes:
+    - [ ] Current state captured: `info@pcquanti.co.za` hosted at Afrihost
+    - [ ] Option A: Keep Afrihost, configure Outlook (IMAP/SMTP) + verification checklist
+    - [ ] Option B: Migrate to Microsoft 365 / Google Workspace and update DNS (SPF/DKIM/DMARC notes)
+  - **If Blocked:** Use `info@pcquanti.co.za` directly in the Contact path until changes are made
 
-- [ ] **3.2.2** Configure SMTP for form submissions (if needed)
-  - **Goal:** Send emails via SendGrid, Mailgun, or similar
-  - **AC:** Form emails delivered reliably, no spam folder issues
+- [ ] **3.2.2** Add SMTP/provider integration option (code + docs)
+  - **Goal:** Enable reliable contact form delivery using a provider (SendGrid/Mailgun/etc.)
+  - **AC:** `docs/email-provider.md` documents supported options + required env vars (no secrets committed)
   - **If Blocked:** Use formspree.io or similar service
 
 ### 3.3 Analytics & Monitoring
-- [ ] **3.3.1** Set up Google Analytics
-  - **Goal:** Track page views, user journeys, form submissions
-  - **AC:** GA tag installed, events firing in GA dashboard
-  - **If Blocked:** Use Vercel Analytics if GA setup blocked
+- [ ] **3.3.1** Add analytics integration hooks + manual steps (GA)
+  - **Goal:** Ensure analytics can be enabled without code changes later
+  - **AC:** Code supports GA ID via env var (no secret committed) and `docs/analytics.md` contains setup + verification steps
+  - **If Blocked:** Document a no-analytics MVP and add later
 
-- [ ] **3.3.2** Set up Google Search Console
-  - **Goal:** Submit sitemap, monitor search performance
-  - **AC:** Site verified, sitemap submitted
-  - **If Blocked:** Defer to Phase 3
+- [ ] **3.3.2** Document GSC verification + sitemap submission (human action)
+  - **Goal:** Make it easy for a human to verify ownership and submit sitemap
+  - **AC:** `docs/search-console.md` contains verification methods (DNS / HTML tag) and submission steps
+  - **If Blocked:** Defer actual verification, but keep docs ready
 
 - [ ] **3.3.3** Set up error monitoring (Sentry or similar)
   - **Goal:** Catch runtime errors, monitor performance
   - **AC:** Sentry installed, test error logged
-  - **If Blocked:** Skip if budget/time constrained, rely on Vercel logs
+  - **If Blocked:** Skip if budget/time constrained, rely on GitHub Actions logs + console logging
 
 ---
 
@@ -218,19 +383,21 @@
 
 - [ ] **4.1.3** Add structured data (Schema.org)
   - **Goal:** Organization, Service, WebSite schemas in JSON-LD
-  - **AC:** Schema validates in Google Rich Results Test
-  - **If Blocked:** Defer to Phase 4 if complex
+  - **AC:** Schema JSON-LD is present in markup; values are configurable for domain/name
+  - **If Blocked:** Implement Organization only, add Service schema later
+  - **Skill refs:** `brain/skills/domains/marketing/seo/schema-markup.md`
 
 ### 4.2 Technical SEO
-- [ ] **4.2.1** Generate sitemap.xml
-  - **Goal:** Auto-generate sitemap listing all pages
-  - **AC:** `/sitemap.xml` accessible, includes all routes, submitted to GSC
+- [ ] **4.2.1** Implement sitemap.xml (App Router)
+  - **Goal:** Provide a sitemap for crawlers
+  - **AC:** `/sitemap.xml` is accessible and includes key routes (Home, About, Services, Contact)
   - **If Blocked:** Use `next-sitemap` package
+  - **Skill refs:** `brain/skills/domains/marketing/seo/seo-audit.md`
 
-- [ ] **4.2.2** Create robots.txt
-  - **Goal:** Allow all crawlers, link to sitemap
-  - **AC:** `/robots.txt` accessible, no disallowed pages
-  - **If Blocked:** Use default Next.js robots.txt
+- [ ] **4.2.2** Implement robots.txt
+  - **Goal:** Allow crawling and reference sitemap
+  - **AC:** `/robots.txt` is accessible and includes a `Sitemap:` line
+  - **If Blocked:** Provide a permissive default, refine later
 
 - [ ] **4.2.3** Configure canonical URLs
   - **Goal:** Prevent duplicate content issues
@@ -332,18 +499,18 @@
   - **If Blocked:** N/A (must work for launch)
 
 ### 6.2 Deployment
-- [ ] **6.2.1** Deploy to production
-  - **Goal:** Push final changes to main branch, trigger production deploy
-  - **AC:** Site live at custom domain, SSL active
-  - **If Blocked:** N/A (must complete)
+- [ ] **6.2.1** Production deployment runbook (GitHub Pages)
+  - **Goal:** Make it clear how changes get published to the live GitHub Pages site
+  - **AC:** `docs/production-deploy.md` includes: branch strategy, GitHub Actions deploy workflow notes, and post-deploy validation steps
+  - **If Blocked:** Keep site on last known-good deployment; fix build first
 
-- [ ] **6.2.2** Submit sitemap to Google Search Console
+- [ ] **6.2.2** Execute GSC sitemap submission (human action)
   - **Goal:** Help Google discover all pages
-  - **AC:** Sitemap submitted, no errors in GSC
+  - **AC:** `docs/search-console.md` includes submission steps; once verified by human, sitemap is submitted and status recorded (paste screenshot/link into doc)
   - **If Blocked:** Defer 1-2 days if GSC verification slow
 
 - [ ] **6.2.3** Monitor for errors (first 24 hours)
-  - **Goal:** Watch Sentry/Vercel logs for runtime errors
+  - **Goal:** Watch Sentry (if enabled) and GitHub Actions build/deploy logs
   - **AC:** No critical errors, performance stable
   - **If Blocked:** Fix urgent issues immediately, defer minor bugs
 
@@ -354,7 +521,7 @@
   - **If Blocked:** Provide verbal walkthrough if no time to write docs
 
 - [ ] **6.3.2** Transfer ownership (if applicable)
-  - **Goal:** Add Phil as admin to Vercel, Google Analytics, domain registrar
+  - **Goal:** Add Phil as admin to GitHub repo, Google Analytics, domain registrar
   - **AC:** Phil confirms access
   - **If Blocked:** Jono retains admin access, grants Phil editor role
 
@@ -389,7 +556,7 @@
 
 ## Success Criteria (Overall)
 
-- [ ] Site live at custom domain with SSL
+- [ ] Site live on GitHub Pages URL (custom domain optional later)
 - [ ] All core pages complete (Home, About, Services x5, Contact)
 - [ ] Contact form works, emails delivered
 - [ ] SEO foundation in place (metadata, sitemap, keywords)
@@ -399,5 +566,5 @@
 
 ---
 
-**Next Task:** Phase 0, Task 1.1.1 (Create Tailwind config with brand colors)
+**Next Task:** Phase 0, Task 1.0.1 (Verify Next.js app boots locally)
 
