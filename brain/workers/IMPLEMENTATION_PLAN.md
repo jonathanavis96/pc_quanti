@@ -169,12 +169,12 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Inline components first, extract to library later
   - **Skill refs:** `brain/skills/domains/frontend/component-architecture.md`, `brain/skills/domains/frontend/react-patterns.md`
 
-- [ ] **1.2.4** Confirm logo usage rules (simple + not overpowering)
+- [x] **1.2.4** Confirm logo usage rules (simple + not overpowering)
   - **Goal:** Keep branding concise and aligned with Phil preferences
   - **AC:** Documented in `docs/requirements.md` (or Design Pack):
-    - [ ] Avoid overly detailed/geometric mark that overpowers the name
-    - [ ] Avoid generic arch/house clip-art feel
-    - [ ] Ensure “Project Services” (or equivalent) is readable in logo lockup if included
+    - [x] Avoid overly detailed/geometric mark that overpowers the name
+    - [x] Avoid generic arch/house clip-art feel
+    - [x] Ensure "Project Services" (or equivalent) is readable in logo lockup if included
   - **If Blocked:** Keep existing logo for MVP, refine post-launch
 
 ### 1.3 Requirements, Audience & Scope (keep MVP crisp)

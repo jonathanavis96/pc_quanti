@@ -125,3 +125,4 @@ Started: 2026-02-14
 
 | 2026-02-14 17:49 | 1.2.2 | Set up typography system | Imported Inter font from Google Fonts, configured font-sans in Tailwind with weight variants (400/500/600/700), added heading size tokens (h1-h4) matching design system specs |
 | 1.2.3 | Create component library foundations | 2026-02-14T15:56:04Z | Built Button, Card, Container in src/components/ with TypeScript props; all used in app/page.tsx |
+| 1.2.4 | Confirm logo usage rules | 2026-02-14T17:56:52Z | Created docs/requirements.md with logo design principles (simple PC house icon, avoid overly detailed/generic arch/nuclear imagery), contact info, and services naming conventions |
