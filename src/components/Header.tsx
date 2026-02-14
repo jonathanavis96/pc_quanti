@@ -138,7 +138,7 @@ export function Header() {
             <Button
               variant="primary"
               size="md"
-              className="bg-white text-pc-blue hover:bg-white/90 active:bg-white"
+              className="bg-pc-blue-light !text-pc-blue border border-white/40 shadow-[inset_0_3px_0_rgba(255,255,255,0.85),inset_0_-4px_0_rgba(31,1,153,0.45),0_3px_0_rgba(0,0,0,0.08)] hover:bg-pc-blue-light/95 active:bg-pc-blue-light/85 active:shadow-[inset_0_2px_0_rgba(255,255,255,0.75),inset_0_-3px_0_rgba(31,1,153,0.45),0_2px_0_rgba(0,0,0,0.08)]"
             >
               Contact Us
             </Button>
