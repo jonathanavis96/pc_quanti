@@ -658,7 +658,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `docs/search-console.md` includes submission steps; once verified by human, sitemap is submitted and status recorded (paste screenshot/link into doc)
   - **If Blocked:** Defer 1-2 days if GSC verification slow
 
-- [ ] **6.2.3** Monitor for errors (first 24 hours)
+- [x] **6.2.3** Monitor for errors (first 24 hours)
   - **Goal:** Watch Sentry (if enabled) and GitHub Actions build/deploy logs
   - **AC:** No critical errors, performance stable
   - **If Blocked:** Fix urgent issues immediately, defer minor bugs
