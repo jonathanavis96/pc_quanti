@@ -62,7 +62,8 @@ colors: {
 - Fallback: system-ui, sans-serif
 
 **Scale:**
-```
+
+```text
 // Headings
 - H1: 2.5rem (40px) / line-height 1.2 / weight 700
 - H2: 2rem (32px) / line-height 1.3 / weight 700
@@ -94,7 +95,8 @@ colors: {
 - Comfortable reading width (prose): 65ch (~700px)
 
 **Breakpoints:**
-```
+
+```text
 sm: 640px   // Mobile landscape
 md: 768px   // Tablet
 lg: 1024px  // Desktop
@@ -106,14 +108,16 @@ xl: 1280px  // Wide desktop
 ### Radii + Shadows
 
 **Border radius:**
-```
+
+```text
 sm: 0.25rem (4px)   // Subtle elements
 md: 0.5rem (8px)    // Cards, inputs, buttons
 lg: 0.75rem (12px)  // Hero sections, large cards
 ```
 
 **Shadows:**
-```
+
+```text
 sm: 0 1px 2px rgba(0,0,0,0.05)           // Subtle depth
 md: 0 4px 6px rgba(0,0,0,0.07)           // Cards
 lg: 0 10px 15px rgba(0,0,0,0.1)          // Modals, popovers

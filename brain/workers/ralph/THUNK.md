@@ -393,3 +393,4 @@ Started: 2026-02-14
 **Verification:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md` shows no MD032 errors
 2026-02-14 | 0.8.1 | Fix MD034 bare URL in APP_FLOW.md | Wrapped email address in angle brackets
 | 0.9.1 | 2026-02-14T17:37:34Z | Fix MD040 in APP_FLOW.md | Added language specifier (text) to fenced code block at line 199 |
+| 0.9.2 | 2026-02-14 19:38 | Fix MD040 in DESIGN_SYSTEM.md | Added language specifiers (`text`) to 4 unlabeled code blocks and blank lines before fences |
