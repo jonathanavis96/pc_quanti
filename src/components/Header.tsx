@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button } from './Button';
 import { Container } from './Container';
 
@@ -20,13 +21,22 @@ const navItems: NavItem[] = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [underline, setUnderline] = useState({ left: 0, width: 0 });
-  const [hoveredHref, setHoveredHref] = useState<string | null>(null);
+  const [activeRing, setActiveRing] = useState({ left: 0, top: 0, width: 0, height: 0 });
   const [isUnderlineVisible, setIsUnderlineVisible] = useState(false);
+  const [isHoveringNav, setIsHoveringNav] = useState(false);
   const navRef = useRef<HTMLDivElement | null>(null);
   const linkRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
+
+  const activeHref = useMemo(() => {
+    if (!pathname) return '/';
+    if (pathname === '/') return '/';
+    const match = navItems.find((item) => pathname.startsWith(item.href) && item.href !== '/');
+    return match?.href ?? '/';
+  }, [pathname]);
 
   const updateUnderline = (href: string) => {
     const link = linkRefs.current[href];
@@ -42,6 +52,26 @@ export function Header() {
     });
   };
 
+  const updateActiveRing = (href: string) => {
+    const link = linkRefs.current[href];
+    const container = navRef.current;
+    if (!link || !container) return;
+
+    const linkRect = link.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
+
+    setActiveRing({
+      left: linkRect.left - containerRect.left,
+      top: linkRect.top - containerRect.top,
+      width: linkRect.width,
+      height: linkRect.height,
+    });
+  };
+
+  useEffect(() => {
+    updateActiveRing(activeHref);
+  }, [activeHref]);
+
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 8);
     handleScroll();
@@ -51,13 +81,17 @@ export function Header() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (hoveredHref) {
-        updateUnderline(hoveredHref);
+      updateActiveRing(activeHref);
+      if (isUnderlineVisible) {
+        const hoveredHref = navItems.find((item) => linkRefs.current[item.href])?.href;
+        if (hoveredHref) {
+          updateUnderline(hoveredHref);
+        }
       }
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [hoveredHref]);
+  }, [activeHref, isUnderlineVisible]);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
   const closeMobileMenu = () => setMobileMenuOpen(false);
@@ -88,8 +122,8 @@ export function Header() {
               className="flex items-center gap-20"
               aria-label="Main navigation"
               onMouseLeave={() => {
-                setHoveredHref(null);
                 setIsUnderlineVisible(false);
+                setIsHoveringNav(false);
               }}
             >
               {navItems.map((item) => (
@@ -99,11 +133,11 @@ export function Header() {
                   ref={(el) => {
                     linkRefs.current[item.href] = el;
                   }}
-                  className="text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-pc-blue rounded-sm px-4 py-3"
+                  className="text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-sm px-4 py-3"
                   onMouseEnter={() => {
-                    setHoveredHref(item.href);
-                    updateUnderline(item.href);
                     setIsUnderlineVisible(true);
+                    setIsHoveringNav(true);
+                    updateUnderline(item.href);
                   }}
                 >
                   {item.label}
@@ -132,6 +166,20 @@ export function Header() {
                 },
               }}
             />
+
+            <div
+              className="absolute border-2 border-white/90 rounded-lg pointer-events-none"
+              style={{
+                left: activeRing.left,
+                top: activeRing.top,
+                width: activeRing.width,
+                height: activeRing.height,
+                transformOrigin: isHoveringNav ? 'right' : 'left',
+                transform: `scaleX(${isHoveringNav ? 0 : 1})`,
+                opacity: isHoveringNav ? 0 : 1,
+                transition: 'transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1), opacity 200ms cubic-bezier(0.2, 0.8, 0.2, 1)',
+              }}
+            />
           </div>
 
           <Link href="/contact" className="hidden md:block">
@@ -145,7 +193,7 @@ export function Header() {
           </Link>
 
           <button
-            className="md:hidden p-2 text-pc-neutral-900 hover:text-pc-blue focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+            className="md:hidden p-2 text-white hover:text-white/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-sm"
             onClick={toggleMobileMenu}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
@@ -169,14 +217,14 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-3 py-3"
+                  className="text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-sm px-3 py-3"
                   onClick={closeMobileMenu}
                 >
                   {item.label}
                 </Link>
               ))}
               <Link href="/contact" onClick={closeMobileMenu}>
-                <Button variant="primary" size="md" className="w-full">
+                <Button variant="primary" size="md" className="w-full bg-white text-pc-blue">
                   Contact Us
                 </Button>
               </Link>
