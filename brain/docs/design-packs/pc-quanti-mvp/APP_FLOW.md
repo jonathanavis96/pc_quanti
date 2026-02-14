@@ -196,7 +196,7 @@ in nuclear/industrial sectors seeking project management consultancy services.
 
 ## 3) Navigation Structure
 
-```
+```text
 Header (sticky on all pages):
   - Logo (links to /)
   - Nav: Home | About | Services | Contact

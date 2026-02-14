@@ -91,7 +91,7 @@
 
 ### 0.9 Fix MD040 (fenced-code-language) errors in pc-quanti-mvp design pack
 
-- [ ] **0.9.1** Fix MD040 in brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md
+- [x] **0.9.1** Fix MD040 in brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md` passes (no MD040 errors)
 
 - [ ] **0.9.2** Fix MD040 in brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md
