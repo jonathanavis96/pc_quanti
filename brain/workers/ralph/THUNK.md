@@ -61,3 +61,4 @@ Started: 2026-02-14
 
 | 0.1.6 | Fix MD013 in brain/docs/design-packs/_template/APP_FLOW.md | 2026-02-14 | Wrapped long lines at 80 chars (lines 5 and 7) |
 | 0.1.7 | Fix MD013 in brain/docs/design-packs/_template/DESIGN_SYSTEM.md | 2026-02-14 | Wrapped long line at 80 chars (line 7) |
+| 0.1.8 | Fix MD013 in brain/docs/design-packs/_template/PRD.md | Broke long line (101 chars) into two lines to satisfy 80-char limit | 2026-02-14 |

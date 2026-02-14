@@ -4,7 +4,8 @@
 
 A compact place to capture **must-not-change behaviors** and key functional requirements.
 
-If you already have a PRD elsewhere, link it here and extract only the “design-relevant constraints.”
+If you already have a PRD elsewhere, link it here and extract only the
+"design-relevant constraints."
 
 ## Setup (how to start)
 

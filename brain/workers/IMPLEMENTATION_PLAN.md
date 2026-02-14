@@ -30,7 +30,7 @@
 - [x] **0.1.7** Fix MD013 in brain/docs/design-packs/_template/DESIGN_SYSTEM.md
   - **AC:** `markdownlint brain/docs/design-packs/_template/DESIGN_SYSTEM.md` passes (no MD013 errors)
 
-- [ ] **0.1.8** Fix MD013 in brain/docs/design-packs/_template/PRD.md
+- [x] **0.1.8** Fix MD013 in brain/docs/design-packs/_template/PRD.md
   - **AC:** `markdownlint brain/docs/design-packs/_template/PRD.md` passes (no MD013 errors)
 
 - [ ] **0.1.9** Fix MD013 and MD029 in brain/docs/design-packs/README.md
