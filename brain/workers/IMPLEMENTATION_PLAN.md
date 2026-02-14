@@ -52,7 +52,7 @@
 
 ### 0.3 Fix MD032 (blanks-around-lists) errors
 
-- [ ] **0.3.1** Fix MD032 in brain/cortex/THOUGHTS.md
+- [x] **0.3.1** Fix MD032 in brain/cortex/THOUGHTS.md
   - **AC:** `markdownlint brain/cortex/THOUGHTS.md` passes (no MD032 errors)
 
 ### 0.4 Fix MD029 (ol-prefix) errors

@@ -20,6 +20,7 @@ with crisp UX and GitHub Pages-compatible deployment.
 constraints for GitHub Pages)
 
 **Key Objectives:**
+
 - Publish a clean, services-centric brochure site
 - Optimize for B2B credibility and UK market discovery
 - Keep branding crisp (do not over-emphasize nuclear)
