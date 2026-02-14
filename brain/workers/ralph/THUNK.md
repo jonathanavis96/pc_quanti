@@ -514,3 +514,24 @@ Started: 2026-02-14
 | 4.2.1 | Implement sitemap.xml (App Router) | Created `app/sitemap.ts` with MetadataRoute.Sitemap implementation; includes all key routes (Home, About, Services, Contact, and 5 service pages); configured with `dynamic = "force-static"` for static export compatibility; verified `/sitemap.xml` accessible at http://localhost:3000/sitemap.xml with proper XML structure and all 9 routes | 2026-02-14 |
 | 4.2.2 | Implement robots.txt | Created `app/robots.ts` with MetadataRoute.Robots implementation; configured to allow all crawlers (`User-Agent: *`, `Allow: /`) and reference sitemap at `https://pcquanti.com/sitemap.xml`; added `dynamic = "force-static"` for static export compatibility; verified `/robots.txt` accessible and properly formatted in build output | 2026-02-14 |
 2026-02-14T18:11:52Z | 4.2.3 | Configure canonical URLs | Added metadataBase and canonical links to all pages (/, /about, /services, all service detail pages). Verified canonical tags render correctly in build output.
+
+## 2026-02-14 20:12 - Task 4.3.1: Optimize copy for target keywords
+
+**Completed:** SEO keyword optimization across homepage, about, services pages and meta descriptions
+
+**Changes:**
+- Homepage: Added "UK nuclear project management" to H2 heading, "Industrial PM Consultancy Services" to services H2
+- Enhanced services intro copy to include "quantity surveying, contract administration, claims management, and project controls"
+- Meta descriptions: Updated all pages (layout.tsx, page.tsx, about, services) to include target keywords:
+  - "UK nuclear project management consultancy"
+  - Service-specific keywords (quantity surveying, contract administration, etc.)
+- All keywords integrated naturally into existing copy, maintaining readability
+- Keywords now appear in H1s, H2s, meta descriptions, and body text as per AC
+
+**Verified:**
+- Target keywords "UK nuclear project management", "industrial PM consultancy", service names appear in headings
+- Meta descriptions contain keywords naturally
+- Service pages already had good keyword coverage in body text
+- No forced or unnatural keyword stuffing
+
+**Commit:** 63bb89f - feat(seo): optimize copy for target keywords

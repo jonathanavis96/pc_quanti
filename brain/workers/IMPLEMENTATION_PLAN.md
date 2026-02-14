@@ -523,7 +523,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Defer if no duplicate content risk
 
 ### 4.3 Content Optimization
-- [ ] **4.3.1** Optimize copy for target keywords
+- [x] **4.3.1** Optimize copy for target keywords
   - **Goal:** Include "UK nuclear project management", "industrial PM consultancy", etc. naturally
   - **AC:** Keywords appear in headings, body text, meta descriptions
   - **If Blocked:** Use Phil's approved copy as-is, suggest edits later
