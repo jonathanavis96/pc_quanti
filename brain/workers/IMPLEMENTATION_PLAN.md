@@ -326,7 +326,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 
 ### 2.5 Service Detail Pages
 
-- [ ] **2.5.1** Build Project Management detail page
+- [x] **2.5.1** Build Project Management detail page
   - **Goal:** Describe PM services, typical deliverables, sectors served
   - **AC:** `/services/project-management` renders, includes CTA to Contact
   - **If Blocked:** Use generic description if Phil's copy not ready
