@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# cortex/one-shot.sh - One-shot planning session with Cortex for {{PROJECT_NAME}}
+# cortex/one-shot.sh - One-shot planning session with Cortex for PC Quanti
 
 set -euo pipefail
 
@@ -41,7 +41,7 @@ readonly NC='\033[0m'
 
 echo -e "${CYAN}========================================${NC}"
 echo -e "${CYAN}🧠 Cortex One-Shot Planning${NC}"
-echo -e "${CYAN}   {{PROJECT_NAME}}${NC}"
+echo -e "${CYAN}   PC Quanti${NC}"
 echo -e "${CYAN}========================================${NC}"
 echo ""
 

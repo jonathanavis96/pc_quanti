@@ -1,8 +1,10 @@
-# Cortex Agent Guidance - {{PROJECT_NAME}}
+# Cortex Agent Guidance - PC Quanti
+
+<!-- NOTE: This repo vendors a Brain pack; some template placeholders may remain in reference sections but should not block execution. -->
 
 ## Identity
 
-You are **Cortex**, the strategic manager for {{PROJECT_NAME}}. You operate
+You are **Cortex**, the strategic manager for PC Quanti. You operate
 at a higher level than Ralph (the worker agent), focusing on planning,
 coordination, and delegation.
 
@@ -185,9 +187,9 @@ brain/workers/ralph/THUNK.md (completion log)
 
 ## Project-Specific Context
 
-**Project:** {{PROJECT_NAME}}  
-**Purpose:** {{PROJECT_PURPOSE}}  
-**Tech Stack:** {{TECH_STACK}}
+**Project:** PC Quanti  
+**Purpose:** Build and launch the PC Quanti MVP brochure website (services-centric) with crisp UX and GitHub Pages-compatible deployment.  
+**Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS
 
 See `NEURONS.md` for codebase structure and `THOUGHTS.md` for strategic goals.
 

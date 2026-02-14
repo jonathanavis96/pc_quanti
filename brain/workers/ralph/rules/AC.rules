@@ -1,0 +1,52 @@
+# Acceptance Criteria Rules for PC Quanti (Ralph verifier)
+# Format: stanza key=value blocks separated by blank lines
+
+[Plan.1]
+mode=cmd
+gate=block
+desc=Implementation plan exists
+cmd=test -f ../IMPLEMENTATION_PLAN.md
+expect_exit=0
+
+[Plan.2]
+mode=cmd
+gate=block
+desc=Implementation plan contains at least one task
+cmd=grep -cE '^\s*- \[ \]' ../IMPLEMENTATION_PLAN.md
+expect_stdout_regex=^[1-9][0-9]*$
+expect_exit=0
+
+[Placeholders.1]
+mode=cmd
+gate=block
+desc=No template placeholders remain in brain/cortex
+cmd=grep -R "{{PROJECT_NAME}}\\|{{PROJECT_PURPOSE}}\\|{{TECH_STACK}}\\|{{PROJECT_TYPE}}\\|{{PROJECT_GOALS}}\\|{{SUCCESS_CRITERIA}}\\|{{TIMESTAMP}}" -n ../../cortex
+expect_exit=1
+
+[Protected.1]
+mode=cmd
+gate=warn
+desc=loop.sh exists
+cmd=test -f loop.sh
+expect_exit=0
+
+[Protected.2]
+mode=cmd
+gate=warn
+desc=verifier.sh exists
+cmd=test -f verifier.sh
+expect_exit=0
+
+[Protected.3]
+mode=cmd
+gate=warn
+desc=PROMPT.md exists
+cmd=test -f PROMPT.md
+expect_exit=0
+
+[Protected.4]
+mode=cmd
+gate=warn
+desc=AGENTS.md exists
+cmd=test -f AGENTS.md
+expect_exit=0

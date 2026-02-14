@@ -1,8 +1,8 @@
-# DECISIONS.md - {{PROJECT_NAME}}
+# DECISIONS.md - PC Quanti
 
-**Purpose:** Architectural decisions and conventions for {{PROJECT_NAME}}
+**Purpose:** Architectural decisions and conventions for PC Quanti
 
-**Last updated:** {{TIMESTAMP}}
+**Last updated:** 2026-02-14 17:01:00
 
 ---
 
