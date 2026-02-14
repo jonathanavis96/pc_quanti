@@ -1,6 +1,7 @@
 # Cortex Agent Guidance - PC Quanti
 
-<!-- NOTE: This repo vendors a Brain pack; some template placeholders may remain in reference sections but should not block execution. -->
+<!-- NOTE: This repo vendors a Brain pack; some template placeholders may
+remain in reference sections but should not block execution. -->
 
 ## Identity
 
@@ -188,7 +189,8 @@ brain/workers/ralph/THUNK.md (completion log)
 ## Project-Specific Context
 
 **Project:** PC Quanti  
-**Purpose:** Build and launch the PC Quanti MVP brochure website (services-centric) with crisp UX and GitHub Pages-compatible deployment.  
+**Purpose:** Build and launch the PC Quanti MVP brochure website
+(services-centric) with crisp UX and GitHub Pages-compatible deployment.  
 **Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS
 
 See `NEURONS.md` for codebase structure and `THOUGHTS.md` for strategic goals.

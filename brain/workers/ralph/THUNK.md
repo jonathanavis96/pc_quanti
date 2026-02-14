@@ -395,3 +395,4 @@ Started: 2026-02-14
 | 0.9.1 | 2026-02-14T17:37:34Z | Fix MD040 in APP_FLOW.md | Added language specifier (text) to fenced code block at line 199 |
 | 0.9.2 | 2026-02-14 19:38 | Fix MD040 in DESIGN_SYSTEM.md | Added language specifiers (`text`) to 4 unlabeled code blocks and blank lines before fences |
 | 0.9.3 | 2026-02-14 19:39 | Fix MD040 in FRONTEND_GUIDELINES.md | Added language specifier (`text`) to component directory structure code block |
+| 2026-02-14 19:42 | 0.10.1 | Fixed MD013 line-length errors in brain/cortex/AGENTS.md | ✅ PASS |

@@ -102,7 +102,7 @@
 
 ### 0.10 Fix MD013 (line-length) errors in brain/cortex/AGENTS.md
 
-- [ ] **0.10.1** Fix MD013 in brain/cortex/AGENTS.md
+- [x] **0.10.1** Fix MD013 in brain/cortex/AGENTS.md
   - **AC:** `markdownlint brain/cortex/AGENTS.md` passes (no MD013 errors)
 
 ### 0.11 Fix MD031 (blanks-around-fences) errors in pc-quanti-mvp design pack
