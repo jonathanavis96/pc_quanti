@@ -479,7 +479,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `docs/search-console.md` contains verification methods (DNS / HTML tag) and submission steps
   - **If Blocked:** Defer actual verification, but keep docs ready
 
-- [ ] **3.3.3** Set up error monitoring (Sentry or similar)
+- [x] **3.3.3** Set up error monitoring (Sentry or similar)
   - **Goal:** Catch runtime errors, monitor performance
   - **AC:** Sentry installed, test error logged
   - **If Blocked:** Skip if budget/time constrained, rely on GitHub Actions logs + console logging

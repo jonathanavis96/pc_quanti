@@ -401,3 +401,32 @@ Started: 2026-02-14
 | 2026-02-14 19:47:07 | 0.13.1 | Fix MD013, MD022, MD032, and MD009 in LESSONS.md | Wrapped long lines, added blank lines around headings and lists, removed trailing space, specified language for code fence |
 
 | 3.3.2 | 2026-02-14 | Created `docs/search-console.md` with comprehensive GSC verification methods (DNS, HTML tag, file upload, GA, GTM) and sitemap submission steps. Includes troubleshooting, testing commands, and ongoing maintenance guidance. |
+
+## 2026-02-14 19:52 - Task 3.3.3: Set up error monitoring (Sentry)
+
+**Completed:** Implemented Sentry error monitoring with full Next.js integration
+
+**Changes:**
+- Installed `@sentry/nextjs` package
+- Created Sentry configuration files (client, server, edge)
+- Added instrumentation.ts for automatic initialization
+- Updated next.config.ts with withSentryConfig wrapper
+- Modified app/error.tsx to capture exceptions to Sentry
+- Created /test-error page for testing error capture
+- Added .env.local.example with Sentry configuration template
+- Created docs/sentry-setup.md with complete setup instructions
+- Updated .gitignore to exclude sensitive Sentry files
+
+**Verification:**
+- ✓ Sentry installed and in package.json
+- ✓ Test error page created at /test-error
+- ✓ Configuration files created (client, server, edge, instrumentation)
+- ✓ Build completes successfully without warnings
+- ✓ Error boundary captures exceptions
+- ✓ Documentation created for setup and usage
+
+**Notes:**
+- Using static export mode, so some server-side features (tunnelRoute) are disabled
+- Session replay configured with privacy-first defaults (masked text/media)
+- Sample rates configured for production use (10% session replay, 100% errors)
+- Test page available at /test-error for verification
