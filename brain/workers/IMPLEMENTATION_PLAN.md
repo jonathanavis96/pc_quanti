@@ -5,6 +5,45 @@
 
 ---
 
+## Phase 0-Warn: Markdown Lint Errors
+
+### 0.1 Fix MD013 (line-length) errors
+
+- [ ] **0.1.1** Fix MD013 in brain/cortex/AGENTS.md
+  - **AC:** `markdownlint brain/cortex/AGENTS.md` passes (no MD013 errors)
+
+- [ ] **0.1.2** Fix MD013 in brain/cortex/CORTEX_SYSTEM_PROMPT.md
+  - **AC:** `markdownlint brain/cortex/CORTEX_SYSTEM_PROMPT.md` passes (no MD013 errors)
+
+- [ ] **0.1.3** Fix MD013 in brain/cortex/DECISIONS.md
+  - **AC:** `markdownlint brain/cortex/DECISIONS.md` passes (no MD013 errors)
+
+- [ ] **0.1.4** Fix MD013 in brain/cortex/GAP_CAPTURE.md
+  - **AC:** `markdownlint brain/cortex/GAP_CAPTURE.md` passes (no MD013 errors)
+
+- [ ] **0.1.5** Fix MD013 in brain/docs/brain-sync.md
+  - **AC:** `markdownlint brain/docs/brain-sync.md` passes (no MD013 errors)
+
+- [ ] **0.1.6** Fix MD013 in brain/docs/design-packs/_template/APP_FLOW.md
+  - **AC:** `markdownlint brain/docs/design-packs/_template/APP_FLOW.md` passes (no MD013 errors)
+
+- [ ] **0.1.7** Fix MD013 in brain/docs/design-packs/_template/DESIGN_SYSTEM.md
+  - **AC:** `markdownlint brain/docs/design-packs/_template/DESIGN_SYSTEM.md` passes (no MD013 errors)
+
+- [ ] **0.1.8** Fix MD013 in brain/docs/design-packs/_template/PRD.md
+  - **AC:** `markdownlint brain/docs/design-packs/_template/PRD.md` passes (no MD013 errors)
+
+- [ ] **0.1.9** Fix MD013 and MD029 in brain/docs/design-packs/README.md
+  - **AC:** `markdownlint brain/docs/design-packs/README.md` passes (no MD013 or MD029 errors)
+
+- [ ] **0.1.10** Fix MD013 in brain/docs/design/README.md
+  - **AC:** `markdownlint brain/docs/design/README.md` passes (no MD013 errors)
+
+- [ ] **0.1.11** Fix MD013 in brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md
+  - **AC:** `markdownlint brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md` passes (no MD013 errors)
+
+---
+
 ## Overview
 
 6-phase implementation plan for PC Quanti professional website build.
