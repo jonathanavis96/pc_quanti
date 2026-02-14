@@ -8,3 +8,6 @@ brain/workers/ralph/logs/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Windows download metadata (can appear in WSL)
+*:Zone.Identifier
