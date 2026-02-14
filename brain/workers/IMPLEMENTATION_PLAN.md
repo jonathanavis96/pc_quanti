@@ -179,18 +179,18 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 
 ### 1.3 Requirements, Audience & Scope (keep MVP crisp)
 
-- [ ] **1.3.1** Create a 1-page requirements + scope summary (PC Quanti MVP)
-  - **Goal:** Turn Phil’s preferences into explicit requirements and guardrails
+- [x] **1.3.1** Create a 1-page requirements + scope summary (PC Quanti MVP)
+  - **Goal:** Turn Phil's preferences into explicit requirements and guardrails
   - **AC:** `docs/requirements.md` includes:
-    - [ ] Primary goal (conversion event)
-    - [ ] Primary audience + pain/desire/action map
-    - [ ] Trust barriers + what evidence will be shown
-    - [ ] MoSCoW scope (Must/Should/Could/Won’t)
-    - [ ] Reference sites + what to emulate/avoid (HPC preferred)
-    - [ ] Content constraints (generic examples due to confidentiality)
-    - [ ] Services naming decision: “Project Management” vs “Project Services”
-    - [ ] Primary contact email: `info@pcquanti.co.za`
-    - [ ] Target market is B2B; UK market expansion is a priority
+    - [x] Primary goal (conversion event)
+    - [x] Primary audience + pain/desire/action map
+    - [x] Trust barriers + what evidence will be shown
+    - [x] MoSCoW scope (Must/Should/Could/Won't)
+    - [x] Reference sites + what to emulate/avoid (HPC preferred)
+    - [x] Content constraints (generic examples due to confidentiality)
+    - [x] Services naming decision: "Project Management" vs "Project Services"
+    - [x] Primary contact email: `info@pcquanti.co.za`
+    - [x] Target market is B2B; UK market expansion is a priority
   - **If Blocked:** Use best-guess placeholders and add `TODO(PHIL)` questions
   - **Skill refs:** `brain/skills/domains/websites/discovery/requirements-distiller.md`, `brain/skills/domains/websites/discovery/audience-mapping.md`, `brain/skills/domains/websites/discovery/scope-control.md`
 
