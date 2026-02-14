@@ -53,3 +53,4 @@ Started: 2026-02-14
 - Display can be cleared with `[r]` hotkey, but log persists
 - Each project gets independent THUNK numbering (starts at 1)
 - When starting a new plan phase, use `[e]` to create a new Era section
+| 2026-02-14 16:56:08 | 0.1.1 | Fix MD013 in brain/cortex/AGENTS.md | COMPLETED |
