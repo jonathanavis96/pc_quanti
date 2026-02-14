@@ -336,7 +336,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `/services/quantity-surveying` renders, includes CTA
   - **If Blocked:** Use generic description
 
-- [ ] **2.5.3** Build Contract Administration detail page
+- [x] **2.5.3** Build Contract Administration detail page
   - **Goal:** Describe contract admin, compliance, documentation
   - **AC:** `/services/contract-administration` renders, includes CTA
   - **If Blocked:** Use generic description
