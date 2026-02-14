@@ -100,7 +100,7 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 border-b transition-colors duration-200 ${
         isScrolled
-          ? 'bg-pc-blue/75 backdrop-blur border-transparent'
+          ? 'bg-[rgba(0,0,204,0.75)] backdrop-blur border-transparent'
           : 'bg-pc-blue border-transparent'
       }`}
     >
