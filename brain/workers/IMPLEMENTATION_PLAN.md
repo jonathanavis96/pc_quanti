@@ -357,11 +357,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Form renders on `/contact`, client-side validation, submit button
   - **If Blocked:** Use mailto link if form backend not ready
 
-- [ ] **2.6.2** Implement GitHub Pages-compatible contact submission
+- [x] **2.6.2** Implement GitHub Pages-compatible contact submission
   - **Goal:** Make the contact path work on static hosting
   - **AC:** One of the following works end-to-end:
-    - [ ] Formspree (or similar) integration, OR
-    - [ ] mailto fallback with prefilled subject/body
+    - [x] Formspree (or similar) integration, OR
+    - [x] mailto fallback with prefilled subject/body
   - **If Blocked:** Keep the form UI and make the primary CTA a mailto link
   - **Notes:** Avoid Next.js API routes if hosting on GitHub Pages static export
 

@@ -83,23 +83,58 @@ export default function ContactPage() {
 
     setIsSubmitting(true);
 
-    // TODO: Implement submission logic in task 2.6.2
-    // For now, just log the form data
-    console.log('Form submitted:', formData);
+    // Formspree integration for GitHub Pages static hosting
+    const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
     
-    // Simulate submission delay
-    setTimeout(() => {
+    if (!formspreeId) {
+      // Fallback to mailto if Formspree not configured
+      const mailtoSubject = encodeURIComponent(`Service Inquiry: ${formData.service}`);
+      const mailtoBody = encodeURIComponent(
+        `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Phone: ${formData.phone}\n` +
+        `Service: ${formData.service}\n\n` +
+        `Message:\n${formData.message}`
+      );
+      window.location.href = `mailto:info@pcquanti.com?subject=${mailtoSubject}&body=${mailtoBody}`;
       setIsSubmitting(false);
-      alert('Form submitted successfully! (This is a placeholder - integration pending)');
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
+      return;
+    }
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message
+        })
       });
-    }, 1000);
+
+      if (response.ok) {
+        alert('Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.');
+        // Reset form on success
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('Sorry, there was an error submitting your form. Please try emailing us directly at info@pcquanti.com');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

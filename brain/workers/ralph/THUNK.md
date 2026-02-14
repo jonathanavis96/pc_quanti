@@ -293,3 +293,4 @@ Started: 2026-02-14
   - Placeholder submission handler (logs to console, shows alert) - actual backend integration pending in task 2.6.2
 - **Verification:** Build passes, `/contact` route renders successfully
 - **Next:** Task 2.6.2 will implement GitHub Pages-compatible submission (Formspree or mailto fallback)
+| 2.6.2 | Implement GitHub Pages-compatible contact submission | 2026-02-14 | Verified Formspree integration + mailto fallback already implemented |
