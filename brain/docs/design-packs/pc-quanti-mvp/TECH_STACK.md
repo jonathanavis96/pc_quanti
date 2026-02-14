@@ -1,133 +1,208 @@
-# TECH_STACK - PC Quanti MVP
+# PC Quanti Tech Stack
 
-## What this file is
+## Overview
 
-A constraints document: what's possible, what's expensive, and what tools are
-available.
+PC Quanti is a **statically-generated marketing website** built with modern web technologies optimized for performance, SEO, and GitHub Pages deployment.
 
-A design audit that ignores this file tends to propose changes that can't be
-implemented.
+**Deployment target:** GitHub Pages (static HTML)  
+**Build approach:** Static Site Generation (SSG) via Next.js
+
+---
 
 ## 1) Frontend
 
 ### Framework
+- **Next.js 14+** (App Router)
+- **React 18+**
+- **TypeScript** (strict mode enabled)
 
-- **Next.js 15.1.4** (App Router, React Server Components)
-- **React 19** (with TypeScript)
-- **Node.js 18+** required for builds
+**Rationale:** Next.js provides excellent SEO, static generation, and image optimization. App Router enables file-based routing with minimal boilerplate.
 
 ### Routing
-
-- Next.js App Router (`app/` directory)
-- File-based routing
-- Static generation preferred (SSG) for GitHub Pages deployment
+- File-based routing via Next.js App Router
+- Routes:
+  - `/` → Home
+  - `/about` → About
+  - `/services` → Services overview
+  - `/services/[slug]` → Individual service pages
+  - `/contact` → Contact page
+- **No client-side routing library needed** (Next.js handles it)
 
 ### Build Tooling
-
-- **Turbopack** (Next.js default dev server)
-- **Static export:** `next build && next export` → `out/` directory
-- Deploy target: **GitHub Pages** (static HTML/CSS/JS only, no server-side)
+- **Next.js built-in bundler** (Turbopack in dev, Webpack in production)
+- **ESLint** (Next.js recommended config + custom rules)
+- **TypeScript compiler** (tsc for type checking)
+- **PostCSS** (Tailwind CSS processing)
 
 ### Styling/Theming
+- **Tailwind CSS 3.x** (utility-first CSS framework)
+- **PostCSS** (Tailwind processing)
+- **No CSS Modules, no Sass, no styled-components**
 
-- **Tailwind CSS 3.4.17** (utility-first)
-- **PostCSS** for processing
-- Custom theme extension in `tailwind.config.ts`
-- Global styles in `app/globals.css`
+**Token source:** `tailwind.config.ts`
 
 ### UI Libraries
-
-- **None** (MVP uses custom components)
-- Future: Consider shadcn/ui or Radix UI for complex interactions
+- **None in MVP** (building custom components for maximum control)
+- **Future consideration:** Radix UI or HeadlessUI for complex interactions (modals, dropdowns)
 
 ### Icons
-
-- **Lucide React** or **Hero Icons** (lightweight, tree-shakable)
-- Inline SVG for logo and custom brand assets
+- **Lucide React** or **Heroicons** (lightweight, tree-shakeable SVG icons)
+- **Alternative:** Custom SVG icons if minimal set needed
 
 ### Motion/Animation
+- **Tailwind CSS transitions** (hover, focus states)
+- **Framer Motion** (optional, only if needed for hero animations or page transitions)
+- **CSS animations** for simple effects (fade-in, slide-up)
 
-- **Tailwind transitions** (CSS transitions via utility classes)
-- `framer-motion` (optional, if complex animations needed post-MVP)
+**Constraint:** Respect `prefers-reduced-motion` for accessibility
 
 ### Form Handling + Validation
+- **React Hook Form** (lightweight, performant form management)
+- **Zod** (TypeScript-first schema validation)
+- **Alternative:** Simple controlled inputs if form is minimal
 
-- **React Hook Form** (lightweight, good DX)
-- **Zod** for schema validation (TypeScript-first)
-- Contact form submits to Formspree or similar (no backend in MVP)
+**Form submission:**
+- Option 1: **Resend API** (email service, easy integration)
+- Option 2: **FormSpree** (free tier for low volume)
+- Option 3: **Next.js API route** → email service (SendGrid, AWS SES)
+
+---
 
 ## 2) Testing
 
-### Unit Test Stack
+### Unit Testing
+- **Vitest** (fast, modern test runner)
+- **@testing-library/react** (component testing utilities)
+- **@testing-library/jest-dom** (custom matchers)
 
-- **Vitest** (fast, Vite-compatible)
-- **React Testing Library** (component testing)
+**Coverage target:** Not strict in MVP, but test critical paths (form submission, navigation)
 
-### Component Test Stack
+### Component Testing
+- **@testing-library/react** (same as unit tests)
+- **No Storybook in MVP** (can add later for design system documentation)
 
-- **Storybook** (optional, post-MVP for design system documentation)
+### E2E Testing
+- **None in MVP** (manual testing only)
+- **Future:** Playwright or Cypress if needed for critical user flows
 
-### E2E Test Stack
-
-- **Playwright** (optional, if Phil wants smoke tests pre-deploy)
-
-**Status:** Testing deferred until core pages built
+---
 
 ## 3) Constraints
 
 ### Performance Budgets
 
-- **Page Load:** < 2s on 3G
-- **Lighthouse Score:** 90+ (Performance, Accessibility, Best Practices, SEO)
-- **Image Optimization:** Use Next.js `<Image>` component (auto-WebP, lazy load)
+**Lighthouse targets (desktop):**
+- Performance: 90+
+- Accessibility: 100
+- Best Practices: 95+
+- SEO: 100
+
+**Lighthouse targets (mobile):**
+- Performance: 80+
+- Accessibility: 100
+
+**Core Web Vitals:**
+- **LCP (Largest Contentful Paint):** < 2.5s
+- **FID (First Input Delay):** < 100ms
+- **CLS (Cumulative Layout Shift):** < 0.1
+
+**Bundle size:**
+- Total JS (initial load): < 150KB (gzipped)
+- First Contentful Paint: < 1.8s
+
+**Optimization strategies:**
+- Static generation for all pages (no SSR needed)
+- Next.js `<Image>` component for automatic optimization
+- Lazy-load below-the-fold images
+- Minimal third-party scripts (analytics only)
+- Tree-shaking via ES modules
 
 ### Accessibility Baseline
 
-- **WCAG 2.1 Level AA** compliance
+**WCAG AA compliance** (minimum):
+- Semantic HTML (`<nav>`, `<main>`, `<header>`, `<footer>`)
 - Keyboard navigation for all interactive elements
-- Screen reader compatible (semantic HTML, ARIA labels where needed)
-- Focus indicators visible (no `outline: none` without replacement)
+- Visible focus states (Tailwind focus rings)
+- Color contrast: 4.5:1 for normal text, 3:1 for large text
+- `alt` text for all images
+- Form labels associated with inputs
+- `aria-label` for icon-only buttons
+
+**Testing:** Lighthouse accessibility audit + manual keyboard navigation
 
 ### Browser/Device Support
 
-- **Modern browsers:** Chrome, Firefox, Safari, Edge (last 2 versions)
-- **Mobile-first:** Responsive design from 320px viewport width
-- **No IE11 support** (Next.js 15 doesn't support it)
+**Desktop browsers:**
+- Chrome (last 2 versions)
+- Firefox (last 2 versions)
+- Safari (last 2 versions)
+- Edge (last 2 versions)
 
-### Deployment Constraints
+**Mobile browsers:**
+- iOS Safari (last 2 versions)
+- Chrome Android (last 2 versions)
 
-- **Static-only:** No server-side rendering (GitHub Pages limitation)
-- **No API routes:** Contact form uses third-party service (Formspree)
-- **No database:** All content is hardcoded or CMS-fetched at build time
-- **Custom domain:** `pcquanti.co.uk` (awaiting Phil's decision)
+**No support for:**
+- Internet Explorer 11 (EOL)
+- Legacy browsers (< 2 years old)
 
-### "Must Not Change" Constraints
-
-- **Logo:** Blue house (#2C02D9) with "PC" text (already approved)
-- **Brand Color:** #2C02D9 is primary CTA color (non-negotiable)
-- **Content Tone:** Professional, credible, lean (not corporate marketing fluff)
-- **Services-Centric:** Services pages are the core conversion funnel
-  (Home → Services → Contact)
+**Responsive breakpoints:**
+- Mobile: 375px minimum (iPhone SE)
+- Tablet: 768px
+- Desktop: 1024px
+- Wide desktop: 1280px
 
 ### SEO Constraints
 
-- **Meta tags:** All pages must have unique title/description
-- **Structured data:** Schema.org for Organization, Service pages
-- **Sitemap:** Auto-generate `sitemap.xml` for Google Search Console
-- **Robots.txt:** Allow all crawlers
+**Must-haves:**
+- Meta tags on all pages (title, description, OG tags)
+- Structured data (Schema.org JSON-LD for Organization and Service pages)
+- `robots.txt` and `sitemap.xml`
+- Clean URL structure (no query params, semantic slugs)
+- Fast load times (LCP < 2.5s)
 
-## 4) Future Considerations (Post-MVP)
+**Target keywords (UK nuclear/industrial PM):**
+- "UK nuclear project management"
+- "industrial project management consultancy"
+- "quantity surveying nuclear sector"
+- "project controls mining"
+- "claims management energy projects"
 
-- **CMS Integration:** Sanity or Contentful (if Phil wants to self-edit content)
-- **Blog:** Next.js MDX support for case studies / thought leadership
-- **Contact Form Backend:** Replace Formspree with custom API (Vercel Functions)
-- **Analytics:** Google Analytics 4 (already planned for Phase 2)
-- **A/B Testing:** Google Optimize or Vercel Edge Config (if conversion tuning
-  needed)
+### GitHub Pages Constraints
+
+**Static HTML only:**
+- No server-side APIs (use serverless functions or third-party services)
+- No database (all content is static)
+- No authentication (not needed in MVP)
+
+**Deployment:**
+- Build command: `npm run build` → outputs to `out/` directory
+- GitHub Actions workflow for automated deployment on push to `main`
+- Custom domain support (if Phil provides domain)
+
+### "Must Not Change" Constraints
+
+**Brand anchors:**
+- Primary CTA color: `#2C02D9` (bright blue)
+- Logo design (PC house icon with blue background)
+- Clean, crisp aesthetic (no cluttered layouts)
+
+**Information architecture:**
+- 5-page structure (Home, About, Services, Service details, Contact)
+- Services must be discoverable from Home page
+- Contact details visible in header/footer on all pages
+
+**Behavioral:**
+- Mobile-first design (majority of industrial users browse on mobile)
+- Fast page loads (users won't wait > 3 seconds)
+- Simple navigation (no mega-menus, no complex dropdowns)
+
+---
 
 ## Completeness Checklist
 
 - [x] All UI-affecting dependencies listed
-- [x] Constraints explicit (static export, no backend, WCAG AA)
-- [x] Build and deploy process documented (GitHub Pages)
-- [x] Browser support and accessibility baseline defined
+- [x] Constraints are explicit (performance, accessibility, browser support)
+- [x] Deployment target and build process documented
+- [x] SEO requirements specified
+- [x] GitHub Pages constraints noted (static HTML only)
