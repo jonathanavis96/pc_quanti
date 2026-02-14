@@ -380,3 +380,14 @@ Started: 2026-02-14
 | 2026-02-14T17:30:33Z | 0.6.2 | Fix MD013 in DESIGN_SYSTEM.md | Fixed 2 line-length violations by wrapping long lines |
 | 2026-02-14T17:32:41Z | 0.6.3 | Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md | Wrapped 8 long lines to comply with 80-char limit |
 | 2026-02-14 19:33 | 0.7.1 | Fix MD032 in APP_FLOW.md | Added blank line before list at line 11 | PASS |
+
+## 2026-02-14 19:34 - Task 0.7.2: Fix MD032 in DESIGN_SYSTEM.md
+
+**What:** Fixed MD032 (blanks-around-lists) markdownlint errors in `brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md`
+
+**How:** Added blank lines before 14 lists that were missing proper spacing around them
+
+**Files changed:**
+- `brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md`: Added blank lines after bold headers and before list items
+
+**Verification:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md` shows no MD032 errors

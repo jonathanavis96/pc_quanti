@@ -16,6 +16,7 @@ accessibility while avoiding overly corporate or cluttered aesthetics.
 ### Colors
 
 **Brand anchor (must not change):**
+
 - Primary CTA: `#2C02D9` (bright blue) - used in logo and primary CTAs
 
 **Color palette:**
@@ -38,12 +39,14 @@ colors: {
 ```
 
 **Semantic colors:**
+
 - Success: `#10B981` (green)
 - Warning: `#F59E0B` (amber)
 - Error: `#EF4444` (red)
 - Info: `#3B82F6` (blue)
 
 **Color usage rules:**
+
 - Primary CTA buttons: `pc-blue` background
 - Text links: `pc-blue` with underline on hover
 - Body text: `pc-neutral-900`
@@ -54,6 +57,7 @@ colors: {
 ### Typography
 
 **Font families:**
+
 - Sans-serif: Inter or Manrope (clean, professional, modern)
 - Fallback: system-ui, sans-serif
 
@@ -72,6 +76,7 @@ colors: {
 ```
 
 **Weight scale:**
+
 - 400 (Regular): Body text
 - 600 (Semibold): Subheadings, emphasis
 - 700 (Bold): Headings, CTAs
@@ -79,10 +84,12 @@ colors: {
 ### Spacing + Layout
 
 **Spacing scale (Tailwind defaults extended):**
+
 - Use Tailwind's default spacing scale: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12,
   16, 20, 24, 32, 40, 48, 64
 
 **Container widths:**
+
 - Max content width: 1280px
 - Comfortable reading width (prose): 65ch (~700px)
 
@@ -116,12 +123,14 @@ xl: 0 20px 25px rgba(0,0,0,0.1)          // Hero images
 ### Motion
 
 **Durations:**
+
 - Instant: 100ms (hover states)
 - Fast: 200ms (dropdowns, tooltips)
 - Normal: 300ms (modals, drawers)
 - Slow: 500ms (page transitions)
 
 **Easings:**
+
 - Default: `ease-in-out`
 - Enter: `ease-out`
 - Exit: `ease-in`
@@ -135,11 +144,13 @@ xl: 0 20px 25px rgba(0,0,0,0.1)          // Hero images
 ### No hardcoded values policy
 
 **Forbidden:**
+
 - Inline hex colors (use Tailwind classes)
 - Magic numbers for spacing (use Tailwind spacing scale)
 - Random font sizes (use defined typography scale)
 
 **Allowed exceptions:**
+
 - One-off brand-specific values already defined in tokens
 - SVG paths/coordinates
 - Calculated values derived from tokens
@@ -168,15 +179,18 @@ xl: 0 20px 25px rgba(0,0,0,0.1)          // Hero images
 ## 4) Accessibility Constraints
 
 **Contrast requirements:**
+
 - WCAG AA compliance minimum
 - Text contrast ratio: 4.5:1 for normal text, 3:1 for large text
 - Primary CTA blue (`#2C02D9`) on white: 6.8:1 ✓
 
 **Focus states:**
+
 - Visible focus rings on all interactive elements
 - Use Tailwind's `focus:ring-2 focus:ring-pc-blue focus:ring-offset-2`
 
 **Touch targets:**
+
 - Minimum 44×44px for interactive elements (mobile)
 
 ---
