@@ -5,6 +5,7 @@ import { Card } from "@/src/components/Card";
 import { Container } from "@/src/components/Container";
 import { Header } from "@/src/components/Header";
 import { Hero } from "@/src/components/Hero";
+import { TrustBar } from "@/src/components/TrustBar";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
           ctaText="Get in Touch"
           ctaHref="/contact"
         />
+
+        <TrustBar />
 
         {/* Value Proposition Section */}
         {/* TODO(DESIGN): Review card layout and icon placement */}

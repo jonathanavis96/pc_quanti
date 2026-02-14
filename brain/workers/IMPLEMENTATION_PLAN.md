@@ -282,9 +282,9 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Cards link to `/services/[service-slug]`, icons or placeholders, responsive grid
   - **If Blocked:** Text-only list if no icons available
 
-- [ ] **2.3.3** Build trust bar (above the fold or immediately after hero)
-  - **Goal:** Reduce “can I trust you?” friction fast
-  - **AC:** A compact trust strip exists (e.g. “Years experience”, “Key sectors”, “Accreditations” placeholders) and is visible near the top
+- [x] **2.3.3** Build trust bar (above the fold or immediately after hero)
+  - **Goal:** Reduce "can I trust you?" friction fast
+  - **AC:** A compact trust strip exists (e.g. "Years experience", "Key sectors", "Accreditations" placeholders) and is visible near the top
   - **If Blocked:** Use a simple text line under the hero (no logos needed)
   - **Skill refs:** `brain/skills/domains/websites/architecture/section-composer.md`, `brain/skills/domains/websites/copywriting/objection-handler.md`
 

@@ -183,3 +183,26 @@ Started: 2026-02-14
 - Services hub page already exists at `app/services/page.tsx` with proper routing
 - Service cards already had placeholder text for icons (TODO comments remain)
 - Grid is responsive and matches design system
+
+## 2.3.3 Build trust bar (above the fold or immediately after hero)
+
+**Completed:** 2026-02-14
+
+**Changes:**
+- Created `src/components/TrustBar.tsx` with credibility markers component
+- Added TrustBar to homepage (`app/page.tsx`) immediately after Hero section
+- Exported TrustBar and TrustBarProps from `src/components/index.ts`
+- Component displays 4 trust markers: Experience (15+ Years), Sectors (Nuclear, Industrial, Infrastructure), Locations (UK & South Africa), Accreditations (RICS, APM)
+- Responsive design with flex layout, centered on mobile, distributed on desktop
+- Supports optional custom markers via props for future flexibility
+
+**Acceptance Criteria Met:**
+- ✅ Compact trust strip exists with years of experience, key sectors, and accreditation placeholders
+- ✅ Visible near the top (immediately after hero section)
+- ✅ Clean, professional styling consistent with design system
+- ✅ Build passes successfully
+
+**Notes:**
+- Used placeholder accreditations (RICS, APM) - Phil can update with actual credentials
+- Component is reusable and can accept custom markers if needed
+- Follows objection-handler pattern for addressing "Can I trust you?" friction
