@@ -15,7 +15,7 @@
 - [x] **0.1.2** Fix MD013 in brain/cortex/CORTEX_SYSTEM_PROMPT.md
   - **AC:** `markdownlint brain/cortex/CORTEX_SYSTEM_PROMPT.md` passes (no MD013 errors)
 
-- [ ] **0.1.3** Fix MD013 in brain/cortex/DECISIONS.md
+- [x] **0.1.3** Fix MD013 in brain/cortex/DECISIONS.md
   - **AC:** `markdownlint brain/cortex/DECISIONS.md` passes (no MD013 errors)
 
 - [ ] **0.1.4** Fix MD013 in brain/cortex/GAP_CAPTURE.md
