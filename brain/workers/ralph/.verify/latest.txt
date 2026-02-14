@@ -1,6 +1,6 @@
 Ralph Verifier Report
-Time: 2026-02-14 18:30:22
-Git:  bea58ab
+Time: 2026-02-14 18:32:59
+Git:  15f321e
 AC:   /home/grafe/code/pc-quanti/brain/workers/ralph/rules/AC.rules
 Approvals: /home/grafe/code/pc-quanti/brain/workers/ralph/rules/MANUAL_APPROVALS.rules
 ------------------------------------------------------------
@@ -13,37 +13,9 @@ Approvals: /home/grafe/code/pc-quanti/brain/workers/ralph/rules/MANUAL_APPROVALS
   desc: Implementation plan contains at least one task
   cmd:  grep -cE '^\s*- \[ \]' ../IMPLEMENTATION_PLAN.md
   exit: 0
-  stdout: 66
+  stdout: 65
 [PASS] Placeholders.1
   desc: No template placeholders remain in brain/cortex
   cmd:  grep -R "{{PROJECT_NAME}}\\|{{PROJECT_PURPOSE}}\\|{{TECH_STACK}}\\|{{PROJECT_TYPE}}\\|{{PROJECT_GOALS}}\\|{{SUCCESS_CRITERIA}}\\|{{TIMESTAMP}}" -n ../../cortex
   exit: 1
   stdout: 
-[PASS] Protected.1
-  desc: loop.sh exists
-  cmd:  test -f loop.sh
-  exit: 0
-  stdout: 
-[PASS] Protected.2
-  desc: verifier.sh exists
-  cmd:  test -f verifier.sh
-  exit: 0
-  stdout: 
-[PASS] Protected.3
-  desc: PROMPT.md exists
-  cmd:  test -f PROMPT.md
-  exit: 0
-  stdout: 
-[PASS] Protected.4
-  desc: AGENTS.md exists
-  cmd:  test -f AGENTS.md
-  exit: 0
-  stdout: 
-------------------------------------------------------------
-SUMMARY
-  PASS: 7
-  FAIL: 0
-  WARN: 0 (manual_warn=0)
-  SKIP: 0
-  Manual gate=block failures: 0
-  Hash guard: OK

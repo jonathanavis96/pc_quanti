@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Button } from "@/src/components/Button";
 import { Card } from "@/src/components/Card";
 import { Container } from "@/src/components/Container";
-import { Header } from "@/src/components/Header";
 import { Hero } from "@/src/components/Hero";
 import { TrustBar } from "@/src/components/TrustBar";
 import { FAQ } from "@/src/components/FAQ";
@@ -11,8 +10,6 @@ import { FAQ } from "@/src/components/FAQ";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       <main>
         <Hero
           headline="Expert Project Management for Nuclear & Industrial Sectors"
@@ -188,7 +185,7 @@ export default function Home() {
                   Initial Consultation
                 </h3>
                 <p className="text-pc-neutral-600">
-                  Reach out via our contact form or phone. We'll discuss your project scope, timeline, and specific requirements.
+                  Reach out via our contact form or phone. We&apos;ll discuss your project scope, timeline, and specific requirements.
                 </p>
               </div>
               <div className="text-center">
@@ -302,10 +299,18 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-pc-neutral-400">
-                <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
-                <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
+                <li>
+                  <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                </li>
+                <li>
+                  <Link href="/about" className="hover:text-white transition-colors">About</Link>
+                </li>
+                <li>
+                  <Link href="/services" className="hover:text-white transition-colors">Services</Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+                </li>
               </ul>
             </div>
             <div>
