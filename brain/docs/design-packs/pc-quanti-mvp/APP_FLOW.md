@@ -106,7 +106,7 @@ in nuclear/industrial sectors seeking project management consultancy services.
       Quantity Surveying, Contract Admin, Claims, Project Controls)
     - Message (required)
     - Submit button
-  - Contact details (email: info@pcquanti.co.za, phone if provided)
+  - Contact details (email: <info@pcquanti.co.za>, phone if provided)
   - Optional: Map or address (if Phil provides)
 - **States:**
   - Default: Empty form

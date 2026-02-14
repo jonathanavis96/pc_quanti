@@ -391,3 +391,4 @@ Started: 2026-02-14
 - `brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md`: Added blank lines after bold headers and before list items
 
 **Verification:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md` shows no MD032 errors
+2026-02-14 | 0.8.1 | Fix MD034 bare URL in APP_FLOW.md | Wrapped email address in angle brackets
