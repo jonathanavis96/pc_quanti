@@ -631,7 +631,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 ## Phase 5: Launch & Handoff (Week 8)
 
 ### 6.1 Pre-Launch Checklist
-- [ ] **6.1.1** Final QA pass
+- [x] **6.1.1** Final QA pass
   - **Goal:** Click through every page, test all forms/links
   - **AC:** Checklist complete, no broken links or 404s
   - **If Blocked:** N/A (must complete)
