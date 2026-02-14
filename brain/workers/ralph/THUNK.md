@@ -158,3 +158,28 @@ Started: 2026-02-14
 **Build:** ✓ Passed
 | 2026-02-14 | 2.2.1 | Build services overview page (`/services`) | Created `app/services/page.tsx` with 5 service cards (PM, QS, Contract Admin, Claims, Project Controls). Central hub links to detail pages, includes primary CTA to /contact. Responsive layout using Card component. |
 | 2026-02-14 | 2.3.1 | Build hero section | Created reusable `src/components/Hero.tsx` component with headline, subheadline, and CTA button. Integrated into home page with gradient background (pc-blue-light to white). Fully responsive across mobile/tablet/desktop. CTA links to `/contact`. Replaced inline hero markup with dedicated component for maintainability. |
+
+## 2026-02-14 18:21 - Task 2.3.2: Build services preview section
+
+**Completed by:** Ralph  
+**Duration:** ~5 iterations
+
+**What was done:**
+- Added Next.js Link import to homepage
+- Updated all 5 service cards to link to `/services/[service-slug]`:
+  - Project Management → `/services/project-management`
+  - Quantity Surveying → `/services/quantity-surveying`
+  - Contract Administration → `/services/contract-administration`
+  - Claims Management → `/services/claims-management`
+  - Project Controls → `/services/project-controls`
+- Verified build passes successfully
+
+**Acceptance Criteria Met:**
+✅ Cards link to `/services/[service-slug]`
+✅ Icons or placeholders (using TODO comments for future icons)
+✅ Responsive grid (existing md:grid-cols-2 lg:grid-cols-3)
+
+**Notes:**
+- Services hub page already exists at `app/services/page.tsx` with proper routing
+- Service cards already had placeholder text for icons (TODO comments remain)
+- Grid is responsive and matches design system

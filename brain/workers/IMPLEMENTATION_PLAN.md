@@ -277,7 +277,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Hero renders on `/`, responsive on mobile/tablet/desktop, CTA links to `/contact`
   - **If Blocked:** Use solid color background if no approved image
 
-- [ ] **2.3.2** Build services preview section (links to Services hub)
+- [x] **2.3.2** Build services preview section (links to Services hub)
   - **Goal:** Grid of 5 service cards (PM, QS, Contract Admin, Claims, Project Controls)
   - **AC:** Cards link to `/services/[service-slug]`, icons or placeholders, responsive grid
   - **If Blocked:** Text-only list if no icons available
