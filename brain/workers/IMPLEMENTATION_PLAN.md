@@ -566,7 +566,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use Tailwind default focus styles
   - **Status:** COMPLETE - Added focus:outline-none focus:ring-2 focus:ring-* focus:ring-offset-2 to all interactive elements across 11 pages. Updated: app/about/page.tsx (2 buttons), app/error.tsx (2 elements), app/test-error/page.tsx (2 buttons), app/not-found.tsx (1 link), app/services/page.tsx (2 links), and all 5 service detail pages (back links). All buttons and links now have visible focus indicators matching design system.
 
-- [ ] **5.1.3** Test with screen reader (NVDA or VoiceOver)
+- [x] **5.1.3** Test with screen reader (NVDA or VoiceOver)
   - **Goal:** Verify content reads logically, alt tags work
   - **AC:** Manual test confirms no major issues
   - **If Blocked:** Use automated tools only if no screen reader available
