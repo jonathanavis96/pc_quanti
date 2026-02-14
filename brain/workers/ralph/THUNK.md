@@ -132,3 +132,27 @@ Started: 2026-02-14
 | 1.4.3 | Define CTAs and conversion paths | 2026-02-14T18:06:42Z | Verified CTA strategy and user journeys already documented in docs/sitemap.md (3 journeys: Discovery→Services→Contact, About→Contact, Mobile quick-action); confirmed CTA placement: Primary="Contact Us" (header button on all pages, #2C02D9 blue), Secondary="View Our Services" (Home hero), Tertiary="Get in Touch" (service detail pages); marked task complete as acceptance criteria met |
 | 1.5.1 | Create code-first wireframe (repo-verifiable) | 2026-02-14T18:08:18Z | Built complete Home page wireframe in app/page.tsx with all sections from sitemap: header (logo + nav + Contact Us CTA), hero (headline + subheadline + dual CTAs), value proposition (4 cards: Nuclear Expertise, Lean Model, Trusted Network, On-Ground Experience), services grid (5 cards with Learn More buttons), trust markers (sector badges: Nuclear/Mining/Infrastructure/Energy), and footer (3-column layout with Quick Links and Contact). Added TODO(DESIGN) markers for layout/visual decisions (header sticky?, hero height?, card icons?, typography scale, credibility layout) and TODO(PHIL) markers for copy approval (subheadline, services intro, contact details). Build passes successfully. Provides verifiable UI baseline for design iteration without requiring Figma access. |
 | 2.1.1 | Build desktop navigation | 2026-02-14T18:11:38Z | Created Header component (src/components/Header.tsx) with logo + 4 nav links (Home/Services/About/Contact) using Next.js Link; Services link styled with font-semibold for prominence; added focus states (ring-2 ring-pc-blue) for accessibility; replaced inline header in app/page.tsx with reusable Header component; build passes successfully (static export confirmed) |
+
+## 2026-02-14 18:14 - Task 2.1.2: Build mobile navigation
+
+**What:** Added mobile hamburger menu to Header component
+**Why:** Enable mobile users to navigate the site easily
+**How:** 
+- Converted Header to client component with `'use client'`
+- Added useState to manage mobile menu open/close state
+- Implemented hamburger/close icon toggle button (visible only on mobile)
+- Added mobile navigation menu with same links as desktop
+- Menu closes automatically on link click
+- No layout shift (menu appears below header)
+- Desktop CTA button hidden on mobile, shown in mobile menu as full-width button
+
+**AC Met:** 
+✓ Menu opens/closes with hamburger button
+✓ Closes on link click via onClick handler
+✓ No layout shift (conditional render within Container)
+✓ Simple show/hide (no animation as per fallback)
+
+**Files:**
+- `src/components/Header.tsx` - Added mobile menu state and UI
+
+**Build:** ✓ Passed

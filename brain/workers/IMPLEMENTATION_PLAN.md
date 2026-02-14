@@ -259,7 +259,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Header renders on all pages; Services link is prominent
   - **If Blocked:** Use a minimal top nav with no dropdown
 
-- [ ] **2.1.2** Build mobile navigation
+- [x] **2.1.2** Build mobile navigation
   - **Goal:** Hamburger menu with the same links, easy to use
   - **AC:** Menu opens/closes; closes on link click; no layout shift
   - **If Blocked:** Use simple show/hide (no animation)
