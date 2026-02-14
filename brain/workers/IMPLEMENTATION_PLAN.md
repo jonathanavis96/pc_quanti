@@ -591,10 +591,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Defer image optimization if under time pressure
   - **Completed:** 2026-02-14 - Ran Lighthouse audits on all 9 pages (desktop + mobile). Desktop average: 99.2/100 (9/9 passing 90+ target). Mobile average: 91.4/100 (9/9 passing 80+ target). All Core Web Vitals pass: FCP 0.3s desktop/1.5-1.6s mobile, LCP 0.8-1.3s desktop/1.5-1.6s mobile, TBT 10-50ms desktop/300-430ms mobile, CLS 0 (perfect). No performance warnings. Results saved to .lighthouse/performance-summary.md
 
-- [ ] **5.3.2** Optimize image loading (lazy load, WebP)
+- [x] **5.3.2** Optimize image loading (lazy load, WebP)
   - **Goal:** Images load only when visible, use modern formats
   - **AC:** Lighthouse suggests no further image optimizations
   - **If Blocked:** Use Next.js Image component defaults
+  - **Completed:** 2026-02-14 - Converted logo.png to logo.webp (66KB -> 12KB, 82% reduction). Updated all logo references in Header and footer. Header logo uses priority loading (above fold), footer logo uses lazy loading. All images already using Next.js Image component. Previous Lighthouse audits showed no image optimization warnings (all pages 90+ desktop, 80+ mobile).
 
 - [ ] **5.3.3** Minimize JavaScript bundle size
   - **Goal:** Remove unused dependencies, code-split if needed
