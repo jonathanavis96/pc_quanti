@@ -512,7 +512,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use `next-sitemap` package
   - **Skill refs:** `brain/skills/domains/marketing/seo/seo-audit.md`
 
-- [ ] **4.2.2** Implement robots.txt
+- [x] **4.2.2** Implement robots.txt
   - **Goal:** Allow crawling and reference sitemap
   - **AC:** `/robots.txt` is accessible and includes a `Sitemap:` line
   - **If Blocked:** Provide a permissive default, refine later
