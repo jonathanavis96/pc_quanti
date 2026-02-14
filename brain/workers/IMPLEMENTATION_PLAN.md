@@ -298,7 +298,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** FAQ preview exists and includes a CTA (“Still have questions?” “Contact”)
   - **If Blocked:** Add placeholder Q&As with `TODO(PHIL)` markers
 
-- [ ] **2.3.6** Build footer
+- [x] **2.3.6** Build footer
   - **Goal:** Contact info, nav links, social media icons (if applicable)
   - **AC:** Footer component in `src/components/Footer.tsx`, renders on all pages via layout
   - **If Blocked:** Minimal footer with email/phone only

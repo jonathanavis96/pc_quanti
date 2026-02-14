@@ -7,6 +7,8 @@ export type { CardProps } from './Card';
 export { Container } from './Container';
 export type { ContainerProps } from './Container';
 
+export { Footer } from './Footer';
+
 export { Header } from './Header';
 
 export { Hero } from './Hero';

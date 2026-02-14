@@ -230,3 +230,28 @@ Started: 2026-02-14
 - `src/components/index.ts` (export added)
 - `app/page.tsx` (FAQ section added)
 
+
+## 2026-02-14 18:30 - Task 2.3.6: Build footer
+
+**What:** Created Footer component with contact info, navigation links, and services links.
+
+**How:**
+- Created `src/components/Footer.tsx` with 3-column grid (responsive)
+- Company info column: brand description, email, phone
+- Quick Links column: Home, Services, About, Contact
+- Services column: links to service sections with anchor tags
+- Bottom bar: copyright with dynamic year
+- Integrated Footer into `app/layout.tsx` (renders on all pages)
+- Fixed import path to use `@/src/components` (matching tsconfig paths)
+- Added Footer export to `src/components/index.ts`
+
+**Validation:**
+- Build passes: `npm run build` successful
+- Footer renders on all pages via root layout
+- Responsive grid: 1 column mobile, 3 columns desktop
+- All links properly configured with hover states
+
+**Files:**
+- `src/components/Footer.tsx` (new)
+- `src/components/index.ts` (export added)
+- `app/layout.tsx` (Footer integrated)
