@@ -1,118 +1,144 @@
-# THOUGHTS.md - [PROJECT_NAME] Vision
+# PC Quanti - Vision & Goals
 
-[REPLACE: Brief tagline describing your project in one sentence]
+**Project:** PC Quanti Website  
+**Owner:** Phil  
+**Purpose:** Professional website for nuclear/industrial project management consultancy  
+**Tech Stack:** Next.js, Tailwind CSS, TypeScript
 
-## What This Project Does
+---
 
-[REPLACE: Describe your project's purpose. What problem does it solve? Who uses it? What value does it provide?]
+## Vision
 
-Example structure:
+Build a professional, SEO-optimized website that positions Phil's PC Quanti as a credible, lean, and experienced project management consultancy serving nuclear and broader industrial sectors (mining, infrastructure, energy). The site should communicate trust, expertise, and accessibility—avoiding big-corporate overhead while showcasing scarce skills and on-ground delivery capability.
 
-- **Primary Goal:** [Main objective of the project]
-- **Key Features:** [List 3-5 main features or capabilities]
-- **Target Users:** [Who benefits from this project]
-- **Integration Points:** [How it connects to other systems/tools]
+**Key messaging pillars:**
+1. **Experience:** Phil's nuclear + SA industrial background
+2. **Lean model:** Agile, not bloated corporate overhead
+3. **Scarce skills access:** Trusted network of specialists
+4. **Sector versatility:** Nuclear focus, but capable across industrial sectors
 
-## Current Goals
+---
 
-### Active Focus
+## Goals
 
-[REPLACE: What is the project currently working on? What's the immediate priority?]
+### Phase 0: Discovery & Design (Weeks 1-2)
+- [ ] Finalize brand assets and color system (logo confirmed: bright blue #2C02D9 house with "PC")
+- [ ] Define sitemap: Home, About, Services, Sectors (optional), Contact
+- [ ] Create design system in Tailwind config (typography, spacing, components)
+- [ ] Write or approve all copy (services descriptions, about section, value props)
+- [ ] Design mockups for key pages (Home, Services, Contact)
 
-Example:
+### Phase 1: Core Website Build (Weeks 3-4)
+- [ ] **Home page:** Hero + value prop, services overview, CTA (Contact Us)
+- [ ] **About page:** Phil's story, credibility markers, differentiators
+- [ ] **Services pages:** PM, QS, Contract Admin, Claims Management, Project Controls
+- [ ] **Contact page:** Form with enquiry-type dropdown, email/phone display
+- [ ] Responsive design (mobile, tablet, desktop)
 
-- Feature X implementation
-- Performance optimization in area Y
-- Refactoring module Z
-- Bug fixes in component W
+### Phase 2: Technical Setup (Week 5)
+- [ ] Deploy to Vercel (or Phil's preferred host)
+- [ ] Set up custom domain (pcquanti.co.uk or similar—awaiting Phil's decision)
+- [ ] Configure email forwarding (contact@pcquanti.co.uk)
+- [ ] Set up Google Analytics and Search Console
+- [ ] SSL certificate and security headers
 
-### Definition of Done
+### Phase 3: SEO & Content Optimization (Week 6)
+- [ ] Meta tags for all pages (title, description, OG tags)
+- [ ] Structured data (Schema.org) for Organization, Service pages
+- [ ] Optimize for UK nuclear/industrial PM keywords:
+  - "UK nuclear project management"
+  - "industrial project management consultancy"
+  - "quantity surveying nuclear sector"
+  - "project controls mining"
+  - "claims management energy projects"
+- [ ] Create Sectors sub-pages if needed (Nuclear, Mining, Infrastructure, Energy)
+- [ ] Sitemap.xml and robots.txt
 
-[REPLACE: Define what "complete" means for key deliverables. Be specific and measurable.]
+### Phase 4: Polish & Testing (Week 7)
+- [ ] Accessibility audit (WCAG AA compliance)
+- [ ] Cross-browser testing (Chrome, Firefox, Safari, Edge)
+- [ ] Performance optimization (Lighthouse score 90+)
+- [ ] Final copy review with Phil
+- [ ] Fix any bugs or design issues
 
-A task/feature in this project is complete when:
+### Phase 5: Launch & Handoff (Week 8)
+- [ ] Final QA checklist
+- [ ] Deploy to production
+- [ ] Submit sitemap to Google Search Console
+- [ ] Handoff documentation (how to update content, add blog posts if needed)
+- [ ] Optional: Set up basic analytics dashboard for Phil
 
-#### ✅ [Category 1 - e.g., Functionality]
+---
 
-- [Specific criterion 1]
-- [Specific criterion 2]
-- [Specific criterion 3]
+## Success Criteria
 
-#### ✅ [Category 2 - e.g., Testing]
+- [x] Website built and deployed (Next.js + Tailwind)
+- [ ] SEO optimized for UK nuclear/industrial PM searches (no ongoing marketing/LinkedIn management)
+- [ ] Responsive design across all devices
+- [ ] Clear CTAs (Contact Us, View Services)
+- [ ] Phil approves final design and copy
+- [ ] Lighthouse performance score 90+ (desktop), 80+ (mobile)
+- [ ] All pages load in < 2 seconds
 
-- [Specific criterion 1]
-- [Specific criterion 2]
+---
 
-#### ✅ [Category 3 - e.g., Documentation]
+## Scope Boundaries
 
-- [Specific criterion 1]
-- [Specific criterion 2]
+**In scope:**
+- Website design, build, and deployment
+- SEO foundation (meta tags, structure, content optimized for UK nuclear/industrial PM searches)
+- Professional messaging positioning Phil as credible/experienced in nuclear + broader sectors
+- Contact form with enquiry routing
 
-#### ✅ [Category 4 - e.g., Integration]
+**Out of scope:**
+- Ongoing marketing campaigns or LinkedIn management
+- Content creation beyond initial website copy
+- Lead generation services or paid ad management
+- Blog setup (optional future addition)
+- E-commerce or payment processing
 
-- [Specific criterion 1]
-- [Specific criterion 2]
+---
 
-## Success Metrics
+## Design Preferences (from client feedback)
 
-[REPLACE: How do you measure if this project is successful? Define quantifiable metrics.]
+### What Phil Likes
+- **HattinghPC.co.za** style: clean, simple, professional
+- **Crisp** layouts (not "lumpy" or overly busy)
+- Simple navigation, clear CTAs
+- White/light backgrounds with blue accents
 
-This project is successful when:
+### What to Avoid
+- Nuclear-specific branding (wants to broaden to all industrial sectors)
+- Overly technical/engineering-heavy messaging
+- Complex navigation or cluttered pages
+- Generic stock photos of construction sites (prefer authentic or minimal imagery)
 
-1. **[Metric Category 1]** - [Specific measurable outcome]
-2. **[Metric Category 2]** - [Specific measurable outcome]
-3. **[Metric Category 3]** - [Specific measurable outcome]
-4. **[Metric Category 4]** - [Specific measurable outcome]
-5. **[Metric Category 5]** - [Specific measurable outcome]
+### Brand Assets
+- **Logo:** Bright blue (#2C02D9) house icon with "PC" text inside
+- **Primary Color:** #2C02D9 (bright blue)
+- **Typography:** Clean sans-serif (suggest: Inter, Manrope, or similar)
+- **Tone:** Professional, confident, approachable (not stuffy or overly corporate)
 
-## Source Code Definition
+---
 
-[REPLACE: Define what counts as "source code" vs reference materials in your project]
+## Open Questions (awaiting Phil's email response)
 
-For this project, "source code" means:
+- [ ] Domain name finalized? (pcquanti.co.uk or pcquanti.com?)
+- [ ] Preferred hosting provider? (Vercel recommended for Next.js)
+- [ ] Any additional brand guidelines or assets?
+- [ ] Timeline/deadline for launch?
+- [ ] Budget for premium features (professional copywriting, stock photos, etc.)?
+- [ ] Does Phil have existing testimonials or case studies to feature?
 
-- **`[directory/]`** - [Description of what lives here]
-- **`[directory/]`** - [Description of what lives here]
-- **`[file-pattern]`** - [Description of these files]
-- **`[directory/]`** - [Description of what lives here]
+---
 
-**NOT source code:**
+## Non-Goals (for clarity)
 
-- `[directory/]` - [Explanation why - e.g., "Generated files", "External dependencies", "Read-only reference"]
+- **Not building:** E-commerce, client portal, project management tools
+- **Not delivering:** Ongoing SEO campaigns, PPC ads, social media management
+- **Not creating:** Blog content beyond initial launch (can be added later if Phil wants)
 
-## Knowledge Base Integration
+---
 
-> **Brain Integration (Optional):** If `./brain/` exists, this project can leverage shared knowledge. Otherwise, the project works standalone.
-
-[REPLACE: How does this project use the brain repository's knowledge base?]
-
-**If brain repository is available**, this project can reference:
-
-- **Performance Patterns:** `./brain/skills/domains/frontend/react-patterns.md` (if applicable)
-- **Domain Conventions:** `./brain/skills/domains/[relevant-domain].md` (if applicable)
-- **Project Learnings:** `./brain/skills/projects/[this-project-slug].md` (project-specific patterns that might benefit other projects)
-
-**Standalone mode:** If brain is not present, rely on project-local documentation in `docs/` and standard best practices.
-
-## Technical Context
-
-[REPLACE: Key technical decisions, architecture choices, or constraints]
-
-### Technology Stack
-
-- **Language(s):** [e.g., TypeScript, Python, Bash]
-- **Framework(s):** [e.g., Next.js, React, Express]
-- **Key Libraries:** [List major dependencies]
-- **Infrastructure:** [e.g., Vercel, AWS, Docker]
-
-### Architecture Decisions
-
-- [Key decision 1 and rationale]
-- [Key decision 2 and rationale]
-- [Key decision 3 and rationale]
-
-### Constraints
-
-- [Technical constraint 1]
-- [Technical constraint 2]
-- [Business constraint 1]
+**Last Updated:** 2026-02-14  
+**Status:** Project bootstrapped, Phase 0 in progress
