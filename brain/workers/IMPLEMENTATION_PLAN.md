@@ -42,6 +42,24 @@
 - [ ] **0.1.11** Fix MD013 in brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md
   - **AC:** `markdownlint brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md` passes (no MD013 errors)
 
+### 0.2 Fix MD013 (line-length) errors in brain/cortex
+
+- [ ] **0.2.1** Fix MD013 in brain/cortex/IMPLEMENTATION_PLAN.md
+  - **AC:** `markdownlint brain/cortex/IMPLEMENTATION_PLAN.md` passes (no MD013 errors)
+
+- [ ] **0.2.2** Fix MD013 in brain/cortex/THOUGHTS.md
+  - **AC:** `markdownlint brain/cortex/THOUGHTS.md` passes (no MD013 errors)
+
+### 0.3 Fix MD032 (blanks-around-lists) errors
+
+- [ ] **0.3.1** Fix MD032 in brain/cortex/THOUGHTS.md
+  - **AC:** `markdownlint brain/cortex/THOUGHTS.md` passes (no MD032 errors)
+
+### 0.4 Fix MD029 (ol-prefix) errors
+
+- [ ] **0.4.1** Fix MD029 in brain/docs/design-packs/README.md
+  - **AC:** `markdownlint brain/docs/design-packs/README.md` passes (no MD029 errors)
+
 ---
 
 ## Overview
