@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
     // Temporarily ignore build errors during development
     ignoreBuildErrors: true,
   },
+  images: {
+    unoptimized: true, // Required for static export
+  },
 };
 
 export default withSentryConfig(nextConfig, {

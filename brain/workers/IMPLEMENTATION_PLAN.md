@@ -494,7 +494,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Metadata exports in each `page.tsx`, verified in browser dev tools
   - **If Blocked:** Use generic fallback metadata in root layout
 
-- [ ] **4.1.2** Optimize images (alt tags, compression)
+- [x] **4.1.2** Optimize images (alt tags, compression)
   - **Goal:** All images have descriptive alt text, under 200KB each
   - **AC:** Lighthouse audit shows no missing alt tags, images load fast
   - **If Blocked:** Use Next.js Image component defaults

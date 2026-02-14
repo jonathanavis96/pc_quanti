@@ -471,3 +471,21 @@ Started: 2026-02-14
 - app/services/contract-administration/page.tsx (added metadata)
 - app/services/claims-management/page.tsx (added metadata)
 - app/services/project-controls/page.tsx (added metadata)
+
+## Task 4.1.2 - Optimize images (alt tags, compression)
+
+**Completed:** 2026-02-14T18:00:58Z
+
+**Changes:**
+- Added `images: { unoptimized: true }` to next.config.ts for static export compatibility
+- Optimized logo.png from 68KB to 66KB using ImageMagick (strip metadata, quality 85)
+- Verified all Image components have descriptive alt text: "PC Quanti logo"
+- Confirmed no raw img tags without alt attributes
+- Build successful with image optimization
+
+**Verification:**
+- All images under 200KB ✓
+- All Image components have alt tags ✓
+- Next.js Image component used throughout ✓
+- Build completes without image warnings ✓
+
