@@ -295,10 +295,11 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   alt="PC Quanti logo"
                   width={40}
                   height={40}
+                  loading="lazy"
                 />
                 <span className="text-lg font-semibold">PC Quanti</span>
               </div>
