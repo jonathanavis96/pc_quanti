@@ -149,11 +149,11 @@ export default function ContractAdministrationPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors">
+              <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Quantity Surveying →</h3>
                 <p className="text-sm text-pc-neutral-600">Cost planning and commercial management</p>
               </Link>
-              <Link href="/services/claims-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors">
+              <Link href="/services/claims-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Claims Management →</h3>
                 <p className="text-sm text-pc-neutral-600">Dispute resolution and claims preparation</p>
               </Link>
