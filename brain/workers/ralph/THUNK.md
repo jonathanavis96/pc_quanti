@@ -376,3 +376,4 @@ Started: 2026-02-14
 - **AC Met:** ✅ docs/email-provider.md documents supported options + required env vars (no secrets committed)
 - **Next:** Task 3.3.1 will add analytics integration hooks
 | 2026-02-14 | 3.3.1 | Add analytics integration hooks + manual steps (GA) | Created Analytics component, updated layout, added docs/analytics.md with setup instructions |
+| 2026-02-14 | 0.6.1 | Fix MD013 in APP_FLOW.md | Fixed 6 line-length violations by breaking long lines at appropriate points to stay under 80 characters |

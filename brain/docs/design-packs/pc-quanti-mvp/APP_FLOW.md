@@ -2,9 +2,12 @@
 
 ## Overview
 
-PC Quanti is a **5-page marketing website** optimized for lead generation. The primary user journey is: discovery → services exploration → contact/enquiry.
+PC Quanti is a **5-page marketing website** optimized for lead generation.
+The primary user journey is: discovery → services exploration →
+contact/enquiry.
 
-**Primary persona:** Project managers, procurement officers, or executives in nuclear/industrial sectors seeking project management consultancy services.
+**Primary persona:** Project managers, procurement officers, or executives
+in nuclear/industrial sectors seeking project management consultancy services.
 
 **Top user goals:**
 1. Understand PC Quanti's services and expertise
@@ -18,8 +21,10 @@ PC Quanti is a **5-page marketing website** optimized for lead generation. The p
 ### Home Page
 
 - **Route:** `/`
-- **Primary user intent:** Understand what PC Quanti offers and why they're credible
-- **Primary CTA:** "View Our Services" (scroll to services overview) + "Contact Us" (header + footer)
+- **Primary user intent:** Understand what PC Quanti offers and why
+  they're credible
+- **Primary CTA:** "View Our Services" (scroll to services overview) +
+  "Contact Us" (header + footer)
 - **Key components:**
   - Hero section (logo, tagline, primary CTA)
   - Value proposition (3-4 key differentiators)
@@ -96,7 +101,8 @@ PC Quanti is a **5-page marketing website** optimized for lead generation. The p
     - Email (required)
     - Phone (optional)
     - Company (optional)
-    - Enquiry type (dropdown: General Enquiry, Project Management, Quantity Surveying, Contract Admin, Claims, Project Controls)
+    - Enquiry type (dropdown: General Enquiry, Project Management,
+      Quantity Surveying, Contract Admin, Claims, Project Controls)
     - Message (required)
     - Submit button
   - Contact details (email: info@pcquanti.co.za, phone if provided)
@@ -144,7 +150,8 @@ PC Quanti is a **5-page marketing website** optimized for lead generation. The p
   4. Navigate to Services page to understand scope
   5. Click "Contact" in header or footer
   6. Submit enquiry form
-- **Success outcome:** Lead captured with higher intent (qualified by credibility check)
+- **Success outcome:** Lead captured with higher intent (qualified by
+  credibility check)
 - **Failure modes:**
   - About page too generic (doesn't differentiate PC Quanti)
   - Missing trust markers (no sectors, no specific experience mentioned)
@@ -153,8 +160,10 @@ PC Quanti is a **5-page marketing website** optimized for lead generation. The p
 
 ### Journey 3: Direct Service Search → Enquiry
 
-- **Name:** User searching for specific service (e.g., "UK nuclear quantity surveying")
-- **Entry point:** Google search → lands directly on service detail page (e.g., `/services/quantity-surveying`)
+- **Name:** User searching for specific service
+  (e.g., "UK nuclear quantity surveying")
+- **Entry point:** Google search → lands directly on service detail page
+  (e.g., `/services/quantity-surveying`)
 - **Steps:**
   1. Land on specific service page via SEO
   2. Read service description and deliverables

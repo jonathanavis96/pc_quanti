@@ -67,7 +67,7 @@
 
 ### 0.6 Fix MD013 (line-length) errors in pc-quanti-mvp design pack
 
-- [ ] **0.6.1** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md
+- [x] **0.6.1** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md` passes (no MD013 errors)
 
 - [ ] **0.6.2** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md
