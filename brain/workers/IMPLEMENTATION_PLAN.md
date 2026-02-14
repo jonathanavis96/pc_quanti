@@ -117,7 +117,7 @@
 
 ### 0.13 Fix MD013, MD022, MD032, and MD009 errors in LESSONS.md
 
-- [ ] **0.13.1** Fix MD013, MD022, MD032, and MD009 in brain/docs/design-packs/pc-quanti-mvp/LESSONS.md
+- [x] **0.13.1** Fix MD013, MD022, MD032, and MD009 in brain/docs/design-packs/pc-quanti-mvp/LESSONS.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/LESSONS.md` passes (no MD013, MD022, MD032, or MD009 errors)
 
 ---
