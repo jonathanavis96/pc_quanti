@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "About | PC Quanti",
-  description: "Learn about Phil's background in nuclear project management and why PC Quanti delivers lean, expert project services across industrial sectors.",
+  description: "Learn about Phil's background in UK nuclear project management and why PC Quanti delivers lean, expert consultancy services for industrial sectors including quantity surveying and contract administration.",
   alternates: {
     canonical: "/about",
   },

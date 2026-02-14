@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     default: "PC Quanti | Expert Project Management for Nuclear & Industrial Sectors",
     template: "%s | PC Quanti",
   },
-  description: "Lean, trusted project management consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+  description: "UK nuclear project management consultancy delivering expert Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls for industrial sectors across the UK and South Africa.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "PC Quanti | Expert Project Management for Nuclear & Industrial Sectors",
-    description: "Lean, trusted project management consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+    description: "UK nuclear project management consultancy delivering expert Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls for industrial sectors across the UK and South Africa.",
     type: "website",
     locale: "en_GB",
     url: "/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "PC Quanti | Expert Project Management for Nuclear & Industrial Sectors",
-    description: "Lean, trusted project management consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+    description: "UK nuclear project management consultancy delivering expert Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls for industrial sectors across the UK and South Africa.",
   },
 };
 
