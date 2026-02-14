@@ -10,6 +10,7 @@ contact/enquiry.
 in nuclear/industrial sectors seeking project management consultancy services.
 
 **Top user goals:**
+
 1. Understand PC Quanti's services and expertise
 2. Assess credibility (Phil's background, sector experience)
 3. Initiate contact for project enquiry

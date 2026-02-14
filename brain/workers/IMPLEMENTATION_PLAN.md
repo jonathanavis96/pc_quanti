@@ -78,7 +78,7 @@
 
 ### 0.7 Fix MD032 (blanks-around-lists) errors in pc-quanti-mvp design pack
 
-- [ ] **0.7.1** Fix MD032 in brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md
+- [x] **0.7.1** Fix MD032 in brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/APP_FLOW.md` passes (no MD032 errors)
 
 - [ ] **0.7.2** Fix MD032 in brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md

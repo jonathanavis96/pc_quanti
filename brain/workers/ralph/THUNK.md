@@ -379,3 +379,4 @@ Started: 2026-02-14
 | 2026-02-14 | 0.6.1 | Fix MD013 in APP_FLOW.md | Fixed 6 line-length violations by breaking long lines at appropriate points to stay under 80 characters |
 | 2026-02-14T17:30:33Z | 0.6.2 | Fix MD013 in DESIGN_SYSTEM.md | Fixed 2 line-length violations by wrapping long lines |
 | 2026-02-14T17:32:41Z | 0.6.3 | Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md | Wrapped 8 long lines to comply with 80-char limit |
+| 2026-02-14 19:33 | 0.7.1 | Fix MD032 in APP_FLOW.md | Added blank line before list at line 11 | PASS |
