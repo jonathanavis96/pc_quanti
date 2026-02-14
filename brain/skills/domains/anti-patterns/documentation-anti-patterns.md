@@ -2,9 +2,12 @@
 
 ## Overview
 
-Common documentation mistakes that reduce clarity, maintainability, and usefulness. These patterns emerge from code reviews, lint failures, and user feedback across the brain repository.
+Common documentation mistakes that reduce clarity, maintainability, and
+usefulness. These patterns emerge from code reviews, lint failures, and user
+feedback across the brain repository.
 
-**Target Audience:** Technical writers, developers documenting code, Ralph loop agents
+**Target Audience:** Technical writers, developers documenting code, Ralph
+loop agents
 
 **Related:**
 
@@ -18,7 +21,9 @@ Common documentation mistakes that reduce clarity, maintainability, and usefulne
 
 ### Problem
 
-Documentation contains links to files, sections, or external resources that no longer exist or have moved. This breaks navigation and erodes trust in the documentation.
+Documentation contains links to files, sections, or external resources that no
+longer exist or have moved. This breaks navigation and erodes trust in the
+documentation.
 
 **Common Causes:**
 
@@ -39,11 +44,14 @@ rg '\[.*\]\((?!http).*\.md\)' docs/ skills/ --type md
 
 ### Bad Example
 
-Documentation references a file that doesn't exist, or uses outdated paths after reorganization.
+Documentation references a file that doesn't exist, or uses outdated paths
+after reorganization.
 
 **Why it's bad:** Reader clicks link, gets 404, loses trust in documentation.
 
-**Recent Example:** `tools/validate_doc_sync.sh` looked for `brain/skills/...` while this repo stores files at `skills/...`, breaking pre-commit runs.
+**Recent Example:** `tools/validate_doc_sync.sh` looked for
+`brain/skills/...` while this repo stores files at `skills/...`, breaking
+pre-commit runs.
 
 ### Good Example
 
@@ -72,9 +80,10 @@ Then reference it correctly from the current file's location.
 
 ## Anti-Pattern 2: Code Examples Missing Context
 
-### Problem
+### The Problem
 
-Code snippets lack necessary imports, variable definitions, or setup code, making examples unrunnable without guessing missing parts.
+Code snippets lack necessary imports, variable definitions, or setup code,
+making examples unrunnable without guessing missing parts.
 
 **Common Causes:**
 
@@ -83,7 +92,7 @@ Code snippets lack necessary imports, variable definitions, or setup code, makin
 - Removing "boring" imports to save space
 - Not testing examples in isolation
 
-### Detection
+### How to Detect
 
 ```bash
 # Run example validation
@@ -127,7 +136,7 @@ result = parse_marker(content)
 print(result['type'])
 ```
 
-### Prevention
+### How to Prevent
 
 - **Include all imports at top of example**
 - **Define all variables before use, or mark as "user-provided"**
@@ -144,9 +153,10 @@ print(result['type'])
 
 ## Anti-Pattern 3: Wall of Text (No Structure)
 
-### Problem
+### The Problem
 
-Large blocks of unformatted text without headings, lists, or visual breaks. Readers cannot scan, skim, or find information quickly.
+Large blocks of unformatted text without headings, lists, or visual breaks.
+Readers cannot scan, skim, or find information quickly.
 
 **Common Causes:**
 
@@ -155,7 +165,7 @@ Large blocks of unformatted text without headings, lists, or visual breaks. Read
 - Fear of "too many headings"
 - Not considering reader's scanning behavior
 
-### Detection
+### How to Detect
 
 **Manual review:**
 
@@ -166,7 +176,17 @@ Large blocks of unformatted text without headings, lists, or visual breaks. Read
 ### Bad Example
 
 ```markdown
-The Ralph loop is a self-improving AI agent system that runs in PLAN and BUILD modes. In PLAN mode it reads the current state and creates an implementation plan with prioritized tasks. In BUILD mode it picks the first unchecked task and implements it, then commits the changes and logs completion to workers/ralph/THUNK.md. The loop alternates between PLAN and BUILD modes every 3 iterations. It also runs a verifier after each BUILD iteration to check acceptance criteria. If the verifier fails the agent must fix the issues before continuing. The system uses hash guards to protect critical files from modification. If a protected file needs changes the agent creates a SPEC_CHANGE_REQUEST.md and stops. The loop continues until all tasks are complete and outputs a completion sentinel.
+The Ralph loop is a self-improving AI agent system that runs in PLAN and
+BUILD modes. In PLAN mode it reads the current state and creates an
+implementation plan with prioritized tasks. In BUILD mode it picks the first
+unchecked task and implements it, then commits the changes and logs
+completion to workers/ralph/THUNK.md. The loop alternates between PLAN and
+BUILD modes every 3 iterations. It also runs a verifier after each BUILD
+iteration to check acceptance criteria. If the verifier fails the agent must
+fix the issues before continuing. The system uses hash guards to protect
+critical files from modification. If a protected file needs changes the agent
+creates a SPEC_CHANGE_REQUEST.md and stops. The loop continues until all
+tasks are complete and outputs a completion sentinel.
 ```
 
 **Problem:** 9 sentences, 7 different topics, no visual structure.
@@ -203,7 +223,7 @@ If verifier fails:
 2. If protected file needs changes → create `SPEC_CHANGE_REQUEST.md` and stop
 ```
 
-### Prevention
+### How to Prevent
 
 - **Max paragraph length: 6-8 lines** (roughly 3-4 sentences)
 - **Use headings liberally** - every major topic gets one
@@ -214,9 +234,10 @@ If verifier fails:
 
 ## Anti-Pattern 4: Outdated Examples (Stale Code)
 
-### Problem
+### The Problem
 
-Documentation shows code patterns, commands, or APIs that no longer match current implementation. Readers copy broken examples and waste time debugging.
+Documentation shows code patterns, commands, or APIs that no longer match
+current implementation. Readers copy broken examples and waste time debugging.
 
 **Common Causes:**
 
@@ -225,7 +246,7 @@ Documentation shows code patterns, commands, or APIs that no longer match curren
 - Examples hard-coded in docs (not extracted from tests)
 - No "last updated" date on technical docs
 
-### Detection
+### How to Detect
 
 ```bash
 # Find examples with deprecated patterns
@@ -262,11 +283,12 @@ bash new-project.sh --help
 See `bash new-project.sh --help` for current options.
 ```
 
-### Prevention
+### How to Prevent
 
 - **Extract examples from passing tests** (guarantees they work)
 - **Add "last reviewed" date to technical docs**
-- **When refactoring, search for doc references:** `rg "function_name" docs/ skills/`
+- **When refactoring, search for doc references:**
+  `rg "function_name" docs/ skills/`
 - **Mark version-specific examples:** "As of v2.1.0..."
 
 ### Automated Check
@@ -283,9 +305,11 @@ Partial - `validate_examples.py` catches syntax errors but not semantic stalenes
 
 ## Anti-Pattern 5: Missing "Why" (No Context or Rationale)
 
-### Problem
+### The Problem
 
-Documentation explains "what" and "how" but omits "why" - the reasoning, trade-offs, or problem being solved. Readers cannot adapt guidance to new situations.
+Documentation explains "what" and "how" but omits "why" - the reasoning,
+trade-offs, or problem being solved. Readers cannot adapt guidance to new
+situations.
 
 **Common Causes:**
 
@@ -294,7 +318,7 @@ Documentation explains "what" and "how" but omits "why" - the reasoning, trade-o
 - Assuming "obviously good practice"
 - Time pressure (skip explanations)
 
-### Detection
+### How to Detect
 
 **Manual review:**
 
@@ -323,9 +347,12 @@ Types: feat, fix, docs, refactor, chore, test
 
 **Why this format:**
 
-- **Type prefix** enables automated changelog generation (feat → Features, fix → Bug Fixes)
-- **Scope** allows filtering by component (e.g., `git log --grep="^fix(ralph)"`)
-- **Imperative mood** matches Git's own messages ("Merge branch...", "Revert commit...")
+- **Type prefix** enables automated changelog generation (feat → Features,
+  fix → Bug Fixes)
+- **Scope** allows filtering by component (e.g.,
+  `git log --grep="^fix(ralph)"`)
+- **Imperative mood** matches Git's own messages ("Merge branch...",
+  "Revert commit...")
 
 **Types:**
 
@@ -345,9 +372,10 @@ git commit -m "fix(ralph): prevent duplicate THUNK entries
 - Prevents ID collisions on loop restart"
 ```
 
-### Prevention
+### How to Prevent
 
-- **Start sections with problem statement:** "This prevents X", "Without this, Y happens"
+- **Start sections with problem statement:** "This prevents X", "Without this,
+  Y happens"
 - **Explain trade-offs:** "We chose A over B because..."
 - **Link to related decisions:** See `DECISIONS.md` for architectural choices
 - **Add "Common Pitfalls" or "When to Use" subsections**
@@ -356,9 +384,11 @@ git commit -m "fix(ralph): prevent duplicate THUNK entries
 
 ## Anti-Pattern 6: Unclear Audience or Purpose
 
-### Problem
+### The Problem
 
-Documentation doesn't specify who it's for (human vs agent, beginner vs expert) or what problem it solves. Readers cannot determine if it's relevant to them.
+Documentation doesn't specify who it's for (human vs agent, beginner vs
+expert) or what problem it solves. Readers cannot determine if it's relevant
+to them.
 
 **Common Causes:**
 
@@ -367,7 +397,7 @@ Documentation doesn't specify who it's for (human vs agent, beginner vs expert) 
 - No purpose statement at top
 - Assuming reader knows the use case
 
-### Detection
+### How to Detect
 
 **Manual review:**
 
@@ -397,7 +427,8 @@ Functions:
 
 **Purpose:** Diagnose and fix cache behavior issues in Ralph loop
 
-**Target Audience:** Human developers debugging Ralph, advanced agent troubleshooting
+**Target Audience:** Human developers debugging Ralph, advanced agent
+troubleshooting
 
 **When to Use:**
 
@@ -426,13 +457,14 @@ cache_clear [key]  # Clear specific key or entire cache
 **See Also:**
 
 - [CACHE_DESIGN.md](../../../docs/CACHE_DESIGN.md) - Architecture details
-- [skills/domains/ralph/cache-debugging.md](../ralph/cache-debugging.md) - Advanced patterns
+- [skills/domains/ralph/cache-debugging.md](../ralph/cache-debugging.md) -
+  Advanced patterns
 
 ```bash
 # End of example
 ```
 
-### Prevention
+### How to Prevent
 
 - **Always add "Purpose" and "Target Audience" at top**
 - **Include "When to Use" or "Use Cases" section**
@@ -443,9 +475,11 @@ cache_clear [key]  # Clear specific key or entire cache
 
 ## Anti-Pattern 7: Inconsistent Terminology
 
-### Problem
+### The Problem
 
-Same concept called by different names throughout documentation (e.g., "task" vs "todo" vs "action item"). Readers cannot tell if they're different things or just inconsistent writing.
+Same concept called by different names throughout documentation (e.g., "task"
+vs "todo" vs "action item"). Readers cannot tell if they're different things
+or just inconsistent writing.
 
 **Common Causes:**
 
@@ -454,7 +488,7 @@ Same concept called by different names throughout documentation (e.g., "task" vs
 - Evolving terminology without global update
 - Mixing domain-specific terms
 
-### Detection
+### How to Detect
 
 ```bash
 # Find potential inconsistencies
@@ -486,7 +520,8 @@ Complete tasks from workers/IMPLEMENTATION_PLAN.md...
 
 ## Terminology
 
-- **Task:** Single unit of work in workers/IMPLEMENTATION_PLAN.md (e.g., "16.3.3")
+- **Task:** Single unit of work in workers/IMPLEMENTATION_PLAN.md (e.g.,
+  "16.3.3")
 - **Subtask:** Hierarchical breakdown (e.g., "1.1.1", "1.1.2")
 - **Completion:** Task marked `[x]` after verifier confirms success
 
@@ -497,10 +532,11 @@ Complete the **task** and mark it `[x]`.
 Log **task** completion to workers/ralph/THUNK.md.
 ```
 
-### Prevention
+### How to Prevent
 
 - **Create glossary/terminology section** in main README
-- **Use find-replace for global term changes:** `rg "old_term" --files-with-matches | xargs sed -i 's/old_term/new_term/g'`
+- **Use find-replace for global term changes:**
+  `rg "old_term" --files-with-matches | xargs sed -i 's/old_term/new_term/g'`
 - **Add terminology to style guide** (if exists)
 - **Review PR diffs for new term introductions**
 
@@ -508,9 +544,10 @@ Log **task** completion to workers/ralph/THUNK.md.
 
 ## Anti-Pattern 8: Double-Prefixed / Non-Existent Repo Paths
 
-### Problem
+### The Problem
 
-Documentation attempts to "normalize" paths during repo refactors and accidentally introduces **double-prefixed** or **non-existent** paths.
+Documentation attempts to "normalize" paths during repo refactors and
+accidentally introduces **double-prefixed** or **non-existent** paths.
 
 This commonly shows up as duplicated segments like:
 
@@ -520,8 +557,8 @@ This commonly shows up as duplicated segments like:
 ### Bad Example
 
 ```markdown
-# INTENTIONAL INVALID PATHS BELOW (anti-pattern example) - do not "fix" these strings.
-# Looks plausible but does not exist
+# INTENTIONAL INVALID PATHS BELOW (anti-pattern example) - do not "fix"
+# these strings. Looks plausible but does not exist
 See `workers/workers/IMPLEMENTATION_PLAN.md` for task contracts.
 
 # Duplicated path segment
@@ -532,7 +569,8 @@ grep "\\*\\*TASK_ID\\*\\*" workers/ralph/workers/ralph/THUNK.md
 
 - Readers copy commands that fail immediately.
 - Reviewers may miss it because the string *looks* like a valid relative path.
-- It creates conflicting "source of truth" guidance (two different canonical locations).
+- It creates conflicting "source of truth" guidance (two different canonical
+  locations).
 
 ### Good Example
 
@@ -544,7 +582,7 @@ See `workers/IMPLEMENTATION_PLAN.md` for task contracts.
 grep "\\*\\*TASK_ID\\*\\*" workers/ralph/THUNK.md
 ```
 
-### Detection
+### How to Detect
 
 ```bash
 # Verify the actual file locations
@@ -552,7 +590,8 @@ find workers -maxdepth 4 -name 'IMPLEMENTATION_PLAN.md' -o -name 'THUNK.md'
 
 # Catch common duplication regressions
 # NOTE: Exclude files that intentionally contain bad paths as examples.
-rg "workers/ralph/workers/ralph/THUNK\.md|workers/workers/IMPLEMENTATION_PLAN\.md" -n docs/ skills/ cortex/ --type md \
+rg "workers/ralph/workers/ralph/THUNK\.md" -n docs/ skills/ cortex/ \
+  --type md \
   --glob '!skills/domains/anti-patterns/documentation-anti-patterns.md' \
   --glob '!artifacts/reports/TEMPLATE_DRIFT_REPORT.md'
 
@@ -560,11 +599,13 @@ rg "workers/ralph/workers/ralph/THUNK\.md|workers/workers/IMPLEMENTATION_PLAN\.m
 bash tools/validate_links.sh
 ```
 
-### Prevention
+### How to Prevent
 
-- **Don’t bulk search/replace paths without verifying the target exists** (use `find`/`ls` first).
+- **Don't bulk search/replace paths without verifying the target exists**
+  (use `find`/`ls` first).
 - After any doc refactor, run the duplication-regex grep above.
-- Prefer writing commands with **placeholders** (e.g., `TASK_ID`) rather than hard-coded IDs that may not exist.
+- Prefer writing commands with **placeholders** (e.g., `TASK_ID`) rather than
+  hard-coded IDs that may not exist.
 
 ---
 
@@ -582,8 +623,10 @@ Before committing documentation:
 
 ## Related Anti-Patterns
 
-- [markdown-anti-patterns.md](markdown-anti-patterns.md) - Formatting issues (MD codes)
-- [ralph-anti-patterns.md](ralph-anti-patterns.md) - Ralph loop-specific mistakes
+- [markdown-anti-patterns.md](markdown-anti-patterns.md) - Formatting issues
+  (MD codes)
+- [ralph-anti-patterns.md](ralph-anti-patterns.md) - Ralph loop-specific
+  mistakes
 - [shell-anti-patterns.md](shell-anti-patterns.md) - Shell scripting pitfalls
 
 ## Tools
@@ -595,6 +638,8 @@ Before committing documentation:
 
 ## See Also
 
-- [code-review-patterns.md](../code-quality/code-review-patterns.md) - Manual review checklist
-- [code-hygiene.md](../code-quality/code-hygiene.md) - General quality patterns
+- [code-review-patterns.md](../code-quality/code-review-patterns.md) - Manual
+  review checklist
+- [code-hygiene.md](../code-quality/code-hygiene.md) - General quality
+  patterns
 - [QUALITY_GATES.md](../../../docs/QUALITY_GATES.md) - Automated validation
