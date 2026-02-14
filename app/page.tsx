@@ -3,6 +3,7 @@ import { Button } from "@/src/components/Button";
 import { Card } from "@/src/components/Card";
 import { Container } from "@/src/components/Container";
 import { Header } from "@/src/components/Header";
+import { Hero } from "@/src/components/Hero";
 
 export default function Home() {
   return (
@@ -10,29 +11,12 @@ export default function Home() {
       <Header />
 
       <main>
-        {/* Hero Section */}
-        {/* TODO(DESIGN): Review hero height, background treatment, and typography scale */}
-        <section className="py-20 md:py-32 bg-gradient-to-b from-pc-neutral-50 to-white">
-          <Container maxWidth="lg">
-            <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-bold text-pc-neutral-900 mb-6">
-                Expert Project Management for Nuclear & Industrial Sectors
-              </h1>
-              {/* TODO(PHIL): Approve/replace subheadline */}
-              <p className="text-xl text-pc-neutral-600 mb-8 leading-relaxed">
-                Lean, trusted consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="primary" size="lg">
-                  View Our Services
-                </Button>
-                <Button variant="outline" size="lg">
-                  Get in Touch
-                </Button>
-              </div>
-            </div>
-          </Container>
-        </section>
+        <Hero
+          headline="Expert Project Management for Nuclear & Industrial Sectors"
+          subheadline="Lean, trusted consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa."
+          ctaText="Get in Touch"
+          ctaHref="/contact"
+        />
 
         {/* Value Proposition Section */}
         {/* TODO(DESIGN): Review card layout and icon placement */}

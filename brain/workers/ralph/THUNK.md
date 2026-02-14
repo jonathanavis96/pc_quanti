@@ -157,3 +157,4 @@ Started: 2026-02-14
 
 **Build:** ✓ Passed
 | 2026-02-14 | 2.2.1 | Build services overview page (`/services`) | Created `app/services/page.tsx` with 5 service cards (PM, QS, Contract Admin, Claims, Project Controls). Central hub links to detail pages, includes primary CTA to /contact. Responsive layout using Card component. |
+| 2026-02-14 | 2.3.1 | Build hero section | Created reusable `src/components/Hero.tsx` component with headline, subheadline, and CTA button. Integrated into home page with gradient background (pc-blue-light to white). Fully responsive across mobile/tablet/desktop. CTA links to `/contact`. Replaced inline hero markup with dedicated component for maintainability. |

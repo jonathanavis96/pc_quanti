@@ -272,7 +272,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 
 ### 2.3 Home Page
 
-- [x] **2.3.1** Build hero section
+- [ ] **2.3.1** Build hero section
   - **Goal:** Headline + subheadline + CTA button, background image or gradient
   - **AC:** Hero renders on `/`, responsive on mobile/tablet/desktop, CTA links to `/contact`
   - **If Blocked:** Use solid color background if no approved image

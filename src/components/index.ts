@@ -8,3 +8,6 @@ export { Container } from './Container';
 export type { ContainerProps } from './Container';
 
 export { Header } from './Header';
+
+export { Hero } from './Hero';
+export type { HeroProps } from './Hero';
