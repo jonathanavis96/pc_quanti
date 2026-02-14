@@ -489,3 +489,25 @@ Started: 2026-02-14
 - Next.js Image component used throughout ✓
 - Build completes without image warnings ✓
 
+
+## 2026-02-14 20:01 - Task 4.1.3: Add structured data (Schema.org)
+
+**Completed:**
+- Created `src/config/site.ts` with configurable company info, services, contact details
+- Created `src/components/StructuredData.tsx` with Organization, WebSite, and Service schemas
+- Added StructuredData component to root layout
+- Updated `.env.example` with `NEXT_PUBLIC_SITE_URL`
+- Build successful, schema markup ready for deployment
+
+**AC Met:**
+✅ Schema JSON-LD is present in markup (Organization, WebSite schemas on homepage)
+✅ Values are configurable via `siteConfig` for domain/name/services
+✅ Follows schema-markup.md skill guidelines (JSON-LD in `<head>`, accurate data)
+
+**Files Changed:**
+- `src/config/site.ts` (new)
+- `src/components/StructuredData.tsx` (new)
+- `app/layout.tsx` (added StructuredData import and component)
+- `.env.example` (added NEXT_PUBLIC_SITE_URL)
+
+**Next:** Service pages can now use `<StructuredData type="service" serviceName="..." serviceDescription="..." />` for Service schema.

@@ -499,7 +499,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Lighthouse audit shows no missing alt tags, images load fast
   - **If Blocked:** Use Next.js Image component defaults
 
-- [ ] **4.1.3** Add structured data (Schema.org)
+- [x] **4.1.3** Add structured data (Schema.org)
   - **Goal:** Organization, Service, WebSite schemas in JSON-LD
   - **AC:** Schema JSON-LD is present in markup; values are configurable for domain/name
   - **If Blocked:** Implement Organization only, add Service schema later
