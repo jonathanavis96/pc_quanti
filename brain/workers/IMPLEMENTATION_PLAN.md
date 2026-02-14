@@ -544,7 +544,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Skip if time/budget constrained, focus on Services pages
   - **Decision:** Skipped per PRD - explicitly deferred until after MVP. Sectors already mentioned throughout Services pages.
 
-- [ ] **4.3.3** Add internal linking
+- [x] **4.3.3** Add internal linking
   - **Goal:** Link Services pages to each other, link Home to About/Services
   - **AC:** All pages have 2+ internal links, no orphan pages
   - **If Blocked:** Manual review, add links in Phase 4
