@@ -4,7 +4,8 @@
 
 ## Current Mission
 
-Build and launch the PC Quanti MVP brochure website (services-centric) with crisp UX and GitHub Pages-compatible deployment.
+Build and launch the PC Quanti MVP brochure website (services-centric)
+with crisp UX and GitHub Pages-compatible deployment.
 
 **Status:** Initial planning phase - project just bootstrapped
 
@@ -15,7 +16,8 @@ Build and launch the PC Quanti MVP brochure website (services-centric) with cris
 ### Project Context
 
 **Type:** Next.js website  
-**Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS (static export constraints for GitHub Pages)
+**Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS (static export
+constraints for GitHub Pages)
 
 **Key Objectives:**
 - Publish a clean, services-centric brochure site
