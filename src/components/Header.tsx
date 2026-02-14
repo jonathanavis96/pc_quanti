@@ -49,13 +49,13 @@ export function Header() {
             </Link>
             <Link 
               href="/about" 
-              className="text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1"
+              className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1"
             >
               About
             </Link>
             <Link 
               href="/contact" 
-              className="text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1"
+              className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1"
             >
               Contact
             </Link>
@@ -107,14 +107,14 @@ export function Header() {
               </Link>
               <Link 
                 href="/about" 
-                className="text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1 py-2"
+                className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1 py-2"
                 onClick={closeMobileMenu}
               >
                 About
               </Link>
               <Link 
                 href="/contact" 
-                className="text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1 py-2"
+                className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1 py-2"
                 onClick={closeMobileMenu}
               >
                 Contact
