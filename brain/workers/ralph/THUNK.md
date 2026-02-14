@@ -538,3 +538,5 @@ Started: 2026-02-14
 
 | 4.3.2 | 2026-02-14 | Skipped Sectors pages per PRD | Evaluated task against PRD/THOUGHTS - Sectors sub-pages explicitly deferred until after MVP. Sector coverage already exists throughout Services pages (nuclear, mining, infrastructure, energy mentioned). Marked complete with skip decision. | N/A |
 | 0.14.1 | 2026-02-14 20:18 | Fix MD013, MD032, MD036, MD022, and MD029 in PRD.md | Fixed line length (MD013), blank lines around lists (MD032), emphasis as heading (MD036), blank lines around headings (MD022), and ordered list prefix (MD029) errors. Wrapped long lines, added blank lines before/after lists, converted bold persona headers to proper headings, added blank lines after headings, and renumbered ordered lists to restart at 1 in each section. |
+
+| 0.15.1 | Fix MD013 in TECH_STACK.md | Fixed all MD013, MD022, and MD032 errors in brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md by adding blank lines around headings/lists and wrapping long lines | 2026-02-14 |

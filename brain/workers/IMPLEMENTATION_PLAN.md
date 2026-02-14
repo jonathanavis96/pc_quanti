@@ -127,7 +127,7 @@
 
 ### 0.15 Fix MD013 error in TECH_STACK.md
 
-- [ ] **0.15.1** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md
+- [x] **0.15.1** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md` passes (no MD013 errors)
 
 ---
