@@ -310,16 +310,16 @@ export default function Home() {
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-pc-neutral-400">
                 <li>
-                  <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                  <Link href="/" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">Home</Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-white transition-colors">About</Link>
+                  <Link href="/about" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">About</Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-white transition-colors">Services</Link>
+                  <Link href="/services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">Services</Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+                  <Link href="/contact" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">Contact</Link>
                 </li>
               </ul>
             </div>

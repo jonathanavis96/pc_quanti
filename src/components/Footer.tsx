@@ -17,7 +17,7 @@ export function Footer() {
                 <p className="text-pc-neutral-600">
                   <a 
                     href="mailto:phil@pcquanti.co.za" 
-                    className="hover:text-pc-blue transition-colors"
+                    className="hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                   >
                     phil@pcquanti.co.za
                   </a>
@@ -25,7 +25,7 @@ export function Footer() {
                 <p className="text-pc-neutral-600">
                   <a 
                     href="tel:+27823456789" 
-                    className="hover:text-pc-blue transition-colors"
+                    className="hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                   >
                     +27 82 345 6789
                   </a>
@@ -39,25 +39,25 @@ export function Footer() {
               <nav className="space-y-2">
                 <Link 
                   href="/" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors"
+                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                 >
                   Home
                 </Link>
                 <Link 
                   href="/services" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors"
+                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                 >
                   Services
                 </Link>
                 <Link 
                   href="/about" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors"
+                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                 >
                   About
                 </Link>
                 <Link 
                   href="/contact" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors"
+                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                 >
                   Contact
                 </Link>
@@ -70,19 +70,19 @@ export function Footer() {
               <nav className="space-y-2">
                 <Link 
                   href="/services#project-management" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors"
+                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                 >
                   Project Management
                 </Link>
                 <Link 
                   href="/services#quantity-surveying" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors"
+                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                 >
                   Quantity Surveying
                 </Link>
                 <Link 
                   href="/services#contract-admin" 
-                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors"
+                  className="block text-pc-neutral-600 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
                 >
                   Contract Administration
                 </Link>

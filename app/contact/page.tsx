@@ -337,7 +337,7 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-gray-600 mb-1">Email</p>
-                      <a href="mailto:info@pcquanti.com" className="text-gray-900 hover:text-pc-blue transition-colors">
+                      <a href="mailto:info@pcquanti.com" className="text-gray-900 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm">
                         info@pcquanti.com
                       </a>
                     </div>
@@ -349,7 +349,7 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-gray-600 mb-1">Phone</p>
-                      <a href="tel:+44XXXXXXXXXX" className="text-gray-900 hover:text-pc-blue transition-colors">
+                      <a href="tel:+44XXXXXXXXXX" className="text-gray-900 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm">
                         +44 (0) XXX XXX XXXX
                       </a>
                       <p className="text-xs text-gray-500 mt-1">
