@@ -107,7 +107,7 @@
 
 ### 0.11 Fix MD031 (blanks-around-fences) errors in pc-quanti-mvp design pack
 
-- [ ] **0.11.1** Fix MD031 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
+- [x] **0.11.1** Fix MD031 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md` passes (no MD031 errors)
 
 ### 0.12 Fix MD032 (blanks-around-lists) errors in pc-quanti-mvp design pack

@@ -62,6 +62,7 @@ app/
 **Hard rule:** Use Tailwind utility classes exclusively. No CSS modules, no styled-components.
 
 **Example:**
+
 ```tsx
 // ✅ Correct
 <button className="bg-pc-blue text-white px-6 py-3 rounded-md
@@ -115,6 +116,7 @@ Tailwind config and referenced via utility classes.
 ### How components reference tokens
 
 **Colors:**
+
 ```tsx
 // ✅ Use semantic token names
 <button className="bg-pc-blue text-white border-pc-neutral-200">
@@ -124,6 +126,7 @@ Tailwind config and referenced via utility classes.
 ```
 
 **Spacing:**
+
 ```tsx
 // ✅ Use Tailwind spacing scale
 <div className="px-6 py-12 md:px-12 md:py-24">
@@ -133,6 +136,7 @@ Tailwind config and referenced via utility classes.
 ```
 
 **Typography:**
+
 ```tsx
 // ✅ Use predefined text utilities
 <h1 className="text-4xl font-bold leading-tight">
@@ -166,6 +170,7 @@ Tailwind config and referenced via utility classes.
 - Implement visible focus states on all interactive elements
 
 **Focus states:**
+
 ```tsx
 // ✅ Always add focus rings
 <button className="focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
@@ -191,6 +196,7 @@ Tailwind config and referenced via utility classes.
 - Contact forms: associate labels with inputs using `htmlFor`
 
 **Example:**
+
 ```tsx
 // ✅ Semantic HTML + minimal ARIA
 <nav aria-label="Primary navigation">
