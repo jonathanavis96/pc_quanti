@@ -130,20 +130,20 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 
 ### 1.1 Design Pack (canonical UX inputs)
 
-- [ ] **1.1.0** Create PC Quanti Design Pack (MVP)
+- [x] **1.1.0** Create PC Quanti Design Pack (MVP)
   - **Goal:** Capture canonical UX/UI constraints so implementation stays crisp and consistent
   - **AC:** A new pack exists under `brain/docs/design-packs/pc-quanti-mvp/` containing:
-    - [ ] `DESIGN_SYSTEM.md` (tokens + rules; CTA color anchored on #2C02D9)
-    - [ ] `FRONTEND_GUIDELINES.md` (component structure, token usage rules, accessibility baseline)
-    - [ ] `APP_FLOW.md` (treat as site map + page behaviors/journeys)
-    - [ ] `TECH_STACK.md` (Next.js + Tailwind + GitHub Pages static constraints)
-    - [ ] (Optional) `PRD.md` (invariants + out-of-scope)
-    - [ ] (Optional) `LESSONS.md` (append-only decisions)
+    - [x] `DESIGN_SYSTEM.md` (tokens + rules; CTA color anchored on #2C02D9)
+    - [x] `FRONTEND_GUIDELINES.md` (component structure, token usage rules, accessibility baseline)
+    - [x] `APP_FLOW.md` (treat as site map + page behaviors/journeys)
+    - [x] `TECH_STACK.md` (Next.js + Tailwind + GitHub Pages static constraints)
+    - [x] (Optional) `PRD.md` (invariants + out-of-scope)
+    - [x] (Optional) `LESSONS.md` (append-only decisions)
   - **If Blocked:** Copy `_template/` verbatim first, then fill incrementally
   - **Refs:** `brain/docs/design-packs/README.md`, `brain/docs/design-packs/_template/*`
 
-- [ ] **1.1.0a** (Optional) Run design-only UI/UX audit using the Design Pack
-  - **Goal:** Sanity check “crisp / not cluttered / services-centric” before heavy buildout
+- [x] **1.1.0a** (Optional) Run design-only UI/UX audit using the Design Pack
+  - **Goal:** Sanity check "crisp / not cluttered / services-centric" before heavy buildout
   - **AC:** Audit output saved under `brain/artifacts/design-audits/pc-quanti-mvp/<YYYY-MM-DD_HHMMSS>.md`
   - **If Blocked:** Skip audit and proceed with MVP implementation
   - **Refs:** `brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md`
