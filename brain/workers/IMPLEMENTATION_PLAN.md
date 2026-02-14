@@ -352,8 +352,8 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use generic description
 
 ### 2.6 Contact Page
-- [ ] **2.6.1** Build contact form
-  - **Goal:** “Request services” style enquiry flow (service dropdown/checklist) + name, email, phone, message
+- [x] **2.6.1** Build contact form
+  - **Goal:** "Request services" style enquiry flow (service dropdown/checklist) + name, email, phone, message
   - **AC:** Form renders on `/contact`, client-side validation, submit button
   - **If Blocked:** Use mailto link if form backend not ready
 

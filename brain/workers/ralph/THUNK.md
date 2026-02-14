@@ -276,3 +276,20 @@ Started: 2026-02-14
   - Build passes, route renders at `/services/project-controls`
 - **Verification:** `npm run build` successful, route listed in build output
 - **Commit:** Next
+
+## 2026-02-14 19:06 - Task 2.6.1: Build contact form
+- **Status:** ✅ Complete
+- **Changes:**
+  - Created `app/contact/page.tsx` with complete contact form implementation
+  - Form includes all required fields: name (required), email (required), phone (optional), service dropdown (required), message (required)
+  - Service dropdown options: General Enquiry, Project Management, Quantity Surveying, Contract Administration, Claims Management, Project Controls
+  - Implemented comprehensive client-side validation with error messages and accessible ARIA attributes
+  - Form state management with React hooks (useState for formData, errors, isSubmitting)
+  - Email regex validation, phone format validation (when provided)
+  - Error handling with red borders and inline error messages
+  - Contact information sidebar with email, phone placeholder, location
+  - Responsive two-column layout (form + contact info)
+  - Submit button with disabled state during submission
+  - Placeholder submission handler (logs to console, shows alert) - actual backend integration pending in task 2.6.2
+- **Verification:** Build passes, `/contact` route renders successfully
+- **Next:** Task 2.6.2 will implement GitHub Pages-compatible submission (Formspree or mailto fallback)
