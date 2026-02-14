@@ -69,3 +69,4 @@ Started: 2026-02-14
 | 0.2.2 | Fix MD013 in brain/cortex/THOUGHTS.md | 2026-02-14 | Wrapped 2 long lines (124 and 104 chars) at lines 7 and 18 to comply with 80-char MD013 limit |
 | 0.3.1 | Fix MD032 in brain/cortex/THOUGHTS.md | 2026-02-14 | Added blank line after "**Key Objectives:**" to surround list properly (MD032 compliance) |
 | 0.4.1 | Fix MD029 in brain/docs/design-packs/README.md | 2026-02-14 | File already compliant - no MD029 errors found |
+| 1.0.1 | Verify Next.js app boots locally | 2026-02-14 | Initialized Next.js 16.1.6 with TypeScript, Tailwind CSS, and App Router. Confirmed npm install succeeds and dev server starts without errors on http://localhost:3000 |

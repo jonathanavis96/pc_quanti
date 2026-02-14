@@ -110,7 +110,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 
 ### 1.0 Repo readiness & quality gates (do first)
 
-- [ ] **1.0.1** Verify Next.js app boots locally
+- [x] **1.0.1** Verify Next.js app boots locally
   - **Goal:** Confirm project installs and dev server runs
   - **AC:** `npm install` succeeds; `npm run dev` starts without errors
   - **If Blocked:** Document error + fix root cause before proceeding (see `brain/skills/playbooks/investigate-test-failures.md`)
