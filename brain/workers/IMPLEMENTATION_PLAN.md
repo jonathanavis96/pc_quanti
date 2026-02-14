@@ -36,7 +36,7 @@
 - [x] **0.1.9** Fix MD013 and MD029 in brain/docs/design-packs/README.md
   - **AC:** `markdownlint brain/docs/design-packs/README.md` passes (no MD013 or MD029 errors)
 
-- [ ] **0.1.10** Fix MD013 in brain/docs/design/README.md
+- [x] **0.1.10** Fix MD013 in brain/docs/design/README.md
   - **AC:** `markdownlint brain/docs/design/README.md` passes (no MD013 errors)
 
 - [ ] **0.1.11** Fix MD013 in brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md

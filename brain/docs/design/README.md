@@ -1,6 +1,7 @@
 # Design Docs (Project-Local)
 
-This folder contains **project-local design prompts and protocols** used for design-only audits.
+This folder contains **project-local design prompts and protocols** used for
+design-only audits.
 
 ## Contents
 
