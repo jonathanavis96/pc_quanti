@@ -653,7 +653,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `docs/production-deploy.md` includes: branch strategy, GitHub Actions deploy workflow notes, and post-deploy validation steps
   - **If Blocked:** Keep site on last known-good deployment; fix build first
 
-- [ ] **6.2.2** Execute GSC sitemap submission (human action)
+- [x] **6.2.2** Execute GSC sitemap submission (human action)
   - **Goal:** Help Google discover all pages
   - **AC:** `docs/search-console.md` includes submission steps; once verified by human, sitemap is submitted and status recorded (paste screenshot/link into doc)
   - **If Blocked:** Defer 1-2 days if GSC verification slow

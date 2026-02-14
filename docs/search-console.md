@@ -253,6 +253,28 @@ curl -s https://yourdomain.com/sitemap.xml | head -20
 4. Use performance data to inform SEO improvements (see `brain/docs/design-packs/pc-quanti-mvp/PRD.md` for SEO goals)
 5. Consider setting up Google Analytics integration (see `docs/analytics.md`)
 
+## Submission Status
+
+> **Action Required:** This section should be updated once GSC verification and sitemap submission are complete.
+
+### Verification Status
+- [ ] Google Search Console property verified
+- [ ] Verification method used: _______________
+- [ ] Date verified: _______________
+- [ ] Verified by: _______________
+
+### Sitemap Submission Status
+- [ ] Sitemap submitted to GSC
+- [ ] Sitemap URL: _______________
+- [ ] Date submitted: _______________
+- [ ] Submission status: _______________
+- [ ] Discovered URLs: _______________
+
+### Evidence
+<!-- Paste screenshot or GSC link here once completed -->
+
+---
+
 ## Notes
 
 - Verification is permanent once completed (unless verification method is removed)
