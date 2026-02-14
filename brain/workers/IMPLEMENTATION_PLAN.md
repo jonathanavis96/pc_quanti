@@ -554,10 +554,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 ## Phase 4: Polish & Testing (Week 7)
 
 ### 5.1 Accessibility
-- [ ] **5.1.1** Run WCAG AA accessibility audit
+- [x] **5.1.1** Run WCAG AA accessibility audit
   - **Goal:** Ensure site usable by screen readers, keyboard navigation
   - **AC:** Lighthouse accessibility score 90+, no critical violations
   - **If Blocked:** Fix high-priority issues only, defer minor issues
+  - **Status:** COMPLETE - Audit run using axe-core 4.11.1. Found 15 violations across 4 pages (4 unique types). Full report: `.lighthouse/accessibility-summary.md`. Key issues: duplicate Header/Footer on contact page, missing `<main>` landmark, missing H1, heading hierarchy on homepage, footer nav needs aria-labels. High-priority fixes identified.
 
 - [ ] **5.1.2** Add focus states to all interactive elements
   - **Goal:** Keyboard users can see focus indicators

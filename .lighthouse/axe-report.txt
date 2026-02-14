@@ -1,0 +1,81 @@
+[1mRunning axe-core 4.11.1 in chrome-headless[22m
+[1m[22m
+[1mTesting [4m[34mhttp://localhost:3000[39m[24m[22m ... please wait, this may take a minute.
+
+[31m[1m  Violation of "heading-order" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure the order of headings is semantically correct. Correct invalid elements at:
+     - div:nth-child(2) > h4
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/heading-order[39m[24m
+
+[31m[1m  Violation of "landmark-no-duplicate-contentinfo" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure the document has at most one contentinfo landmark. Correct invalid elements at:
+     - .bg-pc-neutral-900
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-contentinfo[39m[24m
+
+[31m[1m  Violation of "landmark-unique" with 2 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure landmarks are unique. Correct invalid elements at:
+     - .bg-pc-neutral-900
+     - div:nth-child(2) > nav
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-unique[39m[24m
+[31m[1m[22m[39m
+[31m[1m4 Accessibility issues detected.[22m[39m
+[1mTesting complete of 1 pages[22m
+[1m[22m
+[1mRunning axe-core 4.11.1 in chrome-headless[22m
+[1m[22m
+[1mTesting [4m[34mhttp://localhost:3000/services[39m[24m[22m ... please wait, this may take a minute.
+
+[31m[1m  Violation of "landmark-unique" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure landmarks are unique. Correct invalid elements at:
+     - div:nth-child(2) > nav
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-unique[39m[24m
+[31m[1m[22m[39m
+[31m[1m1 Accessibility issues detected.[22m[39m
+[1m[22m
+[1mTesting [4m[34mhttp://localhost:3000/about[39m[24m[22m ... please wait, this may take a minute.
+
+[31m[1m  Violation of "landmark-no-duplicate-banner" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure the document has at most one banner landmark. Correct invalid elements at:
+     - header:nth-child(2)
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner[39m[24m
+
+[31m[1m  Violation of "landmark-no-duplicate-contentinfo" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure the document has at most one contentinfo landmark. Correct invalid elements at:
+     - footer:nth-child(5)
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-contentinfo[39m[24m
+
+[31m[1m  Violation of "landmark-unique" with 4 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure landmarks are unique. Correct invalid elements at:
+     - header:nth-child(2)
+     - header:nth-child(2) > .max-w-7xl.w-full.sm\:px-6 > .justify-between.py-4.flex > .md\:flex.hidden[aria-label="Main navigation"]
+     - footer:nth-child(5)
+     - footer:nth-child(5) > .max-w-7xl.w-full.sm\:px-6 > .py-12 > .grid-cols-1.md\:grid-cols-3.grid > div:nth-child(2) > nav
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-unique[39m[24m
+[31m[1m[22m[39m
+[31m[1m6 Accessibility issues detected.[22m[39m
+[1m[22m
+[1mTesting [4m[34mhttp://localhost:3000/contact[39m[24m[22m ... please wait, this may take a minute.
+
+[31m[1m  Violation of "landmark-one-main" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure the document has a main landmark. Correct invalid elements at:
+     - html
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-one-main[39m[24m
+
+[31m[1m  Violation of "landmark-unique" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure landmarks are unique. Correct invalid elements at:
+     - body > footer > .max-w-7xl.sm\:px-6.lg\:px-8 > .py-12 > .grid-cols-1.md\:grid-cols-3.grid > div:nth-child(2) > nav
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/landmark-unique[39m[24m
+
+[31m[1m  Violation of "page-has-heading-one" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure that the page, or at least one of its frames contains a level-one heading. Correct invalid elements at:
+     - html
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/page-has-heading-one[39m[24m
+
+[31m[1m  Violation of "region" with 1 occurrences![22m[39m
+[31m[1m[22m[39m    Ensure all page content is contained by landmarks. Correct invalid elements at:
+     - .min-h-screen
+    For details, see: [4m[34mhttps://dequeuniversity.com/rules/axe/4.11/region[39m[24m
+[31m[1m[22m[39m
+[31m[1m4 Accessibility issues detected.[22m[39m
+[1mTesting complete of 3 pages[22m
+[1m[22m
