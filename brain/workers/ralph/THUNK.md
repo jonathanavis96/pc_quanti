@@ -351,3 +351,12 @@ Started: 2026-02-14
   - ✅ Comprehensive checklist of required info provided
   - ✅ Setup instructions ready for when domain details are finalized
 - **Next:** Task 3.2.1 will document email setup/forwarding/Outlook usage
+| 3.2.1 | Document email setup / forwarding / Outlook usage | 2026-02-14 | Created comprehensive `docs/email-forwarding.md` with:
+  - ✅ Current state documented: `info@pcquanti.co.za` hosted at Afrihost
+  - ✅ Option A: Keep Afrihost + configure Outlook (IMAP/SMTP settings, step-by-step setup for desktop/mobile, verification checklist, troubleshooting)
+  - ✅ Option B: Migrate to Microsoft 365 or Google Workspace (cost comparison, setup steps, DNS migration checklist)
+  - ✅ Email authentication section (SPF/DKIM/DMARC importance and setup)
+  - ✅ Contact form integration notes (Formspree + email verification)
+  - ✅ Recommended action plan (use Afrihost immediately, consider M365 migration later)
+  - ✅ Support resources and summary
+- **Next:** Task 3.2.2 will add SMTP/provider integration option

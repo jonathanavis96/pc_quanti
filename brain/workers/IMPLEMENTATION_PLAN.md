@@ -400,12 +400,12 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Leave as placeholders; proceed with GitHub Pages default domain
 
 ### 3.2 Email & Communication
-- [ ] **3.2.1** Document email setup / forwarding / Outlook usage (human action)
+- [x] **3.2.1** Document email setup / forwarding / Outlook usage (human action)
   - **Goal:** Ensure Phil can use Outlook while sending/receiving as `info@pcquanti.co.za` (current domain is `pcquanti.co.za`, email hosted with Afrihost)
   - **AC:** `docs/email-forwarding.md` includes:
-    - [ ] Current state captured: `info@pcquanti.co.za` hosted at Afrihost
-    - [ ] Option A: Keep Afrihost, configure Outlook (IMAP/SMTP) + verification checklist
-    - [ ] Option B: Migrate to Microsoft 365 / Google Workspace and update DNS (SPF/DKIM/DMARC notes)
+    - [x] Current state captured: `info@pcquanti.co.za` hosted at Afrihost
+    - [x] Option A: Keep Afrihost, configure Outlook (IMAP/SMTP) + verification checklist
+    - [x] Option B: Migrate to Microsoft 365 / Google Workspace and update DNS (SPF/DKIM/DMARC notes)
   - **If Blocked:** Use `info@pcquanti.co.za` directly in the Contact path until changes are made
 
 - [ ] **3.2.2** Add SMTP/provider integration option (code + docs)
