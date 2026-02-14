@@ -648,7 +648,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **Note:** Test procedure documented, GitHub Actions updated with Formspree env var support. Human action required: Phil to configure Formspree and verify email delivery.
 
 ### 6.2 Deployment
-- [ ] **6.2.1** Production deployment runbook (GitHub Pages)
+- [x] **6.2.1** Production deployment runbook (GitHub Pages)
   - **Goal:** Make it clear how changes get published to the live GitHub Pages site
   - **AC:** `docs/production-deploy.md` includes: branch strategy, GitHub Actions deploy workflow notes, and post-deploy validation steps
   - **If Blocked:** Keep site on last known-good deployment; fix build first
