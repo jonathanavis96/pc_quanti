@@ -24,7 +24,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="PC Quanti logo"
               width={50}
               height={50}
