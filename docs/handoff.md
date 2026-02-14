@@ -535,19 +535,35 @@ See `docs/email-forwarding.md` for current setup details.
 
 ## Post-Launch Support
 
-**Support window:** 2 weeks post-launch (until 2026-02-28)
+**Support window:** 2 weeks post-launch (February 14 - February 28, 2026)
+
+**What's included:**
+
+- Bug fixes for issues discovered after launch
+- Answers to questions about managing/updating the site
+- Assistance with content updates if needed
+- Troubleshooting deployment or form issues
 
 **Contact for support:**
 
-- **Bug fixes:** Report via GitHub Issues or email developer
-- **Content updates:** Follow instructions in [Content Updates](#content-updates)
-- **Questions:** Email or schedule quick call
+- **Bug fixes:** Report via GitHub Issues or email developer directly
+- **Content updates:** Follow instructions in [Content Updates](#content-updates) or request assistance
+- **Questions:** Email or schedule a quick call
 
-**Response time:**
+**Response time commitments:**
 
-- Critical bugs (site down, form broken): 24 hours
-- Non-critical bugs: 48 hours
-- Content questions: 48 hours
+- **Critical bugs** (site down, contact form broken, security issues): Within 24 hours
+- **Non-critical bugs** (styling issues, minor functionality): Within 48 hours
+- **Content questions** (how to update pages, add content): Within 48 hours
+- **Enhancement requests** (new features, major changes): Out of scope for support window
+
+**After the support window:**
+
+After February 28, 2026, you have full ownership of the site and codebase. For ongoing support:
+
+- Self-service: Use this documentation and code comments
+- Community help: Next.js documentation, GitHub Discussions
+- Developer support: Contact developer for paid consulting (if needed)
 
 ---
 

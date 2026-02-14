@@ -674,7 +674,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Phil confirms access
   - **If Blocked:** Jono retains admin access, grants Phil editor role
 
-- [ ] **6.3.3** Post-launch support window
+- [x] **6.3.3** Post-launch support window
   - **Goal:** Fix bugs, answer questions for 2 weeks post-launch
   - **AC:** Bug fixes deployed within 48 hours, Phil satisfied
   - **If Blocked:** N/A (included in scope)
