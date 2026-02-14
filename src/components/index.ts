@@ -11,3 +11,6 @@ export { Header } from './Header';
 
 export { Hero } from './Hero';
 export type { HeroProps } from './Hero';
+
+export { TrustBar } from './TrustBar';
+export type { TrustBarProps } from './TrustBar';
