@@ -10,10 +10,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Expert Project Management for Nuclear & Industrial Sectors",
-  description: "Lean, trusted consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+  description: "UK nuclear project management consultancy delivering expert Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls for industrial sectors.",
   openGraph: {
     title: "PC Quanti | Expert Project Management for Nuclear & Industrial Sectors",
-    description: "Lean, trusted consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+    description: "UK nuclear project management consultancy delivering expert Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls for industrial sectors.",
   },
 };
 
@@ -35,7 +35,7 @@ export default function Home() {
         <section className="py-16 md:py-24">
           <Container maxWidth="lg">
             <h2 className="text-3xl font-bold text-pc-neutral-900 text-center mb-12">
-              Why Choose PC Quanti
+              Why Choose PC Quanti for UK Nuclear Project Management
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card variant="outlined" padding="lg">
@@ -84,11 +84,11 @@ export default function Home() {
           <Container maxWidth="lg">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">
-                Our Services
+                Industrial PM Consultancy Services
               </h2>
               {/* TODO(PHIL): Approve/replace services intro */}
               <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-                PC Quanti provides specialized project management services tailored to nuclear, mining, infrastructure, and energy sectors. We combine deep technical expertise with a lean, agile delivery model.
+                PC Quanti provides specialized project management consultancy tailored to UK nuclear, mining, infrastructure, and energy sectors. We combine deep technical expertise in quantity surveying, contract administration, claims management, and project controls with a lean, agile delivery model.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

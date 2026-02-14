@@ -5,13 +5,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Services",
-  description: "Specialist project management consultancy for nuclear, mining, and industrial sectors. Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls.",
+  description: "Specialist UK nuclear and industrial PM consultancy. Expert Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls for mining, infrastructure, and energy sectors.",
   alternates: {
     canonical: "/services",
   },
   openGraph: {
     title: "Our Services | PC Quanti",
-    description: "Specialist project management consultancy for nuclear, mining, and industrial sectors. Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls.",
+    description: "Specialist UK nuclear and industrial PM consultancy. Expert Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls for mining, infrastructure, and energy sectors.",
     url: "/services",
   },
 };
