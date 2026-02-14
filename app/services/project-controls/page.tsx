@@ -1,6 +1,16 @@
 import React from 'react';
 import { Container, Card, Button } from '@/src/components';
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Project Controls",
+  description: "Scheduling, cost control, and risk management to deliver certainty in complex environments. Expert project controls for nuclear and industrial sectors.",
+  openGraph: {
+    title: "Project Controls | PC Quanti",
+    description: "Scheduling, cost control, and risk management to deliver certainty in complex environments. Expert project controls for nuclear and industrial sectors.",
+  },
+};
 
 export default function ProjectControlsPage() {
   return (

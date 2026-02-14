@@ -1,6 +1,16 @@
 import React from 'react';
 import { Container, Card, Button } from '@/src/components';
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Project Management",
+  description: "End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning with expert project management consultancy.",
+  openGraph: {
+    title: "Project Management | PC Quanti",
+    description: "End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning with expert project management consultancy.",
+  },
+};
 
 export default function ProjectManagementPage() {
   return (
