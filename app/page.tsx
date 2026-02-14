@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+
 import { Button } from "@/src/components/Button";
 import { Card } from "@/src/components/Card";
 import { Container } from "@/src/components/Container";
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <main>
+    <>
+      <main className="min-h-screen bg-white">
         <Hero
           headline="Expert Project Management for Nuclear & Industrial Sectors"
           subheadline="Lean, trusted consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa."
@@ -286,58 +286,6 @@ export default function Home() {
           </Container>
         </section>
       </main>
-
-      {/* Footer */}
-      {/* TODO(DESIGN): Review footer layout and information architecture */}
-      <footer className="bg-pc-neutral-900 text-white py-12">
-        <Container maxWidth="lg">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Image
-                  src="/logo.webp"
-                  alt="PC Quanti logo"
-                  width={40}
-                  height={40}
-                  loading="lazy"
-                />
-                <span className="text-lg font-semibold">PC Quanti</span>
-              </div>
-              <p className="text-pc-neutral-400">
-                Expert project management services for nuclear and industrial sectors
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-pc-neutral-400">
-                <li>
-                  <Link href="/" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">Home</Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">About</Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">Services</Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm">Contact</Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              {/* TODO(PHIL): Add actual contact details */}
-              <ul className="space-y-2 text-pc-neutral-400">
-                <li>Email: info@pcquanti.com</li>
-                <li>UK & South Africa</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-pc-neutral-700 pt-8 text-center text-pc-neutral-400 text-sm">
-            <p>&copy; 2026 PC Quanti. All rights reserved.</p>
-          </div>
-        </Container>
-      </footer>
-    </div>
+    </>
   );
 }

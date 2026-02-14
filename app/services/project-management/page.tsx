@@ -47,7 +47,7 @@ export default function ProjectManagementPage() {
                 PC Quanti delivers expert project management consultancy tailored to the unique demands of nuclear, mining, and industrial projects. With extensive experience in high-stakes, highly regulated environments, we provide lean, effective project leadership without the overhead of large corporate consultancies.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Whether you're navigating complex commissioning phases, managing stakeholder expectations, or ensuring compliance with stringent regulatory frameworks, our approach combines deep technical expertise with pragmatic delivery focus.
+                Whether you&apos;re navigating complex commissioning phases, managing stakeholder expectations, or ensuring compliance with stringent regulatory frameworks, our approach combines deep technical expertise with pragmatic delivery focus.
               </p>
             </Card>
           </div>

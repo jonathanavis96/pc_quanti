@@ -1,8 +1,5 @@
 import { Container } from "@/src/components/Container";
-import { Header } from "@/src/components/Header";
-import { Footer } from "@/src/components/Footer";
 import { Button } from "@/src/components/Button";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -15,9 +12,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <>
-      <Header />
-      <main className="py-16 sm:py-24">
+    <main className="py-16 sm:py-24">
         {/* Phil's Story Section */}
         <Container>
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
@@ -44,7 +39,7 @@ export default function AboutPage() {
               </h1>
               <div className="prose prose-lg text-pc-neutral-600 space-y-4">
                 <p>
-                  <strong>Phil</strong> founded PC Quanti to deliver expert project management services with the agility and focus that large consultancies can't match.
+                  <strong>Phil</strong> founded PC Quanti to deliver expert project management services with the agility and focus that large consultancies can&apos;t match.
                 </p>
                 <p>
                   With deep experience in <strong>nuclear project environments</strong>—including five years of intensive work with a major client operating under strict confidentiality—Phil brings scarce skills to complex industrial projects. This nuclear foundation provides rigorous discipline in safety, compliance, and stakeholder coordination that translates seamlessly across sectors.
@@ -141,7 +136,7 @@ export default function AboutPage() {
               Credentials & Affiliations
             </h2>
             <p className="text-pc-neutral-600 max-w-2xl mx-auto">
-              This section is reserved for professional certifications, memberships, and industry affiliations. Content pending Phil's input.
+              This section is reserved for professional certifications, memberships, and industry affiliations. Content pending Phil&apos;s input.
             </p>
             <p className="text-sm text-pc-neutral-400 mt-4 italic">
               (Placeholder—can be removed or populated with specific credentials)
@@ -173,7 +168,5 @@ export default function AboutPage() {
           </div>
         </Container>
       </main>
-      <Footer />
-    </>
   );
 }
