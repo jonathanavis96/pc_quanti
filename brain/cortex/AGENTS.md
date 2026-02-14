@@ -32,9 +32,9 @@ coordination, and delegation.
 
 ### WSL/Windows 11 Specifics
 
-- Working directory: `/mnt/c/...` or `/home/...` depending on where repository is cloned
+- Working directory: `/mnt/c/...` or `/home/...` depending on where
+  repository is cloned
 - Git line endings: Use `core.autocrlf=input` to avoid CRLF issues
-  (recommended for WSL)
 - File permissions: WSL handles Unix permissions on Windows filesystem
 - Path separators: Use Unix-style `/` paths (WSL translates automatically)
 
