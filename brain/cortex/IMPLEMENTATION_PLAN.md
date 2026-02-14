@@ -1,12 +1,12 @@
-# Cortex Implementation Plan - {{PROJECT_NAME}}
+# Cortex Implementation Plan - PC Quanti
 
 **Status:** Planning mode  
 **Branch:** `main`  
-**Last Updated:** {{TIMESTAMP}} (by Cortex)
+**Last Updated:** 2026-02-14 17:01:00 (by Cortex)
 
 ## Mission
 
-From `THOUGHTS.md`: {{PROJECT_PURPOSE}}
+From `THOUGHTS.md`: Build and launch the PC Quanti MVP brochure website (services-centric) with crisp UX and GitHub Pages-compatible deployment.
 
 ## Current Status
 

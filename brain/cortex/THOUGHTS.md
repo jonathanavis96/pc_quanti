@@ -1,10 +1,10 @@
-# Cortex Thoughts - {{PROJECT_NAME}}
+# Cortex Thoughts - PC Quanti
 
-**Last Updated:** {{TIMESTAMP}}
+**Last Updated:** 2026-02-14 17:01:00
 
 ## Current Mission
 
-{{PROJECT_PURPOSE}}
+Build and launch the PC Quanti MVP brochure website (services-centric) with crisp UX and GitHub Pages-compatible deployment.
 
 **Status:** Initial planning phase - project just bootstrapped
 
@@ -14,11 +14,15 @@
 
 ### Project Context
 
-**Type:** {{PROJECT_TYPE}}  
-**Tech Stack:** {{TECH_STACK}}
+**Type:** Next.js website  
+**Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS (static export constraints for GitHub Pages)
 
 **Key Objectives:**
-{{PROJECT_GOALS}}
+- Publish a clean, services-centric brochure site
+- Optimize for B2B credibility and UK market discovery
+- Keep branding crisp (do not over-emphasize nuclear)
+- Ensure content can be generic where confidentiality is required
+- Provide a simple, high-converting contact flow ("request services")
 
 ### Initial Assessment
 
@@ -45,7 +49,7 @@
 
 ## Planning Session Log
 
-### {{TIMESTAMP}} - Initial Bootstrap
+### 2026-02-14 17:01:00 - Initial Bootstrap
 
 **Context:** First Cortex planning session after project creation.
 
@@ -75,7 +79,10 @@
 
 From THOUGHTS.md:
 
-- {{SUCCESS_CRITERIA}}
+- Site builds and deploys successfully via GitHub Pages workflow
+- Lighthouse: Performance 90+ desktop, 80+ mobile; Accessibility 90+
+- Clear services hub + detail pages with strong CTAs
+- Contact conversion path works (form or mailto fallback)
 
 **How to Measure:**
 
