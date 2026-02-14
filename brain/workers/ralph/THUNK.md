@@ -430,3 +430,44 @@ Started: 2026-02-14
 - Session replay configured with privacy-first defaults (masked text/media)
 - Sample rates configured for production use (10% session replay, 100% errors)
 - Test page available at /test-error for verification
+
+---
+
+## 2026-02-14 | Task 4.1.1 | Add metadata to all pages
+
+**What was done:**
+- Updated root layout.tsx with proper default metadata including title template
+- Added metadata exports to home page (app/page.tsx)
+- Added metadata to services overview page
+- Added metadata to all 5 service detail pages (project-management, quantity-surveying, contract-administration, claims-management, project-controls)
+- Created app/contact/layout.tsx to add metadata to client component contact page
+- Verified metadata in production build HTML output
+
+**Implementation Details:**
+- Root layout uses title template "%s | PC Quanti" for consistent branding
+- Each page has unique title and description optimized for SEO
+- OpenGraph tags added for social media sharing
+- Twitter card metadata included
+- All metadata verified in .next/server/app/*.html files
+
+**Verification:**
+- ✓ Build completes successfully
+- ✓ Home page: "Expert Project Management for Nuclear & Industrial Sectors"
+- ✓ About page: "About | PC Quanti | PC Quanti"
+- ✓ Contact page: "Contact Us | PC Quanti"
+- ✓ Services page: "Our Services | PC Quanti"
+- ✓ Service detail pages: "[Service] | PC Quanti"
+- ✓ All pages have unique descriptions with target keywords
+- ✓ OpenGraph metadata present on all pages
+
+**Files Changed:**
+- app/layout.tsx (updated root metadata)
+- app/page.tsx (added metadata)
+- app/about/page.tsx (already had metadata)
+- app/services/page.tsx (added metadata)
+- app/contact/layout.tsx (created for client component metadata)
+- app/services/project-management/page.tsx (added metadata)
+- app/services/quantity-surveying/page.tsx (added metadata)
+- app/services/contract-administration/page.tsx (added metadata)
+- app/services/claims-management/page.tsx (added metadata)
+- app/services/project-controls/page.tsx (added metadata)

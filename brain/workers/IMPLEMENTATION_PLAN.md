@@ -489,7 +489,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 ## Phase 3: SEO & Content Optimization (Week 6)
 
 ### 4.1 On-Page SEO
-- [ ] **4.1.1** Add metadata to all pages
+- [x] **4.1.1** Add metadata to all pages
   - **Goal:** Unique title, description, OG tags for Home, About, Services, Contact
   - **AC:** Metadata exports in each `page.tsx`, verified in browser dev tools
   - **If Blocked:** Use generic fallback metadata in root layout
