@@ -341,7 +341,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `/services/contract-administration` renders, includes CTA
   - **If Blocked:** Use generic description
 
-- [ ] **2.5.4** Build Claims Management detail page
+- [x] **2.5.4** Build Claims Management detail page
   - **Goal:** Describe claims services, dispute resolution, forensic analysis
   - **AC:** `/services/claims-management` renders, includes CTA
   - **If Blocked:** Use generic description

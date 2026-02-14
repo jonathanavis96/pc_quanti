@@ -265,3 +265,4 @@ Started: 2026-02-14
 | 2.5.2 | 2026-02-14T18:58:52Z | Built Quantity Surveying detail page at `/services/quantity-surveying` with cost management, contract support sections, and CTA |
 
 | 2026-02-14 19:01 | 2.5.3 | Build Contract Administration detail page | Created `/app/services/contract-administration/page.tsx` following existing service page pattern with overview, deliverables (contract mgmt, documentation, compliance, risk), key capabilities, and CTA. Build verified. |
+| 2.5.4 | Build Claims Management detail page | Created /services/claims-management page with claims preparation, assessment, dispute resolution, and forensic analysis sections. Includes CTA. | 2026-02-14T19:04:15+02:00 |
