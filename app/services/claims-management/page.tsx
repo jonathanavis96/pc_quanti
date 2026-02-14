@@ -1,6 +1,16 @@
 import React from 'react';
 import { Container, Card, Button } from '@/src/components';
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Claims Management",
+  description: "Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience. Expert claims management consultancy.",
+  openGraph: {
+    title: "Claims Management | PC Quanti",
+    description: "Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience. Expert claims management consultancy.",
+  },
+};
 
 export default function ClaimsManagementPage() {
   return (

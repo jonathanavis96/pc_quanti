@@ -1,6 +1,16 @@
 import React from 'react';
 import { Container, Card, Button } from '@/src/components';
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contract Administration",
+  description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex industrial projects.",
+  openGraph: {
+    title: "Contract Administration | PC Quanti",
+    description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex industrial projects.",
+  },
+};
 
 export default function ContractAdministrationPage() {
   return (

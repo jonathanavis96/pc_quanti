@@ -6,6 +6,16 @@ import { Container } from "@/src/components/Container";
 import { Hero } from "@/src/components/Hero";
 import { TrustBar } from "@/src/components/TrustBar";
 import { FAQ } from "@/src/components/FAQ";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Expert Project Management for Nuclear & Industrial Sectors",
+  description: "Lean, trusted consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+  openGraph: {
+    title: "PC Quanti | Expert Project Management for Nuclear & Industrial Sectors",
+    description: "Lean, trusted consultancy delivering Project Management, Quantity Surveying, Contract Administration, Claims Management, and Project Controls across the UK and South Africa.",
+  },
+};
 
 export default function Home() {
   return (

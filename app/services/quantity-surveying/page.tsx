@@ -1,6 +1,16 @@
 import React from 'react';
 import { Container, Card, Button } from '@/src/components';
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Quantity Surveying",
+  description: "Cost planning, procurement support, and commercial management to keep your project on budget. Expert quantity surveying for industrial sectors.",
+  openGraph: {
+    title: "Quantity Surveying | PC Quanti",
+    description: "Cost planning, procurement support, and commercial management to keep your project on budget. Expert quantity surveying for industrial sectors.",
+  },
+};
 
 export default function QuantitySurveyingPage() {
   return (
