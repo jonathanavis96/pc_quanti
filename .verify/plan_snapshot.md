@@ -163,7 +163,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use system fonts as fallback
   - **Skill refs:** `brain/skills/domains/websites/design/typography-system.md`
 
-- [x] **1.2.3** Create component library foundations
+- [ ] **1.2.3** Create component library foundations
   - **Goal:** Build reusable Button, Card, Container components
   - **AC:** Components in `src/components/`, TypeScript props; at least one page uses each
   - **If Blocked:** Inline components first, extract to library later

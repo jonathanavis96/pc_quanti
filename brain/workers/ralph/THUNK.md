@@ -124,3 +124,4 @@ Started: 2026-02-14
 | 1.2.1 | 2026-02-14 | Added PC Quanti brand colors (pc-blue #2C02D9 + variants, pc-neutral scale) to tailwind.config.ts; created Button component with primary/secondary/outline variants using brand tokens; updated home page demo |
 
 | 2026-02-14 17:49 | 1.2.2 | Set up typography system | Imported Inter font from Google Fonts, configured font-sans in Tailwind with weight variants (400/500/600/700), added heading size tokens (h1-h4) matching design system specs |
+| 1.2.3 | Create component library foundations | 2026-02-14T15:56:04Z | Built Button, Card, Container in src/components/ with TypeScript props; all used in app/page.tsx |
