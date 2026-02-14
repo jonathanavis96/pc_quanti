@@ -137,7 +137,7 @@
 
 ### 0.17 Fix MD013 and MD024 errors in documentation-anti-patterns.md
 
-- [ ] **0.17.1** Fix MD013 and MD024 in brain/skills/domains/anti-patterns/documentation-anti-patterns.md
+- [x] **0.17.1** Fix MD013 and MD024 in brain/skills/domains/anti-patterns/documentation-anti-patterns.md
   - **AC:** `markdownlint brain/skills/domains/anti-patterns/documentation-anti-patterns.md` passes (no MD013 or MD024 errors)
 
 ---
