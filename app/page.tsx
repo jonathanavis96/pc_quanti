@@ -6,6 +6,7 @@ import { Container } from "@/src/components/Container";
 import { Header } from "@/src/components/Header";
 import { Hero } from "@/src/components/Hero";
 import { TrustBar } from "@/src/components/TrustBar";
+import { FAQ } from "@/src/components/FAQ";
 
 export default function Home() {
   return (
@@ -223,9 +224,33 @@ export default function Home() {
           </Container>
         </section>
 
+        {/* FAQ Preview Section */}
+        <FAQ 
+          items={[
+            {
+              question: "What sectors do you serve?",
+              answer: "TODO(PHIL): Specify primary sectors - nuclear, industrial, infrastructure, etc. Mention geographic focus (UK & South Africa)."
+            },
+            {
+              question: "How does your lean model benefit clients?",
+              answer: "TODO(PHIL): Explain cost savings, flexibility, personalized attention vs. big consultancies."
+            },
+            {
+              question: "What qualifications and experience does your team have?",
+              answer: "TODO(PHIL): Highlight nuclear background, certifications, years of experience, notable projects."
+            },
+            {
+              question: "Do you handle international projects?",
+              answer: "TODO(PHIL): Clarify UK & South Africa capabilities, remote/on-site delivery, travel arrangements."
+            }
+          ]}
+          ctaText="Still have questions?"
+          ctaLabel="Contact Us"
+        />
+
         {/* Trust Markers / Credibility Section */}
         {/* TODO(DESIGN): Review layout and visual hierarchy for credibility markers */}
-        <section className="py-16 md:py-24 bg-pc-neutral-50">
+        <section className="py-16 md:py-24 bg-white">
           <Container maxWidth="lg">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-pc-neutral-900 mb-8">

@@ -209,3 +209,24 @@ Started: 2026-02-14
 
 | 2026-02-14 | 2.3.3 | Build trust bar component | TrustBar component already exists and is integrated in app/page.tsx with credibility markers (15+ Years, Sectors, Locations, Accreditations). Verified build passes. |
 | 2026-02-14 | 2.3.4 | Build "How it works" section | Created 3-step process section (Initial Consultation, Tailored Proposal, Project Delivery) with numbered badges and CTA to /contact. Build passes. |
+
+## 2026-02-14 18:28 - Task 2.3.5: Build FAQ preview
+
+**What:** Created FAQ component with 4 placeholder Q&As and CTA to Contact page.
+
+**How:**
+- Created `src/components/FAQ.tsx` with configurable items, CTA text/href
+- Integrated into home page between "How It Works" and "Trust Markers" sections
+- Added 4 placeholder Q&As with `TODO(PHIL)` markers for content review
+- Updated component exports in `src/components/index.ts`
+
+**Validation:**
+- Build passes: `npm run build` successful
+- Component renders with proper spacing (bg-pc-neutral-50)
+- CTA button links to `/contact`
+
+**Files:**
+- `src/components/FAQ.tsx` (new)
+- `src/components/index.ts` (export added)
+- `app/page.tsx` (FAQ section added)
+

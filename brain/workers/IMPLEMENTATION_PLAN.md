@@ -293,7 +293,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Section exists with 3-5 steps and a CTA to Contact
   - **If Blocked:** Use a 3-step numbered list
 
-- [ ] **2.3.5** Build FAQ preview (3-4 Q&As)
+- [x] **2.3.5** Build FAQ preview (3-4 Q&As)
   - **Goal:** Handle top objections without clutter
   - **AC:** FAQ preview exists and includes a CTA (“Still have questions?” “Contact”)
   - **If Blocked:** Add placeholder Q&As with `TODO(PHIL)` markers

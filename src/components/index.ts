@@ -14,3 +14,6 @@ export type { HeroProps } from './Hero';
 
 export { TrustBar } from './TrustBar';
 export type { TrustBarProps } from './TrustBar';
+
+export { FAQ } from './FAQ';
+export type { FAQProps, FAQItem } from './FAQ';
