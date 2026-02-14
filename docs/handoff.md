@@ -15,6 +15,7 @@ after launch.
 **Need to add a new page?** → [Adding New Pages](#adding-new-pages)  
 **Need to check analytics?** → [Analytics Access](#analytics-access)  
 **Need to fix a bug?** → [Making Changes](#making-changes)  
+**Need to transfer ownership?** → [Ownership Transfer Checklist](#ownership-transfer-checklist)  
 **Something broken?** → [Monitoring & Support](#monitoring--support)
 
 ---
@@ -387,6 +388,148 @@ See `docs/contact-form-testing.md` for detailed debugging steps.
 2. **Check image sizes:** Compress large images (<100KB recommended)
 3. **Review third-party scripts:** Minimize analytics/tracking scripts
 4. **Monitor Core Web Vitals:** Check Search Console → Enhancements
+
+---
+
+## Ownership Transfer Checklist
+
+This section covers transferring admin access to Phil for all services and platforms.
+
+### GitHub Repository Access
+
+**Current repository:** `https://github.com/[username]/pc-quanti`
+
+**To add Phil as admin:**
+
+1. Go to repository on GitHub
+2. Click **Settings** tab
+3. Click **Collaborators and teams** (left sidebar)
+4. Click **Add people**
+5. Enter Phil's GitHub username or email
+6. Select **Admin** role
+7. Click **Add [username] to this repository**
+
+**Phil will need:**
+- GitHub account (free)
+- Accept invitation email sent by GitHub
+
+**Alternative:** Transfer entire repository to Phil's GitHub account:
+1. Go to repository **Settings** → **General** (scroll to bottom)
+2. Click **Transfer ownership**
+3. Enter Phil's GitHub username
+4. Confirm transfer
+
+### Domain Registrar Access
+
+**Domain:** pcquanti.com  
+**Registrar:** [To be confirmed - check where domain was purchased]
+
+**To add Phil as admin:**
+
+**If using Namecheap:**
+1. Log in to Namecheap account
+2. Go to **Profile** → **Manage Users**
+3. Click **Invite User**
+4. Enter Phil's email, select **Full Access**
+5. Phil accepts invitation
+
+**If using GoDaddy:**
+1. Log in to GoDaddy account
+2. Go to **Account Settings** → **Delegate Access**
+3. Click **Add Delegate**
+4. Enter Phil's email and name
+5. Grant **Products & Domains** access
+
+**If using Cloudflare (for DNS only):**
+1. Log in to Cloudflare
+2. Select **pcquanti.com** domain
+3. Go to **Manage Account** → **Members**
+4. Click **Invite**
+5. Enter Phil's email, select **Administrator** role
+
+**Important DNS records to document:**
+- A record pointing to GitHub Pages IP (if applicable)
+- CNAME records for www subdomain
+- MX records for email forwarding
+- TXT records for domain verification
+
+See `docs/domain-setup.md` for current DNS configuration.
+
+### Formspree Admin Access
+
+**Service:** Contact form email delivery
+
+**To add Phil as admin:**
+
+1. Log in to Formspree (https://formspree.io)
+2. Go to account **Settings**
+3. Click **Team** or **Add Member**
+4. Enter Phil's email
+5. Select **Admin** or **Owner** role
+6. Phil accepts invitation
+
+**Phil will need:**
+- Formspree account (free tier should be sufficient for contact form)
+
+**Current form ID:** Check `NEXT_PUBLIC_FORMSPREE_FORM_ID` in GitHub repository secrets
+
+### Sentry Admin Access (Optional)
+
+**Service:** Error monitoring and performance tracking
+
+**To add Phil as admin:**
+
+1. Log in to Sentry (https://sentry.io)
+2. Go to **Settings** → **Members**
+3. Click **Invite Member**
+4. Enter Phil's email
+5. Select **Admin** or **Owner** role
+6. Phil accepts invitation
+
+**Note:** Only add if Sentry is actively configured and being used.
+
+### GitHub Pages / Deployment Access
+
+**Platform:** GitHub Actions (automatic deployment)
+
+**Access method:** GitHub repository access grants deployment access automatically.
+
+Once Phil has admin access to the GitHub repository, he can:
+- Trigger manual deployments via Actions tab
+- Configure GitHub Pages settings
+- Manage repository secrets (API keys, form IDs)
+
+### Email Forwarding Access (If Configured)
+
+**Service:** Email forwarding for contact@pcquanti.com
+
+**Provider:** [To be confirmed - check email forwarding setup]
+
+**Common providers:**
+- **Cloudflare Email Routing:** Access via Cloudflare dashboard
+- **ImprovMX:** Separate login at improvmx.com
+- **Namecheap Email Forwarding:** Access via domain registrar
+
+See `docs/email-forwarding.md` for current setup details.
+
+### Ownership Transfer Completion Checklist
+
+- [ ] GitHub repository: Phil added as admin or owner
+- [ ] Domain registrar: Phil has full access to pcquanti.com
+- [ ] Google Analytics: Phil added as administrator
+- [ ] Google Search Console: Phil added as owner
+- [ ] Formspree: Phil added as admin
+- [ ] Sentry (if used): Phil added as admin
+- [ ] Email forwarding: Phil has access to manage
+- [ ] DNS records documented in handoff
+- [ ] All API keys and secrets documented
+- [ ] Phil confirms he can access all services
+
+**After transfer:**
+- Test that Phil can make a code change, commit, and deploy
+- Verify Phil can view analytics data
+- Confirm Phil receives contact form submissions
+- Document any remaining developer-only access (if Jono retains editor role)
 
 ---
 
