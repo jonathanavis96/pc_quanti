@@ -258,3 +258,5 @@ Started: 2026-02-14
 
 | 2026-02-14 | 0.3.1 | Fixed MD022, MD013, MD032, MD034 in design-audit file | All markdown lint errors resolved |
 | 2026-02-14 | 2.4.1 | Built About page with Phil's story section | Created `/about` page with narrative, headshot placeholder, differentiators (lean model, scarce skills, on-ground delivery, sector versatility), credentials section placeholder, responsive design |
+
+| 2.4.2 | Build differentiators section | About page already contains complete differentiators section with 4 cards (Lean Model, Scarce Skills Access, On-Ground Delivery, Sector Versatility), SVG icons, responsive grid layout, brand-colored icon backgrounds. All AC met. | 2026-02-14 |

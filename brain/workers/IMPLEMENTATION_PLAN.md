@@ -314,7 +314,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `/about` page renders, includes headshot or placeholder, responsive
   - **If Blocked:** Use placeholder bio, flag for Phil review
 
-- [ ] **2.4.2** Build differentiators section
+- [x] **2.4.2** Build differentiators section
   - **Goal:** Lean model, scarce skills access, on-ground delivery, sector versatility
   - **AC:** 4 key differentiators displayed (cards or list), icons optional
   - **If Blocked:** Text-only list if no icons
