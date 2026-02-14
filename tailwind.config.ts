@@ -22,6 +22,15 @@ const config: Config = {
         'pc-neutral-600': '#525252',  // Secondary text
         'pc-neutral-900': '#171717',  // Primary text
       },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'h1': ['2.5rem', { lineHeight: '1.2', fontWeight: '700' }],
+        'h2': ['2rem', { lineHeight: '1.3', fontWeight: '700' }],
+        'h3': ['1.5rem', { lineHeight: '1.4', fontWeight: '600' }],
+        'h4': ['1.25rem', { lineHeight: '1.5', fontWeight: '600' }],
+      },
     },
   },
   plugins: [],
