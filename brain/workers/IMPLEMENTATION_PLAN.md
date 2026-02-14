@@ -97,7 +97,7 @@
 - [x] **0.9.2** Fix MD040 in brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md` passes (no MD040 errors)
 
-- [ ] **0.9.3** Fix MD040 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
+- [x] **0.9.3** Fix MD040 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md` passes (no MD040 errors)
 
 ### 0.10 Fix MD031 (blanks-around-fences) errors in pc-quanti-mvp design pack

@@ -17,7 +17,7 @@ management needed for MVP). Deployed as static HTML to GitHub Pages.
 
 ### Component directory structure
 
-```
+```text
 src/
   components/
     ui/              # Shared UI primitives (Button, Input, Card, etc.)
