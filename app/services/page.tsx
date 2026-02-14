@@ -56,6 +56,12 @@ export default function ServicesPage() {
         <div className="py-16 md:py-24">
           {/* Header */}
           <div className="mb-12 md:mb-16 text-center">
+            <Link 
+              href="/" 
+              className="text-pc-blue hover:underline mb-4 inline-block"
+            >
+              ← Back to Home
+            </Link>
             <h1 className="text-4xl md:text-5xl font-bold text-pc-neutral-900 mb-4">
               Our Services
             </h1>

@@ -143,6 +143,23 @@ export default function QuantitySurveyingPage() {
             </Card>
           </div>
 
+          {/* Related Services */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-6">
+              Related Services
+            </h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/services/contract-administration" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors">
+                <h3 className="font-semibold text-pc-neutral-900 mb-2">Contract Administration →</h3>
+                <p className="text-sm text-pc-neutral-600">Expert contract management and compliance services</p>
+              </Link>
+              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors">
+                <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Controls →</h3>
+                <p className="text-sm text-pc-neutral-600">Scheduling, cost control, and risk management</p>
+              </Link>
+            </div>
+          </div>
+
           {/* CTA Section */}
           <div className="text-center p-8 bg-pc-neutral-50 rounded-lg">
             <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
