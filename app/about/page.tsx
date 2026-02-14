@@ -2,6 +2,7 @@ import { Container } from "@/src/components/Container";
 import { Header } from "@/src/components/Header";
 import { Footer } from "@/src/components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "About | PC Quanti",
@@ -144,6 +145,30 @@ export default function AboutPage() {
             <p className="text-sm text-gray-500 mt-4 italic">
               (Placeholder—can be removed or populated with specific credentials)
             </p>
+          </div>
+        </Container>
+
+        {/* CTA Section with internal links */}
+        <Container className="mt-16">
+          <div className="bg-white rounded-2xl p-8 sm:p-12 text-center border border-gray-200">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Ready to explore our services?
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+              Discover how PC Quanti can support your next project with expert project management, quantity surveying, and contract administration services.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link href="/services" className="inline-block">
+                <button className="px-6 py-3 bg-[#2C02D9] text-white font-semibold rounded-lg hover:bg-[#2C02D9]/90 transition-colors">
+                  View Services
+                </button>
+              </Link>
+              <Link href="/contact" className="inline-block">
+                <button className="px-6 py-3 bg-gray-100 text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-colors">
+                  Get in Touch
+                </button>
+              </Link>
+            </div>
           </div>
         </Container>
       </main>
