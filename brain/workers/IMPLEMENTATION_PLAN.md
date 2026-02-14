@@ -115,7 +115,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `npm install` succeeds; `npm run dev` starts without errors
   - **If Blocked:** Document error + fix root cause before proceeding (see `brain/skills/playbooks/investigate-test-failures.md`)
 
-- [ ] **1.0.2** Add CI-like local gates (lint / typecheck / build)
+- [x] **1.0.2** Add CI-like local gates (lint / typecheck / build)
   - **Goal:** Ensure baseline quality gates exist early
   - **AC:** These commands succeed locally:
     - `npm run lint`
