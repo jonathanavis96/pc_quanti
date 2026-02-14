@@ -528,10 +528,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Keywords appear in headings, body text, meta descriptions
   - **If Blocked:** Use Phil's approved copy as-is, suggest edits later
 
-- [ ] **4.3.2** Create Sectors pages (optional)
+- [x] **4.3.2** Create Sectors pages (optional)
   - **Goal:** Dedicated pages for Nuclear, Mining, Infrastructure, Energy sectors
   - **AC:** `/sectors/nuclear` etc. render, include sector-specific keywords
   - **If Blocked:** Skip if time/budget constrained, focus on Services pages
+  - **Decision:** Skipped per PRD - explicitly deferred until after MVP. Sectors already mentioned throughout Services pages.
 
 - [ ] **4.3.3** Add internal linking
   - **Goal:** Link Services pages to each other, link Home to About/Services
