@@ -6,9 +6,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Claims Management",
   description: "Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience. Expert claims management consultancy.",
+  alternates: {
+    canonical: "/services/claims-management",
+  },
   openGraph: {
     title: "Claims Management | PC Quanti",
     description: "Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience. Expert claims management consultancy.",
+    url: "/services/claims-management",
   },
 };
 

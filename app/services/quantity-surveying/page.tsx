@@ -6,9 +6,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Quantity Surveying",
   description: "Cost planning, procurement support, and commercial management to keep your project on budget. Expert quantity surveying for industrial sectors.",
+  alternates: {
+    canonical: "/services/quantity-surveying",
+  },
   openGraph: {
     title: "Quantity Surveying | PC Quanti",
     description: "Cost planning, procurement support, and commercial management to keep your project on budget. Expert quantity surveying for industrial sectors.",
+    url: "/services/quantity-surveying",
   },
 };
 
