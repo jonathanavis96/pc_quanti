@@ -100,13 +100,25 @@
 - [x] **0.9.3** Fix MD040 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md` passes (no MD040 errors)
 
-### 0.10 Fix MD031 (blanks-around-fences) errors in pc-quanti-mvp design pack
+### 0.10 Fix MD013 (line-length) errors in brain/cortex/AGENTS.md
 
-- [ ] **0.10.1** Fix MD031 in brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md
-  - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/DESIGN_SYSTEM.md` passes (no MD031 errors)
+- [ ] **0.10.1** Fix MD013 in brain/cortex/AGENTS.md
+  - **AC:** `markdownlint brain/cortex/AGENTS.md` passes (no MD013 errors)
 
-- [ ] **0.10.2** Fix MD031 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
+### 0.11 Fix MD031 (blanks-around-fences) errors in pc-quanti-mvp design pack
+
+- [ ] **0.11.1** Fix MD031 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md` passes (no MD031 errors)
+
+### 0.12 Fix MD032 (blanks-around-lists) errors in pc-quanti-mvp design pack
+
+- [ ] **0.12.1** Fix MD032 in brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md
+  - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/FRONTEND_GUIDELINES.md` passes (no MD032 errors)
+
+### 0.13 Fix MD013, MD022, MD032, and MD009 errors in LESSONS.md
+
+- [ ] **0.13.1** Fix MD013, MD022, MD032, and MD009 in brain/docs/design-packs/pc-quanti-mvp/LESSONS.md
+  - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/LESSONS.md` passes (no MD013, MD022, MD032, or MD009 errors)
 
 ---
 
