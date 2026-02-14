@@ -120,6 +120,16 @@
 - [x] **0.13.1** Fix MD013, MD022, MD032, and MD009 in brain/docs/design-packs/pc-quanti-mvp/LESSONS.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/LESSONS.md` passes (no MD013, MD022, MD032, or MD009 errors)
 
+### 0.14 Fix MD013, MD032, MD036, MD022, and MD029 errors in PRD.md
+
+- [ ] **0.14.1** Fix MD013, MD032, MD036, MD022, and MD029 in brain/docs/design-packs/pc-quanti-mvp/PRD.md
+  - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/PRD.md` passes (no MD013, MD032, MD036, MD022, or MD029 errors)
+
+### 0.15 Fix MD013 error in TECH_STACK.md
+
+- [ ] **0.15.1** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md
+  - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md` passes (no MD013 errors)
+
 ---
 
 ## Overview
