@@ -360,3 +360,18 @@ Started: 2026-02-14
   - ✅ Recommended action plan (use Afrihost immediately, consider M365 migration later)
   - ✅ Support resources and summary
 - **Next:** Task 3.2.2 will add SMTP/provider integration option
+
+## 2026-02-14 19:21 - Task 3.2.2: Add SMTP/provider integration option
+
+- **Created:** `docs/email-provider.md` - comprehensive email provider integration guide
+  - Documented 4 provider options: SendGrid, Mailgun, Resend, SMTP/Nodemailer
+  - Included setup steps, code examples, pros/cons for each
+  - Added comparison table and recommended approach (keep Formspree for MVP, upgrade later)
+  - Documented environment variables with security notes
+  - Provided testing steps and next actions
+- **Updated:** `.env.example` - added optional email provider env vars (commented out)
+  - SendGrid, Mailgun, Resend, and SMTP options
+  - Clear comments directing to docs/email-provider.md
+- **Verified:** No secrets committed (all vars are examples/commented)
+- **AC Met:** ✅ docs/email-provider.md documents supported options + required env vars (no secrets committed)
+- **Next:** Task 3.3.1 will add analytics integration hooks

@@ -408,7 +408,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
     - [x] Option B: Migrate to Microsoft 365 / Google Workspace and update DNS (SPF/DKIM/DMARC notes)
   - **If Blocked:** Use `info@pcquanti.co.za` directly in the Contact path until changes are made
 
-- [ ] **3.2.2** Add SMTP/provider integration option (code + docs)
+- [x] **3.2.2** Add SMTP/provider integration option (code + docs)
   - **Goal:** Enable reliable contact form delivery using a provider (SendGrid/Mailgun/etc.)
   - **AC:** `docs/email-provider.md` documents supported options + required env vars (no secrets committed)
   - **If Blocked:** Use formspree.io or similar service
