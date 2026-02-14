@@ -56,3 +56,4 @@ Started: 2026-02-14
 | 2026-02-14 16:56:08 | 0.1.1 | Fix MD013 in brain/cortex/AGENTS.md | COMPLETED |
 | 2026-02-14 17:07:32 | 0.1.2 | Fix MD013 in brain/cortex/CORTEX_SYSTEM_PROMPT.md | COMPLETED |
 | 2026-02-14 17:07:57 | 0.1.3 | Fix MD013 in brain/cortex/DECISIONS.md | COMPLETED |
+| 0.1.4 | 2026-02-14T15:09:35Z | Fixed MD013 in brain/cortex/GAP_CAPTURE.md by wrapping long line |
