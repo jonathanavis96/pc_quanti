@@ -254,7 +254,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
 ---
 
 ### 2.1 Header/Navigation (keep it simple)
-- [ ] **2.1.1** Build desktop navigation
+- [x] **2.1.1** Build desktop navigation
   - **Goal:** Simple logo + clear nav links (Home, Services, About, Contact)
   - **AC:** Header renders on all pages; Services link is prominent
   - **If Blocked:** Use a minimal top nav with no dropdown

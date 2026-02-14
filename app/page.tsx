@@ -2,37 +2,12 @@ import Image from "next/image";
 import { Button } from "@/src/components/Button";
 import { Card } from "@/src/components/Card";
 import { Container } from "@/src/components/Container";
+import { Header } from "@/src/components/Header";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* TODO(DESIGN): Review header layout and spacing - consider sticky header */}
-      <header className="border-b border-pc-neutral-200 bg-white">
-        <Container maxWidth="xl">
-          <div className="flex items-center justify-between py-4">
-            <div className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="PC Quanti logo"
-                width={50}
-                height={50}
-                priority
-              />
-              <span className="text-xl font-semibold text-pc-neutral-900">PC Quanti</span>
-            </div>
-            {/* TODO(DESIGN): Review navigation styling and active states */}
-            <nav className="hidden md:flex items-center gap-8">
-              <a href="/" className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors">Home</a>
-              <a href="/about" className="text-pc-neutral-600 hover:text-pc-blue transition-colors">About</a>
-              <a href="/services" className="text-pc-neutral-600 hover:text-pc-blue transition-colors">Services</a>
-              <a href="/contact" className="text-pc-neutral-600 hover:text-pc-blue transition-colors">Contact</a>
-            </nav>
-            <Button variant="primary" size="md">
-              Contact Us
-            </Button>
-          </div>
-        </Container>
-      </header>
+      <Header />
 
       <main>
         {/* Hero Section */}
