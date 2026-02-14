@@ -130,16 +130,6 @@
 - [x] **0.15.1** Fix MD013 in brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md
   - **AC:** `markdownlint brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md` passes (no MD013 errors)
 
-### 0.16 Fix MD013 errors in brain/skills/conventions.md
-
-- [x] **0.16.1** Fix MD013 in brain/skills/conventions.md
-  - **AC:** `markdownlint brain/skills/conventions.md` passes (no MD013 errors)
-
-### 0.17 Fix MD013 and MD024 errors in documentation-anti-patterns.md
-
-- [ ] **0.17.1** Fix MD013 and MD024 in brain/skills/domains/anti-patterns/documentation-anti-patterns.md
-  - **AC:** `markdownlint brain/skills/domains/anti-patterns/documentation-anti-patterns.md` passes (no MD013 or MD024 errors)
-
 ---
 
 ## Overview
