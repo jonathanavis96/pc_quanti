@@ -207,10 +207,10 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use minimal, professional placeholders and mark TODOs clearly
   - **Skill refs:** `brain/skills/domains/marketing/content/copywriting.md`
 
-- [ ] **1.4.3** Define CTAs and conversion paths
+- [x] **1.4.3** Define CTAs and conversion paths
   - **Goal:** Map user journeys (visitor → Contact Us, visitor → View Services → Contact)
   - **AC:** CTA placement documented, primary = "Contact Us", secondary = "View Services"
-  - **If Blocked:** Default to Contact Us on all pages
+  - **Completed:** User journeys already documented in `docs/sitemap.md` (3 journeys: Discovery→Services→Contact, About→Contact, Mobile quick-action). CTA strategy: Primary="Contact Us" (header button, all pages), Secondary="View Our Services" (Home hero), Tertiary="Get in Touch" (service detail pages). Placement verified against sitemap definitions.
 
 ### 1.5 Design Mockups (Optional)
 - [ ] **1.5.1** Create code-first wireframe (repo-verifiable)
