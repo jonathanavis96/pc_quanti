@@ -394,7 +394,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `docs/deployment.md` includes: enabling Pages, selecting branch/artifact, and validation checklist
   - **If Blocked:** Keep workflow in repo; a human can enable Pages later
 
-- [ ] **3.1.3** Custom domain (defer until details known)
+- [x] **3.1.3** Custom domain (defer until details known)
   - **Goal:** Keep a placeholder plan without blocking MVP launch
   - **AC:** `docs/domain-setup.md` exists with placeholders (domain name, registrar, DNS provider) and a checklist of required info
   - **If Blocked:** Leave as placeholders; proceed with GitHub Pages default domain

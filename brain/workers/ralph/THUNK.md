@@ -329,3 +329,25 @@ Started: 2026-02-14
   - ✅ Selecting source (GitHub Actions) documented
   - ✅ Validation checklist included (homepage, navigation, assets, forms, etc.)
 - **Next:** Task 3.1.3 will document custom domain setup (defer until details known)
+
+---
+
+## 2026-02-14 | Task 3.1.3 | Custom Domain Documentation
+
+- **Task:** Create `docs/domain-setup.md` with placeholder guide for custom domain setup
+- **Changes:**
+  - Created `docs/domain-setup.md` with:
+    - Placeholders for domain name, registrar, DNS provider
+    - Checklist for required information (domain details, technical requirements)
+    - Setup steps for both apex domain (A records) and subdomain (CNAME)
+    - GitHub Pages configuration instructions
+    - HTTPS enablement guide
+    - Verification checklist
+    - Common issues and troubleshooting
+    - References to official GitHub Pages documentation
+- **AC Met:**
+  - ✅ `docs/domain-setup.md` exists with all required placeholders
+  - ✅ Domain name, registrar, DNS provider fields included
+  - ✅ Comprehensive checklist of required info provided
+  - ✅ Setup instructions ready for when domain details are finalized
+- **Next:** Task 3.2.1 will document email setup/forwarding/Outlook usage
