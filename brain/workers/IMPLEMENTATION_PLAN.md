@@ -669,7 +669,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** Document in `docs/handoff.md`, shared with Phil
   - **If Blocked:** Provide verbal walkthrough if no time to write docs
 
-- [ ] **6.3.2** Transfer ownership (if applicable)
+- [x] **6.3.2** Transfer ownership (if applicable)
   - **Goal:** Add Phil as admin to GitHub repo, Google Analytics, domain registrar
   - **AC:** Phil confirms access
   - **If Blocked:** Jono retains admin access, grants Phil editor role
