@@ -25,7 +25,7 @@ export default function ProjectControlsPage() {
           <div className="mb-12 md:mb-16">
             <Link 
               href="/services" 
-              className="text-pc-blue hover:underline mb-4 inline-block"
+              className="text-pc-blue hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
             >
               ← Back to Services
             </Link>

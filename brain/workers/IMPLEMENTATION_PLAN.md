@@ -560,10 +560,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Fix high-priority issues only, defer minor issues
   - **Status:** COMPLETE - Audit run using axe-core 4.11.1. Found 15 violations across 4 pages (4 unique types). Full report: `.lighthouse/accessibility-summary.md`. Key issues: duplicate Header/Footer on contact page, missing `<main>` landmark, missing H1, heading hierarchy on homepage, footer nav needs aria-labels. High-priority fixes identified.
 
-- [ ] **5.1.2** Add focus states to all interactive elements
+- [x] **5.1.2** Add focus states to all interactive elements
   - **Goal:** Keyboard users can see focus indicators
   - **AC:** Tab through site, all links/buttons have visible focus ring
   - **If Blocked:** Use Tailwind default focus styles
+  - **Status:** COMPLETE - Added focus:outline-none focus:ring-2 focus:ring-* focus:ring-offset-2 to all interactive elements across 11 pages. Updated: app/about/page.tsx (2 buttons), app/error.tsx (2 elements), app/test-error/page.tsx (2 buttons), app/not-found.tsx (1 link), app/services/page.tsx (2 links), and all 5 service detail pages (back links). All buttons and links now have visible focus indicators matching design system.
 
 - [ ] **5.1.3** Test with screen reader (NVDA or VoiceOver)
   - **Goal:** Verify content reads logically, alt tags work

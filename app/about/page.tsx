@@ -159,12 +159,12 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/services" className="inline-block">
-                <button className="px-6 py-3 bg-[#2C02D9] text-white font-semibold rounded-lg hover:bg-[#2C02D9]/90 transition-colors">
+                <button className="px-6 py-3 bg-[#2C02D9] text-white font-semibold rounded-lg hover:bg-[#2C02D9]/90 transition-colors focus:outline-none focus:ring-2 focus:ring-[#2C02D9] focus:ring-offset-2">
                   View Services
                 </button>
               </Link>
               <Link href="/contact" className="inline-block">
-                <button className="px-6 py-3 bg-gray-100 text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-colors">
+                <button className="px-6 py-3 bg-gray-100 text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
                   Get in Touch
                 </button>
               </Link>
