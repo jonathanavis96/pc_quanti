@@ -213,10 +213,11 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **Completed:** User journeys already documented in `docs/sitemap.md` (3 journeys: Discovery→Services→Contact, About→Contact, Mobile quick-action). CTA strategy: Primary="Contact Us" (header button, all pages), Secondary="View Our Services" (Home hero), Tertiary="Get in Touch" (service detail pages). Placement verified against sitemap definitions.
 
 ### 1.5 Design Mockups (Optional)
-- [ ] **1.5.1** Create code-first wireframe (repo-verifiable)
+- [x] **1.5.1** Create code-first wireframe (repo-verifiable)
   - **Goal:** Provide a quick UI baseline without requiring Figma access
   - **AC:** Home page sections exist with placeholder styling and a simple visual hierarchy; TODO markers note where design feedback is needed
   - **If Blocked:** Skip and iterate directly in Phase 1
+  - **Completed:** Home page wireframe created with header (nav + CTA button), hero section, value proposition (4 cards), services grid (5 cards), trust markers (sector badges), and footer. All sections include TODO(DESIGN) markers for visual/layout feedback and TODO(PHIL) markers for copy approval. Build passes successfully.
 
 ---
 
