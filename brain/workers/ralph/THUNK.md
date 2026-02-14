@@ -54,3 +54,4 @@ Started: 2026-02-14
 - Each project gets independent THUNK numbering (starts at 1)
 - When starting a new plan phase, use `[e]` to create a new Era section
 | 2026-02-14 16:56:08 | 0.1.1 | Fix MD013 in brain/cortex/AGENTS.md | COMPLETED |
+| 2026-02-14 17:07:32 | 0.1.2 | Fix MD013 in brain/cortex/CORTEX_SYSTEM_PROMPT.md | COMPLETED |

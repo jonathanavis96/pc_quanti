@@ -12,7 +12,7 @@
 - [x] **0.1.1** Fix MD013 in brain/cortex/AGENTS.md
   - **AC:** `markdownlint brain/cortex/AGENTS.md` passes (no MD013 errors)
 
-- [ ] **0.1.2** Fix MD013 in brain/cortex/CORTEX_SYSTEM_PROMPT.md
+- [x] **0.1.2** Fix MD013 in brain/cortex/CORTEX_SYSTEM_PROMPT.md
   - **AC:** `markdownlint brain/cortex/CORTEX_SYSTEM_PROMPT.md` passes (no MD013 errors)
 
 - [ ] **0.1.3** Fix MD013 in brain/cortex/DECISIONS.md
