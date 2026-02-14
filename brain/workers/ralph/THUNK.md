@@ -255,3 +255,5 @@ Started: 2026-02-14
 - `src/components/Footer.tsx` (new)
 - `src/components/index.ts` (export added)
 - `app/layout.tsx` (Footer integrated)
+
+| 2026-02-14 | 0.3.1 | Fixed MD022, MD013, MD032, MD034 in design-audit file | All markdown lint errors resolved |

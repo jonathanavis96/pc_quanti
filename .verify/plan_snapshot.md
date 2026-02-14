@@ -50,19 +50,14 @@
 - [x] **0.2.2** Fix MD013 in brain/cortex/THOUGHTS.md
   - **AC:** `markdownlint brain/cortex/THOUGHTS.md` passes (no MD013 errors)
 
-### 0.3 Fix markdown lint errors in design-audit file
+### 0.3 Fix MD032 (blanks-around-lists) errors
 
-- [x] **0.3.1** Fix MD022, MD013, MD032, and MD034 in brain/artifacts/design-audits/pc-quanti-mvp/2026-02-14_174429.md
-  - **AC:** `markdownlint brain/artifacts/design-audits/pc-quanti-mvp/2026-02-14_174429.md` passes (no MD022, MD013, MD032, or MD034 errors)
-
-### 0.4 Fix MD032 (blanks-around-lists) errors
-
-- [x] **0.4.1** Fix MD032 in brain/cortex/THOUGHTS.md
+- [x] **0.3.1** Fix MD032 in brain/cortex/THOUGHTS.md
   - **AC:** `markdownlint brain/cortex/THOUGHTS.md` passes (no MD032 errors)
 
-### 0.5 Fix MD029 (ol-prefix) errors
+### 0.4 Fix MD029 (ol-prefix) errors
 
-- [x] **0.5.1** Fix MD029 in brain/docs/design-packs/README.md
+- [x] **0.4.1** Fix MD029 in brain/docs/design-packs/README.md
   - **AC:** `markdownlint brain/docs/design-packs/README.md` passes (no MD029 errors)
 
 ---
