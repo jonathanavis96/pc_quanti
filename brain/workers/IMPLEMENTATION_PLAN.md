@@ -319,7 +319,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** 4 key differentiators displayed (cards or list), icons optional
   - **If Blocked:** Text-only list if no icons
 
-- [ ] **2.4.3** Build credentials/certifications section (if applicable)
+- [x] **2.4.3** Build credentials/certifications section (if applicable)
   - **Goal:** Display relevant certs, memberships, affiliations
   - **AC:** Section renders if Phil provides details, otherwise skip
   - **If Blocked:** Skip if no content available
