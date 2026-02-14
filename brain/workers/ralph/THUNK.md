@@ -122,3 +122,5 @@ Started: 2026-02-14
 
 | 2026-02-14 17:44 | 1.1.0a | Run design-only UI/UX audit | Comprehensive design audit applying Jobs/Ive principles, identified 9 key areas for improvement, created phased implementation plan (18-20h estimated) |
 | 1.2.1 | 2026-02-14 | Added PC Quanti brand colors (pc-blue #2C02D9 + variants, pc-neutral scale) to tailwind.config.ts; created Button component with primary/secondary/outline variants using brand tokens; updated home page demo |
+
+| 2026-02-14 17:49 | 1.2.2 | Set up typography system | Imported Inter font from Google Fonts, configured font-sans in Tailwind with weight variants (400/500/600/700), added heading size tokens (h1-h4) matching design system specs |

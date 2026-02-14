@@ -157,7 +157,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Use Tailwind default theme temporarily, refine later
   - **Skill refs:** `brain/skills/domains/websites/design/color-system.md`
 
-- [ ] **1.2.2** Set up typography system (Inter or Manrope font)
+- [x] **1.2.2** Set up typography system (Inter or Manrope font)
   - **Goal:** Import Google Fonts, configure font weights/sizes in Tailwind
   - **AC:** Fonts load on all pages, `font-sans` uses chosen typeface
   - **If Blocked:** Use system fonts as fallback
