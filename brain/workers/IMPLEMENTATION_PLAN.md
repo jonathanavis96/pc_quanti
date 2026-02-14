@@ -346,7 +346,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **AC:** `/services/claims-management` renders, includes CTA
   - **If Blocked:** Use generic description
 
-- [ ] **2.5.5** Build Project Controls detail page
+- [x] **2.5.5** Build Project Controls detail page
   - **Goal:** Describe project controls, scheduling, risk management
   - **AC:** `/services/project-controls` renders, includes CTA
   - **If Blocked:** Use generic description

@@ -266,3 +266,13 @@ Started: 2026-02-14
 
 | 2026-02-14 19:01 | 2.5.3 | Build Contract Administration detail page | Created `/app/services/contract-administration/page.tsx` following existing service page pattern with overview, deliverables (contract mgmt, documentation, compliance, risk), key capabilities, and CTA. Build verified. |
 | 2.5.4 | Build Claims Management detail page | Created /services/claims-management page with claims preparation, assessment, dispute resolution, and forensic analysis sections. Includes CTA. | 2026-02-14T19:04:15+02:00 |
+
+## 2026-02-14 19:04 - Task 2.5.5: Build Project Controls detail page
+- **Status:** ✅ Complete
+- **Changes:**
+  - Created `app/services/project-controls/page.tsx` with comprehensive project controls service description
+  - Includes sections: Overview, Planning & Scheduling, Cost Control, Risk Management, Performance Monitoring
+  - Follows established pattern from claims-management page (header, overview, deliverables grid, capabilities, CTA)
+  - Build passes, route renders at `/services/project-controls`
+- **Verification:** `npm run build` successful, route listed in build output
+- **Commit:** Next
