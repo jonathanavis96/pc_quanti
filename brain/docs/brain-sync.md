@@ -34,7 +34,8 @@ If you discover missing knowledge, capture a gap locally and mark it for Brain i
 touch brain/cortex/.gap_pending
 ```
 
-Brain will ingest pending gaps from sibling projects when you run (in the Brain repo):
+Brain will ingest pending gaps from sibling projects when you run (in the
+Brain repo):
 
 ```bash
 bash cortex/sync_gaps.sh

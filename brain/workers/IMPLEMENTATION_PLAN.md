@@ -21,7 +21,7 @@
 - [x] **0.1.4** Fix MD013 in brain/cortex/GAP_CAPTURE.md
   - **AC:** `markdownlint brain/cortex/GAP_CAPTURE.md` passes (no MD013 errors)
 
-- [ ] **0.1.5** Fix MD013 in brain/docs/brain-sync.md
+- [x] **0.1.5** Fix MD013 in brain/docs/brain-sync.md
   - **AC:** `markdownlint brain/docs/brain-sync.md` passes (no MD013 errors)
 
 - [ ] **0.1.6** Fix MD013 in brain/docs/design-packs/_template/APP_FLOW.md
