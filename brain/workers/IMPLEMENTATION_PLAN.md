@@ -201,7 +201,7 @@ If a task requires human credentials/UI clicks (GitHub repo settings, domain DNS
   - **If Blocked:** Start with Home/About/Contact, add Services/Sectors in Phase 1
   - **Skill refs:** `brain/skills/domains/websites/architecture/sitemap-builder.md`
 
-- [ ] **1.4.2** Draft copy placeholders for core pages
+- [x] **1.4.2** Draft copy placeholders for core pages
   - **Goal:** Ensure every section has human-readable placeholder copy (not Lorem ipsum)
   - **AC:** Copy placeholders saved in `docs/copy.md` (or inline in components) with clear `TODO(PHIL): approve/replace` markers
   - **If Blocked:** Use minimal, professional placeholders and mark TODOs clearly
