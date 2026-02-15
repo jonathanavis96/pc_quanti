@@ -143,7 +143,7 @@ export function BlueprintHeroArt() {
           y="186"
           width="110"
           height="32"
-          rx="12"
+          rx="4"
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -249,7 +249,7 @@ export function BlueprintHeroArt() {
           y="236"
           width="170"
           height="32"
-          rx="12"
+          rx="4"
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -346,7 +346,7 @@ export function BlueprintHeroArt() {
           y="295"
           width="150"
           height="32"
-          rx="12"
+          rx="4"
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
