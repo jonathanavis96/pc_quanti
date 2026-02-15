@@ -20,32 +20,38 @@ const services = [
   {
     slug: 'project-management',
     title: 'Project Management',
-    description: 'End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning.',
+    description: 'Lead complex programmes from initiation through closeout with rigorous governance and delivery focus.',
     icon: '📋',
   },
   {
     slug: 'quantity-surveying',
     title: 'Quantity Surveying',
-    description: 'Cost planning, procurement support, and commercial management to keep your project on budget.',
+    description: 'Deliver cost certainty through robust estimating, commercial management, and cost control.',
     icon: '📊',
   },
   {
     slug: 'contract-administration',
     title: 'Contract Administration',
-    description: 'Expert contract management, variations, and change control to protect your interests.',
+    description: 'Ensure compliance and control risk with disciplined contract management and stakeholder alignment.',
     icon: '📝',
   },
   {
     slug: 'claims-management',
     title: 'Claims Management',
-    description: 'Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience.',
+    description: 'Protect commercial outcomes with expert claims preparation, review, and negotiation support.',
     icon: '⚖️',
   },
   {
     slug: 'project-controls',
     title: 'Project Controls',
-    description: 'Scheduling, cost control, and risk management to deliver certainty in complex environments.',
+    description: 'Keep projects on schedule and under control through integrated planning, tracking, and performance reporting.',
     icon: '🎯',
+  },
+  {
+    slug: 'risk-management',
+    title: 'Risk Management',
+    description: 'Identify and mitigate project risks before they impact delivery — protecting timelines, budgets, and outcomes.',
+    icon: '⚠️',
   },
 ];
 
@@ -66,7 +72,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-lg md:text-xl text-pc-neutral-600 max-w-3xl mx-auto">
-              Specialist project management consultancy for nuclear, mining, and industrial sectors.
+              Specialist support for complex projects where failure isn't an option.
             </p>
           </div>
 

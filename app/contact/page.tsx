@@ -345,12 +345,9 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-gray-600 mb-1">Phone</p>
-                      <a href="tel:+44XXXXXXXXXX" className="text-gray-900 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm">
-                        +44 (0) XXX XXX XXXX
+                      <a href="https://wa.me/27823456789" className="text-gray-900 hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm">
+                        +27 82 345 6789
                       </a>
-                      <p className="text-xs text-gray-500 mt-1">
-                        (Placeholder - awaiting Phil&apos;s contact number)
-                      </p>
                     </div>
                   </div>
 

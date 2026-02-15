@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useId, useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Container } from './Container';
 import { Button } from './Button';
@@ -23,7 +23,6 @@ export const FAQ: React.FC<FAQProps> = ({
   ctaHref = "/contact",
   ctaLabel = "Contact Us",
 }) => {
-  const baseId = useId();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -36,8 +35,8 @@ export const FAQ: React.FC<FAQProps> = ({
         <div className="space-y-4">
           {items.map((item, index) => {
             const isOpen = openIndex === index;
-            const buttonId = `${baseId}-faq-button-${index}`;
-            const panelId = `${baseId}-faq-panel-${index}`;
+            const buttonId = `faq-button-${index}`;
+            const panelId = `faq-panel-${index}`;
 
             return (
               <div
