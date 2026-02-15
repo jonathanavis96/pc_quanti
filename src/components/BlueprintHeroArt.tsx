@@ -140,10 +140,10 @@ export function BlueprintHeroArt() {
         />
         <motion.rect
           x="75"
-          y="193"
+          y="186"
           width="110"
-          height="25"
-          rx="12.5"
+          height="32"
+          rx="12"
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -246,10 +246,10 @@ export function BlueprintHeroArt() {
         />
         <motion.rect
           x="155"
-          y="243"
+          y="236"
           width="170"
-          height="25"
-          rx="12.5"
+          height="32"
+          rx="12"
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -343,10 +343,10 @@ export function BlueprintHeroArt() {
         />
         <motion.rect
           x="325"
-          y="302"
+          y="295"
           width="150"
-          height="25"
-          rx="12.5"
+          height="32"
+          rx="12"
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
