@@ -8,12 +8,12 @@ const SPEED_MULTIPLIER = 8;
 
 const drawTransition = {
   duration: 10.0 / SPEED_MULTIPLIER,
-  ease: 'linear',
+  ease: [0, 0, 1, 1] as const,
 };
 
 const detailTransition = {
   duration: 8.0 / SPEED_MULTIPLIER,
-  ease: 'linear',
+  ease: [0, 0, 1, 1] as const,
 };
 
 export function BlueprintHeroArt() {
@@ -91,7 +91,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 18.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 18.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M130 186H185"
@@ -100,7 +100,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 18.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 18.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M75 186V218"
@@ -109,7 +109,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 20.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 20.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M185 186V218"
@@ -118,7 +118,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 20.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 20.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M75 218H130"
@@ -127,7 +127,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 22.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 22.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M185 218H130"
@@ -136,7 +136,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 22.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 22.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.rect
           x="75"
@@ -147,7 +147,7 @@ export function BlueprintHeroArt() {
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 / SPEED_MULTIPLIER, delay: 24.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.2 / SPEED_MULTIPLIER, delay: 24.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.text
           x="130"
@@ -157,7 +157,7 @@ export function BlueprintHeroArt() {
           fill="rgba(44, 2, 217, 0.75)"
           initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 1 }}
           animate={{ clipPath: 'inset(0 0% 0 0)', opacity: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 25.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 25.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         >
           1. Define scope
         </motion.text>
@@ -197,7 +197,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 33.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 33.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M240 236H325"
@@ -206,7 +206,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 33.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 33.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M155 236V268"
@@ -215,7 +215,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 35.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 35.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M325 236V268"
@@ -224,7 +224,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 35.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 35.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M155 268H240"
@@ -233,7 +233,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 37.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 37.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M325 268H240"
@@ -242,7 +242,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 37.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 37.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.rect
           x="155"
@@ -253,7 +253,7 @@ export function BlueprintHeroArt() {
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 / SPEED_MULTIPLIER, delay: 39.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.2 / SPEED_MULTIPLIER, delay: 39.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.text
           x="240"
@@ -263,7 +263,7 @@ export function BlueprintHeroArt() {
           fill="rgba(44, 2, 217, 0.75)"
           initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 1 }}
           animate={{ clipPath: 'inset(0 0% 0 0)', opacity: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 40.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 40.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         >
           2. Align commercial strategy
         </motion.text>
@@ -294,7 +294,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 48.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 48.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M400 295H475"
@@ -303,7 +303,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 48.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 48.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M325 295V327"
@@ -312,7 +312,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 50.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 50.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M475 295V327"
@@ -321,7 +321,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 50.5 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.5 / SPEED_MULTIPLIER, delay: 50.5 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M325 327H400"
@@ -330,7 +330,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 52.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 52.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.path
           d="M475 327H400"
@@ -339,7 +339,7 @@ export function BlueprintHeroArt() {
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 52.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 52.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.rect
           x="325"
@@ -350,7 +350,7 @@ export function BlueprintHeroArt() {
           fill="rgba(44, 2, 217, 0.08)"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 / SPEED_MULTIPLIER, delay: 54.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 1.2 / SPEED_MULTIPLIER, delay: 54.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         />
         <motion.text
           x="400"
@@ -360,7 +360,7 @@ export function BlueprintHeroArt() {
           fill="rgba(44, 2, 217, 0.75)"
           initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 1 }}
           animate={{ clipPath: 'inset(0 0% 0 0)', opacity: 1 }}
-          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 55.0 / SPEED_MULTIPLIER, ease: 'linear' }}
+          transition={{ duration: 2.0 / SPEED_MULTIPLIER, delay: 55.0 / SPEED_MULTIPLIER, ease: [0, 0, 1, 1] as const }}
         >
           3. Deliver with control
         </motion.text>

@@ -55,7 +55,7 @@ export function ServicesGrid() {
             Focused delivery support across the project lifecycle
           </h2>
           <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-            Specialist support for complex projects where failure isn't an option.
+            Specialist support for complex projects where failure isn&apos;t an option.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

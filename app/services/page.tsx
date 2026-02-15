@@ -72,7 +72,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-lg md:text-xl text-pc-neutral-600 max-w-3xl mx-auto">
-              Specialist support for complex projects where failure isn't an option.
+              Specialist support for complex projects where failure isn&apos;t an option.
             </p>
           </div>
 

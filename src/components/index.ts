@@ -22,6 +22,9 @@ export { ProofStrip } from './ProofStrip';
 export { CTASection } from './CTASection';
 export { BlueprintHeroArt } from './BlueprintHeroArt';
 
+export { SectorsTrustGrid } from './SectorsTrustGrid';
+export type { SectorsTrustGridProps } from './SectorsTrustGrid';
+
 export { TrustBar } from './TrustBar';
 export type { TrustBarProps } from './TrustBar';
 
