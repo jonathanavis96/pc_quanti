@@ -35,24 +35,6 @@ export function BlueprintHeroArt() {
           transition={drawTransition}
         />
         <motion.path
-          d="M60 80H220M60 110H180M60 140H200"
-          stroke="rgba(44, 2, 217, 0.35)"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ ...detailTransition, delay: 0.35 }}
-        />
-        <motion.path
-          d="M280 90H440M280 120H420M280 150H450"
-          stroke="rgba(44, 2, 217, 0.35)"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ ...detailTransition, delay: 0.45 }}
-        />
-        <motion.path
           d="M70 70H450"
           stroke="rgba(44, 2, 217, 0.2)"
           strokeWidth="1"
@@ -71,8 +53,8 @@ export function BlueprintHeroArt() {
           transition={{ ...detailTransition, delay: 0.55 }}
         />
         <motion.circle
-          cx="140"
-          cy="230"
+          cx="130"
+          cy="110"
           r="36"
           stroke="rgba(44, 2, 217, 0.65)"
           strokeWidth="2"
@@ -81,8 +63,8 @@ export function BlueprintHeroArt() {
           transition={{ ...drawTransition, delay: 0.5 }}
         />
         <motion.circle
-          cx="300"
-          cy="230"
+          cx="240"
+          cy="110"
           r="28"
           stroke="rgba(44, 2, 217, 0.4)"
           strokeWidth="2"
@@ -91,8 +73,8 @@ export function BlueprintHeroArt() {
           transition={{ ...drawTransition, delay: 0.6 }}
         />
         <motion.circle
-          cx="420"
-          cy="230"
+          cx="400"
+          cy="110"
           r="20"
           stroke="rgba(44, 2, 217, 0.4)"
           strokeWidth="2"
@@ -101,7 +83,7 @@ export function BlueprintHeroArt() {
           transition={{ ...drawTransition, delay: 0.7 }}
         />
         <motion.path
-          d="M176 230H272M328 230H402"
+          d="M166 110H212M268 110H380"
           stroke="rgba(44, 2, 217, 0.5)"
           strokeWidth="2"
           strokeLinecap="round"
@@ -110,7 +92,7 @@ export function BlueprintHeroArt() {
           transition={{ ...drawTransition, delay: 0.8 }}
         />
         <motion.path
-          d="M140 266V320M300 258V320M420 250V320"
+          d="M130 146V186M240 138V236M400 130V295"
           stroke="rgba(44, 2, 217, 0.25)"
           strokeWidth="1.5"
           strokeLinecap="round"
@@ -119,7 +101,7 @@ export function BlueprintHeroArt() {
           transition={{ ...detailTransition, delay: 1.0 }}
         />
         <motion.path
-          d="M320 180C350 160 390 160 420 180"
+          d="M360 50C390 30 430 30 460 50"
           stroke="rgba(44, 2, 217, 0.35)"
           strokeWidth="1.5"
           strokeLinecap="round"
@@ -128,8 +110,8 @@ export function BlueprintHeroArt() {
           transition={{ ...detailTransition, delay: 0.85 }}
         />
         <motion.circle
-          cx="320"
-          cy="180"
+          cx="360"
+          cy="50"
           r="6"
           fill="rgba(44, 2, 217, 0.2)"
           stroke="rgba(44, 2, 217, 0.5)"
@@ -139,8 +121,8 @@ export function BlueprintHeroArt() {
           transition={{ duration: 0.4, delay: 0.9, ease: [0.2, 0.8, 0.2, 1] }}
         />
         <motion.circle
-          cx="370"
-          cy="165"
+          cx="410"
+          cy="35"
           r="5"
           fill="rgba(44, 2, 217, 0.2)"
           stroke="rgba(44, 2, 217, 0.5)"
@@ -150,8 +132,8 @@ export function BlueprintHeroArt() {
           transition={{ duration: 0.4, delay: 0.95, ease: [0.2, 0.8, 0.2, 1] }}
         />
         <motion.circle
-          cx="420"
-          cy="180"
+          cx="460"
+          cy="50"
           r="6"
           fill="rgba(44, 2, 217, 0.2)"
           stroke="rgba(44, 2, 217, 0.5)"
@@ -165,9 +147,9 @@ export function BlueprintHeroArt() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.1, ease: [0.2, 0.8, 0.2, 1] }}
         >
-          <rect x="70" y="310" width="120" height="32" rx="16" fill="rgba(44, 2, 217, 0.08)" />
-          <text x="130" y="331" textAnchor="middle" fontSize="12" fill="rgba(44, 2, 217, 0.75)">
-            Certainty
+          <rect x="55" y="186" width="150" height="32" rx="16" fill="rgba(44, 2, 217, 0.08)" />
+          <text x="130" y="207" textAnchor="middle" fontSize="12" fill="rgba(44, 2, 217, 0.75)">
+            1. Define scope
           </text>
         </motion.g>
         <motion.g
@@ -175,9 +157,9 @@ export function BlueprintHeroArt() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
         >
-          <rect x="228" y="310" width="120" height="32" rx="16" fill="rgba(44, 2, 217, 0.08)" />
-          <text x="288" y="331" textAnchor="middle" fontSize="12" fill="rgba(44, 2, 217, 0.75)">
-            Confidence
+          <rect x="135" y="236" width="210" height="32" rx="16" fill="rgba(44, 2, 217, 0.08)" />
+          <text x="240" y="257" textAnchor="middle" fontSize="12" fill="rgba(44, 2, 217, 0.75)">
+            2. Align commercial strategy
           </text>
         </motion.g>
         <motion.g
@@ -185,9 +167,9 @@ export function BlueprintHeroArt() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.3, ease: [0.2, 0.8, 0.2, 1] }}
         >
-          <rect x="384" y="310" width="120" height="32" rx="16" fill="rgba(44, 2, 217, 0.08)" />
-          <text x="444" y="331" textAnchor="middle" fontSize="12" fill="rgba(44, 2, 217, 0.75)">
-            Momentum
+          <rect x="310" y="295" width="180" height="32" rx="16" fill="rgba(44, 2, 217, 0.08)" />
+          <text x="400" y="316" textAnchor="middle" fontSize="12" fill="rgba(44, 2, 217, 0.75)">
+            3. Deliver with control
           </text>
         </motion.g>
       </svg>
