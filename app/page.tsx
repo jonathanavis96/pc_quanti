@@ -30,10 +30,10 @@ export default function Home() {
 
         <TrustBar />
 
+        <ServicesGrid />
+
         {/* Trust Markers / Credibility Section */}
         <SectorsTrustGrid />
-
-        <ServicesGrid />
 
         <ProcessTimeline />
 
