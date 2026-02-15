@@ -1,11 +1,11 @@
-import Link from "next/link";
-
-import { Button } from "@/src/components/Button";
-import { Card } from "@/src/components/Card";
-import { Container } from "@/src/components/Container";
 import { Hero } from "@/src/components/Hero";
 import { TrustBar } from "@/src/components/TrustBar";
 import { FAQ } from "@/src/components/FAQ";
+import { Container } from "@/src/components/Container";
+import { ServicesGrid } from "@/src/components/ServicesGrid";
+import { ProcessTimeline } from "@/src/components/ProcessTimeline";
+import { ProofStrip } from "@/src/components/ProofStrip";
+import { CTASection } from "@/src/components/CTASection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -30,206 +30,13 @@ export default function Home() {
 
         <TrustBar />
 
-        {/* Value Proposition Section */}
-        {/* TODO(DESIGN): Review card layout and icon placement */}
-        <section className="py-16 md:py-24">
-          <Container maxWidth="lg">
-            <h2 className="text-3xl font-bold text-pc-neutral-900 text-center mb-12">
-              Why Choose PC Quanti for UK Nuclear Project Management
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card variant="outlined" padding="lg">
-                {/* TODO(DESIGN): Add icon or visual element */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Nuclear Expertise
-                </h3>
-                <p className="text-pc-neutral-600">
-                  Deep experience in nuclear and high-compliance industrial projects
-                </p>
-              </Card>
-              <Card variant="outlined" padding="lg">
-                {/* TODO(DESIGN): Add icon or visual element */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Lean Model
-                </h3>
-                <p className="text-pc-neutral-600">
-                  Low overhead consultancy without the big firm premium
-                </p>
-              </Card>
-              <Card variant="outlined" padding="lg">
-                {/* TODO(DESIGN): Add icon or visual element */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Trusted Network
-                </h3>
-                <p className="text-pc-neutral-600">
-                  Access to scarce PM and QS skills through proven partnerships
-                </p>
-              </Card>
-              <Card variant="outlined" padding="lg">
-                {/* TODO(DESIGN): Add icon or visual element */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  On-Ground Experience
-                </h3>
-                <p className="text-pc-neutral-600">
-                  Real-world delivery in nuclear, mining, and infrastructure sectors
-                </p>
-              </Card>
-            </div>
-          </Container>
-        </section>
+        <ServicesGrid />
 
-        {/* Services Grid Section */}
-        {/* TODO(DESIGN): Review card styling and hover states */}
-        <section className="py-16 md:py-24 bg-pc-neutral-50">
-          <Container maxWidth="lg">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">
-                Industrial PM Consultancy Services
-              </h2>
-              {/* TODO(PHIL): Approve/replace services intro */}
-              <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-                PC Quanti provides specialized project management consultancy tailored to UK nuclear, mining, infrastructure, and energy sectors. We combine deep technical expertise in quantity surveying, contract administration, claims management, and project controls with a lean, agile delivery model.
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Service 1: Project Management */}
-              <Card variant="elevated" padding="lg">
-                {/* TODO(DESIGN): Add service icon */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Project Management
-                </h3>
-                <p className="text-pc-neutral-600 mb-4">
-                  Professional project leadership from initiation through closeout, with proven experience in complex nuclear and industrial environments.
-                </p>
-                <Link href="/services/project-management">
-                  <Button variant="outline" size="sm">
-                    Learn More
-                  </Button>
-                </Link>
-              </Card>
+        <ProcessTimeline />
 
-              {/* Service 2: Quantity Surveying */}
-              <Card variant="elevated" padding="lg">
-                {/* TODO(DESIGN): Add service icon */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Quantity Surveying
-                </h3>
-                <p className="text-pc-neutral-600 mb-4">
-                  Accurate cost estimation, budget control, and commercial management to keep projects on track financially.
-                </p>
-                <Link href="/services/quantity-surveying">
-                  <Button variant="outline" size="sm">
-                    Learn More
-                  </Button>
-                </Link>
-              </Card>
+        <ProofStrip />
 
-              {/* Service 3: Contract Administration */}
-              <Card variant="elevated" padding="lg">
-                {/* TODO(DESIGN): Add service icon */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Contract Administration
-                </h3>
-                <p className="text-pc-neutral-600 mb-4">
-                  Expert contract management ensuring compliance, mitigating risks, and maintaining smooth stakeholder relationships.
-                </p>
-                <Link href="/services/contract-administration">
-                  <Button variant="outline" size="sm">
-                    Learn More
-                  </Button>
-                </Link>
-              </Card>
-
-              {/* Service 4: Claims Management */}
-              <Card variant="elevated" padding="lg">
-                {/* TODO(DESIGN): Add service icon */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Claims Management
-                </h3>
-                <p className="text-pc-neutral-600 mb-4">
-                  Specialist support for contract claims, disputes, and negotiations, protecting your project interests.
-                </p>
-                <Link href="/services/claims-management">
-                  <Button variant="outline" size="sm">
-                    Learn More
-                  </Button>
-                </Link>
-              </Card>
-
-              {/* Service 5: Project Controls */}
-              <Card variant="elevated" padding="lg">
-                {/* TODO(DESIGN): Add service icon */}
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Project Controls
-                </h3>
-                <p className="text-pc-neutral-600 mb-4">
-                  Integrated planning, scheduling, and performance monitoring to deliver projects on time and within budget.
-                </p>
-                <Link href="/services/project-controls">
-                  <Button variant="outline" size="sm">
-                    Learn More
-                  </Button>
-                </Link>
-              </Card>
-            </div>
-          </Container>
-        </section>
-
-        {/* How It Works Section */}
-        <section className="py-16 md:py-24 bg-white">
-          <Container maxWidth="lg">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">
-                How It Works
-              </h2>
-              <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-                Getting started with PC Quanti is straightforward. We focus on understanding your needs and delivering results quickly.
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-pc-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  1
-                </div>
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Initial Consultation
-                </h3>
-                <p className="text-pc-neutral-600">
-                  Reach out via our contact form or phone. We&apos;ll discuss your project scope, timeline, and specific requirements.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-pc-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  2
-                </div>
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Tailored Proposal
-                </h3>
-                <p className="text-pc-neutral-600">
-                  We prepare a clear proposal outlining our approach, deliverables, and resource allocation from our trusted network.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-pc-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  3
-                </div>
-                <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Project Delivery
-                </h3>
-                <p className="text-pc-neutral-600">
-                  Our team mobilizes quickly, delivering expert project management with regular updates and transparent communication.
-                </p>
-              </div>
-            </div>
-            <div className="text-center">
-              <Link href="/contact">
-                <Button variant="primary" size="lg">
-                  Start a Conversation
-                </Button>
-              </Link>
-            </div>
-          </Container>
-        </section>
+        <CTASection />
 
         {/* FAQ Preview Section */}
         <FAQ 
