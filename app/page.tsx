@@ -30,6 +30,9 @@ export default function Home() {
 
         <TrustBar />
 
+        {/* Trust Markers / Credibility Section */}
+        <SectorsTrustGrid />
+
         <ServicesGrid />
 
         <ProcessTimeline />
@@ -62,8 +65,6 @@ export default function Home() {
           ctaLabel="Contact Us"
         />
 
-        {/* Trust Markers / Credibility Section */}
-        <SectorsTrustGrid />
       </main>
     </>
   );
