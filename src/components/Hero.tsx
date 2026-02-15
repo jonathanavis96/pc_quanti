@@ -1,7 +1,11 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { Button } from './Button';
 import { Container } from './Container';
+import { BlueprintHeroArt } from './BlueprintHeroArt';
 
 export interface HeroProps {
   headline: string;
@@ -17,20 +21,142 @@ export function Hero({
   ctaHref = '/contact',
 }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-pc-blue-light via-white to-pc-neutral-50 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-white py-20 md:py-28">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage:
+            'linear-gradient(to right, rgba(44, 2, 217, 0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(44, 2, 217, 0.35) 1px, transparent 1px), radial-gradient(circle at top, rgba(44, 2, 217, 0.08), transparent 55%)',
+          backgroundSize: '32px 32px, 32px 32px, 100% 100%',
+        }}
+        aria-hidden
+      />
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-pc-neutral-900 md:text-5xl lg:text-6xl">
-            {headline}
-          </h1>
-          <p className="mb-8 text-lg text-pc-neutral-600 md:text-xl">
-            {subheadline}
-          </p>
-          <Link href={ctaHref}>
-            <Button size="lg" variant="primary">
-              {ctaText}
-            </Button>
-          </Link>
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+          <motion.div
+            className="flex flex-col gap-6 text-left"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-pc-neutral-500">
+              UK & South Africa • Project Delivery Consultancy
+            </p>
+            <motion.h1
+              className="text-4xl font-bold tracking-tight text-pc-neutral-900 md:text-5xl lg:text-6xl"
+              initial={{ clipPath: 'inset(0 0 100% 0)' }}
+              animate={{ clipPath: 'inset(0 0 0% 0)' }}
+              transition={{ duration: 0.8, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
+            >
+              {headline}
+            </motion.h1>
+            <motion.p
+              className="text-lg text-pc-neutral-600 md:text-xl"
+              initial={{ clipPath: 'inset(0 0 100% 0)' }}
+              animate={{ clipPath: 'inset(0 0 0% 0)' }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
+            >
+              {subheadline}
+            </motion.p>
+            <div className="flex flex-wrap gap-4">
+              <motion.div
+                className="relative inline-flex"
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.45, ease: [0.2, 0.8, 0.2, 1] }}
+              >
+                <motion.svg
+                  className="absolute inset-0 h-full w-full"
+                  viewBox="0 0 180 52"
+                  preserveAspectRatio="none"
+                  initial={{ pathLength: 0, opacity: 1 }}
+                  animate={{ pathLength: 1, opacity: 1 }}
+                  transition={{ duration: 1.2, delay: 0.5, ease: [0.2, 0.8, 0.2, 1] }}
+                >
+                  <motion.path
+                    d="M2 50 L178 50 L178 2 L2 2 L2 50"
+                    fill="none"
+                    stroke="rgba(44, 2, 217, 0.9)"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    pathLength={1}
+                    initial={{ strokeDasharray: '1 1', strokeDashoffset: 1 }}
+                    animate={{ strokeDasharray: '1 1', strokeDashoffset: 0 }}
+                    transition={{ duration: 1.2, delay: 0.5, ease: [0.2, 0.8, 0.2, 1] }}
+                  />
+                </motion.svg>
+                <motion.div
+                  className="absolute inset-0 rounded-md"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(44, 2, 217, 0.95) 0%, rgba(44, 2, 217, 0.7) 60%, rgba(44, 2, 217, 0.9) 100%)',
+                    backgroundSize: '200% 200%',
+                  }}
+                  initial={{
+                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                    opacity: 0,
+                    backgroundPosition: '0% 0%',
+                  }}
+                  animate={{
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                    opacity: 1,
+                    backgroundPosition: '100% 100%',
+                  }}
+                  transition={{ duration: 0.9, delay: 1.1, ease: [0.2, 0.8, 0.2, 1] }}
+                />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.2, delay: 1.15, ease: [0.2, 0.8, 0.2, 1] }}
+                >
+                  <Link href={ctaHref}>
+                    <Button
+                      size="lg"
+                      variant="primary"
+                      className="relative bg-transparent text-white hover:bg-transparent active:bg-transparent"
+                    >
+                      {ctaText}
+                    </Button>
+                  </Link>
+                </motion.div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.55, ease: [0.2, 0.8, 0.2, 1] }}
+              >
+                <Link href="/services">
+                  <Button size="lg" variant="outline">
+                    View Services
+                  </Button>
+                </Link>
+              </motion.div>
+            </div>
+            <motion.div
+              className="flex flex-wrap gap-3 text-sm font-semibold text-pc-neutral-500"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.65, ease: [0.2, 0.8, 0.2, 1] }}
+            >
+              {['PM', 'QS', 'Contracts', 'Claims', 'Controls'].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-pc-neutral-200 bg-white px-3 py-1"
+                >
+                  {item}
+                </span>
+              ))}
+            </motion.div>
+          </motion.div>
+          <motion.div
+            className="flex justify-center lg:justify-end"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.2, 0.8, 0.2, 1] }}
+          >
+            <BlueprintHeroArt />
+          </motion.div>
         </div>
       </Container>
     </section>

@@ -16,6 +16,12 @@ export { Header } from './Header';
 export { Hero } from './Hero';
 export type { HeroProps } from './Hero';
 
+export { ServicesGrid } from './ServicesGrid';
+export { ProcessTimeline } from './ProcessTimeline';
+export { ProofStrip } from './ProofStrip';
+export { CTASection } from './CTASection';
+export { BlueprintHeroArt } from './BlueprintHeroArt';
+
 export { TrustBar } from './TrustBar';
 export type { TrustBarProps } from './TrustBar';
 
