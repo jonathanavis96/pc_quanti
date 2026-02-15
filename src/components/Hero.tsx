@@ -89,21 +89,31 @@ export function Hero({
                 <motion.div
                   className="absolute inset-0 rounded-md"
                   style={{
-                    background:
-                      'linear-gradient(135deg, rgba(44, 2, 217, 0.95) 0%, rgba(44, 2, 217, 0.7) 60%, rgba(44, 2, 217, 0.9) 100%)',
-                    backgroundSize: '200% 200%',
+                    backgroundColor: 'rgba(44, 2, 217, 0.9)',
+                  }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.2, delay: 1.45, ease: [0.2, 0.8, 0.2, 1] }}
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-md"
+                  style={{
+                    backgroundColor: 'rgba(44, 2, 217, 0.9)',
+                    maskImage:
+                      'repeating-linear-gradient(135deg, #000 0 8px, transparent 8px 14px)',
+                    maskSize: '200% 200%',
                   }}
                   initial={{
                     clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
                     opacity: 0,
-                    backgroundPosition: '0% 0%',
+                    maskPosition: '0% 0%',
                   }}
                   animate={{
                     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
                     opacity: 1,
-                    backgroundPosition: '100% 100%',
+                    maskPosition: '100% 100%',
                   }}
-                  transition={{ duration: 0.9, delay: 1.1, ease: [0.2, 0.8, 0.2, 1] }}
+                  transition={{ duration: 1.0, delay: 1.05, ease: [0.2, 0.8, 0.2, 1] }}
                 />
                 <motion.div
                   initial={{ opacity: 0 }}
