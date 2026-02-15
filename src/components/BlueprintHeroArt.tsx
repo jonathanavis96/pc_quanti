@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Speed multiplier: 1 = normal, 2 = 2x faster, 0.5 = half speed
-const SPEED_MULTIPLIER = 4;
+const SPEED_MULTIPLIER = 8;
 
 const drawTransition = {
   duration: 10.0 / SPEED_MULTIPLIER,

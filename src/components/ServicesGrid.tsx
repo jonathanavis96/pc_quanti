@@ -14,13 +14,13 @@ const services = [
   {
     title: 'Quantity Surveying',
     description:
-      'Provide cost certainty through robust estimating, commercial management, and cost control.',
+      'Deliver cost certainty through robust estimating, commercial management, and cost control.',
     href: '/services/quantity-surveying',
   },
   {
     title: 'Contract Administration',
     description:
-      'Maintain compliance and control risk with disciplined contract management and stakeholder alignment.',
+      'Ensure compliance and control risk with disciplined contract management and stakeholder alignment.',
     href: '/services/contract-administration',
   },
   {
@@ -32,8 +32,14 @@ const services = [
   {
     title: 'Project Controls',
     description:
-      'Integrate planning, scheduling, and performance reporting to keep delivery on track.',
+      'Keep projects on schedule and under control through integrated planning, tracking, and performance reporting.',
     href: '/services/project-controls',
+  },
+  {
+    title: 'Risk Management',
+    description:
+      'Identify and mitigate project risks before they impact delivery — protecting timelines, budgets, and outcomes.',
+    href: '/services/risk-management',
   },
 ];
 
@@ -49,7 +55,7 @@ export function ServicesGrid() {
             Focused delivery support across the project lifecycle
           </h2>
           <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-            Specialist support for nuclear and industrial teams who need lean, accountable delivery partners.
+            Specialist support for complex projects where failure isn't an option.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
