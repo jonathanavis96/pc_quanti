@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, Button } from '@/src/components';
+import { Card, Container, LinkButton } from '@/src/components';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -114,11 +114,9 @@ export default function ServicesPage() {
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
               Get in touch to explore how PC Quanti can support your next project with lean, expert consultancy.
             </p>
-            <Link href="/contact">
-              <Button size="lg">
-                Contact Us
-              </Button>
-            </Link>
+            <LinkButton href="/contact" size="lg">
+              Contact Us
+            </LinkButton>
           </div>
         </div>
       </Container>

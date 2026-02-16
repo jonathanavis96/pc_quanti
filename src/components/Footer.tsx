@@ -98,6 +98,12 @@ export function Footer() {
                 >
                   Project Controls
                 </Link>
+                <Link
+                  href="/services/risk-management"
+                  className="block hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
+                >
+                  Risk Management
+                </Link>
               </nav>
             </div>
           </div>

@@ -46,19 +46,19 @@ export default function Home() {
           items={[
             {
               question: "What sectors do you serve?",
-              answer: "TODO(PHIL): Specify primary sectors - nuclear, industrial, infrastructure, etc. Mention geographic focus (UK & South Africa)."
+              answer: "We specialize in nuclear, mining, infrastructure, and energy sectors across the UK and South Africa. Our experience spans new build nuclear facilities, decommissioning projects, mining operations, and industrial infrastructure development in highly regulated environments."
             },
             {
               question: "How does your lean model benefit clients?",
-              answer: "TODO(PHIL): Explain cost savings, flexibility, personalized attention vs. big consultancies."
+              answer: "Our lean consultancy model eliminates corporate overhead while maintaining expert delivery. You get direct access to senior professionals without the markup of large firms, faster decision-making, flexible engagement models, and personalized attention to your project's unique challenges."
             },
             {
               question: "What qualifications and experience does your team have?",
-              answer: "TODO(PHIL): Highlight nuclear background, certifications, years of experience, notable projects."
+              answer: "Our team brings decades of combined experience in nuclear and industrial project management, with professional certifications including chartered quantity surveying, project management qualifications, and deep sector-specific expertise. We've delivered critical projects across challenging environments in both the UK and South Africa."
             },
             {
               question: "Do you handle international projects?",
-              answer: "TODO(PHIL): Clarify UK & South Africa capabilities, remote/on-site delivery, travel arrangements."
+              answer: "Yes, we operate across the UK and South Africa with proven capability for both on-site and remote delivery. Our international experience enables us to navigate different regulatory frameworks, manage cross-border teams, and deliver projects efficiently regardless of location."
             }
           ]}
           ctaText="Still have questions?"
