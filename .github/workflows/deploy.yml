@@ -34,8 +34,9 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
+          USE_GITHUB_PAGES: 'true'
           NEXT_PUBLIC_FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }}
-          NEXT_PUBLIC_SITE_URL: https://pcquanti.com
+          NEXT_PUBLIC_SITE_URL: https://jonathanavis96.github.io/pc_quanti
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
