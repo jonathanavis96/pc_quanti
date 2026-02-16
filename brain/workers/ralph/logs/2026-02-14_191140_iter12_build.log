@@ -1,0 +1,133 @@
+Script started on 2026-02-14 19:11:40+02:00 [COMMAND="cat "/tmp/rovodev_prompt_with_mode_12891_12.md" | acli rovodev run --config-file /tmp/rovodev_config_12891_1771087557.yml --yolo 2> >(bash /home/grafe/code/pc-quanti/workers/shared/filter_acli_errors.sh >&2)" TERM="xterm-256color" TTY="/dev/pts/21" COLUMNS="103" LINES="54"]
+bash: /home/grafe/code/pc-quanti/workers/shared/filter_acli_errors.sh: No such file or directory
+]11;?\[6n[?25l[32m⠋[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠙[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠹[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠸[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠼[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠴[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠦[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠧[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠇[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠋[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠙[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠹[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠸[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠼[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠴[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠦[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠧[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠇[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠏[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠋[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠙[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠸[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠼[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠴[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠦[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠧[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠇[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠏[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠋[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠙[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠹[0m Loading Rovo Dev...
+[2K[1A[2K[32m⠸[0m Loading Rovo Dev...
+
+[?25h[1A[2K[1A[2KWorking in [1;32m/home/grafe/code/[0m[1;32mpc-quanti[0m
+
+[31m───[0m[31m You've reached your Rovo Dev credit limit [0m[31m────────────────────────────────────────────────────────[0m[31m─[0m
+
+Your Rovo Dev usage resets in 13d 6h 10m. Extra usage is not available on your Standard trial. 
+]8;id=975491;https://admin.atlassian.com/billing/o/301183a9-f46f-4915-b624-833e05280e6f/29891c17-7524-4640-b736-d8aa23ba051b/entitlement/e455b3e0-ce9d-3342-8781-4e3946b964c8\[34mUpgrade plan[0m]8;;\
+
+[31m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[?2004h[?25l[32m⠋[0m [90mCreating agent...[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠙[0m [90mCreating agent...[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠹[0m [90mCreating agent...[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠸[0m [90mCreating agent...[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m✔[0m [90mUsing model: anthropic.claude-sonnet-[0m[1;90m4[0m[90m-[0m[1;90m5[0m[90m-[0m[1;90m20250929[0m[90m-v[0m[1;90m1:0[0m
+[32m⠸[0m [90mCreating agent...[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠼[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠴[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠦[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠧[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠇[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠏[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠋[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠙[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠹[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠸[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠼[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠴[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠦[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠧[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠇[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠏[0m [90mStarting MCP servers: 1/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠋[0m [90mStarting MCP servers: 2/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m⠙[0m [90mStarting MCP servers: 2/3[0m [2m(ctrl+c to cancel)[0m
+[2K[1A[2K[32m✔[0m [90mStarted [0m[1;90m3[0m[90m MCP servers[0m
+  [2K  
+[?25h[1A[2K[?25l
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is working[0m[32m.  [0m                                                            [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.  [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.  [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.. [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m...[0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m   [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.  [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.. [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m...[0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m   [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.  [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.. [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m...[0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m   [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.  [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m.. [0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[32mRovo Dev is thinking[0m[32m...[0m                                                           [2mctrl+c to interrupt[0m
+[2m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[2K[1A[2K[1A[2K[1A[2K
+[?25h[31m───[0m[31m You've reached your Rovo Dev credit limit [0m[31m────────────────────────────────────────────────────────[0m[31m─[0m
+
+Your Rovo Dev usage resets in 13d 6h 10m. Extra usage is not available on your Standard trial. 
+]8;id=18843;https://admin.atlassian.com/billing/o/301183a9-f46f-4915-b624-833e05280e6f/29891c17-7524-4640-b736-d8aa23ba051b/entitlement/e455b3e0-ce9d-3342-8781-4e3946b964c8\[34mUpgrade plan[0m]8;;\
+
+[31m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+
+Script done on 2026-02-14 19:12:11+02:00 [COMMAND_EXIT_CODE="0"]
+:::TOOL_END::: id=e2fa298c-69d1-4219-b9b0-a3fc5789e048 result=PASS exit=0 duration_ms=31127 ts=2026-02-14T17:12:11Z
+:::VERIFIER_ENV::: iter=12 ts=1771089131 run_id=1771089131-12891
+:::PHASE_END::: iter=12 phase=build status=ok run_id=run-1771087557-12891 ts=1771089131830
+:::ITER_END::: iter=12 run_id=run-1771087557-12891 ts=1771089131832

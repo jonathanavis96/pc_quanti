@@ -1,7 +1,7 @@
 # Design Packs (Project Standard)
 
-This project uses **Design Packs** to store canonical UI/UX context and to run design-only audits
-before implementation.
+This project uses **Design Packs** to store canonical UI/UX context and to
+run design-only audits before implementation.
 
 ## Where packs live
 
@@ -21,14 +21,15 @@ brain/docs/design-packs/
 
 1. Copy `brain/docs/design-packs/_template/` to a new pack folder name:
    - e.g. `brain/docs/design-packs/my-app/`
-2. Fill out each file using its built-in **setup + questions + required sections** guidance.
+2. Fill out each file using its built-in **setup + questions + required
+   sections** guidance.
 3. Run a design audit session (design-only): produce an audit report under:
 
 ```text
 brain/artifacts/design-audits/<pack-name>/<YYYY-MM-DD_HHMMSS>.md
 ```
 
-4. After approval, translate approved items into task contracts in:
+1. After approval, translate approved items into task contracts in:
    - `workers/IMPLEMENTATION_PLAN.md`
 
 ## Required inputs (mirrors the premium audit prompt)
@@ -53,4 +54,5 @@ Progress/completion context should come from:
 
 ## See Also
 
-- `brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md` — premium UI/UX audit prompt + protocol (design-only)
+- `brain/docs/design/UI_UX_AUDIT_PROMPT_PREMIUM.md` — premium UI/UX audit
+  prompt + protocol (design-only)

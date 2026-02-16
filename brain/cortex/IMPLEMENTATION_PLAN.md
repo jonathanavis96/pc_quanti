@@ -6,7 +6,8 @@
 
 ## Mission
 
-From `THOUGHTS.md`: Build and launch the PC Quanti MVP brochure website (services-centric) with crisp UX and GitHub Pages-compatible deployment.
+From `THOUGHTS.md`: Build and launch the PC Quanti MVP brochure website
+(services-centric) with crisp UX and GitHub Pages-compatible deployment.
 
 ## Current Status
 

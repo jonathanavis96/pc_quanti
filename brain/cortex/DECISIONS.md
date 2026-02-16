@@ -54,7 +54,8 @@ When adding decisions, use this format:
 - Bug fixes (use commit messages instead)
 - Personal preferences without rationale
 
-**Review cadence:** During Cortex planning sessions, promote decisions from THOUGHTS.md → DECISIONS.md when patterns solidify
+**Review cadence:** During Cortex planning sessions, promote decisions from
+THOUGHTS.md → DECISIONS.md when patterns solidify
 
 ---
 

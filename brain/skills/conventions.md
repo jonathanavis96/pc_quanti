@@ -2,7 +2,10 @@
 
 ## Why This Exists
 
-Skills files in the brain repository follow specific conventions to ensure consistency, discoverability, and optimal token efficiency for AI agents. This document centralizes all skills authoring guidelines that were previously scattered across templates and README files.
+Skills files in the brain repository follow specific conventions to
+ensure consistency, discoverability, and optimal token efficiency for AI
+agents. This document centralizes all skills authoring guidelines that were
+previously scattered across templates and README files.
 
 ## When to Use It
 
@@ -67,7 +70,8 @@ Every skills file **must** follow this four-section structure:
 - Always include a "Common Mistakes" table with ❌/✅ format
 - Add decision matrices for choosing between options
 - This section enables quick answers without reading the whole file
-- Tables should be self-contained - reader shouldn't need Details section for basic use
+- Tables should be self-contained - reader shouldn't need Details section
+  for basic use
 
 #### Details
 
@@ -181,7 +185,8 @@ When updating skills files:
 
 - **Preserve structure**: Keep Why/When/Details sections
 - **Maintain focus**: Don't let Details section become unfocused
-- **Consider splitting**: If file grows too large (>500 lines), consider splitting into multiple files
+- **Consider splitting**: If file grows too large (>500 lines), consider
+  splitting into multiple files
 - **Update dates**: Add "Last updated" note if making significant changes
 - **Check links**: Ensure SUMMARY.md link text still accurate
 

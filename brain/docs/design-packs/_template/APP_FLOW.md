@@ -2,10 +2,11 @@
 
 ## What this file is
 
-The **flow inventory**: a complete list of screens/pages/routes and the key user journeys.
+The **flow inventory**: a complete list of screens/pages/routes and the key
+user journeys.
 
-For websites, you can treat this as a **site map + page behaviors** document (or rename it to
-`SITE_MAP.md` in your pack if you prefer).
+For websites, you can treat this as a **site map + page behaviors** document
+(or rename it to `SITE_MAP.md` in your pack if you prefer).
 
 ## Setup (how to start)
 
