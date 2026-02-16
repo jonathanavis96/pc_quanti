@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Button } from './Button';
+import { LinkButton } from './LinkButton';
 import { Container } from './Container';
 import { BlueprintHeroArt } from './BlueprintHeroArt';
 
@@ -131,11 +132,9 @@ export function Hero({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.55, ease: [0.2, 0.8, 0.2, 1] }}
               >
-                <Link href="/services">
-                  <Button size="lg" variant="outline">
-                    View Services
-                  </Button>
-                </Link>
+                <LinkButton href="/services" size="lg" variant="outline">
+                  View Services
+                </LinkButton>
               </motion.div>
             </div>
             <motion.div

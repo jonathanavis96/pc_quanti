@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Button } from './Button';
+import { LinkButton } from './LinkButton';
 import { Container } from './Container';
 
 type NavItem = {
@@ -125,9 +125,9 @@ export function Header() {
           </div>
 
           {/* Desktop CTA Button */}
-          <Link href="/contact" className="hidden md:block">
-            <Button variant="primary" size="md">Contact Us</Button>
-          </Link>
+          <div className="hidden md:block">
+            <LinkButton href="/contact" variant="primary" size="md">Contact Us</LinkButton>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -161,10 +161,10 @@ export function Header() {
                 >
                   {item.label}
                 </Link>
-              ))}
-              <Link href="/contact" onClick={closeMobileMenu}>
-                <Button variant="primary" size="md" className="w-full">Contact Us</Button>
-              </Link>
+              ))}\
+              <LinkButton href="/contact" variant="primary" size="md" className="w-full" onClick={closeMobileMenu}>
+                Contact Us
+              </LinkButton>
             </div>
           </nav>
         )}

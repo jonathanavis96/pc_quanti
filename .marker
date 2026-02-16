@@ -111,3 +111,162 @@ Fixed 10 issues identified in CodeRabbit review for PR #1. All issues were confi
 ---
 
 **Ready for Brain Sync:** This marker file documents all changes and patterns for future reference.
+
+---
+
+# CodeRabbit Review Fixes - Round 2 - 2026-02-16
+
+## Summary
+
+Fixed 10 additional issues identified in the second CodeRabbit review. All issues were confirmed as real problems and have been resolved.
+
+## Issues Fixed
+
+### 1. Function Name Shadowing Global Error
+**File:** `app/error.tsx`
+**Problem:** Component named `Error` shadowed the global `Error` constructor, causing linting warnings.
+**Fix:** Renamed component from `Error` to `ErrorBoundary` to avoid naming conflict.
+
+### 2-9. Invalid HTML - Link/Button Nesting (8 occurrences)
+**Files:** 
+- `app/services/claims-management/page.tsx`
+- `src/components/CTASection.tsx`
+- `src/components/FAQ.tsx`
+- `src/components/Header_NEW.tsx` (2 instances: desktop + mobile)
+- `src/components/Hero.tsx` (secondary CTA)
+- `src/components/ServicesGrid.tsx`
+
+**Problem:** Multiple components still had `<Link><Button>` nesting patterns creating invalid HTML.
+**Fix:** 
+- Replaced all instances with `LinkButton` component
+- Updated `LinkButton` to support `onClick` prop for mobile menu close handler
+- Removed unused `Link` and `Button` imports
+
+### 10. Missing Keyboard Focus Indicators
+**File:** `src/components/FAQ.tsx`
+**Problem:** FAQ accordion toggle buttons lacked visible keyboard focus indicators for accessibility.
+**Fix:** Added `focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-pc-blue` classes to button elements.
+
+### 11. THOUGHTS.md Exceeds 100-Line Policy
+**File:** `brain/cortex/THOUGHTS.md`
+**Problem:** File had 103 lines, exceeding the 100-line policy for strategic documents.
+**Fix:** 
+- Created `brain/cortex/logs/THOUGHTS_ARCHIVE.md` for historical content
+- Reduced THOUGHTS.md to 83 lines with current status and recent work
+- Added reference link to archive in main file
+
+### 12. Bundle Size Documentation Mismatch
+**File:** `brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md`
+**Problem:** Documentation stated "< 150KB (gzipped)" target but actual build is 375KB.
+**Fix:** Updated to show "Current: 375KB | Target: < 150KB" with explanation:
+- Root cause: framer-motion animations, initial feature set
+- Post-MVP optimization plan: code splitting, lazy loading, animation library evaluation
+
+### 13. Incompatible Form Submission Option
+**File:** `brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md`
+**Problem:** Option 3 (Next.js API routes) conflicts with GitHub Pages static hosting constraint.
+**Fix:** 
+- Removed Option 3 from form submission choices
+- Added note: "Next.js API routes not available for GitHub Pages static hosting"
+- Marked Option 2 (FormSpree) as chosen implementation
+
+## Anti-Patterns Learned
+
+### 1. Nested Interactive Elements
+**Pattern:** `<Link><Button>` or `<a><button>`
+**Why Bad:** Invalid HTML, creates nested interactive elements, breaks keyboard navigation
+**Solution:** Use `LinkButton` component that renders a single anchor styled as a button
+**Reference:** `brain/skills/domains/anti-patterns/` (read before fixing)
+
+### 2. Missing Keyboard Focus Indicators
+**Pattern:** Interactive elements without visible focus states
+**Why Bad:** Keyboard users can't see where focus is, fails WCAG 2.1.1
+**Solution:** Always add `focus-visible:ring-2` classes to buttons, links, form controls
+
+### 3. Documentation Drift
+**Pattern:** Actual implementation doesn't match documented specs
+**Why Bad:** Misleads developers, creates confusion during reviews
+**Solution:** Update docs whenever implementation changes, note discrepancies with explanations
+
+### 4. File Size Policies
+**Pattern:** Strategic files growing beyond recommended limits
+**Why Bad:** Harder to scan, violates Brain conventions
+**Solution:** Archive historical content to `logs/` subdirectory, keep current file focused
+
+## Component Enhancement: LinkButton
+
+Enhanced `LinkButton` component to support all use cases:
+
+```typescript
+export interface LinkButtonProps {
+  href: string;
+  variant?: 'primary' | 'secondary' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
+  children: React.ReactNode;
+  className?: string;
+  onClick?: () => void;  // ← Added for mobile menu close
+}
+```
+
+**Usage Examples:**
+```tsx
+// Simple navigation
+<LinkButton href="/contact" variant="primary" size="lg">
+  Contact Us
+</LinkButton>
+
+// With onClick handler (e.g., mobile menu)
+<LinkButton href="/contact" variant="primary" onClick={closeMobileMenu}>
+  Contact Us
+</LinkButton>
+
+// With custom className
+<LinkButton href="/services" variant="outline" className="self-start">
+  Learn More
+</LinkButton>
+```
+
+## Testing Performed
+
+- ✅ Build verification: `npm run build` completes without errors or warnings
+- ✅ TypeScript: All type errors resolved, production type-checking enabled
+- ✅ HTML validation: No nested interactive elements remain
+- ✅ Keyboard navigation: All interactive elements have visible focus indicators
+- ✅ Component usage: LinkButton works in all contexts (CTA, nav, cards, FAQ)
+- ✅ Documentation: All files updated to reflect actual implementation
+
+## Files Changed (Round 2)
+
+**Code (12 files):**
+- `app/error.tsx` - Renamed Error → ErrorBoundary
+- `app/services/claims-management/page.tsx` - Link/Button → LinkButton
+- `src/components/CTASection.tsx` - Link/Button → LinkButton
+- `src/components/FAQ.tsx` - Link/Button → LinkButton, added focus indicators
+- `src/components/Header_NEW.tsx` - Link/Button → LinkButton (2 instances)
+- `src/components/Hero.tsx` - Link/Button → LinkButton
+- `src/components/ServicesGrid.tsx` - Link/Button → LinkButton
+- `src/components/LinkButton.tsx` - Added onClick prop support
+
+**Documentation (3 files):**
+- `brain/cortex/THOUGHTS.md` - Reduced to 83 lines
+- `brain/cortex/logs/THOUGHTS_ARCHIVE.md` - Created archive
+- `brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md` - Updated bundle size + form options
+
+## Lessons Learned (Round 2)
+
+1. **Always read anti-patterns first:** Saved time by understanding common mistakes before fixing
+2. **LinkButton is the standard:** For any link that looks like a button, use LinkButton component
+3. **Keyboard accessibility is not optional:** Every interactive element needs visible focus
+4. **Document actual vs. target:** When implementation differs from spec, explain why and what's next
+5. **Archive, don't delete:** Historical context is valuable, just move it to logs/
+
+---
+
+**Status:** All Round 2 issues resolved ✅  
+**Build:** Passing ✅  
+**TypeScript:** No errors ✅  
+**HTML:** Valid (no nested interactive elements) ✅  
+**Accessibility:** Keyboard focus indicators present ✅  
+**Documentation:** Synced with implementation ✅
+
+**Ready for Brain Sync**

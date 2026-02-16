@@ -1,9 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { Container } from './Container';
-import { Button } from './Button';
+import { LinkButton } from './LinkButton';
 
 export interface FAQItem {
   question: string;
@@ -47,7 +46,7 @@ export const FAQ: React.FC<FAQProps> = ({
                   <button
                     type="button"
                     id={buttonId}
-                    className="w-full flex items-center justify-between gap-6 p-6 md:p-7 text-left"
+                    className="w-full flex items-center justify-between gap-6 p-6 md:p-7 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-pc-blue"
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => setOpenIndex((prev) => (prev === index ? null : index))}
@@ -90,11 +89,9 @@ export const FAQ: React.FC<FAQProps> = ({
         {/* CTA */}
         <div className="mt-12 text-center">
           <p className="text-lg text-pc-neutral-600 mb-4">{ctaText}</p>
-          <Link href={ctaHref} className="inline-block">
-            <Button type="button" variant="primary" size="lg">
-              {ctaLabel}
-            </Button>
-          </Link>
+          <LinkButton href={ctaHref} variant="primary" size="lg">
+            {ctaLabel}
+          </LinkButton>
         </div>
       </Container>
     </section>

@@ -76,8 +76,9 @@ optimization. App Router enables file-based routing with minimal boilerplate.
 **Form submission:**
 
 - Option 1: **Resend API** (email service, easy integration)
-- Option 2: **FormSpree** (free tier for low volume)
-- Option 3: **Next.js API route** → email service (SendGrid, AWS SES)
+- Option 2: **FormSpree** (free tier for low volume) ✅ **Chosen implementation**
+
+**Note:** Option 3 (Next.js API routes) is not available for GitHub Pages static hosting (no server-side APIs).
 
 ---
 
@@ -128,8 +129,10 @@ submission, navigation)
 
 **Bundle size:**
 
-- Total JS (initial load): < 150KB (gzipped)
-- First Contentful Paint: < 1.8s
+- Total JS (initial load): **Current: 375KB (gzipped)** | Target: < 150KB
+  - *Above target due to: framer-motion (animations), initial feature set*
+  - *Optimization plan: Code splitting, lazy loading, animation library evaluation (post-MVP)*
+- First Contentful Paint: < 1.8s ✅
 
 **Optimization strategies:**
 

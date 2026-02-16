@@ -1,8 +1,7 @@
 import React from 'react';
-import Link from 'next/link';
 import { Card } from './Card';
 import { Container } from './Container';
-import { Button } from './Button';
+import { LinkButton } from './LinkButton';
 
 const services = [
   {
@@ -64,11 +63,9 @@ export function ServicesGrid() {
               <div className="mb-4 h-10 w-10 rounded-full border border-pc-blue/20 bg-pc-blue/10" aria-hidden />
               <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">{service.title}</h3>
               <p className="text-pc-neutral-600 mb-6 flex-1">{service.description}</p>
-              <Link href={service.href} className="self-start">
-                <Button variant="outline" size="sm">
-                  Learn more
-                </Button>
-              </Link>
+              <LinkButton href={service.href} variant="outline" size="sm" className="self-start">
+                Learn more
+              </LinkButton>
             </Card>
           ))}
         </div>
