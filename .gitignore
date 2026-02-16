@@ -42,3 +42,10 @@ next-env.d.ts
 .env.local
 .sentryclirc
 undefined:/Users/
+
+# Windows download metadata (can appear in WSL)
+*:Zone.Identifier
+
+# Ralph runtime verifier outputs (local-only)
+brain/workers/ralph/.verify/run_id.txt
+brain/workers/ralph/.verify/latest.txt
