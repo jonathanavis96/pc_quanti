@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button } from './Button';
 import { Container } from './Container';
+import { withBasePath } from '@/src/lib/basePath';
 
 type NavItem = {
   label: string;
@@ -108,7 +109,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
             <Image
-              src="/logo.webp"
+              src={withBasePath('/logo.webp')}
               alt="PC Quanti logo"
               width={220}
               height={80}
