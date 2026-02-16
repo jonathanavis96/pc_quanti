@@ -2,8 +2,15 @@ import { withSentryConfig } from "@sentry/nextjs";
 
 import type { NextConfig } from "next";
 
+// Set to true when deploying to GitHub Pages (username.github.io/repo-name/)
+// Set to false when using custom domain (pcquanti.com)
+const useGitHubPages = process.env.USE_GITHUB_PAGES === 'true';
+const basePath = useGitHubPages ? '/pc_quanti' : '';
+
 const nextConfig: NextConfig = {
   output: 'export',
+  basePath: basePath,
+  assetPrefix: basePath,
   typescript: {
     // Only ignore build errors in development, enforce type checking in production
     ignoreBuildErrors: process.env.NODE_ENV !== 'production',
