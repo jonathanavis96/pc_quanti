@@ -5,8 +5,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'export',
   typescript: {
-    // Temporarily ignore build errors during development
-    ignoreBuildErrors: true,
+    // Only ignore build errors in development, enforce type checking in production
+    ignoreBuildErrors: process.env.NODE_ENV !== 'production',
   },
   images: {
     unoptimized: true, // Required for static export

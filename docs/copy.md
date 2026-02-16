@@ -32,7 +32,7 @@ Our Services
 **Section Intro:**  
 TODO(PHIL): approve/replace — PC Quanti provides specialized project management services tailored to nuclear, mining, infrastructure, and energy sectors. We combine deep technical expertise with a lean, agile delivery model.
 
-#### Service Cards (5)
+#### Service Cards (6)
 
 1. **Project Management**  
    Professional project leadership from initiation through closeout, with proven experience in complex nuclear and industrial environments.
@@ -48,6 +48,9 @@ TODO(PHIL): approve/replace — PC Quanti provides specialized project managemen
 
 5. **Project Controls**  
    Integrated planning, scheduling, and performance monitoring to deliver projects on time and within budget.
+
+6. **Risk Management**  
+   Comprehensive risk identification, analysis, and mitigation strategies to protect project value and schedule.
 
 ---
 

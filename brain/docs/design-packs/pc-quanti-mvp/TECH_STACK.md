@@ -41,7 +41,7 @@ optimization. App Router enables file-based routing with minimal boilerplate.
 
 ### Styling/Theming
 
-- **Tailwind CSS 3.x** (utility-first CSS framework)
+- **Tailwind CSS 4.x** (utility-first CSS framework)
 - **PostCSS** (Tailwind processing)
 - **No CSS Modules, no Sass, no styled-components**
 

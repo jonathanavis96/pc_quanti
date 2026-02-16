@@ -598,7 +598,16 @@ If adding a library:
 
 - Lighthouse Accessibility ≥ 90
 - Keyboard navigation works for header + mobile drawer
-- Motion: **client-approved always-on animation** (do not disable based on `prefers-reduced-motion`). Keep motion smooth and non-violent; avoid jitter/flash.
+- Motion: **client-approved always-on animation** (do not disable based on `prefers-reduced-motion`).
+  - **Known Accessibility Limitation:** This approach conflicts with WCAG Success Criterion 2.3.3 (Animation from Interactions) Level AAA, which recommends respecting user motion preferences. This decision has been explicitly approved by the client.
+  - **Mitigation Requirements:**
+    1. All animations must be evaluated and confirmed as "smooth and non-violent" with no rapid flashing, parallax, or large-scale motion effects.
+    2. Animations should use gentle easing curves (e.g., `cubic-bezier(0.2, 0.8, 0.2, 1)`) and durations between 150-500ms for most effects.
+    3. Hero sketch animation must be deterministic and smooth with no jittery or shaky effects.
+  - **Fallback/Response Plan:** If user complaints arise regarding motion sickness or accessibility concerns:
+    1. Triage: Assess severity and frequency of complaints.
+    2. Mitigation: Evaluate adding an opt-out toggle or cookie-based preference.
+    3. Escalation: Review with client for potential implementation of `prefers-reduced-motion` support.
 - Visual consistency: spacing rhythm + typography hierarchy applied across pages
 - No invented client logos/numbers
 

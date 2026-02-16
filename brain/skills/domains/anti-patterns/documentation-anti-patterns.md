@@ -592,7 +592,7 @@ find workers -maxdepth 4 -name 'IMPLEMENTATION_PLAN.md' -o -name 'THUNK.md'
 # NOTE: Exclude files that intentionally contain bad paths as examples.
 rg "workers/ralph/workers/ralph/THUNK\.md" -n docs/ skills/ cortex/ \
   --type md \
-  --glob '!skills/domains/anti-patterns/documentation-anti-patterns.md' \
+  --glob '!brain/skills/domains/anti-patterns/documentation-anti-patterns.md' \
   --glob '!artifacts/reports/TEMPLATE_DRIFT_REPORT.md'
 
 # Validate links (best effort for markdown links)

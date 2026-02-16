@@ -30,3 +30,6 @@ export type { TrustBarProps } from './TrustBar';
 
 export { FAQ } from './FAQ';
 export type { FAQProps, FAQItem } from './FAQ';
+
+export { LinkButton } from './LinkButton';
+export type { LinkButtonProps } from './LinkButton';

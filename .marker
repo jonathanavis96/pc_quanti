@@ -1,0 +1,113 @@
+# CodeRabbit Review Fixes - 2026-02-16
+
+## Summary
+
+Fixed 10 issues identified in CodeRabbit review for PR #1. All issues were confirmed as real problems (not false positives) and have been resolved.
+
+## Issues Fixed
+
+### 1. Missing Risk Management in Sitemap (P2)
+**File:** `app/sitemap.ts`
+**Problem:** The `/services/risk-management` route was omitted from the sitemap, preventing search engine crawlers from discovering this service page.
+**Fix:** Added `/services/risk-management` to the routes array in sitemap generation.
+
+### 2. Publicly Accessible Sentry Test Page (P1)
+**File:** `app/test-error/page.tsx`
+**Problem:** Test error page was accessible in production, allowing anyone to trigger test errors and consume Sentry quota.
+**Fix:** Added environment gating - page now returns "Not Available" in production unless `NEXT_PUBLIC_ENABLE_TEST_ERRORS` is explicitly set.
+
+### 3. FAQ Placeholder Content
+**File:** `app/page.tsx`
+**Problem:** FAQ section contained `TODO(PHIL):` placeholders visible to users.
+**Fix:** Replaced all 4 TODO placeholders with finalized, professional copy covering:
+- Sectors served (nuclear, mining, infrastructure, energy in UK & South Africa)
+- Lean model benefits (cost savings, direct access, flexibility)
+- Team qualifications (experience, certifications, expertise)
+- International capabilities (UK & South Africa operations)
+
+### 4. Invalid HTML - Link/Button Nesting
+**Files:** `app/services/page.tsx`, `app/services/project-controls/page.tsx`, `app/services/project-management/page.tsx`
+**Problem:** CTA sections nested `<Button>` inside `<Link>`, creating invalid HTML (`<a><button>...</button></a>`).
+**Fix:** 
+- Created new `LinkButton` component that renders as a styled anchor tag
+- Replaced all `<Link><Button>` patterns with `<LinkButton>`
+- Added component to exports in `src/components/index.ts`
+- Maintains same visual styling and accessibility while using valid HTML
+
+### 5. Missing Risk Management in Footer
+**File:** `src/components/Footer.tsx`
+**Problem:** Footer services navigation was missing the 6th service (Risk Management).
+**Fix:** Added Risk Management link with matching styling and focus states.
+
+### 6. TypeScript Errors Ignored in Production
+**File:** `next.config.ts`
+**Problem:** `typescript.ignoreBuildErrors: true` was set unconditionally, allowing type errors in production builds.
+**Fix:** Changed to conditional: `ignoreBuildErrors: process.env.NODE_ENV !== 'production'` - now only ignores errors in development.
+
+### 7. Outdated Tailwind Version in Documentation
+**File:** `brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md`
+**Problem:** Documentation listed "Tailwind CSS 3.x" but package.json shows v4.
+**Fix:** Updated documentation to reflect actual version: "Tailwind CSS 4.x"
+
+### 8. Incorrect Glob Path in Anti-Pattern Documentation
+**File:** `brain/skills/domains/anti-patterns/documentation-anti-patterns.md`
+**Problem:** Exclusion glob missing `brain/` prefix in path validation command.
+**Fix:** Updated glob from `'!skills/domains/anti-patterns/...'` to `'!brain/skills/domains/anti-patterns/...'`
+
+### 9. Missing Risk Management in Copy Documentation
+**File:** `docs/copy.md`
+**Problem:** Service cards section listed only 5 services, missing Risk Management.
+**Fix:** 
+- Updated heading from "Service Cards (5)" to "Service Cards (6)"
+- Added Risk Management entry with description: "Comprehensive risk identification, analysis, and mitigation strategies to protect project value and schedule."
+
+### 10. Animation Accessibility Documentation
+**File:** `Specs.md`
+**Problem:** Client-approved always-on animation conflicted with WCAG 2.3.3 but wasn't documented as a known limitation.
+**Fix:** Expanded documentation to include:
+- Explicit acknowledgment of WCAG SC 2.3.3 (Level AAA) conflict
+- Animation quality requirements (smooth, non-violent, no flashing/parallax)
+- Evaluation criteria (gentle easing, 150-500ms durations, deterministic behavior)
+- Defined fallback/response plan for user complaints (triage → mitigation → escalation)
+
+## Lessons Learned
+
+1. **Link/Button Anti-Pattern:** Never nest interactive elements. Created reusable `LinkButton` component to handle this pattern correctly across the codebase.
+
+2. **Environment Gating:** Test/debug pages should always be gated behind environment checks to prevent production exposure.
+
+3. **Documentation Sync:** When adding features (like Risk Management service), update ALL relevant files: sitemap, footer, documentation, copy guides.
+
+4. **TypeScript in Production:** Build-time type checking should never be disabled in production. Use conditional flags for development convenience only.
+
+5. **Accessibility Trade-offs:** When client requirements conflict with accessibility best practices, document the limitation explicitly with mitigation strategies and fallback plans.
+
+## Testing Performed
+
+- ✅ Build verification: `npm run build` completes without errors
+- ✅ Sitemap validation: `/services/risk-management` now appears in generated sitemap
+- ✅ Test error page: Returns "Not Available" in production mode
+- ✅ FAQ content: All placeholders replaced with professional copy
+- ✅ Link validation: All CTA buttons now use valid HTML (anchor tags)
+- ✅ Footer navigation: All 6 services present and linked correctly
+
+## Files Changed
+
+- `app/sitemap.ts` - Added risk-management route
+- `app/test-error/page.tsx` - Added production gating
+- `app/page.tsx` - Replaced FAQ placeholders
+- `src/components/LinkButton.tsx` - Created new component
+- `src/components/index.ts` - Exported LinkButton
+- `app/services/page.tsx` - Replaced Link/Button with LinkButton
+- `app/services/project-controls/page.tsx` - Replaced Link/Button with LinkButton
+- `app/services/project-management/page.tsx` - Replaced Link/Button with LinkButton
+- `src/components/Footer.tsx` - Added Risk Management link
+- `next.config.ts` - Conditional TypeScript error ignoring
+- `brain/docs/design-packs/pc-quanti-mvp/TECH_STACK.md` - Updated Tailwind version
+- `brain/skills/domains/anti-patterns/documentation-anti-patterns.md` - Fixed glob path
+- `docs/copy.md` - Added Risk Management to service cards
+- `Specs.md` - Documented animation accessibility limitation
+
+---
+
+**Ready for Brain Sync:** This marker file documents all changes and patterns for future reference.
