@@ -212,23 +212,31 @@ export function Header() {
         </div>
 
         {mobileMenuOpen && (
-          <nav className="md:hidden pb-4" aria-label="Mobile navigation">
-            <div className="flex flex-col gap-4">
+          <nav className="md:hidden pb-4 pt-2" aria-label="Mobile navigation">
+            <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-sm px-3 py-3"
+                  className={`text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-md px-4 py-3 text-center ${
+                    activeHref === item.href ? 'bg-white/10' : 'hover:bg-white/5'
+                  }`}
                   onClick={closeMobileMenu}
                 >
                   {item.label}
                 </Link>
               ))}
-              <Link href="/contact" onClick={closeMobileMenu}>
-                <Button variant="primary" size="md" className="w-full bg-white text-pc-blue">
-                  Contact Us
-                </Button>
-              </Link>
+              <div className="mt-2 pt-2 border-t border-white/20">
+                <Link href="/contact" onClick={closeMobileMenu} className="block">
+                  <Button 
+                    variant="primary" 
+                    size="md" 
+                    className="w-full bg-white !text-pc-blue hover:bg-white/95 active:bg-white/90"
+                  >
+                    Contact Us
+                  </Button>
+                </Link>
+              </div>
             </div>
           </nav>
         )}
