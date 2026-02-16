@@ -161,7 +161,7 @@ export function Header() {
                 >
                   {item.label}
                 </Link>
-              ))}\
+              ))}
               <LinkButton href="/contact" variant="primary" size="md" className="w-full" onClick={closeMobileMenu}>
                 Contact Us
               </LinkButton>
