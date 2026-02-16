@@ -7,6 +7,9 @@ import type { NextConfig } from "next";
 const useGitHubPages = process.env.USE_GITHUB_PAGES === 'true';
 const basePath = useGitHubPages ? '/pc_quanti' : '';
 
+// Make basePath available to the app via environment variable
+process.env.NEXT_PUBLIC_BASE_PATH = basePath;
+
 const nextConfig: NextConfig = {
   output: 'export',
   basePath: basePath,
