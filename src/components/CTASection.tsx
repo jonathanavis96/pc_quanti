@@ -1,6 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
-import { Button } from './Button';
+import { LinkButton } from './LinkButton';
 import { Container } from './Container';
 
 export function CTASection() {
@@ -23,11 +22,9 @@ export function CTASection() {
           <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto mb-8">
             Talk to a senior consultant about how PC Quanti can support your next programme with lean, accountable delivery.
           </p>
-          <Link href="/contact">
-            <Button size="lg" variant="primary">
-              Request a call
-            </Button>
-          </Link>
+          <LinkButton href="/contact" size="lg" variant="primary">
+            Request a call
+          </LinkButton>
         </div>
       </Container>
     </section>

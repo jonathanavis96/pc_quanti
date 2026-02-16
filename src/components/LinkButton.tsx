@@ -7,6 +7,7 @@ export interface LinkButtonProps {
   size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void;
 }
 
 export const LinkButton: React.FC<LinkButtonProps> = ({
@@ -15,6 +16,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
   size = 'md',
   className = '',
   children,
+  onClick,
 }) => {
   const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-md transition-colors duration-100 focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2';
   
@@ -33,7 +35,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
   const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
   
   return (
-    <Link href={href} className={classes}>
+    <Link href={href} className={classes} onClick={onClick}>
       {children}
     </Link>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Button } from '@/src/components';
+import { Container, Card, LinkButton } from '@/src/components';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -168,11 +168,9 @@ export default function ClaimsManagementPage() {
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
               Contact PC Quanti to discuss how we can help you prepare, assess, or resolve contractual claims on your industrial project.
             </p>
-            <Link href="/contact">
-              <Button size="lg">
-                Contact Us
-              </Button>
-            </Link>
+            <LinkButton href="/contact" size="lg">
+              Contact Us
+            </LinkButton>
           </div>
         </div>
       </Container>
