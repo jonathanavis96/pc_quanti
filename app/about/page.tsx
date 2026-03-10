@@ -77,10 +77,16 @@ export default function AboutPage() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* Differentiator 1 */}
-            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm">
-              <div className="w-12 h-12 bg-pc-gold/10 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-pc-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm text-center">
+              <div className="flex justify-center mb-4 text-pc-gold">
+                <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10" aria-hidden>
+                  {/* Gantt/schedule bars with arrow — structured execution */}
+                  <rect x="6" y="9" width="16" height="5" rx="1" fill="currentColor" fillOpacity="0.12" /><rect x="6" y="9" width="16" height="5" rx="1" />
+                  <rect x="12" y="18" width="20" height="5" rx="1" fill="currentColor" fillOpacity="0.12" /><rect x="12" y="18" width="20" height="5" rx="1" />
+                  <rect x="6" y="27" width="12" height="5" rx="1" fill="currentColor" fillOpacity="0.12" /><rect x="6" y="27" width="12" height="5" rx="1" />
+                  {/* Completion arrow */}
+                  <polyline points="30,29 36,29" strokeWidth="2" />
+                  <polyline points="33,26 36,29 33,32" strokeWidth="2" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-pc-neutral-900 mb-2">
@@ -92,10 +98,15 @@ export default function AboutPage() {
             </div>
 
             {/* Differentiator 2 */}
-            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm">
-              <div className="w-12 h-12 bg-pc-gold/10 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-pc-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm text-center">
+              <div className="flex justify-center mb-4 text-pc-gold">
+                <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10" aria-hidden>
+                  {/* Eye — oversight / monitoring */}
+                  <path d="M4 22 Q22 6 40 22 Q22 38 4 22 Z" fill="currentColor" fillOpacity="0.08" />
+                  <path d="M4 22 Q22 6 40 22 Q22 38 4 22 Z" />
+                  <circle cx="22" cy="22" r="5" fill="currentColor" fillOpacity="0.15" />
+                  <circle cx="22" cy="22" r="5" />
+                  <circle cx="22" cy="22" r="2" fill="currentColor" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-pc-neutral-900 mb-2">
@@ -107,10 +118,15 @@ export default function AboutPage() {
             </div>
 
             {/* Differentiator 3 */}
-            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm">
-              <div className="w-12 h-12 bg-pc-gold/10 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-pc-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm text-center">
+              <div className="flex justify-center mb-4 text-pc-gold">
+                <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10" aria-hidden>
+                  {/* Shield with warning triangle — risk management */}
+                  <path d="M22 4 L36 10 L36 24 C36 32 22 40 22 40 C22 40 8 32 8 24 L8 10 Z" fill="currentColor" fillOpacity="0.08" />
+                  <path d="M22 4 L36 10 L36 24 C36 32 22 40 22 40 C22 40 8 32 8 24 L8 10 Z" />
+                  {/* Exclamation mark inside shield */}
+                  <line x1="22" y1="17" x2="22" y2="26" strokeWidth="2.2" />
+                  <circle cx="22" cy="30" r="1.2" fill="currentColor" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-pc-neutral-900 mb-2">
@@ -122,10 +138,19 @@ export default function AboutPage() {
             </div>
 
             {/* Differentiator 4 */}
-            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm">
-              <div className="w-12 h-12 bg-pc-gold/10 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-pc-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            <div className="bg-white p-6 rounded-xl border border-pc-neutral-200 shadow-sm text-center">
+              <div className="flex justify-center mb-4 text-pc-gold">
+                <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10" aria-hidden>
+                  {/* Balance scales — dispute resolution */}
+                  <line x1="22" y1="6" x2="22" y2="38" />
+                  <line x1="10" y1="38" x2="34" y2="38" />
+                  <line x1="8" y1="14" x2="36" y2="14" />
+                  {/* Left pan */}
+                  <path d="M8 14 L5 22 Q8 26 11 22 Z" fill="currentColor" fillOpacity="0.12" />
+                  <path d="M8 14 L5 22 Q8 26 11 22 Z" />
+                  {/* Right pan */}
+                  <path d="M36 14 L33 22 Q36 26 39 22 Z" fill="currentColor" fillOpacity="0.12" />
+                  <path d="M36 14 L33 22 Q36 26 39 22 Z" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-pc-neutral-900 mb-2">
