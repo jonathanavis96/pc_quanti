@@ -1,5 +1,6 @@
 import { Container } from "@/src/components/Container";
 import { Button } from "@/src/components/Button";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -19,50 +20,85 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="py-16 sm:py-24">
-        {/* Phil's Story Section */}
-        <Container>
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Image/Headshot placeholder */}
-            <div className="order-2 lg:order-1">
-              <div className="aspect-square bg-gradient-to-br from-pc-neutral-100 to-pc-neutral-200 rounded-2xl flex items-center justify-center">
-                <div className="text-center text-pc-neutral-400">
-                  <svg
-                    className="mx-auto h-24 w-24 mb-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
-                  <p className="text-sm">Professional headshot</p>
-                </div>
-              </div>
-            </div>
 
-            {/* Phil's Story Content */}
-            <div className="order-1 lg:order-2">
-              <h1 className="text-4xl font-bold tracking-tight text-pc-neutral-900 sm:text-5xl mb-6">
-                About PC Quanti
-              </h1>
-              <div className="prose prose-lg text-pc-neutral-600 space-y-4">
+        {/* Intro */}
+        <Container>
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500 mb-3">About Us</p>
+            <h1 className="text-4xl font-bold tracking-tight text-pc-neutral-900 sm:text-5xl mb-6">
+              About PC Quanti
+            </h1>
+            <p className="text-lg text-pc-neutral-600">
+              PC Quanti was established to provide clear, independent and highly disciplined support to organisations operating in complex engineering and construction environments — bringing structure, transparency and professional judgement to projects where technical detail, commercial pressure and contractual obligation intersect.
+            </p>
+          </div>
+        </Container>
+
+        {/* Section 1: Who We Are — image left, text right */}
+        <Container>
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center mb-24">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <Image
+                src="/about/who-we-are.jpg"
+                alt="PC Quanti team in consultation"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500 mb-3">Who We Are</p>
+              <h2 className="text-3xl font-bold tracking-tight text-pc-neutral-900 mb-6">
+                Expertise You Can Trust
+              </h2>
+              <div className="space-y-4 text-pc-neutral-600 leading-relaxed">
                 <p>
-                  PC Quanti was established to provide clear, independent and highly disciplined support to organisations operating in complex engineering and construction environments. Our focus is on bringing structure, transparency and professional judgement to projects where technical detail, commercial pressure and contractual obligation intersect. With a measured, analytical approach and a strong emphasis on integrity, PC Quanti partners with clients to help them understand challenges, evaluate options and move forward with confidence — whether during live project delivery or when matters require formal resolution.
+                  PC Quanti is a specialist provider of technical, commercial, and contractual advisory services for complex engineering and construction projects. We support clients through every stage of the project lifecycle — from early concept and planning through execution, delivery, and hand-over — helping them manage uncertainty, optimise value, and achieve successful outcomes.
                 </p>
                 <p>
-                  After obtaining a B.Sc in Construction Management at the University of Pretoria, <strong>Phil Coleman</strong> spent 13 years in the United Kingdom working on major engineering and construction projects for global infrastructure leader Vinci SA, and its subsidiaries Norwest Holst and Vinci Construction (formally Taylor Woodrow Construction), excelling in the fields of Quantity Surveying, Commercial Management, Project Controls and Project Management. After joining Group Five Nuclear in 2013 as part of their senior management team as Divisional Commercial Manager, Phil became Programme Manager of Group Five Nuclear Division in 2017, tasked with the successful implementation of the iconic <strong>PTR Tanks and Steam Generators Replacement Projects</strong>.
+                  Our multidisciplinary team has deep practical experience in delivering and overseeing major infrastructure, power generation, and oil &amp; gas programmes, working with employers, contractors, consultants, and legal teams around the world. By combining engineering insight with commercial rigour, PC Quanti brings clarity to cost, contract, programme, and risk.
                 </p>
                 <p>
-                  In 2020, with years of major projects experience covering all aspects of the project life-cycle in South Africa and abroad, in the areas of civil structures, and mechanical / electrical service and infrastructure such as <strong>airports developments and nuclear construction at the highest level</strong>, Phil launched PC quanti, a multi-discipline project services company which has provided services on major engineering projects in the nuclear industry and other industrial sectors since inception.
-                </p>
-                <p>
-                  At PC Quanti our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success. We believe the foundation of every great project lies in <strong>disciplined planning, rigorous risk and value management, clear communication</strong> and an unwavering commitment to quality at every stage of the project life cycle.
-                </p>
-                <p>
-                  Our philosophy is rooted in adding measurable value for clients through proactive problem-solving, ethical practice and collaboration with all stakeholders — ensuring projects are delivered safely, on time and within budget while exceeding expectations in performance and long-term operational success.
+                  We understand the demands of internationally recognised contract suites including NEC3, NEC4, FIDIC, GCC and JBCC, and bring thorough, structured discipline to cost planning, project controls, contract administration, and claims management.
                 </p>
               </div>
             </div>
           </div>
         </Container>
+
+        {/* Section 2: What We Do — text left, image right */}
+        <div className="bg-pc-neutral-50 py-20 mb-24">
+          <Container>
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500 mb-3">What We Do</p>
+                <h2 className="text-3xl font-bold tracking-tight text-pc-neutral-900 mb-6">
+                  Supporting Project Success
+                </h2>
+                <div className="space-y-4 text-pc-neutral-600 leading-relaxed">
+                  <p>
+                    At PC Quanti, we provide a broad suite of expert services designed to enhance the planning, delivery, and commercial governance of engineering projects — including project and contract management, cost and value engineering, planning and scheduling, risk management, and independent expert support in dispute resolution.
+                  </p>
+                  <p>
+                    Our approach is evidence-based and focused on ensuring that projects are delivered in compliance with schedule, budget, quality and contractual obligation. We apply rigorous analysis to project data and commercial frameworks, enabling stakeholders to understand entitlement, quantify claims, and navigate complex disputes with confidence.
+                  </p>
+                  <p>
+                    Our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success — rooted in <strong>disciplined planning, rigorous risk management, and clear communication</strong> at every stage of the project life cycle.
+                  </p>
+                </div>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/about/what-we-do.jpg"
+                  alt="PC Quanti project delivery"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </div>
+          </Container>
+        </div>
 
         {/* Differentiators Section */}
         <Container className="mt-24">
