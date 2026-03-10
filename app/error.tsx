@@ -21,28 +21,28 @@ export default function ErrorBoundary({
   }, [error]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-pc-neutral-50">
       <div className="text-center px-4 max-w-md">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Something went wrong</h1>
-        <p className="text-gray-600 mb-8">
-          An unexpected error occurred. Please try again or contact support if the problem persists.
+        <h1 className="text-4xl font-bold text-pc-neutral-900 mb-4">Something went wrong</h1>
+        <p className="text-pc-neutral-600 mb-8">
+          An unexpected error occurred. Please try again or contact us if the problem persists.
         </p>
         <div className="space-x-4">
           <button
             onClick={reset}
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+            className="inline-block bg-pc-gold text-white px-6 py-3 rounded-lg font-medium hover:bg-pc-gold-dark transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2"
           >
             Try Again
           </button>
           <Link
             href="/"
-            className="inline-block bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+            className="inline-block bg-pc-neutral-200 text-pc-neutral-600 px-6 py-3 rounded-lg font-medium hover:bg-pc-neutral-100 transition-colors focus:outline-none focus:ring-2 focus:ring-pc-neutral-400 focus:ring-offset-2"
           >
             Go Home
           </Link>
         </div>
         {error.digest && (
-          <p className="mt-6 text-xs text-gray-400">Error ID: {error.digest}</p>
+          <p className="mt-6 text-xs text-pc-neutral-400">Error ID: {error.digest}</p>
         )}
       </div>
     </div>

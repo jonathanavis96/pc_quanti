@@ -10,7 +10,7 @@ type SectorItem = {
 function IconFrame({ children }: { children: React.ReactNode }) {
   return (
     <div
-      className="flex h-12 w-12 items-center justify-center rounded-md border border-pc-neutral-200 bg-white text-pc-blue"
+      className="flex h-12 w-12 items-center justify-center rounded-md border border-pc-neutral-200 bg-white text-pc-gold"
       aria-hidden
     >
       {children}
@@ -149,28 +149,28 @@ export interface SectorsTrustGridProps {
 }
 
 export function SectorsTrustGrid({
-  heading = "Trusted Across Key Sectors",
+  heading = "Trusted in High-Stakes Sectors",
   items,
 }: SectorsTrustGridProps) {
   const defaultItems: SectorItem[] = [
     {
       title: "Nuclear",
-      description: "High-compliance project delivery",
+      description: "Life-extension upgrades, safety-critical construction and project delivery at nuclear power stations",
       icon: <IconNuclear />,
     },
     {
-      title: "Mining",
-      description: "Remote site delivery excellence",
+      title: "Oil & Gas",
+      description: "Petrochemical plant execution, outage shutdown turnarounds, and commercial management",
       icon: <IconMining />,
     },
     {
       title: "Infrastructure",
-      description: "Multi-year programme delivery",
+      description: "Major infrastructure developments including airport projects, civil works, and public capital programmes",
       icon: <IconInfrastructure />,
     },
     {
-      title: "Energy",
-      description: "Complex project controls",
+      title: "Power Generation",
+      description: "Nuclear and coal-fired power station projects across the full EPC lifecycle",
       icon: <IconEnergy />,
     },
   ];
@@ -192,7 +192,7 @@ export function SectorsTrustGrid({
         <div className="text-center">
           <h2 className="text-3xl font-bold text-pc-neutral-900">{heading}</h2>
           <p className="mx-auto mt-3 max-w-2xl text-base text-pc-neutral-600">
-            Specialist delivery support across high-stakes, highly regulated programmes.
+            Extensive experience in nuclear and coal-fired power generation, oil &amp; gas, and major infrastructure — locally and internationally.
           </p>
         </div>
 
@@ -200,7 +200,7 @@ export function SectorsTrustGrid({
           {displayItems.map((item) => (
             <div
               key={item.title}
-              className="group rounded-lg border border-pc-neutral-200 bg-white p-4 text-left transition-colors hover:bg-pc-neutral-50/60 focus-within:bg-pc-neutral-50/60 focus-within:ring-2 focus-within:ring-pc-blue focus-within:ring-offset-2"
+              className="group rounded-lg border border-pc-neutral-200 bg-white p-4 text-left transition-colors hover:bg-pc-neutral-50/60 focus-within:bg-pc-neutral-50/60 focus-within:ring-2 focus-within:ring-pc-gold focus-within:ring-offset-2"
             >
               <div className="flex items-start gap-4">
                 <IconFrame>{item.icon}</IconFrame>

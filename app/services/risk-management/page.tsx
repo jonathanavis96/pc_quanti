@@ -5,13 +5,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Risk Management",
-  description: "Identify and mitigate project risks before they impact delivery — protecting timelines, budgets, and outcomes for nuclear, mining, and industrial projects.",
+  description: "Proactive risk identification, assessment, and mitigation strategies for nuclear, mining, and industrial projects. Protect timelines, budgets, and outcomes with expert risk management consultancy.",
   alternates: {
     canonical: "/services/risk-management",
   },
   openGraph: {
     title: "Risk Management | PC Quanti",
-    description: "Identify and mitigate project risks before they impact delivery — protecting timelines, budgets, and outcomes for nuclear, mining, and industrial projects.",
+    description: "Proactive risk identification, assessment, and mitigation strategies for nuclear, mining, and industrial projects. Protect timelines, budgets, and outcomes.",
     url: "/services/risk-management",
   },
 };
@@ -25,7 +25,7 @@ export default function RiskManagementPage() {
           <div className="mb-12 md:mb-16">
             <Link 
               href="/services" 
-              className="text-pc-blue hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              className="text-pc-gold hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             >
               ← Back to Services
             </Link>
@@ -44,10 +44,13 @@ export default function RiskManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                In high-stakes nuclear and industrial projects, risk management isn&apos;t optional — it&apos;s essential. PC Quanti provides proactive risk identification, assessment, and mitigation strategies that protect your project from costly delays, budget overruns, and scope creep.
+                PC Quanti provides specialised risk management services tailored to the construction and engineering sector. We help developers, contractors, and project stakeholders identify, assess, and mitigate potential risks before they impact timelines, budgets, or compliance.
+              </p>
+              <p className="text-pc-neutral-600 leading-relaxed mb-4">
+                From project feasibility and cost exposure analysis to contractual, operational, and site-based risk evaluation, our structured approach ensures proactive decision-making and improved project certainty. By combining technical expertise with real-world industry experience, PC Quanti enables clients to minimise financial loss, manage uncertainty effectively, and deliver projects with greater confidence and control.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our structured approach combines industry best practices with hands-on experience in complex, regulated environments where failure carries significant consequences. We don&apos;t just identify risks — we develop practical mitigation strategies and monitor them throughout the project lifecycle.
+                We actively protect our clients&apos; commercial interests and contractual entitlements through rigorous project controls, transparent reporting, and disciplined construction oversight. By implementing proactive risk management strategies and maintaining accurate project data, we help minimise delays, cost overruns, and performance disputes — ensuring projects are delivered efficiently and in compliance with contractual obligations.
               </p>
             </Card>
           </div>
@@ -66,7 +69,7 @@ export default function RiskManagementPage() {
                   <li>• Comprehensive risk registers</li>
                   <li>• Qualitative and quantitative risk analysis</li>
                   <li>• Risk probability and impact assessments</li>
-                  <li>• Risk categorization and prioritization</li>
+                  <li>• Risk categorisation and prioritisation</li>
                 </ul>
               </Card>
 
@@ -96,11 +99,11 @@ export default function RiskManagementPage() {
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Specialized Risk Analysis
+                  Specialised Risk Analysis
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
                   <li>• Schedule risk analysis (Monte Carlo simulation)</li>
-                  <li>• Cost risk modeling</li>
+                  <li>• Cost risk modelling</li>
                   <li>• Safety and regulatory risk assessment</li>
                   <li>• Stakeholder and reputational risk analysis</li>
                 </ul>
@@ -149,11 +152,11 @@ export default function RiskManagementPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Controls →</h3>
                 <p className="text-sm text-pc-neutral-600">Scheduling, cost control, and performance reporting</p>
               </Link>
-              <Link href="/services/project-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/project-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Management →</h3>
                 <p className="text-sm text-pc-neutral-600">End-to-end project delivery and governance</p>
               </Link>
@@ -163,7 +166,7 @@ export default function RiskManagementPage() {
           {/* CTA Section */}
           <div className="text-center p-8 bg-pc-neutral-50 rounded-lg">
             <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
-              Ready to protect your project from preventable risks?
+              Ready to Protect Your Project from Preventable Risks?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
               Get in touch to explore how PC Quanti can strengthen your risk management approach and safeguard project delivery.

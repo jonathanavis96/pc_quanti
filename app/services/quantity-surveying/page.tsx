@@ -5,13 +5,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Quantity Surveying",
-  description: "Cost planning, procurement support, and commercial management to keep your project on budget. Expert quantity surveying for industrial sectors.",
+  description: "Expert cost management, procurement support, and commercial oversight to keep your project on budget. Specialist quantity surveying for nuclear, mining, and industrial sectors.",
   alternates: {
     canonical: "/services/quantity-surveying",
   },
   openGraph: {
     title: "Quantity Surveying | PC Quanti",
-    description: "Cost planning, procurement support, and commercial management to keep your project on budget. Expert quantity surveying for industrial sectors.",
+    description: "Expert cost management, procurement support, and commercial oversight for nuclear, mining, and industrial projects.",
     url: "/services/quantity-surveying",
   },
 };
@@ -25,7 +25,7 @@ export default function QuantitySurveyingPage() {
           <div className="mb-12 md:mb-16">
             <Link 
               href="/services" 
-              className="text-pc-blue hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              className="text-pc-gold hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             >
               ← Back to Services
             </Link>
@@ -33,7 +33,7 @@ export default function QuantitySurveyingPage() {
               Quantity Surveying
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Expert cost management and contract support for nuclear, mining, and industrial projects. From procurement through final account settlement.
+              Detailed quantity surveying, variation analysis, and commercial management to ensure value is maintained across complex engineering and construction projects.
             </p>
           </div>
 
@@ -44,10 +44,13 @@ export default function QuantitySurveyingPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provides specialist quantity surveying services for complex industrial projects, with particular expertise in nuclear and mining sectors. We deliver rigorous cost control, procurement support, and contract administration without the bloated overhead of large consultancies.
+                Administering the contract is supported by detailed quantity surveying, from performing variation analysis and compensation event quotation building or assessment to managing the payment assessment process. Our quantity surveying services dovetail with the work in progress and contract management to ensure value is maintained throughout the project lifecycle.
+              </p>
+              <p className="text-pc-neutral-600 leading-relaxed mb-4">
+                We also provide quantity surveying services in assessing claims, preparing claims, and supporting disputes and arbitrations. Our team brings rigorous cost control and commercial discipline to every engagement, ensuring accurate measurement, transparent reporting, and defensible commercial positions.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach combines deep technical understanding of industrial environments with practical commercial acumen. Whether you&apos;re managing tender processes, controlling project costs, or negotiating final accounts, we bring clarity and precision to every engagement.
+                We provide full commercial management of projects to manage risks and maximise profitability. Our services include procurement planning and execution, estimating, tendering and tender analysis, award management, project cost and value analysis, risk management, and overall coordination of project resources to achieve the commercial success of the project.
               </p>
             </Card>
           </div>
@@ -149,11 +152,11 @@ export default function QuantitySurveyingPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/contract-administration" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/contract-administration" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Contract Administration →</h3>
                 <p className="text-sm text-pc-neutral-600">Expert contract management and compliance services</p>
               </Link>
-              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Controls →</h3>
                 <p className="text-sm text-pc-neutral-600">Scheduling, cost control, and risk management</p>
               </Link>
@@ -163,7 +166,7 @@ export default function QuantitySurveyingPage() {
           {/* CTA Section */}
           <div className="text-center p-8 bg-pc-neutral-50 rounded-lg">
             <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
-              Need expert quantity surveying support?
+              Need Expert Quantity Surveying Support?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
               Contact PC Quanti to discuss how we can help control costs and manage contracts on your next industrial project.
