@@ -6,6 +6,8 @@ import { ProcessTimeline } from "@/src/components/ProcessTimeline";
 import { ProofStrip } from "@/src/components/ProofStrip";
 import { CTASection } from "@/src/components/CTASection";
 import { SectorsTrustGrid } from "@/src/components/SectorsTrustGrid";
+import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -40,6 +42,46 @@ export default function Home() {
         <ProofStrip />
 
         <CTASection />
+
+        {/* Meet Our Team Section */}
+        <section className="py-16 md:py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500 mb-3">Our People</p>
+              <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">Meet Our Team</h2>
+              <p className="text-lg text-pc-neutral-600 max-w-3xl mx-auto">
+                PC Quanti&apos;s strength lies in its highly qualified and committed team of engineering,
+                construction and commercial professionals — combining technical expertise with practical,
+                on-site understanding, always guided by integrity and accountability.
+              </p>
+            </div>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+              {[
+                { name: "Phil Coleman", role: "Managing Director", image: "/team/phil.jpg" },
+                { name: "Tyrone Juul", role: "Project, Construction & Contract Manager", image: "/team/tyrone.jpg" },
+                { name: "Heleene Schreuder", role: "Attorney at Law", image: "/team/heleene.jpg" },
+                { name: "Francois Venter", role: "Planning Engineer", image: "/team/francois.jpg" },
+                { name: "Jonathan Ely", role: "Adjudicator & Arbitrator", image: "/team/jonathan.jpg" },
+              ].map((member) => (
+                <div key={member.name} className="text-center">
+                  <div className="relative mx-auto w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-pc-neutral-200">
+                    <Image src={member.image} alt={member.name} fill className="object-cover object-top" sizes="128px" />
+                  </div>
+                  <h3 className="font-semibold text-pc-neutral-900">{member.name}</h3>
+                  <p className="text-sm text-pc-gold mt-1">{member.role}</p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-10">
+              <Link
+                href="/team"
+                className="inline-flex items-center justify-center rounded-lg border border-pc-neutral-300 px-6 py-3 text-sm font-semibold text-pc-neutral-900 hover:border-pc-gold hover:text-pc-gold transition-colors"
+              >
+                Meet the full team →
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* FAQ Section */}
         <FAQ
