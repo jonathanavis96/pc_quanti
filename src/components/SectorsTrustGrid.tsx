@@ -27,31 +27,36 @@ function IconNuclear() {
   );
 }
 
-/* Pumpjack (nodding donkey) */
+/* Pumpjack — lattice truss tower with walking beam + horse head */
 function IconOilGas() {
   return (
     <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8"
       strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10" aria-hidden>
-      {/* Base platform */}
-      <line x1="4" y1="38" x2="40" y2="38" />
-      {/* Samson post (vertical support) */}
-      <line x1="24" y1="38" x2="24" y2="22" />
-      {/* Walking beam (horizontal, balanced on post) */}
-      <line x1="10" y1="20" x2="36" y2="20" />
-      {/* Horse head (curved front, left side, pumping end) */}
-      <path d="M10 20 Q6 18 6 14 Q6 10 10 10 Q13 10 14 13" />
-      {/* Wellhead rod going down */}
-      <line x1="11" y1="13" x2="11" y2="38" strokeDasharray="2 2" strokeOpacity="0.5" />
-      {/* Crank arm + pitman (right side, engine end) */}
-      <line x1="36" y1="20" x2="36" y2="28" />
-      <circle cx="36" cy="30" r="3" fill="currentColor" fillOpacity="0.15" />
-      <circle cx="36" cy="30" r="3" />
-      {/* Engine box */}
-      <rect x="30" y="32" width="10" height="6" rx="1" fill="currentColor" fillOpacity="0.1" />
-      <rect x="30" y="32" width="10" height="6" rx="1" />
-      {/* Support legs for samson post */}
-      <line x1="24" y1="38" x2="20" y2="38" />
-      <line x1="24" y1="38" x2="28" y2="38" />
+      {/* Ground line */}
+      <line x1="3" y1="38" x2="41" y2="38" />
+      {/* Lattice tower — A-frame, wide at base, narrow at top */}
+      {/* Outer left leg */}
+      <line x1="8" y1="38" x2="18" y2="16" />
+      {/* Outer right leg */}
+      <line x1="29" y1="38" x2="21" y2="16" />
+      {/* Inner left leg */}
+      <line x1="13" y1="38" x2="18" y2="16" />
+      {/* Inner right leg */}
+      <line x1="24" y1="38" x2="21" y2="16" />
+      {/* Cross braces — lower X */}
+      <line x1="8" y1="38" x2="24" y2="28" />
+      <line x1="13" y1="38" x2="8" y2="28" strokeOpacity="0.6" />
+      {/* Cross braces — upper X */}
+      <line x1="13" y1="28" x2="24" y2="22" strokeOpacity="0.7" />
+      <line x1="8" y1="22" x2="24" y2="28" strokeOpacity="0.5" />
+      {/* Pivot cap at top of tower */}
+      <circle cx="19.5" cy="16" r="1.5" fill="currentColor" />
+      {/* Walking beam — left (pump end) to right (horse head) */}
+      <line x1="10" y1="14" x2="36" y2="14" />
+      {/* Horse head — curves up then swoops forward-right */}
+      <path d="M36 14 Q40 14 40 10 Q40 6 36 5 Q33 5 33 8" strokeLinejoin="round" />
+      {/* Wellbore sucker rod — dashed vertical from pump end down */}
+      <line x1="10" y1="14" x2="10" y2="38" strokeDasharray="2.5 2" strokeOpacity="0.45" />
     </svg>
   );
 }
@@ -172,15 +177,11 @@ export function SectorsTrustGrid({
           {displayItems.map((item) => (
             <div
               key={item.title}
-              className="group rounded-lg border border-pc-neutral-200 bg-white p-4 text-left transition-colors hover:bg-pc-neutral-50/60"
+              className="group rounded-lg border border-pc-neutral-200 bg-white p-6 text-center transition-colors hover:bg-pc-neutral-50/60"
             >
-              <div className="flex items-start gap-4">
-                <div className="shrink-0 text-pc-gold">{item.icon}</div>
-                <div>
-                  <h3 className="text-lg font-semibold text-pc-neutral-900">{item.title}</h3>
-                  <p className="mt-1 text-sm text-pc-neutral-600">{item.description}</p>
-                </div>
-              </div>
+              <div className="mb-4 flex justify-center text-pc-gold">{item.icon}</div>
+              <h3 className="text-lg font-semibold text-pc-neutral-900">{item.title}</h3>
+              <p className="mt-2 text-sm text-pc-neutral-600">{item.description}</p>
             </div>
           ))}
         </div>
