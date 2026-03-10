@@ -22,12 +22,12 @@ export function Hero({
   ctaHref = '/contact',
 }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-white py-20 md:py-28">
+    <section className="relative overflow-hidden bg-[#171717] py-20 md:py-28">
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        className="pointer-events-none absolute inset-0 opacity-[0.08]"
         style={{
           backgroundImage:
-            'linear-gradient(to right, rgba(44, 2, 217, 0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(44, 2, 217, 0.35) 1px, transparent 1px), radial-gradient(circle at top, rgba(44, 2, 217, 0.08), transparent 55%)',
+            'linear-gradient(to right, rgba(196, 162, 26, 0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(196, 162, 26, 0.35) 1px, transparent 1px), radial-gradient(circle at top, rgba(196, 162, 26, 0.12), transparent 55%)',
           backgroundSize: '32px 32px, 32px 32px, 100% 100%',
         }}
         aria-hidden
@@ -40,11 +40,11 @@ export function Hero({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-pc-neutral-500">
-              UK & South Africa • Project Delivery Consultancy
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-pc-gold">
+              South Africa & United Kingdom • Engineering & Construction Management
             </p>
             <motion.h1
-              className="text-4xl font-bold tracking-tight text-pc-neutral-900 md:text-5xl lg:text-6xl"
+              className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl"
               initial={{ clipPath: 'inset(0 0 100% 0)' }}
               animate={{ clipPath: 'inset(0 0 0% 0)' }}
               transition={{ duration: 0.8, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
@@ -52,7 +52,7 @@ export function Hero({
               {headline}
             </motion.h1>
             <motion.p
-              className="text-lg text-pc-neutral-600 md:text-xl"
+              className="text-lg text-pc-neutral-400 md:text-xl"
               initial={{ clipPath: 'inset(0 0 100% 0)' }}
               animate={{ clipPath: 'inset(0 0 0% 0)' }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
@@ -77,7 +77,7 @@ export function Hero({
                   <motion.path
                     d="M2 50 L178 50 L178 2 L2 2 L2 50"
                     fill="none"
-                    stroke="rgba(44, 2, 217, 0.9)"
+                    stroke="rgba(196, 162, 26, 0.9)"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -90,7 +90,7 @@ export function Hero({
                 <motion.div
                   className="absolute inset-0 rounded-md"
                   style={{
-                    backgroundColor: 'rgba(44, 2, 217, 0.9)',
+                    backgroundColor: 'rgba(196, 162, 26, 0.9)',
                   }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -99,7 +99,7 @@ export function Hero({
                 <motion.div
                   className="absolute inset-0 rounded-md"
                   style={{
-                    backgroundColor: 'rgba(44, 2, 217, 0.9)',
+                    backgroundColor: 'rgba(196, 162, 26, 0.9)',
                     backgroundImage:
                       'repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(0, 0, 0, 0.1) 2px, rgba(0, 0, 0, 0.1) 3px)',
                   }}
@@ -120,6 +120,7 @@ export function Hero({
                     <Button
                       size="lg"
                       variant="primary"
+                      onDark
                       className="relative bg-transparent text-white hover:bg-transparent active:bg-transparent"
                     >
                       {ctaText}
@@ -132,21 +133,21 @@ export function Hero({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.55, ease: [0.2, 0.8, 0.2, 1] }}
               >
-                <LinkButton href="/services" size="lg" variant="outline">
+                <LinkButton href="/services" size="lg" variant="outline" onDark>
                   View Services
                 </LinkButton>
               </motion.div>
             </div>
             <motion.div
-              className="flex flex-wrap gap-3 text-sm font-semibold text-pc-neutral-500"
+              className="flex flex-wrap gap-3 text-sm font-semibold text-pc-neutral-400"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.65, ease: [0.2, 0.8, 0.2, 1] }}
             >
-              {['PM', 'QS', 'Contracts', 'Claims', 'Controls'].map((item) => (
+              {['PM', 'QS', 'Contracts', 'Claims', 'Planning', 'Risk', 'Disputes'].map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-pc-neutral-200 bg-white px-3 py-1"
+                  className="rounded-full border border-pc-gold/30 bg-pc-gold/10 px-3 py-1 text-pc-gold-300"
                 >
                   {item}
                 </span>

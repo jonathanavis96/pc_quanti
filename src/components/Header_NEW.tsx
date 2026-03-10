@@ -101,8 +101,8 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   ref={(el) => { linkRefs.current[item.href] = el; }}
-                  className={`text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-2 py-2 ${
-                    activeHref === item.href ? 'text-pc-blue' : ''
+                  className={`text-pc-neutral-900 font-medium hover:text-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm px-2 py-2 ${
+                    activeHref === item.href ? 'text-pc-gold' : ''
                   }`}
                   onMouseEnter={() => updateUnderline(item.href)}
                   onMouseLeave={() => updateUnderline(activeHref)}
@@ -114,7 +114,7 @@ export function Header() {
 
             {/* Simple visible underline - testing first */}
             <motion.div
-              className="absolute bottom-0 h-0.5 bg-pc-blue pointer-events-none"
+              className="absolute bottom-0 h-0.5 bg-pc-gold pointer-events-none"
               style={{ left: underline.left, width: underline.width }}
               animate={{ 
                 left: underline.left, 
@@ -132,7 +132,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-pc-neutral-900 hover:text-pc-blue focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+            className="md:hidden p-2 text-pc-neutral-900 hover:text-pc-gold focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             onClick={toggleMobileMenu}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
@@ -157,7 +157,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-pc-neutral-900 font-medium hover:text-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm px-1 py-2"
+                  className="text-pc-neutral-900 font-medium hover:text-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm px-1 py-2"
                   onClick={closeMobileMenu}
                 >
                   {item.label}

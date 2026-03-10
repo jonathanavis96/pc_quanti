@@ -5,13 +5,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Project Management",
-  description: "End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning with expert project management consultancy.",
+  description: "Turnkey project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
   alternates: {
     canonical: "/services/project-management",
   },
   openGraph: {
     title: "Project Management | PC Quanti",
-    description: "End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning with expert project management consultancy.",
+    description: "Turnkey project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
     url: "/services/project-management",
   },
 };
@@ -25,7 +25,7 @@ export default function ProjectManagementPage() {
           <div className="mb-12 md:mb-16">
             <Link 
               href="/services" 
-              className="text-pc-blue hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              className="text-pc-gold hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             >
               ← Back to Services
             </Link>
@@ -33,7 +33,7 @@ export default function ProjectManagementPage() {
               Project Management
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              End-to-end project delivery for nuclear, mining, and industrial sectors. From feasibility through commissioning.
+              Turnkey project management services to suit your project needs — from initial design and engineering development through on-site execution and project close-out.
             </p>
           </div>
 
@@ -44,10 +44,13 @@ export default function ProjectManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti delivers expert project management consultancy tailored to the unique demands of nuclear, mining, and industrial projects. With extensive experience in high-stakes, highly regulated environments, we provide lean, effective project leadership without the overhead of large corporate consultancies.
+                PC Quanti provide turnkey project management services to suit your project needs, from initial design and engineering development phase, through on-site execution and project close-out phases. We can also provide services to existing projects by bolstering your existing team, where we guarantee that we will add value to your project team with our expertise.
+              </p>
+              <p className="text-pc-neutral-600 leading-relaxed mb-4">
+                We implement programme management frameworks, integrating schedule development, risk management, change control and key client and stakeholder risks and interface management to manage time, cost and scope delivery, ensuring issue resolution and alignment between project objectives and contractual obligations.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Whether you&apos;re navigating complex commissioning phases, managing stakeholder expectations, or ensuring compliance with stringent regulatory frameworks, our approach combines deep technical expertise with pragmatic delivery focus.
+                Whether you require management of the main contractor work or certain subcontractors, or require a client-side team to manage the project for you, we can provide you with the necessary services. Our approach combines deep technical expertise with a pragmatic delivery focus across power generation, oil and gas, and major infrastructure developments.
               </p>
             </Card>
           </div>
@@ -117,26 +120,26 @@ export default function ProjectManagementPage() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Nuclear
+                    Nuclear &amp; Power Generation
                   </h3>
                   <p className="text-pc-neutral-600">
-                    New build, decommissioning, and operational nuclear facilities with deep understanding of regulatory requirements and safety-critical environments.
+                    Nuclear and coal-fired power generation facilities with deep understanding of regulatory requirements, safety-critical environments, and complex EPC delivery.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Mining
+                    Oil &amp; Gas
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Surface and underground mining operations, processing facilities, and infrastructure development in resource-intensive environments.
+                    Petrochemical plants and oil and gas installations requiring rigorous project controls, stakeholder management, and operational readiness.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Industrial
+                    Major Infrastructure
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Energy, infrastructure, and heavy industrial projects requiring rigorous project controls and stakeholder management.
+                    Large-scale infrastructure developments including airport projects and civil structures, delivered locally in South Africa, the United Kingdom and other international markets.
                   </p>
                 </div>
               </div>
@@ -149,11 +152,11 @@ export default function ProjectManagementPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Controls →</h3>
                 <p className="text-sm text-pc-neutral-600">Scheduling, cost control, and risk management</p>
               </Link>
-              <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Quantity Surveying →</h3>
                 <p className="text-sm text-pc-neutral-600">Cost planning and commercial management</p>
               </Link>
@@ -163,10 +166,10 @@ export default function ProjectManagementPage() {
           {/* CTA Section */}
           <div className="text-center p-8 bg-pc-neutral-50 rounded-lg">
             <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
-              Ready to discuss your project management needs?
+              Ready to Discuss Your Project Management Needs?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
-              Get in touch to explore how PC Quanti can deliver expert project leadership for your next industrial project.
+              Get in touch to explore how PC Quanti can deliver expert project management for your next engineering or construction project.
             </p>
             <LinkButton href="/contact" size="lg">
               Contact Us

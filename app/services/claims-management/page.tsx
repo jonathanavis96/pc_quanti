@@ -4,14 +4,14 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Claims Management",
-  description: "Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience. Expert claims management consultancy.",
+  title: "Claims Management — Dispute Resolution, Adjudication & Arbitration",
+  description: "Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience. Expert claims management consultancy covering adjudication, arbitration, and forensic schedule analysis for complex projects.",
   alternates: {
     canonical: "/services/claims-management",
   },
   openGraph: {
     title: "Claims Management | PC Quanti",
-    description: "Dispute resolution, delay analysis, and claims preparation backed by nuclear and industrial experience. Expert claims management consultancy.",
+    description: "Expert claims preparation, dispute resolution, adjudication, and arbitration support for complex nuclear, mining, and industrial projects.",
     url: "/services/claims-management",
   },
 };
@@ -25,7 +25,7 @@ export default function ClaimsManagementPage() {
           <div className="mb-12 md:mb-16">
             <Link 
               href="/services" 
-              className="text-pc-blue hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              className="text-pc-gold hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             >
               ← Back to Services
             </Link>
@@ -33,7 +33,7 @@ export default function ClaimsManagementPage() {
               Claims Management
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Expert claims preparation, dispute resolution, and forensic analysis services for complex industrial projects.
+              Specialist advice and representation in construction and engineering disputes — including claims preparation, adjudication, arbitration, and settlement negotiation.
             </p>
           </div>
 
@@ -44,10 +44,13 @@ export default function ClaimsManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provides specialist claims management services for nuclear, mining, and industrial projects. We help clients prepare, assess, and resolve contractual claims through rigorous analysis, clear documentation, and commercially astute strategies.
+                We aim to avoid disputes and manage your project around this core principle. Should a dispute be unavoidable, we provide specialist advice and representation in construction and engineering disputes across all formal and alternative dispute resolution forums. Our services include strategic and practical guidance on contractual dispute resolution procedures, the preparation of statements of claim, statements of defence and counterclaims for adjudication and arbitration proceedings, and comprehensive arbitration support from referral through to final award.
+              </p>
+              <p className="text-pc-neutral-600 leading-relaxed mb-4">
+                We assist clients with the formulation and presentation of construction-related claims, evidentiary preparation, and the coordination of expert input to ensure technically robust and commercially persuasive submissions. We also support and lead dispute resolution negotiations and draft clear, enforceable settlement agreements designed to achieve efficient and sustainable outcomes.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach combines forensic attention to detail with practical commercial awareness. Whether you&apos;re pursuing a delay and disruption claim, defending against contractor claims, or seeking early dispute resolution, we bring clarity, evidence, and expertise to every engagement.
+                While our primary focus is dispute avoidance through strong planning and administration, PC Quanti is highly experienced in construction claims, adjudication, arbitration, and formal dispute resolution proceedings when required. Our mission is to build long-term client relationships by consistently adding measurable value, strengthening project certainty, and delivering professional excellence across every engagement.
               </p>
             </Card>
           </div>
@@ -87,10 +90,10 @@ export default function ClaimsManagementPage() {
                   Dispute Resolution Support
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Expert witness reports</li>
-                  <li>• Adjudication and arbitration support</li>
-                  <li>• Mediation preparation</li>
-                  <li>• Litigation support services</li>
+                  <li>• Expert witness reports and testimony</li>
+                  <li>• Adjudication and arbitration support from referral to final award</li>
+                  <li>• Mediation preparation and settlement negotiation</li>
+                  <li>• Statements of claim, defence, and counterclaim drafting</li>
                 </ul>
               </Card>
 
@@ -149,11 +152,11 @@ export default function ClaimsManagementPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/contract-administration" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/contract-administration" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Contract Administration →</h3>
                 <p className="text-sm text-pc-neutral-600">Expert contract management and compliance</p>
               </Link>
-              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Controls →</h3>
                 <p className="text-sm text-pc-neutral-600">Scheduling, cost control, and risk management</p>
               </Link>
@@ -163,7 +166,7 @@ export default function ClaimsManagementPage() {
           {/* CTA Section */}
           <div className="text-center p-8 bg-pc-neutral-50 rounded-lg">
             <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
-              Need expert claims management support?
+              Need Expert Claims Management Support?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
               Contact PC Quanti to discuss how we can help you prepare, assess, or resolve contractual claims on your industrial project.

@@ -4,14 +4,14 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contract Administration",
-  description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex industrial projects.",
+  title: "Contract Administration — NEC, FIDIC, GCC & JBCC Expertise",
+  description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex nuclear, mining, and industrial projects under NEC3, NEC4, FIDIC, GCC, and JBCC frameworks.",
   alternates: {
     canonical: "/services/contract-administration",
   },
   openGraph: {
     title: "Contract Administration | PC Quanti",
-    description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex industrial projects.",
+    description: "Expert contract administration, compliance management, and documentation services for nuclear, mining, and industrial projects under NEC, FIDIC, GCC, and JBCC.",
     url: "/services/contract-administration",
   },
 };
@@ -25,7 +25,7 @@ export default function ContractAdministrationPage() {
           <div className="mb-12 md:mb-16">
             <Link 
               href="/services" 
-              className="text-pc-blue hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2 rounded-sm"
+              className="text-pc-gold hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             >
               ← Back to Services
             </Link>
@@ -33,7 +33,7 @@ export default function ContractAdministrationPage() {
               Contract Administration
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Expert contract administration, compliance management, and documentation services for nuclear, mining, and industrial projects.
+              Expert contract administration, compliance management, and documentation services for nuclear, mining, and industrial projects — across NEC, FIDIC, GCC, JBCC, and bespoke frameworks.
             </p>
           </div>
 
@@ -44,10 +44,13 @@ export default function ContractAdministrationPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provides specialist contract administration services for complex industrial projects. We ensure contractual obligations are met, documentation is maintained to the highest standards, and compliance requirements are rigorously managed throughout the project lifecycle.
+                We believe that for a project to be truly successful it is critical to implement proper and effective contract administration. PC Quanti ensures concise but comprehensive written project communication, serves the required notices on time, and properly documents the progress of the works and commercial administration required under the contract form — working with established document controls and EDMS systems to keep your important project documentation safe and audit-ready.
+              </p>
+              <p className="text-pc-neutral-600 leading-relaxed mb-4">
+                We provide comprehensive contract management support throughout the lifecycle of construction and engineering projects. Our services include advisory on contractual compliance, risk allocation, payment certification, variation management, and extension of time assessments across NEC3, NEC4, FIDIC, GCC, and JBCC contract suites.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach combines meticulous attention to contractual detail with practical understanding of project delivery realities. Whether you&apos;re managing NEC, FIDIC, or bespoke contract forms, we bring clarity, accuracy, and commercial awareness to every engagement.
+                Our approach is proactive and detail-driven, with a focus on protecting our clients&apos; commercial interests while maintaining project momentum. By ensuring clear record-keeping, structured decision-making, and timely contractual notices, we help mitigate risk and reduce the likelihood of disputes arising.
               </p>
             </Card>
           </div>
@@ -63,10 +66,10 @@ export default function ContractAdministrationPage() {
                   Contract Management
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Contract setup and mobilization</li>
-                  <li>• Notice management and compliance tracking</li>
-                  <li>• Change order administration</li>
-                  <li>• Contract closeout and handover</li>
+                  <li>• Contract setup, mobilisation, and procurement advisory</li>
+                  <li>• Notice management, compliance tracking, and timely notifications</li>
+                  <li>• Variation management and change order administration</li>
+                  <li>• Payment certification and contract closeout</li>
                 </ul>
               </Card>
 
@@ -120,7 +123,7 @@ export default function ContractAdministrationPage() {
                     Contractual Expertise
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Deep knowledge of standard and bespoke contract forms, with proven experience administering NEC, FIDIC, and client-specific agreements in industrial settings.
+                    Deep knowledge of NEC3, NEC4, FIDIC, GCC, JBCC, and bespoke contract forms, with proven experience administering complex agreements in nuclear, mining, and industrial settings.
                   </p>
                 </div>
                 <div>
@@ -149,11 +152,11 @@ export default function ContractAdministrationPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Quantity Surveying →</h3>
                 <p className="text-sm text-pc-neutral-600">Cost planning and commercial management</p>
               </Link>
-              <Link href="/services/claims-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-blue transition-colors focus:outline-none focus:ring-2 focus:ring-pc-blue focus:ring-offset-2">
+              <Link href="/services/claims-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Claims Management →</h3>
                 <p className="text-sm text-pc-neutral-600">Dispute resolution and claims preparation</p>
               </Link>
@@ -163,7 +166,7 @@ export default function ContractAdministrationPage() {
           {/* CTA Section */}
           <div className="text-center p-8 bg-pc-neutral-50 rounded-lg">
             <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
-              Need expert contract administration support?
+              Need Expert Contract Administration Support?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
               Contact PC Quanti to discuss how we can ensure contractual compliance and documentation excellence on your next industrial project.

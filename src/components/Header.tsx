@@ -101,20 +101,20 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 border-b transition-colors duration-200 ${
         isScrolled
-          ? 'bg-[rgba(0,0,204,0.75)] backdrop-blur border-transparent'
-          : 'bg-pc-blue border-transparent'
+          ? 'bg-black border-transparent shadow-lg'
+          : 'bg-black border-transparent'
       }`}
     >
       <Container maxWidth="xl">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
             <Image
-              src={withBasePath('/logo.webp')}
+              src={withBasePath('/logo-rectangle.webp')}
               alt="PC Quanti logo"
               width={220}
-              height={80}
+              height={94}
               priority
-              className="h-16 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
@@ -134,7 +134,7 @@ export function Header() {
                   ref={(el) => {
                     linkRefs.current[item.href] = el;
                   }}
-                  className="text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-sm px-4 py-3"
+                  className="text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm px-4 py-3"
                   onMouseEnter={() => {
                     setIsUnderlineVisible(true);
                     setIsHoveringNav(true);
@@ -187,14 +187,15 @@ export function Header() {
             <Button
               variant="primary"
               size="md"
-              className="bg-pc-blue-light !text-pc-blue border border-white/40 shadow-[inset_0_3px_0_rgba(255,255,255,0.85),inset_0_-4px_0_rgba(31,1,153,0.45),0_3px_0_rgba(0,0,0,0.08)] hover:bg-pc-blue-light/95 active:bg-pc-blue-light/85 active:shadow-[inset_0_2px_0_rgba(255,255,255,0.75),inset_0_-3px_0_rgba(31,1,153,0.45),0_2px_0_rgba(0,0,0,0.08)]"
+              onDark
+              className="border border-white/40 shadow-[inset_0_3px_0_rgba(255,255,255,0.85),inset_0_-4px_0_rgba(0,0,0,0.25),0_3px_0_rgba(0,0,0,0.08)] hover:bg-pc-gold/90 active:bg-pc-gold/80 active:shadow-[inset_0_2px_0_rgba(255,255,255,0.75),inset_0_-3px_0_rgba(0,0,0,0.25),0_2px_0_rgba(0,0,0,0.08)]"
             >
               Contact Us
             </Button>
           </Link>
 
           <button
-            className="md:hidden p-2 text-white hover:text-white/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-sm"
+            className="md:hidden p-2 text-white hover:text-white/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm"
             onClick={toggleMobileMenu}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
@@ -218,7 +219,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-pc-blue rounded-md px-4 py-3 text-center ${
+                  className={`text-white font-medium hover:text-white/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-md px-4 py-3 text-center ${
                     activeHref === item.href ? 'bg-white/10' : 'hover:bg-white/5'
                   }`}
                   onClick={closeMobileMenu}
@@ -228,10 +229,11 @@ export function Header() {
               ))}
               <div className="mt-2 pt-2 border-t border-white/20">
                 <Link href="/contact" onClick={closeMobileMenu} className="block">
-                  <Button 
-                    variant="primary" 
-                    size="md" 
-                    className="w-full bg-white !text-pc-blue hover:bg-white/95 active:bg-white/90"
+                  <Button
+                    variant="primary"
+                    size="md"
+                    onDark
+                    className="w-full hover:bg-pc-gold/90 active:bg-pc-gold/80"
                   >
                     Contact Us
                   </Button>

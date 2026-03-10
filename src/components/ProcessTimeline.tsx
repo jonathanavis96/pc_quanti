@@ -3,20 +3,20 @@ import { Container } from './Container';
 
 const steps = [
   {
-    title: 'Discovery & alignment',
-    description: 'Clarify scope, constraints, and success metrics with stakeholders and delivery teams.',
+    title: 'Planning & Development',
+    description: 'Define scope, schedule and risk frameworks across NEC, FIDIC, GCC and JBCC contract forms from initial design through engineering development.',
   },
   {
-    title: 'Structured mobilisation',
-    description: 'Build the right governance, controls, and reporting cadence to de-risk delivery early.',
+    title: 'Structured Mobilisation',
+    description: 'Implement programme management frameworks integrating schedule development, risk management, change control and stakeholder interface management.',
   },
   {
-    title: 'Controlled execution',
-    description: 'Track progress, manage change, and keep commercial outcomes protected.',
+    title: 'On-Site Execution',
+    description: 'Manage construction delivery with disciplined project controls, commercial administration and rigorous oversight to protect time, cost and quality.',
   },
   {
-    title: 'Closeout & handover',
-    description: 'Deliver final reporting, lessons learned, and a clean transition to operations.',
+    title: 'Closeout & Handover',
+    description: 'Complete final reporting, contract close-out and a structured transition to operations, ensuring all obligations are met.',
   },
 ];
 
@@ -26,16 +26,16 @@ export function ProcessTimeline() {
       <Container maxWidth="lg">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500">Process</p>
-          <h2 className="text-3xl font-bold text-pc-neutral-900 mt-3 mb-4">How we deliver</h2>
+          <h2 className="text-3xl font-bold text-pc-neutral-900 mt-3 mb-4">How We Deliver</h2>
           <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-            A clear, repeatable delivery path that balances governance with practical execution.
+            Professional services across the full project life cycle, combining technical excellence with commercial discipline.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
           {steps.map((step, index) => (
             <div key={step.title} className="flex gap-4">
               <div className="flex flex-col items-center">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-pc-blue/40 text-sm font-semibold text-pc-blue">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-pc-gold/40 text-sm font-semibold text-pc-gold">
                   {String(index + 1).padStart(2, '0')}
                 </div>
                 <div className="mt-4 hidden h-full w-px bg-pc-neutral-200 md:block" aria-hidden />

@@ -2,9 +2,9 @@ import React from 'react';
 import { Container } from './Container';
 
 const proofPoints = [
-  { label: 'Delivery experience', value: '15+ years across nuclear & industrial programmes' },
-  { label: 'Commercial focus', value: 'NEC, FIDIC, and bespoke contract expertise' },
-  { label: 'Lean engagement', value: 'Senior-led delivery without the consultancy overhead' },
+  { label: 'Delivery experience', value: 'Nuclear, power generation, oil & gas, and major infrastructure programmes' },
+  { label: 'Contract expertise', value: 'NEC3 · NEC4 · FIDIC · GCC · JBCC frameworks' },
+  { label: 'Our approach', value: 'Disciplined planning, commercial rigour — measurable project outcomes' },
 ];
 
 export function ProofStrip() {

@@ -46,7 +46,7 @@ export const FAQ: React.FC<FAQProps> = ({
                   <button
                     type="button"
                     id={buttonId}
-                    className="w-full flex items-center justify-between gap-6 p-6 md:p-7 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-pc-blue"
+                    className="w-full flex items-center justify-between gap-6 p-6 md:p-7 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-pc-gold"
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => setOpenIndex((prev) => (prev === index ? null : index))}
