@@ -41,7 +41,7 @@ export function TeamMemberCard({ name, role, image, bio, reverse }: TeamMemberCa
       {/* Bio — row 2, opposite columns — pt-3 nudges text below rounded photo edge */}
       <div className={`${bioCol} pt-3 space-y-4 text-pc-neutral-600 leading-relaxed`}>
         {bio.map((paragraph, idx) => (
-          <p key={idx}>{paragraph}</p>
+          <p key={idx} className="text-justify">{paragraph}</p>
         ))}
       </div>
     </div>

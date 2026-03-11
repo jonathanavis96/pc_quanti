@@ -36,11 +36,11 @@ export default function AboutPage() {
 
         {/* Section 1: Who We Are — image left, text right */}
         <Container>
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center mb-24">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-stretch mb-24">
+            <div className="relative min-h-[400px] overflow-hidden rounded-2xl">
               <Image
-                src="/about/who-we-are.jpg"
-                alt="PC Quanti team in consultation"
+                src="/about/who-we-are.png"
+                alt="PC Quanti team reviewing engineering drawings"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -69,7 +69,7 @@ export default function AboutPage() {
         {/* Section 2: What We Do — text left, image right */}
         <div className="bg-pc-neutral-50 py-20 mb-24">
           <Container>
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-stretch">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500 mb-3">What We Do</p>
                 <h2 className="text-3xl font-bold tracking-tight text-pc-neutral-900 mb-6">
@@ -87,10 +87,10 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <div className="relative min-h-[400px] overflow-hidden rounded-2xl">
                 <Image
-                  src="/about/what-we-do.jpg"
-                  alt="PC Quanti project delivery"
+                  src="/about/what-we-do.png"
+                  alt="PC Quanti team reviewing project controls and risk data"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"

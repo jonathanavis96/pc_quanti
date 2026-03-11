@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, LinkButton } from '@/src/components';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -53,6 +54,17 @@ export default function ProjectManagementPage() {
                 Whether you require management of the main contractor work or certain subcontractors, or require a client-side team to manage the project for you, we can provide you with the necessary services. Our approach combines deep technical expertise with a pragmatic delivery focus across power generation, oil and gas, and major infrastructure developments.
               </p>
             </Card>
+          </div>
+
+          {/* Service Image */}
+          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
+            <Image
+              src="/services/project-management.webp"
+              alt="Project management on a major engineering and construction site"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1088px"
+            />
           </div>
 
           {/* Typical Deliverables */}
