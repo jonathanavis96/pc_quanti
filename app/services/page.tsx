@@ -40,14 +40,14 @@ const PlanningIcon = () => (
 
 const ConstructionManagementIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    {/* Dome */}
-    <path d="M8 30 Q8 12 24 12 Q40 12 40 30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="currentColor" fillOpacity="0.1"/>
+    {/* Crown rib — centre top tab */}
+    <path d="M20 20V10a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+    {/* Left dome arc */}
+    <path d="M8 30v-6a12 12 0 0 1 12-12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    {/* Right dome arc */}
+    <path d="M28 12a12 12 0 0 1 12 12v6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
     {/* Brim */}
-    <line x1="4" y1="30" x2="44" y2="30" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round"/>
-    {/* Underside rim */}
-    <line x1="13" y1="30" x2="13" y2="37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="35" y1="30" x2="35" y2="37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="13" y1="37" x2="35" y2="37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <rect x="3" y="30" width="42" height="8" rx="2" stroke="currentColor" strokeWidth="2.5" fill="currentColor" fillOpacity="0.1"/>
   </svg>
 );
 
@@ -91,10 +91,10 @@ const QuantitySurveyingIcon = () => (
 
 const CommercialManagementIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    {/* Vertical bar */}
-    <line x1="24" y1="4" x2="24" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    {/* S-curve */}
-    <path d="M 32 13 C 32 6 15 6 15 20 C 15 30 33 28 33 36 C 33 43 16 43 16 37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+    {/* Short vertical ticks above and below the S */}
+    <path d="M24 4v8m0 24v8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    {/* S-curve — widened to fill 48×48 viewBox */}
+    <path d="M40 15a6 6 0 0 0-5-3h-22a6 6 0 0 0 0 12h22a6 6 0 0 1 0 12h-22a6 6 0 0 1-5-3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
   </svg>
 );
 
@@ -124,7 +124,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "PC Quanti — Services",
-    description: "Engineering and construction management consultancy with extensive experience in NEC3, NEC4, FIDIC, GCC, JBCC. Project management, planning, construction management, dispute resolution, adjudication and arbitration.",
+    description: "Engineering and construction management consultancy with extensive experience in NEC3, NEC4, FIDIC, GCC, JBCC. Project management, planning, construction management, quantity surveying, commercial management, risk management, contract and dispute resolution, adjudication and arbitration.",
     url: "/services",
   },
 };

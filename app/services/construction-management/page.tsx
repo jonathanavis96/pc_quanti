@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, LinkButton } from '@/src/components';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -55,9 +56,15 @@ export default function ConstructionManagementPage() {
             </Card>
           </div>
 
-          {/* Image Placeholder */}
-          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12 bg-pc-neutral-100 flex items-center justify-center">
-            <p className="text-pc-neutral-400 text-sm">Service image coming soon</p>
+          {/* Service Image */}
+          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
+            <Image
+              src="/services/construction-management.png"
+              alt="Construction management on a complex engineering project"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1088px"
+            />
           </div>
 
           {/* Typical Deliverables */}

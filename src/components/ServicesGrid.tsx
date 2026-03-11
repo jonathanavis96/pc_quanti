@@ -54,15 +54,15 @@ const services = [
     href: '/services/construction-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Hard hat — dome */}
-        <path d="M7 27 Q7 11 22 11 Q37 11 37 27" fill="currentColor" fillOpacity="0.1" />
-        <path d="M7 27 Q7 11 22 11 Q37 11 37 27" />
+        {/* Crown rib — centre top tab */}
+        <path d="M18 18V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v9" />
+        {/* Left dome arc */}
+        <path d="M7 28v-6a11 11 0 0 1 11-11" />
+        {/* Right dome arc */}
+        <path d="M26 11a11 11 0 0 1 11 11v6" />
         {/* Brim */}
-        <line x1="4" y1="27" x2="40" y2="27" strokeWidth="2.2" />
-        {/* Underside rim */}
-        <line x1="12" y1="27" x2="12" y2="33" />
-        <line x1="32" y1="27" x2="32" y2="33" />
-        <line x1="12" y1="33" x2="32" y2="33" />
+        <rect x="3" y="28" width="38" height="7" rx="2" fill="currentColor" fillOpacity="0.1" />
+        <rect x="3" y="28" width="38" height="7" rx="2" />
       </svg>
     ),
   },
@@ -140,11 +140,11 @@ const services = [
       'Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes.',
     href: '/services/commercial-management',
     icon: (
-      <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Dollar sign — vertical bar */}
-        <line x1="22" y1="4" x2="22" y2="40" />
-        {/* S-curve: upper bowl opens down, lower bowl opens up */}
-        <path d="M 29 12 C 29 6 14 6 14 18 C 14 27 30 25 30 32 C 30 39 15 39 15 34" />
+      <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        {/* Short vertical ticks above and below the S */}
+        <path d="M22 4v7m0 22v7" />
+        {/* S-curve — widened to fill 44×44 viewBox */}
+        <path d="M37 14a5.5 5.5 0 0 0-5-3h-20a5.5 5.5 0 0 0 0 11h20a5.5 5.5 0 0 1 0 11h-20a5.5 5.5 0 0 1-5-3" />
       </svg>
     ),
   },

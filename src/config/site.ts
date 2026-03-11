@@ -84,7 +84,7 @@ export const siteConfig = {
       url: "/services/risk-management",
     },
     {
-      name: "Dispute Resolution, Adjudication and Arbitration",
+      name: "Dispute Resolution",
       slug: "dispute-resolution",
       abbreviation: "Disputes",
       description:
