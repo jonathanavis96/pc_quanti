@@ -17,7 +17,7 @@ export function ProofStrip() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-pc-neutral-500 text-center">
                 {point.label}
               </p>
-              <p className="mt-2 text-base font-semibold text-pc-neutral-900 text-left">{point.value}</p>
+              <p className="mt-2 text-base font-semibold text-pc-neutral-900 text-center">{point.value}</p>
             </div>
           ))}
         </div>
