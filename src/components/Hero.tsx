@@ -7,6 +7,7 @@ import { Button } from './Button';
 import { LinkButton } from './LinkButton';
 import { Container } from './Container';
 import { BlueprintHeroArt } from './BlueprintHeroArt';
+import { TypewriterCountries } from './TypewriterCountries';
 
 export interface HeroProps {
   headline: string;
@@ -40,9 +41,14 @@ export function Hero({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-pc-gold">
-              South Africa & United Kingdom • Engineering & Construction Management
-            </p>
+            <div className="flex flex-col gap-1">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-pc-gold">
+                International Service
+              </p>
+              <p className="text-sm font-medium tracking-wide text-pc-neutral-400">
+                Delivering expertise in <TypewriterCountries />
+              </p>
+            </div>
             <motion.h1
               className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl"
               initial={{ clipPath: 'inset(0 0 100% 0)' }}
@@ -144,7 +150,7 @@ export function Hero({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.65, ease: [0.2, 0.8, 0.2, 1] }}
             >
-              {['PM', 'QS', 'Contracts', 'Claims', 'Planning', 'Risk', 'Disputes'].map((item) => (
+              {['PM', 'Planning', 'Construction', 'Contract Admin', 'Contract Mgmt', 'QS', 'Commercial', 'Risk', 'Disputes'].map((item) => (
                 <span
                   key={item}
                   className="rounded-full border border-pc-gold/30 bg-pc-gold/10 px-3 py-1 text-pc-gold-300"

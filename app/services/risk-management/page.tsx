@@ -164,9 +164,9 @@ export default function RiskManagementPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
-                <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Controls →</h3>
-                <p className="text-sm text-pc-neutral-600">Scheduling, cost control, and performance reporting</p>
+              <Link href="/services/planning" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
+                <h3 className="font-semibold text-pc-neutral-900 mb-2">Planning →</h3>
+                <p className="text-sm text-pc-neutral-600">Critical path scheduling, cost control, and performance reporting</p>
               </Link>
               <Link href="/services/project-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Management →</h3>
