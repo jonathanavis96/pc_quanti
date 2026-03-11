@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, Button } from '@/src/components';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -53,6 +54,17 @@ export default function QuantitySurveyingPage() {
                 We provide full commercial management of projects to manage risks and maximise profitability. Our services include procurement planning and execution, estimating, tendering and tender analysis, award management, project cost and value analysis, risk management, and overall coordination of project resources to achieve the commercial success of the project.
               </p>
             </Card>
+          </div>
+
+          {/* Service Image */}
+          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
+            <Image
+              src="/services/quantity-surveying.webp"
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1088px"
+            />
           </div>
 
           {/* Typical Deliverables */}

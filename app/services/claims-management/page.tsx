@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, LinkButton } from '@/src/components';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -53,6 +54,17 @@ export default function ClaimsManagementPage() {
                 While our primary focus is dispute avoidance through strong planning and administration, PC Quanti is highly experienced in construction claims, adjudication, arbitration, and formal dispute resolution proceedings when required. Our mission is to build long-term client relationships by consistently adding measurable value, strengthening project certainty, and delivering professional excellence across every engagement.
               </p>
             </Card>
+          </div>
+
+          {/* Service Image */}
+          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
+            <Image
+              src="/services/claims-management.webp"
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1088px"
+            />
           </div>
 
           {/* Typical Deliverables */}
