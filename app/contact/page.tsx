@@ -82,17 +82,14 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     // Formspree integration for GitHub Pages static hosting
+    // Sends submissions to info@pcquanti.co.za
     const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
-    
+
     if (!formspreeId) {
-      // Fallback to mailto if Formspree not configured
-      const mailtoSubject = encodeURIComponent(`Service Inquiry: ${formData.service}`);
+      // Fallback: open mailto when Formspree ID is not configured
+      const mailtoSubject = encodeURIComponent(`PC Quanti Enquiry: ${formData.service}`);
       const mailtoBody = encodeURIComponent(
-        `Name: ${formData.name}\n` +
-        `Email: ${formData.email}\n` +
-        `Phone: ${formData.phone}\n` +
-        `Service: ${formData.service}\n\n` +
-        `Message:\n${formData.message}`
+        `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService: ${formData.service}\n\nMessage:\n${formData.message}`
       );
       window.location.href = `mailto:info@pcquanti.co.za?subject=${mailtoSubject}&body=${mailtoBody}`;
       setIsSubmitting(false);
@@ -103,14 +100,17 @@ export default function ContactPage() {
       const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify({
           name: formData.name,
+          _replyto: formData.email,
           email: formData.email,
           phone: formData.phone,
           service: formData.service,
-          message: formData.message
+          message: formData.message,
+          _subject: `PC Quanti Enquiry: ${formData.service}`
         })
       });
 
@@ -158,7 +158,7 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-              Tell us about your project and we&apos;ll respond within 24 hours with a tailored recommendation.
+              Tell us about your requirements and we will respond within 24 hours.
             </p>
           </div>
 
@@ -261,11 +261,14 @@ export default function ContactPage() {
                     <option value="">Select a service...</option>
                     <option value="General Enquiry">General Enquiry</option>
                     <option value="Project Management">Project Management</option>
-                    <option value="Quantity Surveying">Quantity Surveying</option>
+                    <option value="Planning">Planning</option>
+                    <option value="Construction Management">Construction Management</option>
                     <option value="Contract Administration">Contract Administration</option>
-                    <option value="Claims Management">Claims Management</option>
-                    <option value="Project Controls">Project Controls</option>
+                    <option value="Contract Management">Contract Management</option>
+                    <option value="Quantity Surveying">Quantity Surveying</option>
+                    <option value="Commercial Management">Commercial Management</option>
                     <option value="Risk Management">Risk Management</option>
+                    <option value="Dispute Resolution, Adjudication and Arbitration">Dispute Resolution, Adjudication and Arbitration</option>
                   </select>
                   {errors.service && (
                     <p id="service-error" className="mt-1 text-sm text-red-500">
@@ -346,8 +349,20 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-pc-neutral-600 mb-1">Phone</p>
-                      <a href="https://wa.me/+27828632154" className="text-pc-neutral-900 hover:text-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
-                        082 863 2154
+                      <a href="tel:+27828632154" className="text-pc-neutral-900 hover:text-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
+                        +27 82 863 2154
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <svg className="w-6 h-6 mt-0.5" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <div>
+                      <p className="text-sm text-pc-neutral-600 mb-1">WhatsApp</p>
+                      <a href="https://wa.me/27828632154" target="_blank" rel="noopener noreferrer" className="text-pc-neutral-900 hover:text-[#25D366] transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
+                        Message us on WhatsApp
                       </a>
                     </div>
                   </div>
@@ -359,9 +374,8 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-pc-neutral-600 mb-1">Location</p>
-                      <p className="text-pc-neutral-900">
-                        South Africa & United Kingdom
-                      </p>
+                      <p className="text-pc-neutral-900">South Africa & United Kingdom</p>
+                      <p className="text-sm text-pc-neutral-500 mt-0.5">and internationally</p>
                     </div>
                   </div>
                 </div>

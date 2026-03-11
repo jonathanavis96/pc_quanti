@@ -11,11 +11,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PC Quanti — Engineering & Construction Management",
-  description: "PC Quanti is an engineering and construction management consultancy delivering professional services across the full project life cycle in nuclear, power generation, oil and gas, and major infrastructure developments.",
+  title: "PC Quanti — Engineering & Construction Consulting Services",
+  description: "PC Quanti delivers engineering and construction consulting services internationally — nuclear, power generation, oil and gas, and major infrastructure projects across South Africa, the United Kingdom, and beyond.",
   openGraph: {
-    title: "PC Quanti — Engineering & Construction Management",
-    description: "PC Quanti is an engineering and construction management consultancy delivering professional services across the full project life cycle in nuclear, power generation, oil and gas, and major infrastructure developments.",
+    title: "PC Quanti — Engineering & Construction Consulting Services",
+    description: "PC Quanti delivers engineering and construction consulting services internationally — nuclear, power generation, oil and gas, and major infrastructure projects across South Africa, the United Kingdom, and beyond.",
   },
 };
 
@@ -24,7 +24,7 @@ export default function Home() {
     <>
       <main className="min-h-screen bg-white">
         <Hero
-          headline="Engineering & Construction Management Consultancy"
+          headline="Engineering & Construction Consulting Services"
           subheadline="Delivering professional services across the full project life cycle — nuclear and coal-fired power generation, oil and gas, and major infrastructure developments in South Africa, the United Kingdom and international markets."
           ctaText="Get in Touch"
           ctaHref="/contact"
@@ -43,16 +43,20 @@ export default function Home() {
 
         <CTASection />
 
-        {/* Meet Our Team Section */}
+        {/* Management Core Team Section */}
         <section className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500 mb-3">Our People</p>
-              <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">Meet Our Team</h2>
+              <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">Management Core Team</h2>
               <p className="text-lg text-pc-neutral-600 max-w-3xl mx-auto">
                 PC Quanti&apos;s strength lies in its highly qualified and committed team of engineering,
                 construction and commercial professionals — combining technical expertise with practical,
                 on-site understanding, always guided by integrity and accountability.
+              </p>
+              <p className="text-base text-pc-neutral-500 max-w-2xl mx-auto mt-3">
+                We operate on an expandable team model, scaling with vetted specialists and
+                associates to match the demands of each project.
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">

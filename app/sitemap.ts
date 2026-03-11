@@ -13,16 +13,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/services",
     "/services/project-management",
-    "/services/quantity-surveying",
+    "/services/planning",
+    "/services/construction-management",
     "/services/contract-administration",
-    "/services/claims-management",
-    "/services/project-controls",
+    "/services/contract-management",
+    "/services/quantity-surveying",
+    "/services/commercial-management",
     "/services/risk-management",
+    "/services/dispute-resolution",
+    "/projects",
+    "/privacy-policy",
+    "/terms-conditions",
+    "/disclaimer",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: route === "" ? 1 : route === "/contact" ? 0.9 : 0.8,
+    priority: route === "" ? 1 : route === "/contact" ? 0.9 : route.startsWith("/privacy") || route.startsWith("/terms") || route.startsWith("/disclaimer") ? 0.3 : 0.8,
   }));
 
   return routes;

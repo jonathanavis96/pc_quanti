@@ -29,7 +29,7 @@ The contact form on `/contact` uses Formspree for static-compatible form submiss
 
 ## Fallback Behavior
 
-If `NEXT_PUBLIC_FORMSPREE_FORM_ID` is not set, the form will fall back to a `mailto:` link with pre-filled subject and body.
+If `NEXT_PUBLIC_FORMSPREE_FORM_ID` is not set, the form will submit directly to Formspree using the email address `info@pcquanti.co.za`.
 
 ## Testing
 
@@ -47,4 +47,4 @@ For GitHub Pages or other static hosting:
 
 Configure email notifications in your Formspree dashboard:
 - Settings → Email Notifications
-- Add recipient email (e.g., `info@pcquanti.com`)
+- Add recipient email: `info@pcquanti.co.za`
