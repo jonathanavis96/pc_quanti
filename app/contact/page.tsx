@@ -374,9 +374,8 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-pc-neutral-600 mb-1">Location</p>
-                      <p className="text-pc-neutral-900">
-                        South Africa & United Kingdom
-                      </p>
+                      <p className="text-pc-neutral-900">South Africa & United Kingdom</p>
+                      <p className="text-sm text-pc-neutral-500 mt-0.5">and internationally</p>
                     </div>
                   </div>
                 </div>

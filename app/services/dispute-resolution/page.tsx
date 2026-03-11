@@ -59,8 +59,8 @@ export default function DisputeResolutionPage() {
           {/* Service Image */}
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
-              src="/services/claims-management.webp"
-              alt=""
+              src="/services/dispute-resolution.png"
+              alt="Dispute resolution and adjudication"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"
