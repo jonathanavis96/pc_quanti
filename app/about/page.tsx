@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-stretch mb-24">
             <div className="relative min-h-[400px] overflow-hidden rounded-2xl">
               <Image
-                src="/about/who-we-are.png"
+                src="/about/who-we-are.webp"
                 alt="PC Quanti team reviewing engineering drawings"
                 fill
                 className="object-cover object-center"
@@ -89,7 +89,7 @@ export default function AboutPage() {
               </div>
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl">
                 <Image
-                  src="/about/what-we-do.png"
+                  src="/about/what-we-do.webp"
                   alt="PC Quanti team reviewing project controls and risk data"
                   fill
                   className="object-cover object-center"

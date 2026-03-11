@@ -60,7 +60,7 @@ export default function ClaimsManagementPage() {
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
               src="/services/claims-management.webp"
-              alt="Claims management and dispute resolution for construction and engineering projects"
+              alt=""
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"

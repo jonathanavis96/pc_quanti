@@ -60,7 +60,7 @@ export default function RiskManagementPage() {
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
               src="/services/risk-management.webp"
-              alt="Risk management and mitigation strategies for major engineering and construction projects"
+              alt=""
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"
