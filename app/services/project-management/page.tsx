@@ -60,7 +60,7 @@ export default function ProjectManagementPage() {
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
               src="/services/project-management.webp"
-              alt="Project management on a major engineering and construction site"
+              alt=""
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"

@@ -60,7 +60,7 @@ export default function ProjectControlsPage() {
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
               src="/services/project-controls.webp"
-              alt="Project controls, scheduling and cost management for engineering programmes"
+              alt=""
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"

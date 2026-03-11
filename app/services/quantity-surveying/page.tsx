@@ -60,7 +60,7 @@ export default function QuantitySurveyingPage() {
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
               src="/services/quantity-surveying.webp"
-              alt="Quantity surveying and cost management on a construction project"
+              alt=""
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"
