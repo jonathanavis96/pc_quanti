@@ -1,19 +1,19 @@
 import { Container, LinkButton } from "@/src/components";
-import Image from "next/image";
+import { ProjectImageCarousel } from "@/src/components/ProjectImageCarousel";
 import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Key Projects — Engineering & Construction Portfolio",
+  title: "Key Projects — Nuclear & Industrial Engineering Portfolio | PC Quanti",
   description:
-    "Explore PC Quanti's key engineering and construction projects including the PTR Tanks Project and Steam Generator replacement at Koeberg Nuclear Power Station. NEC contract management, project controls, and construction oversight.",
+    "PC Quanti's project portfolio showcases landmark engineering and construction achievements at Koeberg Nuclear Power Station — including the PTR Tanks life extension and Steam Generator replacement. Expert NEC contract management, project controls, and construction oversight in safety-critical environments.",
   alternates: {
     canonical: "/projects",
   },
   openGraph: {
     title: "Key Projects | PC Quanti",
     description:
-      "Engineering and construction project portfolio showcasing nuclear power generation projects at Koeberg Nuclear Power Station — PTR Tanks and Steam Generator replacement.",
+      "Case studies from Koeberg Nuclear Power Station: PTR Tanks life extension and Steam Generator replacement — delivered under NEC contract with expert project management and construction oversight.",
     url: "/projects",
   },
 };
@@ -22,18 +22,22 @@ const projects = [
   {
     id: "ptr-tanks",
     title: "PTR Tanks Project",
-    subtitle: "20-Year Life Extension, Koeberg Nuclear Power Station",
+    subtitle: "20-Year Life Extension — Koeberg Nuclear Power Station",
     sector: "Nuclear Power Generation",
     contract: "NEC Option A",
+    location: "Koeberg, South Africa",
     services: [
       "Project Management",
       "Contract Administration",
       "Construction Oversight",
-      "Planning",
+      "Planning & Scheduling",
     ],
-    description: `The PTR Tanks Project involved the design, fabrication, and installation of two new borated water storage tanks as part of the 20-year life extension programme at Koeberg Nuclear Power Station. Each tank was manufactured in SAF2205 Duplex Stainless Steel to ASME III code standards, requiring 100% radiographic weld examination to meet nuclear-grade quality assurance requirements.
-
-Installation demanded precise coordination, including the deployment of a 500-ton crawler crane for roof lifting operations and the integration of complex piping and services connections within a highly regulated nuclear environment. PC Quanti provided end-to-end project management, contract administration under NEC Option A, construction oversight, and detailed programme planning throughout the project lifecycle.`,
+    challenge:
+      "Koeberg Nuclear Power Station required two new borated water storage tanks to support its 20-year life extension programme. Each tank had to be manufactured and installed to the highest nuclear-grade standards within a live, tightly regulated nuclear environment — with zero tolerance for quality deviations.",
+    scope:
+      "PC Quanti delivered end-to-end project management and NEC Option A contract administration from early design through final commissioning. Each tank was fabricated in SAF2205 Duplex Stainless Steel to ASME III code, with 100% radiographic weld examination required throughout. Installation involved the deployment of a 500-ton crawler crane for roof lifting operations and the precise integration of complex piping and services connections.",
+    outcome:
+      "The project was successfully delivered within the required nuclear quality assurance framework, contributing to Koeberg's continued safe and reliable operation. PC Quanti's structured contract administration and programme planning ensured all milestones were tracked, communicated, and met within the constraints of the nuclear environment.",
     images: [
       {
         src: "/projects/ptr/1-ptr-tank-internal-view-koeberg.webp",
@@ -55,19 +59,23 @@ Installation demanded precise coordination, including the deployment of a 500-to
   },
   {
     id: "steam-generator",
-    title: "Steam Generator Project",
-    subtitle: "20-Year Life Extension, Koeberg Nuclear Power Station",
+    title: "Steam Generator Replacement",
+    subtitle: "20-Year Life Extension — Koeberg Nuclear Power Station",
     sector: "Nuclear Power Generation",
     contract: "NEC3 Option A",
+    location: "Koeberg, South Africa",
     services: [
       "Project Management",
       "Contract & Construction Management",
       "Subcontractor Coordination",
       "Project Controls & Planning",
     ],
-    description: `The Steam Generator Replacement Project was a critical component of the 20-year life extension programme at Koeberg Nuclear Power Station. The scope encompassed the replacement of three steam generators per operating unit, each weighing approximately 350 tons, requiring meticulous logistics coordination from manufacturing through transport, rigging, and installation.
-
-PC Quanti delivered comprehensive project management, contract and construction management under NEC3 Option A, subcontractor coordination, and project controls and planning services. The project demanded precise scheduling of welding operations during unit outages, coordination across multiple specialist subcontractors, and adherence to stringent nuclear safety and quality standards over a multi-year timeline.`,
+    challenge:
+      "Replacing six steam generators — three per operating unit, each weighing approximately 350 tons — required meticulous multi-year coordination across manufacturing, heavy transport, rigging, and nuclear-grade installation within live plant outage windows.",
+    scope:
+      "PC Quanti provided comprehensive project management and NEC3 Option A contract and construction management throughout the project lifecycle. Services included subcontractor coordination across multiple specialist firms, detailed outage scheduling for precision welding operations, and ongoing project controls and planning to maintain programme integrity against stringent nuclear safety and quality standards.",
+    outcome:
+      "The Steam Generator Replacement was completed as a critical enabler of Koeberg's 20-year life extension — one of the most technically complex projects undertaken at the station. PC Quanti's structured approach to contract management, risk identification, and programme planning delivered the project within the required quality, safety, and schedule parameters.",
     images: [
       {
         src: "/projects/knps/1-koeberg-steam-generator-project.webp",
@@ -94,34 +102,41 @@ export default function ProjectsPage() {
     <main className="min-h-screen bg-white">
       <Container>
         <div className="py-16 md:py-24">
-          {/* Header */}
-          <div className="mb-16 md:mb-20 text-center">
+
+          {/* Page Header */}
+          <div className="mb-16 md:mb-20">
             <Link
               href="/"
-              className="text-pc-gold hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
+              className="text-pc-gold hover:underline mb-6 inline-block text-sm focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             >
-              &larr; Back to Home
+              ← Back to Home
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-pc-neutral-900 mb-4">
-              Key Projects
-            </h1>
-            <p className="text-lg md:text-xl text-pc-neutral-600 max-w-3xl mx-auto">
-              A selection of landmark engineering and construction projects where
-              PC Quanti has delivered specialist project management, contract
-              administration, and construction oversight services in complex,
-              safety-critical environments.
-            </p>
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-gold mb-3">
+                Portfolio
+              </p>
+              <h1 className="text-4xl md:text-5xl font-bold text-pc-neutral-900 mb-5">
+                Key Projects
+              </h1>
+              <p className="text-lg text-pc-neutral-600 leading-relaxed">
+                A selection of landmark projects where PC Quanti has delivered
+                specialist project management, contract administration, and
+                construction oversight in complex, safety-critical environments.
+                Each project demonstrates our ability to operate at the highest
+                levels of technical and contractual rigour.
+              </p>
+            </div>
           </div>
 
-          {/* Projects */}
-          <div className="space-y-24 md:space-y-32">
+          {/* Project Articles */}
+          <div className="space-y-20 md:space-y-28">
             {projects.map((project, index) => (
               <article
                 key={project.id}
                 id={project.id}
                 className="scroll-mt-24"
               >
-                {/* Project Header */}
+                {/* Project eyebrow + title */}
                 <div className="mb-8">
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-gold mb-2">
                     {project.sector}
@@ -129,74 +144,81 @@ export default function ProjectsPage() {
                   <h2 className="text-3xl md:text-4xl font-bold text-pc-neutral-900 mb-2">
                     {project.title}
                   </h2>
-                  <p className="text-lg text-pc-neutral-600">
+                  <p className="text-lg text-pc-neutral-500">
                     {project.subtitle}
                   </p>
                 </div>
 
-                {/* Project Details Bar */}
-                <div className="flex flex-wrap gap-x-8 gap-y-3 mb-8 text-sm">
-                  <div>
-                    <span className="font-semibold text-pc-neutral-900">
-                      Contract:{" "}
-                    </span>
-                    <span className="text-pc-neutral-600">
-                      {project.contract}
-                    </span>
-                  </div>
-                  <div>
-                    <span className="font-semibold text-pc-neutral-900">
-                      Services:{" "}
-                    </span>
-                    <span className="text-pc-neutral-600">
-                      {project.services.join(" \u00B7 ")}
-                    </span>
-                  </div>
-                </div>
+                {/* Two-column: carousel + case study sidebar */}
+                <div className="grid gap-10 lg:grid-cols-[3fr_2fr] lg:gap-12">
 
-                {/* Image Gallery - Hero image + 3 thumbnails */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                  {/* Hero image */}
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl md:row-span-2">
-                    <Image
-                      src={project.images[0].src}
-                      alt={project.images[0].alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                  {/* Left: Image carousel */}
+                  <div>
+                    <ProjectImageCarousel
+                      images={project.images}
                       priority={index === 0}
                     />
                   </div>
-                  {/* Secondary images */}
-                  {project.images.slice(1).map((image, imgIndex) => (
-                    <div
-                      key={imgIndex}
-                      className="relative aspect-[4/3] overflow-hidden rounded-xl"
-                    >
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 25vw"
-                      />
+
+                  {/* Right: Key facts + narrative */}
+                  <div className="flex flex-col gap-7">
+
+                    {/* Key facts card */}
+                    <div className="rounded-xl border border-pc-neutral-200 bg-pc-neutral-50 p-5">
+                      <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-pc-neutral-500 mb-4">
+                        Project Details
+                      </h3>
+                      <dl className="space-y-3 text-sm">
+                        <div>
+                          <dt className="font-semibold text-pc-neutral-900 mb-1">Contract</dt>
+                          <dd className="text-pc-neutral-600">{project.contract}</dd>
+                        </div>
+                        <div>
+                          <dt className="font-semibold text-pc-neutral-900 mb-1">Location</dt>
+                          <dd className="text-pc-neutral-600">{project.location}</dd>
+                        </div>
+                        <div>
+                          <dt className="font-semibold text-pc-neutral-900 mb-1.5">Services Delivered</dt>
+                          <dd className="flex flex-wrap gap-1.5">
+                            {project.services.map((s) => (
+                              <span
+                                key={s}
+                                className="rounded-full border border-pc-gold/30 bg-pc-gold/10 px-2.5 py-0.5 text-xs font-medium text-pc-gold"
+                              >
+                                {s}
+                              </span>
+                            ))}
+                          </dd>
+                        </div>
+                      </dl>
                     </div>
-                  ))}
+
+                    {/* Case study narrative */}
+                    <div className="space-y-5 text-sm leading-relaxed text-pc-neutral-600">
+                      <div>
+                        <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-pc-neutral-400 mb-2">
+                          Challenge
+                        </h3>
+                        <p>{project.challenge}</p>
+                      </div>
+                      <div>
+                        <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-pc-neutral-400 mb-2">
+                          Scope &amp; Approach
+                        </h3>
+                        <p>{project.scope}</p>
+                      </div>
+                      <div>
+                        <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-pc-neutral-400 mb-2">
+                          Outcome
+                        </h3>
+                        <p>{project.outcome}</p>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
 
-                {/* Description */}
-                <div className="max-w-3xl">
-                  {project.description.split("\n\n").map((paragraph, pIndex) => (
-                    <p
-                      key={pIndex}
-                      className="text-pc-neutral-600 leading-relaxed mb-4 last:mb-0"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-
-                {/* Divider between projects */}
+                {/* Divider */}
                 {index < projects.length - 1 && (
                   <div className="mt-16 md:mt-20 border-t border-pc-neutral-200" />
                 )}
@@ -204,20 +226,21 @@ export default function ProjectsPage() {
             ))}
           </div>
 
-          {/* CTA Section */}
-          <div className="text-center mt-24 p-8 bg-pc-neutral-50 rounded-lg">
-            <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
+          {/* CTA */}
+          <div className="mt-20 md:mt-28 text-center rounded-xl bg-pc-neutral-50 p-10 md:p-14">
+            <h2 className="text-2xl md:text-3xl font-semibold text-pc-neutral-900 mb-4">
               Discuss Your Project
             </h2>
-            <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
-              Whether you are planning a new build, managing a complex
-              programme, or navigating a contractual challenge, PC Quanti brings
-              the expertise to support your project goals.
+            <p className="text-pc-neutral-600 mb-8 max-w-xl mx-auto">
+              Whether you are planning a new build, managing a complex programme,
+              or navigating a contractual challenge — PC Quanti brings the
+              expertise to support your project goals.
             </p>
             <LinkButton href="/contact" size="lg">
               Contact Us
             </LinkButton>
           </div>
+
         </div>
       </Container>
     </main>
