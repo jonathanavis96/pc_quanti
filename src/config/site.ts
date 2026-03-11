@@ -54,7 +54,7 @@ export const siteConfig = {
     {
       name: "Contract Management",
       slug: "contract-management",
-      abbreviation: "Contract Mgmt",
+      abbreviation: "Contract Management",
       description:
         "Comprehensive contract lifecycle support including advisory on compliance, risk allocation, payment certification, variation management, and extension of time assessments across all major procurement forms.",
       url: "/services/contract-management",
