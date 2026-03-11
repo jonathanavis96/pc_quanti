@@ -16,24 +16,38 @@ const ProjectManagementIcon = () => (
 
 const PlanningIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <path d="M8 38 A18 18 0 1 1 40 38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <line x1="24" y1="24" x2="32" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <circle cx="24" cy="24" r="3" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <line x1="10" y1="38" x2="14" y2="38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="34" y1="38" x2="38" y2="38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="24" y1="10" x2="24" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    {/* Clipboard */}
+    <rect x="8" y="8" width="32" height="38" rx="2" stroke="currentColor" strokeWidth="2.5"/>
+    <rect x="17" y="4" width="14" height="8" rx="2" stroke="currentColor" strokeWidth="2.5"/>
+    {/* X obstacles — small, light */}
+    <line x1="14" y1="18" x2="18" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    <line x1="18" y1="18" x2="14" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    <line x1="30" y1="18" x2="34" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    <line x1="34" y1="18" x2="30" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    <line x1="14" y1="30" x2="18" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    <line x1="18" y1="30" x2="14" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    <line x1="30" y1="30" x2="34" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    <line x1="34" y1="30" x2="30" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
+    {/* Start circle BL */}
+    <circle cx="14" cy="40" r="3" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.2"/>
+    {/* End circle TR */}
+    <circle cx="36" cy="16" r="3" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.2"/>
+    {/* Winding S-curve */}
+    <path d="M 14 37 C 24 37 24 25 14 25 C 14 18 24 18 33 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
+    <polyline points="30,13 33,16 30,19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
 const ConstructionManagementIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <path d="M10 30 Q10 16 24 16 Q38 16 38 30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <line x1="6" y1="30" x2="42" y2="30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="14" y1="30" x2="14" y2="36" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="34" y1="30" x2="34" y2="36" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="14" y1="36" x2="34" y2="36" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="24" y1="16" x2="24" y2="10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="20" y1="10" x2="28" y2="10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    {/* Dome */}
+    <path d="M8 30 Q8 12 24 12 Q40 12 40 30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="currentColor" fillOpacity="0.1"/>
+    {/* Brim */}
+    <line x1="4" y1="30" x2="44" y2="30" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round"/>
+    {/* Underside rim */}
+    <line x1="13" y1="30" x2="13" y2="37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="35" y1="30" x2="35" y2="37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="13" y1="37" x2="35" y2="37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
   </svg>
 );
 
@@ -49,12 +63,19 @@ const ContractAdminIcon = () => (
 
 const ContractManagementIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <rect x="10" y="6" width="28" height="36" rx="3" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <rect x="16" y="2" width="16" height="10" rx="2" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <line x1="16" y1="20" x2="32" y2="20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="16" y1="27" x2="32" y2="27" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="16" y1="34" x2="24" y2="34" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <polyline points="26,34 29,37 34,30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    {/* Document */}
+    <rect x="6" y="4" width="24" height="34" rx="2" stroke="currentColor" strokeWidth="2.5" fill="currentColor" fillOpacity="0.06"/>
+    <line x1="11" y1="14" x2="26" y2="14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <line x1="11" y1="20" x2="26" y2="20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <line x1="11" y1="26" x2="20" y2="26" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    {/* Signature line */}
+    <line x1="11" y1="32" x2="26" y2="32" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.4" strokeLinecap="round"/>
+    {/* Pen body */}
+    <path d="M 43 9 L 46 12 L 28 30 L 25 27 Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="currentColor" fillOpacity="0.1"/>
+    {/* Nib */}
+    <path d="M 25 27 L 28 30 L 22 34 Z" fill="currentColor" stroke="none"/>
+    {/* Signature scribble */}
+    <path d="M 13 32 Q 16 29 18 32 Q 20 35 22 32" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
   </svg>
 );
 
@@ -70,10 +91,10 @@ const QuantitySurveyingIcon = () => (
 
 const CommercialManagementIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <line x1="24" y1="12" x2="24" y2="16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="24" y1="32" x2="24" y2="36" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M18 20 C18 17 30 17 30 22 C30 27 18 27 18 32 C18 37 30 37 30 34" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+    {/* Vertical bar */}
+    <line x1="24" y1="4" x2="24" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    {/* S-curve */}
+    <path d="M 32 13 C 32 6 15 6 15 20 C 15 30 33 28 33 36 C 33 43 16 43 16 37" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
   </svg>
 );
 
