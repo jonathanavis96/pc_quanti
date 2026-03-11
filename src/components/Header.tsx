@@ -20,7 +20,6 @@ const navItems: NavItem[] = [
   { label: 'Projects', href: '/projects' },
   { label: 'Team', href: '/team' },
   { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
 ];
 
 export function Header() {
