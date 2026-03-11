@@ -16,7 +16,7 @@ export const siteConfig = {
     email: "info@pcquanti.co.za",
     phone: "+27 82 863 2154",
     phoneInternational: "+27828632154",
-    whatsapp: "https://wa.me/+27828632154",
+    whatsapp: "https://wa.me/27828632154",
   },
   services: [
     {
