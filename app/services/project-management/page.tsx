@@ -6,13 +6,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Project Management",
-  description: "Turnkey project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
+  description: "Comprehensive project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
   alternates: {
     canonical: "/services/project-management",
   },
   openGraph: {
     title: "Project Management | PC Quanti",
-    description: "Turnkey project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
+    description: "Comprehensive project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
     url: "/services/project-management",
   },
 };
@@ -34,7 +34,7 @@ export default function ProjectManagementPage() {
               Project Management
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Turnkey project management services to suit your project needs — from initial design and engineering development through on-site execution and project close-out.
+              Comprehensive project management services to suit your project needs — from initial design and engineering development through on-site execution and project close-out.
             </p>
           </div>
 
@@ -45,13 +45,16 @@ export default function ProjectManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provide turnkey project management services to suit your project needs, from initial design and engineering development phase, through on-site execution and project close-out phases. We can also provide services to existing projects by bolstering your existing team, where we guarantee that we will add value to your project team with our expertise.
+                PC Quanti provide comprehensive project management services to suit your project needs, from initial design and engineering development phase, through on-site execution and project close-out phases. We can also provide services to existing projects by bolstering your existing team, where we guarantee that we will add value to your project team with our expertise.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We implement programme management frameworks, integrating schedule development, risk management, change control and key client and stakeholder risks and interface management to manage time, cost and scope delivery, ensuring issue resolution and alignment between project objectives and contractual obligations.
               </p>
-              <p className="text-pc-neutral-600 leading-relaxed">
+              <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 Whether you require management of the main contractor work or certain subcontractors, or require a client-side team to manage the project for you, we can provide you with the necessary services. Our approach combines deep technical expertise with a pragmatic delivery focus across power generation, oil and gas, and major infrastructure developments.
+              </p>
+              <p className="text-pc-neutral-600 leading-relaxed">
+                We also specialise in plant outage and shutdown project management — coordinating engineering, procurement, and construction activities under tight operational windows with 24/7 scheduling requirements. Our team manages all stakeholder interfaces, operational constraints, and readiness reviews to meet timeframe and budget targets in live industrial environments.
               </p>
             </Card>
           </div>
@@ -164,9 +167,9 @@ export default function ProjectManagementPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/services/project-controls" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
-                <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Controls →</h3>
-                <p className="text-sm text-pc-neutral-600">Scheduling, cost control, and risk management</p>
+              <Link href="/services/planning" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
+                <h3 className="font-semibold text-pc-neutral-900 mb-2">Planning →</h3>
+                <p className="text-sm text-pc-neutral-600">Critical path scheduling, earned value management, and delay analysis</p>
               </Link>
               <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Quantity Surveying →</h3>

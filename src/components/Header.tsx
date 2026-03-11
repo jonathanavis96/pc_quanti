@@ -17,6 +17,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services' },
+  { label: 'Projects', href: '/projects' },
   { label: 'Team', href: '/team' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
@@ -121,7 +122,7 @@ export function Header() {
 
           <div className="hidden md:block relative" ref={navRef}>
             <nav
-              className="flex items-center gap-20"
+              className="flex items-center gap-10 lg:gap-14 xl:gap-20"
               aria-label="Main navigation"
               onMouseLeave={() => {
                 setIsUnderlineVisible(false);
