@@ -4,13 +4,13 @@ import { TeamMemberCard } from "@/src/components/TeamMemberCard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Team | PC Quanti",
+  title: "Management Core Team | PC Quanti",
   description:
-    "Meet the PC Quanti team — highly qualified engineering, construction and commercial professionals with extensive experience across nuclear, oil & gas, power generation and major infrastructure projects.",
+    "Meet PC Quanti's management core team — highly qualified engineering, construction and commercial professionals with extensive experience across nuclear, oil & gas, power generation and major infrastructure projects.",
   openGraph: {
-    title: "Our Team | PC Quanti",
+    title: "Management Core Team | PC Quanti",
     description:
-      "Meet the PC Quanti team — highly qualified engineering, construction and commercial professionals with extensive experience across nuclear, oil & gas, power generation and major infrastructure projects.",
+      "Meet PC Quanti's management core team — highly qualified engineering, construction and commercial professionals with extensive experience across nuclear, oil & gas, power generation and major infrastructure projects.",
   },
 };
 
@@ -75,7 +75,7 @@ export default function TeamPage() {
             Our People
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-pc-neutral-900 sm:text-5xl mb-6">
-            Meet Our Team
+            Management Core Team
           </h1>
           <p className="text-lg text-pc-neutral-600 max-w-3xl mx-auto">
             PC Quanti&apos;s strength lies in its highly qualified and committed team of engineering,
@@ -86,6 +86,13 @@ export default function TeamPage() {
             dispute resolution, our team works collaboratively to deliver disciplined execution,
             proactive risk management and measurable value — always guided by integrity and
             accountability.
+          </p>
+          <p className="text-base text-pc-neutral-500 max-w-3xl mx-auto mt-4">
+            We operate on an expandable team model: our core management professionals are
+            supported by a wider network of vetted specialists and associates who are brought
+            on board as projects demand. This allows us to scale efficiently, assembling the
+            right expertise for each engagement — from a single discipline appointment to a
+            full multi-disciplinary project team — without carrying unnecessary overhead.
           </p>
         </div>
 
@@ -107,7 +114,7 @@ export default function TeamPage() {
         {/* CTA */}
         <div className="mt-20 rounded-2xl bg-pc-neutral-50 border border-pc-neutral-200 p-8 sm:p-12 text-center">
           <h2 className="text-2xl font-bold text-pc-neutral-900 mb-4">
-            Work with our team
+            Work with our core team
           </h2>
           <p className="text-pc-neutral-600 max-w-2xl mx-auto mb-6">
             Get in touch to discuss how PC Quanti can support your next engineering or construction project.

@@ -1,40 +1,40 @@
 import React from 'react';
-import { Container, Card, Button } from '@/src/components';
+import { Container, Card, LinkButton } from '@/src/components';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contract Administration — NEC, FIDIC, GCC & JBCC Expertise",
-  description: "Expert contract management, variations, and change control to protect your interests. Specialist contract administration for complex nuclear, mining, and industrial projects under NEC3, NEC4, FIDIC, GCC, and JBCC frameworks.",
+  title: "Contract Management — Lifecycle Support & Compliance",
+  description: "Comprehensive contract management lifecycle support — advisory on compliance, risk allocation, payment certification, variation management, and extension of time assessments across all major procurement forms.",
   alternates: {
-    canonical: "/services/contract-administration",
+    canonical: "/services/contract-management",
   },
   openGraph: {
-    title: "Contract Administration | PC Quanti",
-    description: "Expert contract administration, compliance management, and documentation services for nuclear, mining, and industrial projects under NEC, FIDIC, GCC, and JBCC.",
-    url: "/services/contract-administration",
+    title: "Contract Management | PC Quanti",
+    description: "Expert contract management covering compliance, risk allocation, payment certification, variation management, and extension of time assessments across NEC, FIDIC, GCC, and JBCC contracts.",
+    url: "/services/contract-management",
   },
 };
 
-export default function ContractAdministrationPage() {
+export default function ContractManagementPage() {
   return (
     <main className="min-h-screen bg-white">
       <Container>
         <div className="py-16 md:py-24">
           {/* Header */}
           <div className="mb-12 md:mb-16">
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-pc-gold hover:underline mb-4 inline-block focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm"
             >
               ← Back to Services
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold text-pc-neutral-900 mb-6">
-              Contract Administration
+              Contract Management
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Expert contract administration, compliance management, and documentation services for nuclear, mining, and industrial projects — across NEC, FIDIC, GCC, JBCC, and bespoke frameworks.
+              Comprehensive contract lifecycle support — from pre-award advisory through to final account, covering compliance, risk allocation, payment certification, and variation management.
             </p>
           </div>
 
@@ -45,13 +45,13 @@ export default function ContractAdministrationPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We believe that for a project to be truly successful it is critical to implement proper and effective contract administration. PC Quanti ensures concise but comprehensive written project communication, serves the required notices on time, and properly documents the progress of the works and commercial administration required under the contract form — working with established document controls and EDMS systems to keep your important project documentation safe and audit-ready.
+                PC Quanti provides comprehensive contract management lifecycle support across all major procurement forms, including NEC3, NEC4, FIDIC, GCC, and JBCC contracts. Our approach covers the full contract life cycle — from pre-award advisory and contract drafting through to contract execution, change management, and final account resolution.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We provide comprehensive contract management support throughout the lifecycle of construction and engineering projects. Our services include advisory on contractual compliance, risk allocation, payment certification, variation management, and extension of time assessments across NEC3, NEC4, FIDIC, GCC, and JBCC contract suites.
+                We advise clients on contract compliance, risk allocation, and commercial exposure throughout project delivery. Our team manages payment certification processes, assesses and manages variations, and provides strategic guidance on extension of time entitlements — ensuring contractual rights are identified, preserved, and enforced.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach is proactive and detail-driven, with a focus on protecting our clients&apos; commercial interests while maintaining project momentum. By ensuring clear record-keeping, structured decision-making, and timely contractual notices, we help mitigate risk and reduce the likelihood of disputes arising.
+                Where contract management is integrated with our quantity surveying and contract administration services, clients benefit from a fully coordinated commercial team that protects value, manages risk, and maintains commercial clarity throughout the project life cycle.
               </p>
             </Card>
           </div>
@@ -59,8 +59,8 @@ export default function ContractAdministrationPage() {
           {/* Service Image */}
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
-              src="/services/contract-administration.webp"
-              alt=""
+              src="/services/contract-management.png"
+              alt="Contract management and documentation"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"
@@ -75,49 +75,49 @@ export default function ContractAdministrationPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Contract Management
+                  Pre-Award Advisory
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Contract setup, mobilisation, and procurement advisory</li>
-                  <li>• Notice management, compliance tracking, and timely notifications</li>
-                  <li>• Variation management and change order administration</li>
-                  <li>• Payment certification and contract closeout</li>
+                  <li>• Contract form selection and risk allocation review</li>
+                  <li>• Tender document review and commercial advice</li>
+                  <li>• Contract negotiation support</li>
+                  <li>• Pre-contract risk assessment and mitigation planning</li>
                 </ul>
               </Card>
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Documentation Control
+                  Contract Execution
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Contract correspondence registers</li>
-                  <li>• Meeting minutes and action tracking</li>
-                  <li>• Document version control</li>
-                  <li>• As-built documentation</li>
+                  <li>• Payment certification and assessment management</li>
+                  <li>• Variation and compensation event management</li>
+                  <li>• Extension of time assessment and entitlement advice</li>
+                  <li>• Compliance monitoring and reporting</li>
                 </ul>
               </Card>
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Compliance & Reporting
+                  Change Management
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Regulatory compliance monitoring</li>
-                  <li>• Contractual milestone tracking</li>
-                  <li>• Performance reporting dashboards</li>
-                  <li>• Audit trail maintenance</li>
+                  <li>• Variation register management</li>
+                  <li>• Change order preparation and negotiation</li>
+                  <li>• Impact assessment on time and cost</li>
+                  <li>• Contractual notice management</li>
                 </ul>
               </Card>
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Risk & Issue Management
+                  Final Account &amp; Close-Out
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Risk register administration</li>
-                  <li>• Early warning notification systems</li>
-                  <li>• Dispute avoidance strategies</li>
-                  <li>• Lessons learned capture</li>
+                  <li>• Final account preparation and negotiation</li>
+                  <li>• Commercial close-out reporting</li>
+                  <li>• Retention release management</li>
+                  <li>• Post-project commercial review</li>
                 </ul>
               </Card>
             </div>
@@ -132,26 +132,26 @@ export default function ContractAdministrationPage() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Contractual Expertise
+                    Multi-Form Expertise
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Deep knowledge of NEC3, NEC4, FIDIC, GCC, JBCC, and bespoke contract forms, with proven experience administering complex agreements in nuclear, mining, and industrial settings.
+                    Deep knowledge of NEC3, NEC4, FIDIC, GCC, and JBCC contracts — enabling tailored advice on each form&apos;s specific requirements, risk mechanisms, and entitlement provisions.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Compliance Rigour
+                    Commercial Protection
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Meticulous tracking of contractual obligations, regulatory requirements, and documentation standards to ensure full compliance and audit readiness.
+                    Proactive identification and management of commercial risks, ensuring contractual rights are preserved and commercial exposure is minimised throughout project delivery.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Practical Focus
+                    Integrated Approach
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Balanced approach that maintains contractual discipline while supporting pragmatic project delivery and collaborative stakeholder relationships.
+                    Contract management delivered alongside contract administration and quantity surveying services, providing a fully coordinated commercial team for complete project commercial control.
                   </p>
                 </div>
               </div>
@@ -164,13 +164,13 @@ export default function ContractAdministrationPage() {
               Related Services
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/services/contract-administration" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
+                <h3 className="font-semibold text-pc-neutral-900 mb-2">Contract Administration →</h3>
+                <p className="text-sm text-pc-neutral-600">Disciplined contract administration and written communication</p>
+              </Link>
               <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Quantity Surveying →</h3>
                 <p className="text-sm text-pc-neutral-600">Cost planning and commercial management</p>
-              </Link>
-              <Link href="/services/dispute-resolution" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
-                <h3 className="font-semibold text-pc-neutral-900 mb-2">Dispute Resolution →</h3>
-                <p className="text-sm text-pc-neutral-600">Adjudication, arbitration, and claims preparation</p>
               </Link>
             </div>
           </div>
@@ -178,16 +178,14 @@ export default function ContractAdministrationPage() {
           {/* CTA Section */}
           <div className="text-center p-8 bg-pc-neutral-50 rounded-lg">
             <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-4">
-              Need Expert Contract Administration Support?
+              Need Expert Contract Management Support?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
-              Contact PC Quanti to discuss how we can ensure contractual compliance and documentation excellence on your next industrial project.
+              Contact PC Quanti to discuss how our contract management services can protect your commercial interests throughout your project delivery.
             </p>
-            <Link href="/contact">
-              <Button size="lg">
-                Contact Us
-              </Button>
-            </Link>
+            <LinkButton href="/contact" size="lg">
+              Contact Us
+            </LinkButton>
           </div>
         </div>
       </Container>

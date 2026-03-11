@@ -7,7 +7,7 @@ const services = [
   {
     title: 'Project Management',
     description:
-      'Turnkey project management from initial design and engineering through on-site execution and close-out, integrating schedule development, risk management and change control to manage time, cost and scope delivery.',
+      'Comprehensive project management from initial design and engineering through on-site execution and close-out, integrating schedule development, risk management, change control, and stakeholder interface management — including plant outage and shutdown delivery.',
     href: '/services/project-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -23,23 +23,46 @@ const services = [
     ),
   },
   {
-    title: 'Quantity Surveying',
+    title: 'Planning',
     description:
-      'Detailed quantity surveying from variation analysis and compensation event assessment to managing payment processes — dovetailing with contract management to ensure value is maintained.',
-    href: '/services/quantity-surveying',
+      'Structured and strategic planning on NEC, FIDIC, and GCC contracts — including critical path scheduling, earned value management, resource loading, forensic delay analysis, look-ahead programmes, and outage and shutdown scheduling.',
+    href: '/services/planning',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Ruler + measurement ticks */}
-        <rect x="4" y="16" width="36" height="12" rx="2" />
-        <line x1="10" y1="16" x2="10" y2="22" />
-        <line x1="16" y1="16" x2="16" y2="24" />
-        <line x1="22" y1="16" x2="22" y2="22" />
-        <line x1="28" y1="16" x2="28" y2="24" />
-        <line x1="34" y1="16" x2="34" y2="22" />
-        {/* Value label */}
-        <line x1="12" y1="10" x2="32" y2="10" strokeDasharray="2 2" strokeOpacity="0.5" />
-        <line x1="12" y1="9" x2="12" y2="11" />
-        <line x1="32" y1="9" x2="32" y2="11" />
+        {/* Clipboard */}
+        <rect x="8" y="7" width="28" height="34" rx="2" />
+        <rect x="16" y="4" width="12" height="7" rx="2" />
+        {/* X obstacles — small, light */}
+        <line x1="14" y1="16" x2="17" y2="19" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="17" y1="16" x2="14" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+        <line x1="27" y1="16" x2="30" y2="19" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="30" y1="16" x2="27" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+        <line x1="14" y1="28" x2="17" y2="31" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="17" y1="28" x2="14" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
+        <line x1="27" y1="28" x2="30" y2="31" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="30" y1="28" x2="27" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
+        {/* Start circle — bottom-left */}
+        <circle cx="13" cy="35" r="2.5" fill="currentColor" fillOpacity="0.2" /><circle cx="13" cy="35" r="2.5" />
+        {/* End circle — top-right */}
+        <circle cx="33" cy="13" r="2.5" fill="currentColor" fillOpacity="0.2" /><circle cx="33" cy="13" r="2.5" />
+        {/* Winding S-curve */}
+        <path d="M 13 32 C 22 32 22 22 13 22 C 13 15 22 15 31 13" strokeWidth="1.6" />
+        <polyline points="28,11 31,13 28,15" strokeWidth="1.6" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Construction Management',
+    description:
+      'Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary execution in operational nuclear and petrochemical plants, including outage and shutdown construction activities.',
+    href: '/services/construction-management',
+    icon: (
+      <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        {/* Crown rib — centre top tab */}
+        <path d="M18 18V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v9" />
+        {/* Left dome arc */}
+        <path d="M7 28v-6a11 11 0 0 1 11-11" />
+        {/* Right dome arc */}
+        <path d="M26 11a11 11 0 0 1 11 11v6" />
+        {/* Brim */}
+        <rect x="3" y="28" width="38" height="7" rx="2" fill="currentColor" fillOpacity="0.1" />
+        <rect x="3" y="28" width="38" height="7" rx="2" />
       </svg>
     ),
   },
@@ -66,46 +89,62 @@ const services = [
     ),
   },
   {
-    title: 'Claims & Dispute Resolution',
+    title: 'Contract Management',
     description:
-      'Specialist advice and representation across all dispute resolution forums, including claims preparation, adjudication, arbitration, and negotiation to achieve efficient and sustainable outcomes.',
-    href: '/services/claims-management',
+      'Comprehensive contract lifecycle support including advisory on compliance, risk allocation, payment certification, variation management, and extension of time assessments across all major procurement forms.',
+    href: '/services/contract-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Balance scales */}
-        <line x1="22" y1="6" x2="22" y2="38" />
-        <line x1="10" y1="38" x2="34" y2="38" />
-        <line x1="8" y1="14" x2="36" y2="14" />
-        <line x1="22" y1="6" x2="22" y2="14" />
-        {/* Left pan */}
-        <path d="M8 14 L5 22 Q8 26 11 22 Z" fill="currentColor" fillOpacity="0.12" />
-        <path d="M8 14 L5 22 Q8 26 11 22 Z" />
-        {/* Right pan */}
-        <path d="M36 14 L33 22 Q36 26 39 22 Z" fill="currentColor" fillOpacity="0.12" />
-        <path d="M36 14 L33 22 Q36 26 39 22 Z" />
+        {/* Document */}
+        <rect x="5" y="4" width="22" height="30" rx="2" fill="currentColor" fillOpacity="0.08" />
+        <rect x="5" y="4" width="22" height="30" rx="2" />
+        <line x1="10" y1="12" x2="23" y2="12" />
+        <line x1="10" y1="17" x2="23" y2="17" />
+        <line x1="10" y1="22" x2="18" y2="22" />
+        {/* Signature line */}
+        <line x1="10" y1="28" x2="23" y2="28" strokeOpacity="0.4" />
+        {/* Pen body — diagonal slab from upper-right down to tip */}
+        <path d="M 39 9 L 41 7 L 23 25 L 21 27 Z" fill="currentColor" fillOpacity="0.1" />
+        <path d="M 39 9 L 41 7 L 23 25 L 21 27 Z" />
+        {/* Nib — pointed tip */}
+        <path d="M 21 27 L 23 25 L 19 31 Z" fill="currentColor" stroke="none" />
+        {/* Signature scribble being written */}
+        <path d="M 11 28 Q 14 26 16 28 Q 18 30 20 28" strokeWidth="1.2" />
       </svg>
     ),
   },
   {
-    title: 'Planning & Project Controls',
+    title: 'Quantity Surveying',
     description:
-      'Strategic planning and project controls on NEC, FIDIC and GCC contracts — including critical path scheduling, earned value management, delay analysis and look-ahead programmes.',
-    href: '/services/project-controls',
+      'Detailed quantity surveying from variation analysis and compensation event assessment to managing payment processes — dovetailing with contract management to ensure value is maintained.',
+    href: '/services/quantity-surveying',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Critical path network */}
-        <circle cx="8" cy="22" r="3" fill="currentColor" fillOpacity="0.15" />
-        <circle cx="8" cy="22" r="3" />
-        <circle cx="22" cy="10" r="3" fill="currentColor" fillOpacity="0.15" />
-        <circle cx="22" cy="10" r="3" />
-        <circle cx="22" cy="34" r="3" fill="currentColor" fillOpacity="0.15" />
-        <circle cx="22" cy="34" r="3" />
-        <circle cx="36" cy="22" r="3" fill="currentColor" fillOpacity="0.15" />
-        <circle cx="36" cy="22" r="3" />
-        <line x1="11" y1="21" x2="19" y2="12" />
-        <line x1="11" y1="23" x2="19" y2="32" />
-        <line x1="25" y1="11" x2="33" y2="21" />
-        <line x1="25" y1="33" x2="33" y2="23" />
+        {/* Ruler + measurement ticks */}
+        <rect x="4" y="16" width="36" height="12" rx="2" />
+        <line x1="10" y1="16" x2="10" y2="22" />
+        <line x1="16" y1="16" x2="16" y2="24" />
+        <line x1="22" y1="16" x2="22" y2="22" />
+        <line x1="28" y1="16" x2="28" y2="24" />
+        <line x1="34" y1="16" x2="34" y2="22" />
+        {/* Value label */}
+        <line x1="12" y1="10" x2="32" y2="10" strokeDasharray="2 2" strokeOpacity="0.5" />
+        <line x1="12" y1="9" x2="12" y2="11" />
+        <line x1="32" y1="9" x2="32" y2="11" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Commercial Management',
+    description:
+      'Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes.',
+    href: '/services/commercial-management',
+    icon: (
+      <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        {/* Short vertical ticks above and below the S */}
+        <path d="M22 4v7m0 22v7" />
+        {/* S-curve — widened to fill 44×44 viewBox */}
+        <path d="M37 14a5.5 5.5 0 0 0-5-3h-20a5.5 5.5 0 0 0 0 11h20a5.5 5.5 0 0 1 0 11h-20a5.5 5.5 0 0 1-5-3" />
       </svg>
     ),
   },
@@ -121,6 +160,27 @@ const services = [
         <path d="M22 4 L36 10 L36 24 C36 32 22 40 22 40 C22 40 8 32 8 24 L8 10 Z" />
         {/* Check mark */}
         <polyline points="15,22 20,27 29,17" strokeWidth="2" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Dispute Resolution',
+    description:
+      'Specialist advice and representation across all dispute resolution forums, including claims preparation, adjudication, arbitration, and negotiation to achieve efficient and sustainable outcomes.',
+    href: '/services/dispute-resolution',
+    icon: (
+      <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        {/* Balance scales */}
+        <line x1="22" y1="6" x2="22" y2="38" />
+        <line x1="10" y1="38" x2="34" y2="38" />
+        <line x1="8" y1="14" x2="36" y2="14" />
+        <line x1="22" y1="6" x2="22" y2="14" />
+        {/* Left pan */}
+        <path d="M8 14 L5 22 Q8 26 11 22 Z" fill="currentColor" fillOpacity="0.12" />
+        <path d="M8 14 L5 22 Q8 26 11 22 Z" />
+        {/* Right pan */}
+        <path d="M36 14 L33 22 Q36 26 39 22 Z" fill="currentColor" fillOpacity="0.12" />
+        <path d="M36 14 L33 22 Q36 26 39 22 Z" />
       </svg>
     ),
   },

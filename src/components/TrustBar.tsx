@@ -26,13 +26,13 @@ export function TrustBar({ markers }: TrustBarProps) {
   return (
     <section className="border-b border-pc-neutral-200 bg-white py-6">
       <Container maxWidth="xl">
-        <div className="flex items-center justify-between gap-x-8 text-center">
+        <div className="grid grid-cols-2 gap-4 text-center md:grid-cols-4 md:gap-x-8">
           {displayMarkers.map((marker, idx) => (
             <div key={idx} className="flex flex-col gap-1">
-              <span className="text-xs font-medium text-pc-neutral-500 uppercase tracking-wide whitespace-nowrap">
+              <span className="text-xs font-medium text-pc-neutral-500 uppercase tracking-wide">
                 {marker.label}
               </span>
-              <span className="text-base font-semibold text-pc-neutral-900 whitespace-nowrap">
+              <span className="text-sm font-semibold text-pc-neutral-900 sm:text-base">
                 {marker.value}
               </span>
             </div>
