@@ -53,6 +53,10 @@ EOF
 # Defaults
 MODEL_ARG=""
 DESIGN_MODE="false"
+# SKIP_PERMISSIONS is intentionally "true" for this interactive chat script.
+# Cortex runs as a trusted planning agent in a controlled dev environment;
+# skipping permission prompts is required for uninterrupted interactive sessions.
+# Use one-shot.sh (which defaults to "false") for non-interactive runs.
 SKIP_PERMISSIONS="true"
 
 while [[ $# -gt 0 ]]; do
@@ -127,6 +131,12 @@ You are starting Cortex in **design-only audit mode**.
 "
 fi
 
+# Pre-flight: ensure AGENTS.md exists and is readable
+if [[ ! -f "${SCRIPT_DIR}/AGENTS.md" || ! -r "${SCRIPT_DIR}/AGENTS.md" ]]; then
+  echo "ERROR: ${SCRIPT_DIR}/AGENTS.md not found or not readable." >&2
+  exit 1
+fi
+
 # Build the system prompt - lean injection (snapshot fetched on demand)
 SYSTEM_PROMPT=$(cat <<EOF
 $(cat "${SCRIPT_DIR}/AGENTS.md")
@@ -169,15 +179,15 @@ echo -e "${GREEN}Cortex has full context of the PC Quanti project.${NC}"
 echo -e "${GREEN}Type 'exit' or press Ctrl+C to end the session.${NC}"
 echo ""
 
-# Build Claude Code command
-CLAUDE_CMD="claude"
+# Build Claude Code command as array to avoid word-splitting
+CLAUDE_CMD=("claude")
 
 if [[ -n "$CLAUDE_MODEL_FLAG" ]]; then
-  CLAUDE_CMD="$CLAUDE_CMD $CLAUDE_MODEL_FLAG"
+  CLAUDE_CMD+=($CLAUDE_MODEL_FLAG)
 fi
 
 if [[ "$SKIP_PERMISSIONS" == "true" ]]; then
-  CLAUDE_CMD="$CLAUDE_CMD --dangerously-skip-permissions"
+  CLAUDE_CMD+=("--dangerously-skip-permissions")
 fi
 
 # Write system prompt to temp file
@@ -185,7 +195,7 @@ PROMPT_FILE=$(mktemp /tmp/cortex_pc_prompt_XXXXXX.md)
 echo "$SYSTEM_PROMPT" > "$PROMPT_FILE"
 
 # Launch Claude Code with system prompt
-$CLAUDE_CMD --system-prompt "$(cat "$PROMPT_FILE")"
+"${CLAUDE_CMD[@]}" --system-prompt "$(cat "$PROMPT_FILE")"
 EXIT_CODE=$?
 
 # Cleanup

@@ -1,7 +1,7 @@
 # PC Quanti — Finalized Website Copy Reference
 
 > **Purpose:** SEO-optimized, grammar-corrected, publication-ready copy for all website pages.
-> **Status:** Finalized reference — ready for implementation.
+> **Status:** Draft — placeholders remain (see `[PHIL INPUT NEEDED]` markers).
 > **Last updated:** 2026-03-10
 > **Notes:** Phil's original voice and tone preserved throughout. Copy has been optimized for SEO keywords (nuclear project management, quantity surveying UK, industrial consultancy, etc.), improved for readability, and corrected for grammar. All TODO(PHIL) placeholders resolved with professional defaults where possible; items requiring Phil's specific input are marked `[PHIL INPUT NEEDED]`.
 
@@ -158,7 +158,7 @@ A: Yes, we operate across the UK and South Africa with proven capability for bot
 
 ### Metadata
 
-**Title tag:** About | PC Quanti
+**Title tag:** About
 **Meta description:** Learn about Phil's background in UK nuclear project management and why PC Quanti delivers lean, expert consultancy services for industrial sectors including quantity surveying and contract administration.
 **Canonical:** /about
 
@@ -752,6 +752,7 @@ Our structured approach combines industry best practices with hands-on experienc
 ## SEO Keyword Strategy
 
 ### Primary Keywords (target across all pages)
+
 - nuclear project management UK
 - industrial project management consultancy
 - quantity surveying nuclear sector
@@ -759,6 +760,7 @@ Our structured approach combines industry best practices with hands-on experienc
 - contract administration industrial projects
 
 ### Secondary Keywords (distribute across service pages)
+
 - NEC contract management
 - FIDIC contract administration
 - claims management nuclear projects
@@ -770,6 +772,7 @@ Our structured approach combines industry best practices with hands-on experienc
 - commissioning management
 
 ### Long-Tail Keywords (FAQ and service detail pages)
+
 - nuclear project management consultancy UK and South Africa
 - lean project management consultancy for industrial sectors
 - quantity surveying for nuclear decommissioning
