@@ -3,6 +3,66 @@ import { Card, Container, LinkButton } from '@/src/components';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
+// Professional SVG icons for each service
+const ProjectManagementIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+    <rect x="6" y="4" width="28" height="36" rx="3" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+    <line x1="12" y1="14" x2="28" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="12" y1="21" x2="24" y2="21" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="12" y1="28" x2="20" y2="28" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <polyline points="30,28 34,32 42,22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+  </svg>
+);
+
+const QuantitySurveyingIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+    <rect x="4" y="30" width="8" height="12" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+    <rect x="16" y="20" width="8" height="22" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+    <rect x="28" y="12" width="8" height="30" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+    <rect x="40" y="6" width="4" height="36" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+    <line x1="2" y1="44" x2="46" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+  </svg>
+);
+
+const ContractAdminIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+    <path d="M10 6h20l10 10v28a2 2 0 01-2 2H10a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+    <path d="M30 6v10h10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <line x1="14" y1="22" x2="34" y2="22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="14" y1="30" x2="34" y2="30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="14" y1="38" x2="24" y2="38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+  </svg>
+);
+
+const ClaimsManagementIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+    <line x1="24" y1="6" x2="24" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="8" y1="14" x2="40" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <path d="M8 14 L4 26 C4 30 12 30 12 26 L8 14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <path d="M40 14 L36 26 C36 30 44 30 44 26 L40 14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <line x1="16" y1="44" x2="32" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+  </svg>
+);
+
+const ProjectControlsIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+    <path d="M8 38 A18 18 0 1 1 40 38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+    <line x1="24" y1="24" x2="32" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <circle cx="24" cy="24" r="3" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+    <line x1="10" y1="38" x2="14" y2="38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="34" y1="38" x2="38" y2="38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <line x1="24" y1="10" x2="24" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+  </svg>
+);
+
+const RiskManagementIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+    <path d="M24 4 L42 12 V26 C42 35 34 42 24 46 C14 42 6 35 6 26 V12 Z" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" fill="none"/>
+    <line x1="24" y1="18" x2="24" y2="28" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <circle cx="24" cy="34" r="1.5" fill="currentColor"/>
+  </svg>
+);
+
 export const metadata: Metadata = {
   title: "PC quanti - Services",
   description: "Engineering and construction management consultancy with extensive experience in NEC3, NEC4, FIDIC, GCC, JBCC. Project management, quantity surveying, cost and value management, risk management, contract and claims management, dispute resolution, adjudication and arbitration.",
@@ -21,37 +81,37 @@ const services = [
     slug: 'project-management',
     title: 'Project Management',
     description: 'Turnkey project management services from initial design and engineering development through on-site execution and project close-out, integrating schedule development, risk management, change control and stakeholder interface management.',
-    icon: '📋',
+    Icon: ProjectManagementIcon,
   },
   {
     slug: 'quantity-surveying',
     title: 'Quantity Surveying',
     description: 'Detailed quantity surveying from variation analysis and compensation event quotation building or assessment to managing the payment assessment process, ensuring value is maintained across claims, disputes and arbitrations.',
-    icon: '📊',
+    Icon: QuantitySurveyingIcon,
   },
   {
     slug: 'contract-administration',
     title: 'Contract Administration',
     description: 'Proper and effective contract administration with concise but comprehensive written project communication, serving required notices on time and properly documenting progress of the works under the contract form.',
-    icon: '📝',
+    Icon: ContractAdminIcon,
   },
   {
     slug: 'claims-management',
     title: 'Claims Management',
     description: 'Specialist advice and representation in construction and engineering disputes across all formal and alternative dispute resolution forums, including adjudication and arbitration proceedings.',
-    icon: '⚖️',
+    Icon: ClaimsManagementIcon,
   },
   {
     slug: 'project-controls',
     title: 'Project Controls',
     description: 'Structured and strategic planning services on various forms of contract, supporting both clients and contractors in developing project controls including delay analysis and extension of time claims.',
-    icon: '🎯',
+    Icon: ProjectControlsIcon,
   },
   {
     slug: 'risk-management',
     title: 'Risk Management',
     description: 'Specialised risk management services helping developers, contractors and project stakeholders identify, assess and mitigate potential risks before they impact timelines, budgets or compliance.',
-    icon: '⚠️',
+    Icon: RiskManagementIcon,
   },
 ];
 
@@ -86,8 +146,8 @@ export default function ServicesPage() {
               >
                 <Card variant="elevated" className="hover:border-pc-gold transition-all duration-200">
                   <div className="flex items-start gap-6">
-                    <div className="text-5xl flex-shrink-0" aria-hidden="true">
-                      {service.icon}
+                    <div className="text-pc-gold flex-shrink-0">
+                      <service.Icon />
                     </div>
                     <div className="flex-1">
                       <h2 className="text-2xl font-semibold text-pc-neutral-900 mb-3 group-hover:text-pc-gold transition-colors">

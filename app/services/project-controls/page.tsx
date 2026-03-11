@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, LinkButton } from '@/src/components';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -53,6 +54,17 @@ export default function ProjectControlsPage() {
                 We also provide services to both clients and contractors to manage delays using recognised forensic schedule analysis techniques, including windows analysis, as-planned vs. as-built comparison, collapsed as-built (but-for analysis), and impacted as-planned methodologies, ensuring compliance with recognised time impact analysis standards.
               </p>
             </Card>
+          </div>
+
+          {/* Service Image */}
+          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
+            <Image
+              src="/services/project-controls.webp"
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1088px"
+            />
           </div>
 
           {/* Typical Deliverables */}

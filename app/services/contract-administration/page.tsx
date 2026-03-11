@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, Button } from '@/src/components';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
@@ -53,6 +54,17 @@ export default function ContractAdministrationPage() {
                 Our approach is proactive and detail-driven, with a focus on protecting our clients&apos; commercial interests while maintaining project momentum. By ensuring clear record-keeping, structured decision-making, and timely contractual notices, we help mitigate risk and reduce the likelihood of disputes arising.
               </p>
             </Card>
+          </div>
+
+          {/* Service Image */}
+          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
+            <Image
+              src="/services/contract-administration.webp"
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1088px"
+            />
           </div>
 
           {/* Typical Deliverables */}
