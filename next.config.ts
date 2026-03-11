@@ -19,7 +19,13 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: process.env.NODE_ENV !== 'production',
   },
   images: {
-    unoptimized: true, // Required for static export
+    // Custom loader prepends NEXT_PUBLIC_BASE_PATH to every image src so
+    // images resolve correctly on both:
+    //   GitHub Pages:  USE_GITHUB_PAGES=true  → /pc_quanti/<src>
+    //   Custom domain: USE_GITHUB_PAGES unset  → /<src>
+    // No changes required in individual components — loader is global.
+    // unoptimized is implied by Next.js when loaderFile is set.
+    loaderFile: './src/lib/imageLoader.ts',
   },
 };
 
