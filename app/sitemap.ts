@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/commercial-management",
     "/services/risk-management",
     "/services/dispute-resolution",
+    "/projects",
     "/privacy-policy",
     "/terms-conditions",
     "/disclaimer",

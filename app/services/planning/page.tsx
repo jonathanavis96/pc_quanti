@@ -59,11 +59,11 @@ export default function PlanningPage() {
             </Card>
           </div>
 
-          {/* Service Image */}
+          {/* Service Image — reusing project-controls.webp as interim; planning.webp to be provided */}
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
               src="/services/project-controls.webp"
-              alt=""
+              alt="Planning and project controls engineering"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 1088px"

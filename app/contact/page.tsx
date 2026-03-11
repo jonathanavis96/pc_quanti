@@ -84,12 +84,20 @@ export default function ContactPage() {
     // Formspree integration for GitHub Pages static hosting
     // Sends submissions to info@pcquanti.co.za
     const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
-    const formspreeEndpoint = formspreeId
-      ? `https://formspree.io/f/${formspreeId}`
-      : 'https://formspree.io/f/info@pcquanti.co.za';
+
+    if (!formspreeId) {
+      // Fallback: open mailto when Formspree ID is not configured
+      const mailtoSubject = encodeURIComponent(`PC Quanti Enquiry: ${formData.service}`);
+      const mailtoBody = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService: ${formData.service}\n\nMessage:\n${formData.message}`
+      );
+      window.location.href = `mailto:info@pcquanti.co.za?subject=${mailtoSubject}&body=${mailtoBody}`;
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
-      const response = await fetch(formspreeEndpoint, {
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -353,7 +361,7 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-pc-neutral-600 mb-1">WhatsApp</p>
-                      <a href="https://wa.me/+27828632154" target="_blank" rel="noopener noreferrer" className="text-pc-neutral-900 hover:text-[#25D366] transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
+                      <a href="https://wa.me/27828632154" target="_blank" rel="noopener noreferrer" className="text-pc-neutral-900 hover:text-[#25D366] transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
                         Message us on WhatsApp
                       </a>
                     </div>

@@ -11,11 +11,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PC Quanti — Engineering & Construction Management",
-  description: "PC Quanti is an engineering and construction management consultancy delivering professional services across the full project life cycle in nuclear, power generation, oil and gas, and major infrastructure developments.",
+  title: "PC Quanti — Engineering & Construction Consulting Services",
+  description: "PC Quanti delivers engineering and construction consulting services internationally — nuclear, power generation, oil and gas, and major infrastructure projects across South Africa, the United Kingdom, and beyond.",
   openGraph: {
-    title: "PC Quanti — Engineering & Construction Management",
-    description: "PC Quanti is an engineering and construction management consultancy delivering professional services across the full project life cycle in nuclear, power generation, oil and gas, and major infrastructure developments.",
+    title: "PC Quanti — Engineering & Construction Consulting Services",
+    description: "PC Quanti delivers engineering and construction consulting services internationally — nuclear, power generation, oil and gas, and major infrastructure projects across South Africa, the United Kingdom, and beyond.",
   },
 };
 
