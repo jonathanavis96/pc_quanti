@@ -29,27 +29,21 @@ const services = [
     href: '/services/planning',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Clipboard body */}
-        <rect x="8" y="7" width="28" height="34" rx="2" fill="currentColor" fillOpacity="0.08" />
+        {/* Clipboard */}
         <rect x="8" y="7" width="28" height="34" rx="2" />
-        {/* Clip tab */}
-        <rect x="16" y="4" width="12" height="7" rx="2" fill="currentColor" fillOpacity="0.15" />
         <rect x="16" y="4" width="12" height="7" rx="2" />
-        {/* 4 X obstacles */}
-        <line x1="13" y1="15" x2="17" y2="19" strokeWidth="1.5" /><line x1="17" y1="15" x2="13" y2="19" strokeWidth="1.5" />
-        <line x1="27" y1="15" x2="31" y2="19" strokeWidth="1.5" /><line x1="31" y1="15" x2="27" y2="19" strokeWidth="1.5" />
-        <line x1="13" y1="27" x2="17" y2="31" strokeWidth="1.5" /><line x1="17" y1="27" x2="13" y2="31" strokeWidth="1.5" />
-        <line x1="27" y1="27" x2="31" y2="31" strokeWidth="1.5" /><line x1="31" y1="27" x2="27" y2="31" strokeWidth="1.5" />
+        {/* X obstacles — small, light */}
+        <line x1="14" y1="16" x2="17" y2="19" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="17" y1="16" x2="14" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+        <line x1="27" y1="16" x2="30" y2="19" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="30" y1="16" x2="27" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+        <line x1="14" y1="28" x2="17" y2="31" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="17" y1="28" x2="14" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
+        <line x1="27" y1="28" x2="30" y2="31" strokeWidth="1.2" strokeOpacity="0.5" /><line x1="30" y1="28" x2="27" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
         {/* Start circle — bottom-left */}
-        <circle cx="13" cy="35" r="2.5" fill="currentColor" fillOpacity="0.2" />
-        <circle cx="13" cy="35" r="2.5" />
+        <circle cx="13" cy="35" r="2.5" fill="currentColor" fillOpacity="0.2" /><circle cx="13" cy="35" r="2.5" />
         {/* End circle — top-right */}
-        <circle cx="33" cy="13" r="2.5" fill="currentColor" fillOpacity="0.2" />
-        <circle cx="33" cy="13" r="2.5" />
-        {/* Winding S-curve avoiding obstacles (passes through centre gap between X columns) */}
-        <path d="M 13 32 C 22 32 22 22 13 22 C 13 15 22 15 31 13" />
-        {/* Arrowhead */}
-        <polyline points="28,11 31,13 28,15" />
+        <circle cx="33" cy="13" r="2.5" fill="currentColor" fillOpacity="0.2" /><circle cx="33" cy="13" r="2.5" />
+        {/* Winding S-curve */}
+        <path d="M 13 32 C 22 32 22 22 13 22 C 13 15 22 15 31 13" strokeWidth="1.6" />
+        <polyline points="28,11 31,13 28,15" strokeWidth="1.6" />
       </svg>
     ),
   },
@@ -60,32 +54,15 @@ const services = [
     href: '/services/construction-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Hard hat dome */}
-        <path d="M9 22 Q9 13 19 13 Q29 13 29 22" fill="currentColor" fillOpacity="0.12" />
-        <path d="M9 22 Q9 13 19 13 Q29 13 29 22" />
-        <line x1="7" y1="22" x2="31" y2="22" strokeWidth="2" />
-        {/* Head */}
-        <circle cx="19" cy="26" r="4" fill="currentColor" fillOpacity="0.08" />
-        <circle cx="19" cy="26" r="4" />
-        {/* Body / shoulders */}
-        <path d="M11 38 Q11 32 19 31 Q27 32 27 38" />
-        {/* Arm holding paper */}
-        <line x1="25" y1="30" x2="30" y2="28" />
-        {/* Paper / document */}
-        <rect x="29" y="22" width="13" height="16" rx="1" fill="currentColor" fillOpacity="0.08" />
-        <rect x="29" y="22" width="13" height="16" rx="1" />
-        {/* Cog on paper: circle + 8 teeth */}
-        <circle cx="35" cy="30" r="3.5" fill="currentColor" fillOpacity="0.1" />
-        <circle cx="35" cy="30" r="3.5" />
-        <circle cx="35" cy="30" r="1.2" fill="currentColor" />
-        <line x1="35" y1="24.5" x2="35" y2="26" strokeWidth="1.6" />
-        <line x1="35" y1="34" x2="35" y2="35.5" strokeWidth="1.6" />
-        <line x1="28.5" y1="30" x2="30" y2="30" strokeWidth="1.6" />
-        <line x1="40" y1="30" x2="41.5" y2="30" strokeWidth="1.6" />
-        <line x1="30.5" y1="25.5" x2="31.5" y2="26.5" strokeWidth="1.4" />
-        <line x1="38.5" y1="25.5" x2="39.5" y2="26.5" strokeWidth="1.4" />
-        <line x1="30.5" y1="34.5" x2="31.5" y2="33.5" strokeWidth="1.4" />
-        <line x1="38.5" y1="34.5" x2="39.5" y2="33.5" strokeWidth="1.4" />
+        {/* Hard hat — dome */}
+        <path d="M7 27 Q7 11 22 11 Q37 11 37 27" fill="currentColor" fillOpacity="0.1" />
+        <path d="M7 27 Q7 11 22 11 Q37 11 37 27" />
+        {/* Brim */}
+        <line x1="4" y1="27" x2="40" y2="27" strokeWidth="2.2" />
+        {/* Underside rim */}
+        <line x1="12" y1="27" x2="12" y2="33" />
+        <line x1="32" y1="27" x2="32" y2="33" />
+        <line x1="12" y1="33" x2="32" y2="33" />
       </svg>
     ),
   },
@@ -164,10 +141,10 @@ const services = [
     href: '/services/commercial-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Dollar sign — vertical line */}
-        <line x1="22" y1="5" x2="22" y2="39" />
-        {/* Dollar sign — S curve */}
-        <path d="M 29 13 C 29 8 14 8 14 17 C 14 24 30 24 30 31 C 30 37 15 37 15 32" />
+        {/* Dollar sign — vertical bar */}
+        <line x1="22" y1="4" x2="22" y2="40" />
+        {/* S-curve: upper bowl opens down, lower bowl opens up */}
+        <path d="M 29 12 C 29 6 14 6 14 18 C 14 27 30 25 30 32 C 30 39 15 39 15 34" />
       </svg>
     ),
   },
