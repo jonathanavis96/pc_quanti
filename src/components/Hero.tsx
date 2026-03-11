@@ -145,18 +145,29 @@ export function Hero({
               </motion.div>
             </div>
             <motion.div
-              className="flex flex-wrap gap-3 text-sm font-semibold text-pc-neutral-400"
+              className="flex flex-wrap gap-2"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.65, ease: [0.2, 0.8, 0.2, 1] }}
             >
-              {['PM', 'Planning', 'Construction', 'Contract Admin', 'Contract Mgmt', 'QS', 'Commercial', 'Risk', 'Disputes'].map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-pc-gold/30 bg-pc-gold/10 px-3 py-1 text-pc-gold-300"
+              {[
+                { label: 'PM',                   href: '/services/project-management' },
+                { label: 'Planning',             href: '/services/planning' },
+                { label: 'Construction',         href: '/services/construction-management' },
+                { label: 'Contract Admin',       href: '/services/contract-administration' },
+                { label: 'Contract Management',  href: '/services/contract-management' },
+                { label: 'QS',                   href: '/services/quantity-surveying' },
+                { label: 'Commercial',           href: '/services/commercial-management' },
+                { label: 'Risk',                 href: '/services/risk-management' },
+                { label: 'Disputes',             href: '/services/dispute-resolution' },
+              ].map(({ label, href }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  className="rounded-full border border-pc-gold/30 bg-pc-gold/10 px-3 py-1 text-sm font-semibold text-pc-gold-300 transition-colors hover:border-pc-gold/60 hover:bg-pc-gold/20"
                 >
-                  {item}
-                </span>
+                  {label}
+                </Link>
               ))}
             </motion.div>
           </motion.div>
