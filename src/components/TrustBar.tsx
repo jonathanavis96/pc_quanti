@@ -16,9 +16,9 @@ export interface TrustBarProps {
 export function TrustBar({ markers }: TrustBarProps) {
   const defaultMarkers = [
     { label: 'Experience', value: 'Decades of combined expertise' },
-    { label: 'Sectors', value: 'Nuclear · Oil & Gas · Infrastructure' },
+    { label: 'Sectors', value: 'Nuclear & Coal · Oil & Gas · Mining · Infrastructure' },
     { label: 'Reach', value: 'South Africa · United Kingdom · International' },
-    { label: 'Standards', value: 'NEC3 · NEC4 · FIDIC · GCC · JBCC' },
+    { label: 'Contract Forms', value: 'NEC3 · NEC4 · FIDIC · GCC · JBCC' },
   ];
 
   const displayMarkers = markers || defaultMarkers;

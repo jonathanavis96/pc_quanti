@@ -46,7 +46,7 @@ export function Hero({
                 International Service
               </p>
               <p className="text-sm font-medium tracking-wide text-pc-neutral-400">
-                Delivering expertise in <TypewriterCountries />
+                Available to provide services in <TypewriterCountries />
               </p>
             </div>
             <motion.h1
@@ -158,8 +158,8 @@ export function Hero({
                 { label: 'Contract Management',  href: '/services/contract-management' },
                 { label: 'QS',                   href: '/services/quantity-surveying' },
                 { label: 'Commercial',           href: '/services/commercial-management' },
-                { label: 'Risk',                 href: '/services/risk-management' },
-                { label: 'Disputes',             href: '/services/dispute-resolution' },
+                { label: 'Risk Management',      href: '/services/risk-management' },
+                { label: 'Dispute Resolution',   href: '/services/dispute-resolution' },
               ].map(({ label, href }) => (
                 <Link
                   key={label}

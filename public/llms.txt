@@ -1,0 +1,36 @@
+# PC Quanti
+
+> Engineering and construction management consultancy delivering professional services across the full project lifecycle — from planning through execution and close-out — for nuclear and coal-fired power, mining, and infrastructure across South Africa, the United Kingdom, and other international markets.
+
+PC Quanti is a multi-disciplinary consultancy founded in 2020, operating across NEC3, NEC4, FIDIC, GCC, and JBCC contract frameworks. The team brings extensive experience in nuclear power generation, coal-fired power, oil and gas, mining, and major infrastructure developments.
+
+## Pages
+
+- [Home](https://pcquanti.co.za/): Overview of PC Quanti's services, sectors, team, and approach
+- [About](https://pcquanti.co.za/about): Company background, differentiators, and professional standards
+- [Team](https://pcquanti.co.za/team): Management core team — bios and qualifications for five key leaders
+- [Services](https://pcquanti.co.za/services): Overview of all nine professional service lines
+- [Projects](https://pcquanti.co.za/projects): Landmark case studies from Koeberg Nuclear Power Station
+- [Contact](https://pcquanti.co.za/contact): Contact form and details for enquiries
+
+## Services
+
+- [Project Management](https://pcquanti.co.za/services/project-management): Comprehensive PM from design through close-out, including plant outage and shutdown delivery
+- [Planning](https://pcquanti.co.za/services/planning): Critical path scheduling, earned value management, forensic delay analysis, and outage scheduling
+- [Construction Management](https://pcquanti.co.za/services/construction-management): Complex project execution in nuclear, petrochemical, oil and gas, airports, stadia, and infrastructure
+- [Contract Administration](https://pcquanti.co.za/services/contract-administration): Contractual notices, reporting, and commercial administration across NEC, FIDIC, GCC, and JBCC
+- [Contract Management](https://pcquanti.co.za/services/contract-management): Contract lifecycle support including compliance, risk allocation, payment certification, and variation management
+- [Quantity Surveying](https://pcquanti.co.za/services/quantity-surveying): Cost management, variation analysis, compensation event assessment, and payment certification
+- [Commercial Management](https://pcquanti.co.za/services/commercial-management): Procurement, estimating, tender analysis, cost analysis, and value engineering
+- [Risk Management](https://pcquanti.co.za/services/risk-management): Risk identification, quantitative analysis, and mitigation planning for construction and engineering projects
+- [Dispute Resolution](https://pcquanti.co.za/services/dispute-resolution): Claims preparation, adjudication, arbitration, expert witness services, and evidentiary preparation
+
+## Legal
+
+- [Privacy Policy](https://pcquanti.co.za/privacy-policy): POPIA and UK GDPR compliant privacy policy
+- [Terms & Conditions](https://pcquanti.co.za/terms-conditions): Website and professional services terms governed by South African law
+- [Disclaimer](https://pcquanti.co.za/disclaimer): Professional services disclaimer and limitation of liability
+
+## Optional
+
+- [llms-full.txt](https://pcquanti.co.za/llms-full.txt): Extended version with detailed page-level content summaries

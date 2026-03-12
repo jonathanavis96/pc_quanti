@@ -45,10 +45,10 @@ export default function ContractAdministrationPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We believe that for a project to be truly successful it is critical to implement proper and effective contract administration. PC Quanti ensures concise but comprehensive written project communication, serves the required notices on time, and properly documents the progress of the works and commercial administration required under the contract form — working with established document controls and EDMS systems to keep your important project documentation safe and audit-ready.
+                We believe that for a project to be truly successful, it is critical to implement proper and effective contract administration. PC Quanti ensures concise but comprehensive written project communication, serves the required notices on time, and properly documents the progress of the works and commercial administration required under the contract form, working with established document controls and EDMS systems to keep your important project documentation safe and audit-ready.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We provide comprehensive contract management support throughout the lifecycle of construction and engineering projects. Our services include advisory on contractual compliance, risk allocation, payment certification, variation management, and extension of time assessments across NEC3, NEC4, FIDIC, GCC, and JBCC contract suites.
+                We provide comprehensive contract administration support throughout the lifecycle of nuclear, mining, and industrial construction and engineering projects. Our services include contractual compliance monitoring, notice management, payment certification, variation management, and extension of time assessments across NEC3, NEC4, FIDIC, GCC, and JBCC contract suites.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
                 Our approach is proactive and detail-driven, with a focus on protecting our clients&apos; commercial interests while maintaining project momentum. By ensuring clear record-keeping, structured decision-making, and timely contractual notices, we help mitigate risk and reduce the likelihood of disputes arising.
@@ -75,13 +75,13 @@ export default function ContractAdministrationPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Contract Management
+                  Contract Administration
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Contract setup, mobilisation, and procurement advisory</li>
-                  <li>• Notice management, compliance tracking, and timely notifications</li>
-                  <li>• Variation management and change order administration</li>
-                  <li>• Payment certification and contract closeout</li>
+                  <li>• Contract setup, mobilisation, and administration</li>
+                  <li>• Notice management and variation &amp; change order administration</li>
+                  <li>• Payment certification and contract close-out</li>
+                  <li>• Ensuring clear contemporaneous record keeping</li>
                 </ul>
               </Card>
 

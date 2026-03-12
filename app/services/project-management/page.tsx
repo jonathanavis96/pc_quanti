@@ -62,7 +62,7 @@ export default function ProjectManagementPage() {
           {/* Service Image */}
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
-              src="/services/project-management.webp"
+              src="/services/services-project-management-5.png"
               alt=""
               fill
               className="object-cover"
@@ -135,7 +135,7 @@ export default function ProjectManagementPage() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Nuclear &amp; Power Generation
+                    Power Generation
                   </h3>
                   <p className="text-pc-neutral-600">
                     Nuclear and coal-fired power generation facilities with deep understanding of regulatory requirements, safety-critical environments, and complex EPC delivery.
@@ -146,7 +146,7 @@ export default function ProjectManagementPage() {
                     Oil &amp; Gas
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Petrochemical plants and oil and gas installations requiring rigorous project controls, stakeholder management, and operational readiness.
+                    Petrochemical plants, oil and gas installations requiring rigorous project controls, stakeholder management, and operational readiness.
                   </p>
                 </div>
                 <div>
@@ -154,7 +154,7 @@ export default function ProjectManagementPage() {
                     Major Infrastructure
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Large-scale infrastructure developments including airport projects and civil structures, delivered locally in South Africa, the United Kingdom and other international markets.
+                    Large-scale infrastructure developments including airport projects, civil structures and mechanical/electrical installations, delivered locally in South Africa, the United Kingdom and other international markets.
                   </p>
                 </div>
               </div>

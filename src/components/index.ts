@@ -20,7 +20,7 @@ export { ServicesGrid } from './ServicesGrid';
 export { ProcessTimeline } from './ProcessTimeline';
 export { ProofStrip } from './ProofStrip';
 export { CTASection } from './CTASection';
-export { BlueprintHeroArt } from './BlueprintHeroArt';
+export { TypewriterHeroArt } from './TypewriterHeroArt';
 
 export { SectorsTrustGrid } from './SectorsTrustGrid';
 export type { SectorsTrustGridProps } from './SectorsTrustGrid';

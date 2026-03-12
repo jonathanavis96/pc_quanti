@@ -45,7 +45,7 @@ export default function CommercialManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provides full project commercial management services covering the complete commercial lifecycle of engineering and construction projects. Our commercial management team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, and value engineering — providing clients with complete commercial visibility and control.
+                PC Quanti's commercial management team comprises specialist individuals with deep expertise across the complete commercial lifecycle of engineering and construction projects. Our team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, and value engineering — providing clients with complete commercial visibility and control.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We work alongside project and construction management teams to align commercial strategy with project delivery objectives, ensuring that cost, value, and risk are actively managed from feasibility through to project close-out.
@@ -82,6 +82,7 @@ export default function CommercialManagementPage() {
                   <li>• Cost estimating and budget preparation</li>
                   <li>• Tender document preparation and management</li>
                   <li>• Tender analysis and contractor evaluation</li>
+                  <li>• Detailed contract review and optimisation</li>
                 </ul>
               </Card>
 
@@ -93,7 +94,8 @@ export default function CommercialManagementPage() {
                   <li>• Cost planning and cost-in-use analysis</li>
                   <li>• Value engineering and design optimisation</li>
                   <li>• Cost benchmarking and market analysis</li>
-                  <li>• Lifecycle cost assessment</li>
+                  <li>• Life cycle cost assessment</li>
+                  <li>• Whole life cost analysis</li>
                 </ul>
               </Card>
 
@@ -166,7 +168,7 @@ export default function CommercialManagementPage() {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/services/quantity-surveying" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Quantity Surveying →</h3>
-                <p className="text-sm text-pc-neutral-600">Detailed cost management and payment process management</p>
+                <p className="text-sm text-pc-neutral-600">Detailed cost management, valuations and remeasurements, escalation calculations, and payment process management</p>
               </Link>
               <Link href="/services/contract-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Contract Management →</h3>
@@ -181,7 +183,7 @@ export default function CommercialManagementPage() {
               Ready to Discuss Your Commercial Management Needs?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
-              Contact PC Quanti to explore how our commercial management services can protect and optimise the commercial outcomes of your next project.
+              Contact PC Quanti to explore how our commercial management services can protect and optimise the commercial outcomes of your next project — across South Africa, the United Kingdom, and other international markets.
             </p>
             <LinkButton href="/contact" size="lg">
               Contact Us

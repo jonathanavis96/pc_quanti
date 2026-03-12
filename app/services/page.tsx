@@ -3,116 +3,145 @@ import { Card, Container, LinkButton } from '@/src/components';
 import Link from 'next/link';
 import type { Metadata } from "next";
 
-// Professional SVG icons for each service
+// SVG icons — exact copies of homepage ServicesGrid icons
 const ProjectManagementIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <rect x="6" y="4" width="28" height="36" rx="3" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <line x1="12" y1="14" x2="28" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="12" y1="21" x2="24" y2="21" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="12" y1="28" x2="20" y2="28" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <polyline points="30,28 34,32 42,22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
+    {/* Clipboard */}
+    <rect x="8" y="7" width="28" height="34" rx="2" />
+    <rect x="16" y="4" width="12" height="7" rx="2" />
+    {/* X obstacles — small, light */}
+    <line x1="14" y1="16" x2="17" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+    <line x1="17" y1="16" x2="14" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+    <line x1="27" y1="16" x2="30" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+    <line x1="30" y1="16" x2="27" y2="19" strokeWidth="1.2" strokeOpacity="0.5" />
+    <line x1="14" y1="28" x2="17" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
+    <line x1="17" y1="28" x2="14" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
+    <line x1="27" y1="28" x2="30" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
+    <line x1="30" y1="28" x2="27" y2="31" strokeWidth="1.2" strokeOpacity="0.5" />
+    {/* Start circle — bottom-left */}
+    <circle cx="13" cy="35" r="2.5" fill="currentColor" fillOpacity="0.2" />
+    <circle cx="13" cy="35" r="2.5" />
+    {/* End circle — top-right */}
+    <circle cx="33" cy="13" r="2.5" fill="currentColor" fillOpacity="0.2" />
+    <circle cx="33" cy="13" r="2.5" />
+    {/* Winding S-curve */}
+    <path d="M 13 32 C 22 32 22 22 13 22 C 13 15 22 15 31 13" strokeWidth="1.6" />
+    <polyline points="28,11 31,13 28,15" strokeWidth="1.6" />
   </svg>
 );
 
 const PlanningIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    {/* Clipboard */}
-    <rect x="8" y="8" width="32" height="38" rx="2" stroke="currentColor" strokeWidth="2.5"/>
-    <rect x="17" y="4" width="14" height="8" rx="2" stroke="currentColor" strokeWidth="2.5"/>
-    {/* X obstacles — small, light */}
-    <line x1="14" y1="18" x2="18" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    <line x1="18" y1="18" x2="14" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    <line x1="30" y1="18" x2="34" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    <line x1="34" y1="18" x2="30" y2="22" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    <line x1="14" y1="30" x2="18" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    <line x1="18" y1="30" x2="14" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    <line x1="30" y1="30" x2="34" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    <line x1="34" y1="30" x2="30" y2="34" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5"/>
-    {/* Start circle BL */}
-    <circle cx="14" cy="40" r="3" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.2"/>
-    {/* End circle TR */}
-    <circle cx="36" cy="16" r="3" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.2"/>
-    {/* Winding S-curve */}
-    <path d="M 14 37 C 24 37 24 25 14 25 C 14 18 24 18 33 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
-    <polyline points="30,13 33,16 30,19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
+    {/* Gantt chart bars */}
+    <rect x="6" y="10" width="18" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
+    <rect x="6" y="10" width="18" height="5" rx="1" />
+    <rect x="14" y="19" width="24" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
+    <rect x="14" y="19" width="24" height="5" rx="1" />
+    <rect x="6" y="28" width="14" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
+    <rect x="6" y="28" width="14" height="5" rx="1" />
+    <line x1="6" y1="38" x2="38" y2="38" strokeWidth="1.2" strokeOpacity="0.4" />
   </svg>
 );
 
 const ConstructionManagementIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
     {/* Crown rib — centre top tab */}
-    <path d="M20 20V10a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M18 18V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v9" />
     {/* Left dome arc */}
-    <path d="M8 30v-6a12 12 0 0 1 12-12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <path d="M7 28v-6a11 11 0 0 1 11-11" />
     {/* Right dome arc */}
-    <path d="M28 12a12 12 0 0 1 12 12v6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+    <path d="M26 11a11 11 0 0 1 11 11v6" />
     {/* Brim */}
-    <rect x="3" y="30" width="42" height="8" rx="2" stroke="currentColor" strokeWidth="2.5" fill="currentColor" fillOpacity="0.1"/>
+    <rect x="3" y="28" width="38" height="7" rx="2" fill="currentColor" fillOpacity="0.1" />
+    <rect x="3" y="28" width="38" height="7" rx="2" />
   </svg>
 );
 
 const ContractAdminIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <path d="M10 6h20l10 10v28a2 2 0 01-2 2H10a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <path d="M30 6v10h10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-    <line x1="14" y1="22" x2="34" y2="22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="14" y1="30" x2="34" y2="30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="14" y1="38" x2="24" y2="38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
+    {/* Document */}
+    <rect x="8" y="4" width="22" height="30" rx="2" />
+    <path d="M30 4 L30 10 L36 10" strokeWidth="1.4" />
+    <path d="M30 4 L36 10 L36 34 Q36 36 34 36 L10 36" />
+    <line x1="13" y1="14" x2="25" y2="14" />
+    <line x1="13" y1="19" x2="25" y2="19" />
+    <line x1="13" y1="24" x2="20" y2="24" />
+    {/* Seal */}
+    <circle cx="30" cy="30" r="5" fill="currentColor" fillOpacity="0.12" />
+    <circle cx="30" cy="30" r="5" />
+    <line x1="28" y1="30" x2="30" y2="32" />
+    <line x1="30" y1="32" x2="33" y2="28" />
   </svg>
 );
 
 const ContractManagementIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
     {/* Document */}
-    <rect x="6" y="4" width="24" height="34" rx="2" stroke="currentColor" strokeWidth="2.5" fill="currentColor" fillOpacity="0.06"/>
-    <line x1="11" y1="14" x2="26" y2="14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="11" y1="20" x2="26" y2="20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="11" y1="26" x2="20" y2="26" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <rect x="5" y="4" width="22" height="30" rx="2" fill="currentColor" fillOpacity="0.08" />
+    <rect x="5" y="4" width="22" height="30" rx="2" />
+    <line x1="10" y1="12" x2="23" y2="12" />
+    <line x1="10" y1="17" x2="23" y2="17" />
+    <line x1="10" y1="22" x2="18" y2="22" />
     {/* Signature line */}
-    <line x1="11" y1="32" x2="26" y2="32" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.4" strokeLinecap="round"/>
+    <line x1="10" y1="28" x2="23" y2="28" strokeOpacity="0.4" />
     {/* Pen body */}
-    <path d="M 43 9 L 46 12 L 28 30 L 25 27 Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="currentColor" fillOpacity="0.1"/>
+    <path d="M 39 9 L 41 7 L 23 25 L 21 27 Z" fill="currentColor" fillOpacity="0.1" />
+    <path d="M 39 9 L 41 7 L 23 25 L 21 27 Z" />
     {/* Nib */}
-    <path d="M 25 27 L 28 30 L 22 34 Z" fill="currentColor" stroke="none"/>
+    <path d="M 21 27 L 23 25 L 19 31 Z" fill="currentColor" stroke="none" />
     {/* Signature scribble */}
-    <path d="M 13 32 Q 16 29 18 32 Q 20 35 22 32" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+    <path d="M 11 28 Q 14 26 16 28 Q 18 30 20 28" strokeWidth="1.2" />
   </svg>
 );
 
 const QuantitySurveyingIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <rect x="4" y="30" width="8" height="12" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <rect x="16" y="20" width="8" height="22" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <rect x="28" y="12" width="8" height="30" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <rect x="40" y="6" width="4" height="36" rx="1.5" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-    <line x1="2" y1="44" x2="46" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
+    {/* Ruler + measurement ticks */}
+    <rect x="4" y="16" width="36" height="12" rx="2" />
+    <line x1="10" y1="16" x2="10" y2="22" />
+    <line x1="16" y1="16" x2="16" y2="24" />
+    <line x1="22" y1="16" x2="22" y2="22" />
+    <line x1="28" y1="16" x2="28" y2="24" />
+    <line x1="34" y1="16" x2="34" y2="22" />
+    {/* Value label */}
+    <line x1="12" y1="10" x2="32" y2="10" strokeDasharray="2 2" strokeOpacity="0.5" />
+    <line x1="12" y1="9" x2="12" y2="11" />
+    <line x1="32" y1="9" x2="32" y2="11" />
   </svg>
 );
 
 const CommercialManagementIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
     {/* Short vertical ticks above and below the S */}
-    <path d="M24 4v8m0 24v8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    {/* S-curve — widened to fill 48×48 viewBox */}
-    <path d="M40 15a6 6 0 0 0-5-3h-22a6 6 0 0 0 0 12h22a6 6 0 0 1 0 12h-22a6 6 0 0 1-5-3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
+    <path d="M22 4v7m0 22v7" />
+    {/* S-curve */}
+    <path d="M37 14a5.5 5.5 0 0 0-5-3h-20a5.5 5.5 0 0 0 0 11h20a5.5 5.5 0 0 1 0 11h-20a5.5 5.5 0 0 1-5-3" />
   </svg>
 );
 
 const RiskManagementIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <path d="M24 4 L42 12 V26 C42 35 34 42 24 46 C14 42 6 35 6 26 V12 Z" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" fill="none"/>
-    <line x1="24" y1="18" x2="24" y2="28" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <circle cx="24" cy="34" r="1.5" fill="currentColor"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
+    {/* Shield */}
+    <path d="M22 4 L36 10 L36 24 C36 32 22 40 22 40 C22 40 8 32 8 24 L8 10 Z" fill="currentColor" fillOpacity="0.1" />
+    <path d="M22 4 L36 10 L36 24 C36 32 22 40 22 40 C22 40 8 32 8 24 L8 10 Z" />
+    {/* Check mark */}
+    <polyline points="15,22 20,27 29,17" strokeWidth="2" />
   </svg>
 );
 
 const DisputeResolutionIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
-    <line x1="24" y1="6" x2="24" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="8" y1="14" x2="40" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M8 14 L4 26 C4 30 12 30 12 26 L8 14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-    <path d="M40 14 L36 26 C36 30 44 30 44 26 L40 14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-    <line x1="16" y1="44" x2="32" y2="44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12" aria-hidden="true">
+    {/* Balance scales */}
+    <line x1="22" y1="6" x2="22" y2="38" />
+    <line x1="10" y1="38" x2="34" y2="38" />
+    <line x1="8" y1="14" x2="36" y2="14" />
+    <line x1="22" y1="6" x2="22" y2="14" />
+    {/* Left pan */}
+    <path d="M8 14 L5 22 Q8 26 11 22 Z" fill="currentColor" fillOpacity="0.12" />
+    <path d="M8 14 L5 22 Q8 26 11 22 Z" />
+    {/* Right pan */}
+    <path d="M36 14 L33 22 Q36 26 39 22 Z" fill="currentColor" fillOpacity="0.12" />
+    <path d="M36 14 L33 22 Q36 26 39 22 Z" />
   </svg>
 );
 
@@ -145,7 +174,7 @@ const services = [
   {
     slug: 'construction-management',
     title: 'Construction Management',
-    description: 'Proven track record of delivering complex projects in challenging environments, including multidisciplinary project execution in operational nuclear and petrochemical facilities. We manage main contractor and subcontractor activities, including outage and shutdown construction.',
+    description: 'Proven track record of delivering complex projects in challenging environments, including multidisciplinary project execution in operational facilities. We manage clients, main contractor or subcontractor activities, including outage and shutdown works.',
     Icon: ConstructionManagementIcon,
   },
   {
@@ -157,7 +186,7 @@ const services = [
   {
     slug: 'contract-management',
     title: 'Contract Management',
-    description: 'Comprehensive contract lifecycle support including advisory on compliance, risk allocation, payment certification, variation management, and extension of time assessments across all major procurement forms.',
+    description: 'Comprehensive contract lifecycle support including advisory on compliance, risk allocation, payment certification, variation management, and extension of time assessments across all major forms of procurement.',
     Icon: ContractManagementIcon,
   },
   {
@@ -203,7 +232,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-lg md:text-xl text-pc-neutral-600 max-w-3xl mx-auto">
-              We have extensive experience in various contract forms including NEC3, NEC4, FIDIC, GCC, JBCC and deploy services in project management, engineering management, planning, construction management, quantity surveying, cost, value and risk management, contract and commercial management, dispute resolution, adjudication and arbitration, with a proven track record of delivering complex major EPC projects.
+              We have extensive experience in various forms of contract including NEC3, NEC4, FIDIC, GCC, JBCC and deploy services in project management, planning, construction management, quantity surveying, cost, value and risk management, contract and commercial management, dispute resolution, adjudication and arbitration, with a proven track record of delivering complex major EPC and EPCM projects.
             </p>
           </div>
 
