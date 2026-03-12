@@ -8,7 +8,7 @@ const steps = [
   },
   {
     title: 'Structured Mobilisation',
-    description: 'Build the right governance, controls, and reporting cadence to de-risk delivery early.',
+    description: 'Build the right team, apply project controls, and develop reporting requirements to de-risk delivery early.',
   },
   {
     title: 'Controlled Execution',
