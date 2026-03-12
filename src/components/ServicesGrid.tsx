@@ -50,7 +50,7 @@ const services = [
   {
     title: 'Construction Management',
     description:
-      'Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary project execution in the fields of nuclear and coal-fire power generation, petrochemical/oil and gas, solar and wind energy, infrastructure development, including outage and shutdown construction activities.',
+      'Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary project execution in the fields of nuclear and coal-fired power generation, petrochemical/oil and gas, solar and wind energy, infrastructure development, including outage and shutdown construction activities.',
     href: '/services/construction-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
