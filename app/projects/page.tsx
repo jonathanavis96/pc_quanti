@@ -248,8 +248,9 @@ export default function ProjectsPage() {
                 major milestone in Koeberg&apos;s 20-year lifecycle extension
                 programme.
               </p>
+              {/* Source: Engineering News, 10 March 2026 — reports the 365-day/99.4% EAF performance milestone */}
               <a
-                href="https://www.engineeringnews.co.za/article/koeberg-unit-2-reconnected-to-grid-after-steam-generator-replacement-2025-02-07"
+                href="https://m.engineeringnews.co.za/article/eskom-hails-performance-of-upgraded-koeberg-nuclear-reactor-2026-03-10"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-pc-gold hover:text-pc-gold-dark transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"

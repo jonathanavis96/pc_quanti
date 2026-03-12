@@ -46,7 +46,7 @@ PC quanti - Engineering & Construction Management
 **Heading:** Welcome to PC quanti
 
 **Body:**
-PC quanti is an engineering and construction management consultancy delivering professional services across the full project lifecycle. Our multi-disciplinary team brings extensive experience in nuclear and coal-fired power generation, oil and gas, and major infrastructure developments including airport projects. Our professionals have successfully delivered services across South Africa, the United Kingdom and other international markets, supporting complex and technically demanding environments.
+PC quanti is an engineering and construction management consultancy delivering professional services across the full project life cycle. Our multi-disciplinary team brings extensive experience in nuclear and coal-fired power generation, oil and gas, and major infrastructure developments including airport projects. Our professionals have successfully delivered services across South Africa, the United Kingdom and other international markets, supporting complex and technically demanding environments.
 
 ### Image Grid Links
 - About Us (about_slim.jpg)
@@ -63,7 +63,7 @@ We operate across a wide range of contract frameworks, including NEC3, NEC4, FID
 **Heading:** PC quanti: mission & philosophy
 
 **Body:**
-At PC Quanti our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success. We believe the foundation of every great project lies in disciplined planning, rigorous risk and value management, clear communication and an unwavering commitment to quality at every stage of the project lifecycle.
+At PC Quanti our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success. We believe the foundation of every great project lies in disciplined planning, rigorous risk and value management, clear communication and an unwavering commitment to quality at every stage of the project life cycle.
 
 Our philosophy is rooted in adding measurable value for clients through proactive problem-solving, ethical practice and collaboration with all stakeholders — ensuring projects are delivered safely, on time and within budget while exceeding expectations in performance and long-term operational success.
 
@@ -262,7 +262,7 @@ PC quanti - Why PC quanti?
 Why choose PC quanti?
 
 ### Introduction
-PC Quanti delivers expert engineering and construction management services across the entire project lifecycle, combining deep technical insight with commercial rigour to support complex and technically demanding endeavours. With extensive experience in major infrastructure, power generation, and oil & gas projects in South Africa, the United Kingdom, and other international markets, PC Quanti brings multi-disciplinary expertise in planning, quantity surveying, cost and value management, risk and contract management, as well as dispute resolution, adjudication and arbitration — helping clients achieve clarity, mitigate risk, and drive successful project outcomes.
+PC Quanti delivers expert engineering and construction management services across the entire project life cycle, combining deep technical insight with commercial rigour to support complex and technically demanding endeavours. With extensive experience in major infrastructure, power generation, and oil & gas projects in South Africa, the United Kingdom, and other international markets, PC Quanti brings multi-disciplinary expertise in planning, quantity surveying, cost and value management, risk and contract management, as well as dispute resolution, adjudication and arbitration — helping clients achieve clarity, mitigate risk, and drive successful project outcomes.
 
 ### Section: Structured Project Execution
 **Heading:** Structured Project Execution for Complex Engineering and Construction

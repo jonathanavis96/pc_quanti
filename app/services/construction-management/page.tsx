@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Construction Management | PC Quanti",
-    description: "Expert construction management for complex engineering environments — nuclear, petrochemical, and industrial sites with outage and shutdown delivery capability.",
+    description: "Proven construction management expertise for the most challenging environments — multidisciplinary project execution in operational nuclear and petrochemical facilities, outage and shutdown management, main contractor and subcontractor oversight.",
     url: "/services/construction-management",
   },
 };
@@ -135,7 +135,7 @@ export default function ConstructionManagementPage() {
                     High-Consequence Environments
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Deep experience managing construction activities in operational nuclear and petrochemical plants — where safety, regulatory compliance, and zero-defect execution are non-negotiable.
+                    Deep experience managing construction activities in operational nuclear and petrochemical facilities — where safety, regulatory compliance, and zero-defect execution are non-negotiable.
                   </p>
                 </div>
                 <div>
