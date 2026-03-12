@@ -145,13 +145,13 @@ const services = [
   {
     slug: 'construction-management',
     title: 'Construction Management',
-    description: 'Proven track record of delivering complex projects in challenging environments, including multidisciplinary execution in operational nuclear and petrochemical plants. We manage main contractor and subcontractor activities, including outage and shutdown construction.',
+    description: 'Proven track record of delivering complex projects in challenging environments, including multidisciplinary project execution in operational nuclear and petrochemical facilities. We manage main contractor and subcontractor activities, including outage and shutdown construction.',
     Icon: ConstructionManagementIcon,
   },
   {
     slug: 'contract-administration',
     title: 'Contract Administration',
-    description: 'Proper and effective contract administration with concise but comprehensive written project communication, serving required notices on time and properly documenting progress of the works under the contract form.',
+    description: 'Timely contractual notices, structured reporting, and disciplined commercial administration — ensuring proper documentation of progress and compliance under the contract form.',
     Icon: ContractAdminIcon,
   },
   {
@@ -163,13 +163,13 @@ const services = [
   {
     slug: 'quantity-surveying',
     title: 'Quantity Surveying',
-    description: 'Detailed quantity surveying from variation analysis and compensation event quotation building or assessment to managing the payment assessment process, ensuring value is maintained across claims, disputes and arbitrations.',
+    description: 'Detailed quantity surveying from variation analysis and compensation event assessment to certification and payment management, ensuring value is maintained across claims, disputes and arbitrations.',
     Icon: QuantitySurveyingIcon,
   },
   {
     slug: 'commercial-management',
     title: 'Commercial Management',
-    description: 'Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes across the project life cycle.',
+    description: 'Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes across the project lifecycle.',
     Icon: CommercialManagementIcon,
   },
   {

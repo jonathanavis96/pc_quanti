@@ -4,7 +4,7 @@ import { Container } from './Container';
 const proofPoints = [
   { label: 'Full lifecycle', value: 'From early concept and planning through execution, delivery and hand-over' },
   { label: 'Track record', value: 'Safety-critical nuclear and major EPC projects across South Africa and the UK' },
-  { label: 'Our commitment', value: 'Delivered safely, on time and within budget — every stage of the project life cycle' },
+  { label: 'Our commitment', value: 'Delivered safely, on time and within budget — every stage of the project lifecycle' },
 ];
 
 export function ProofStrip() {

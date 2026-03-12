@@ -83,7 +83,7 @@ export default function AboutPage() {
                     Our approach is evidence-based and focused on ensuring that projects are delivered in compliance with schedule, budget, quality and contractual obligation. We apply rigorous analysis to project data and commercial frameworks, enabling stakeholders to understand entitlement, quantify claims, and navigate complex disputes with confidence.
                   </p>
                   <p>
-                    Our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success — rooted in <strong>disciplined planning, rigorous risk management, and clear communication</strong> at every stage of the project life cycle.
+                    Our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success — rooted in <strong>disciplined planning, rigorous risk management, and clear communication</strong> at every stage of the project lifecycle.
                   </p>
                 </div>
               </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
               Why choose PC Quanti?
             </h2>
             <p className="mt-4 text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-              PC Quanti delivers expert engineering and construction management services across the entire project life cycle, combining deep technical insight with commercial rigour to support complex and technically demanding endeavours.
+              PC Quanti delivers expert engineering and construction management services across the entire project lifecycle, combining deep technical insight with commercial rigour to support complex and technically demanding endeavours.
             </p>
           </div>
 
