@@ -67,7 +67,7 @@ export function TypewriterHeroArt() {
       <div className="relative select-none text-center">
         <span
           className="text-5xl font-black tracking-[0.08em] text-pc-gold md:text-6xl lg:text-7xl"
-          style={{ fontFamily: 'var(--font-montserrat), system-ui, sans-serif' }}
+          style={{ fontFamily: 'var(--font-poppins), system-ui, sans-serif' }}
           aria-label="PC QUANTI"
         >
           {displayedText}

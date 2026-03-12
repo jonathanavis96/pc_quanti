@@ -65,14 +65,12 @@ const projects = [
     contract: "NEC3 Option A",
     location: "Koeberg, South Africa",
     services: [
-      "NEC Option A",
       "Project Management",
       "Contract Administration",
-      "Construction Oversight",
-      "Planning & Scheduling",
+      "Construction Management",
+      "Planning",
       "Quantity Surveying",
       "Commercial Management",
-      "Construction Management",
       "Risk Management",
     ],
     challenge:
@@ -80,7 +78,7 @@ const projects = [
     scope:
       "PC Quanti provided comprehensive project management and NEC3 Option A contract and construction management to the plant OEM, throughout the complete implementation phase. Services included subcontractor coordination across multiple specialist firms, detailed outage scheduling for precision welding operations, and ongoing project controls and planning to maintain programme integrity against stringent nuclear safety and quality standards.",
     outcome:
-      "The Steam Generator Replacement was completed as a critical enabler of Koeberg's 20-year life extension — one of the most technically complex projects undertaken at the station. PC Quanti's structured approach to contract management, risk identification, and planning as an integrated delivery team, within the required quality, safety, cost, and schedule parameters.",
+      "The Steam Generator Replacement was completed as a critical enabler of Koeberg's 20-year life extension — one of the most technically complex projects undertaken at the station. PC Quanti's structured approach to contract management, risk identification, and planning as an integrated delivery team delivered the project within the required quality, safety, cost, and schedule parameters.",
     images: [
       {
         src: "/projects/knps/1-koeberg-steam-generator-project.webp",

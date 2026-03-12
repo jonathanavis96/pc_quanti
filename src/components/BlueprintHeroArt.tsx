@@ -44,10 +44,10 @@ export function BlueprintHeroArt() {
   }, [charCount]);
 
   useEffect(() => {
-    if (typingComplete) return;
+    if (charCount >= BRAND_TEXT.length) return;
     const interval = setInterval(() => setCursorVisible((prev) => !prev), 530);
     return () => clearInterval(interval);
-  }, [typingComplete]);
+  }, [charCount]);
 
   const displayedText = BRAND_TEXT.slice(0, charCount);
 
