@@ -25,7 +25,7 @@ export default function Home() {
       <main className="min-h-screen bg-white">
         <Hero
           headline="Engineering & Construction Consulting Services"
-          subheadline="Delivering professional services across the full project life cycle — nuclear and coal-fired power generation, oil and gas, and major infrastructure developments in South Africa, the United Kingdom and international markets."
+          subheadline="Delivering professional engineering and construction consulting services across the full project lifecycle — nuclear and coal-fired power generation, oil & gas, and major infrastructure in South Africa, the United Kingdom, and other international markets. We specialise in technically complex projects where disciplined contract management, planning and commercial control are critical to successful delivery."
           ctaText="Get in Touch"
           ctaHref="/contact"
         />
@@ -51,8 +51,8 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-pc-neutral-900 mb-4">Management Core Team</h2>
               <p className="text-lg text-pc-neutral-600 max-w-3xl mx-auto">
                 PC Quanti&apos;s strength lies in its highly qualified and committed team of engineering,
-                construction and commercial professionals — combining technical expertise with practical,
-                on-site understanding, always guided by integrity and accountability.
+                construction and commercial professionals — combining technical expertise with disciplined
+                commercial management, always guided by integrity and accountability.
               </p>
               <p className="text-base text-pc-neutral-500 max-w-2xl mx-auto mt-3">
                 We operate on an expandable team model, scaling with vetted specialists and
@@ -104,7 +104,7 @@ export default function Home() {
             },
             {
               question: "What is PC Quanti's approach to project delivery?",
-              answer: "Our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success. We believe the foundation of every great project lies in disciplined planning, rigorous risk and value management, clear communication and an unwavering commitment to quality at every stage of the project life cycle. Our philosophy is rooted in adding measurable value through proactive problem-solving, ethical practice and collaboration with all stakeholders — ensuring projects are delivered safely, on time and within budget."
+              answer: "Our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success. We believe the foundation of every great project lies in disciplined planning, rigorous risk and value management, clear communication and an unwavering commitment to quality at every stage of the project lifecycle. Our philosophy is rooted in adding measurable value through proactive problem-solving, ethical practice and collaboration with all stakeholders — ensuring projects are delivered safely, on time and within budget."
             },
             {
               question: "What qualifications and experience does your team bring?",

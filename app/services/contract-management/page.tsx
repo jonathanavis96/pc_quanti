@@ -45,13 +45,13 @@ export default function ContractManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provides comprehensive contract management lifecycle support across all major procurement forms, including NEC3, NEC4, FIDIC, GCC, and JBCC contracts. Our approach covers the full contract life cycle — from pre-award advisory and contract drafting through to contract execution, change management, and final account resolution.
+                PC Quanti provides comprehensive contract management lifecycle support across all major procurement forms, including NEC3, NEC4, FIDIC, GCC, and JBCC contracts. Our approach covers the full contract lifecycle — from pre-award advisory and contract drafting through to contract execution, change management, and final account resolution.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We advise clients on contract compliance, risk allocation, and commercial exposure throughout project delivery. Our team manages payment certification processes, assesses and manages variations, and provides strategic guidance on extension of time entitlements — ensuring contractual rights are identified, preserved, and enforced.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Where contract management is integrated with our quantity surveying and contract administration services, clients benefit from a fully coordinated commercial team that protects value, manages risk, and maintains commercial clarity throughout the project life cycle.
+                Where contract management is integrated with our quantity surveying and contract administration services, clients benefit from a fully coordinated commercial team that protects value, manages risk, and maintains commercial clarity throughout the project lifecycle.
               </p>
             </Card>
           </div>
