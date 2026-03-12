@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <circle cx="256" cy="256" r="256" fill="#171717"/>
+  <text
+    x="256"
+    y="370"
+    font-family="Helvetica, Arial, sans-serif"
+    font-weight="900"
+    font-size="420"
+    text-anchor="middle"
+    fill="#C4A21A"
+    letter-spacing="-10"
+  >Q</text>
+</svg>
