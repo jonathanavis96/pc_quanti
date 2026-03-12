@@ -137,7 +137,7 @@ export function SectorsTrustGrid({
     },
     {
       title: "Oil & Gas",
-      description: "Petrochemical plant execution, outage shutdown turnarounds, and commercial management",
+      description: "Petrochemical plant projects, outage shutdown turnaround management",
       icon: <IconOilGas />,
     },
     {
@@ -147,7 +147,7 @@ export function SectorsTrustGrid({
     },
     {
       title: "Power Generation",
-      description: "Nuclear and coal-fired power station projects across the full EPC lifecycle",
+      description: "Nuclear and coal-fired power station projects across the full EPC and EPCM lifecycle",
       icon: <IconPowerGeneration />,
     },
   ];

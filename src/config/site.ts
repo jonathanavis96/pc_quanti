@@ -78,7 +78,7 @@ export const siteConfig = {
     {
       name: "Risk Management",
       slug: "risk-management",
-      abbreviation: "Risk",
+      abbreviation: "Risk Management",
       description:
         "Specialised risk identification, quantitative analysis, and mitigation planning for construction and engineering projects, enabling clients to minimise financial loss, manage uncertainty effectively, and deliver with greater confidence.",
       url: "/services/risk-management",
@@ -86,7 +86,7 @@ export const siteConfig = {
     {
       name: "Dispute Resolution",
       slug: "dispute-resolution",
-      abbreviation: "Disputes",
+      abbreviation: "Dispute Resolution",
       description:
         "Expert claims preparation, assessment, and dispute resolution including adjudication, arbitration, and expert witness services, with strategic guidance on contractual dispute resolution procedures and evidentiary preparation.",
       url: "/services/dispute-resolution",
