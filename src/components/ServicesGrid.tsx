@@ -11,24 +11,6 @@ const services = [
     href: '/services/project-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        {/* Gantt chart bars */}
-        <rect x="6" y="10" width="18" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
-        <rect x="6" y="10" width="18" height="5" rx="1" />
-        <rect x="14" y="19" width="24" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
-        <rect x="14" y="19" width="24" height="5" rx="1" />
-        <rect x="6" y="28" width="14" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
-        <rect x="6" y="28" width="14" height="5" rx="1" />
-        <line x1="6" y1="38" x2="38" y2="38" strokeWidth="1.2" strokeOpacity="0.4" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Planning',
-    description:
-      'Structured and strategic planning on NEC, FIDIC, and GCC contracts — including critical path scheduling, earned value management, resource loading, forensic delay analysis, look-ahead programmes, and outage and shutdown scheduling.',
-    href: '/services/planning',
-    icon: (
-      <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
         {/* Clipboard */}
         <rect x="8" y="7" width="28" height="34" rx="2" />
         <rect x="16" y="4" width="12" height="7" rx="2" />
@@ -48,9 +30,27 @@ const services = [
     ),
   },
   {
+    title: 'Planning',
+    description:
+      'Structured and strategic planning on NEC, FIDIC, JBCC, and GCC contracts — including critical path scheduling, earned value management, resource loading, forensic delay analysis, look-ahead programmes, and outage and shutdown scheduling.',
+    href: '/services/planning',
+    icon: (
+      <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        {/* Gantt chart bars */}
+        <rect x="6" y="10" width="18" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
+        <rect x="6" y="10" width="18" height="5" rx="1" />
+        <rect x="14" y="19" width="24" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
+        <rect x="14" y="19" width="24" height="5" rx="1" />
+        <rect x="6" y="28" width="14" height="5" rx="1" fill="currentColor" fillOpacity="0.15" />
+        <rect x="6" y="28" width="14" height="5" rx="1" />
+        <line x1="6" y1="38" x2="38" y2="38" strokeWidth="1.2" strokeOpacity="0.4" />
+      </svg>
+    ),
+  },
+  {
     title: 'Construction Management',
     description:
-      'Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary project execution in operational nuclear and petrochemical facilities, including outage and shutdown construction activities.',
+      'Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary project execution in the fields of nuclear and coal-fire power generation, petrochemical/oil and gas, solar and wind energy, infrastructure development, including outage and shutdown construction activities.',
     href: '/services/construction-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -116,7 +116,7 @@ const services = [
   {
     title: 'Quantity Surveying',
     description:
-      'Detailed quantity surveying from variation analysis and compensation event assessment to certification and payment management — dovetailing with contract management to ensure value is maintained.',
+      'Detailed quantity surveying from variation analysis and compensation event assessment to certification and payment management — dovetailing with contract administration and management to ensure value is maintained.',
     href: '/services/quantity-surveying',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -166,7 +166,7 @@ const services = [
   {
     title: 'Dispute Resolution',
     description:
-      'Specialist advice and representation across all dispute resolution forums, including claims preparation, adjudication, arbitration, and negotiation to achieve efficient and sustainable outcomes.',
+      'Specialist advice and representation across all dispute resolution forums, including claims preparation, adjudication, arbitration, and negotiation to achieve efficient and preferable outcomes.',
     href: '/services/dispute-resolution',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -198,7 +198,7 @@ export function ServicesGrid() {
             Professional services across the full project lifecycle
           </h2>
           <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-            Extensive experience in NEC3, NEC4, FIDIC, GCC and JBCC contracts with a proven track record of delivering complex major EPC projects.
+            Extensive experience in NEC3, NEC4, FIDIC, GCC and JBCC contracts with a proven track record of delivering complex major EPC and EPCM projects.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

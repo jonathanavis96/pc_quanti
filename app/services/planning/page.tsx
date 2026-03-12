@@ -54,15 +54,15 @@ export default function PlanningPage() {
                 We also provide services to both clients and contractors to manage delays using recognised forensic schedule analysis techniques, including windows analysis, as-planned vs. as-built comparison, collapsed as-built (but-for analysis), and impacted as-planned methodologies, ensuring compliance with recognised time impact analysis standards.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our planning team also specialises in outage and shutdown scheduling — developing and managing critical path programmes for plant turnarounds, coordinating all engineering, procurement, and construction activities to meet tight operational windows in nuclear, petrochemical, and industrial environments.
+                Our planning team also specialises in outage and shutdown scheduling — developing and managing critical path programmes for plant turnarounds, coordinating all engineering, procurement, and construction activities to meet tight operational windows in nuclear and coal-fired power generation, oil and gas, and other industrial &amp; commercial environments.
               </p>
             </Card>
           </div>
 
-          {/* Service Image — reusing project-controls.webp as interim; planning.webp to be provided */}
+          {/* Service Image */}
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
-              src="/services/project-controls.webp"
+              src="/services/services-project-controls-5.png"
               alt="Planning and project controls engineering"
               fill
               className="object-cover"

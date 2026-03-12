@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Josefin_Sans, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/src/components";
 import { Analytics } from "@/src/components/Analytics";
@@ -10,6 +10,27 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin",
+  weight: ["600", "700"],
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["400", "600", "700"],
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["700"],
   display: "swap",
 });
 
@@ -88,7 +109,7 @@ export default function RootLayout({
         <meta property="og:url" content={siteUrl} />
       </head>
       <body
-        className={`${inter.variable} font-sans antialiased`}
+        className={`${inter.variable} ${josefinSans.variable} ${montserrat.variable} ${poppins.variable} font-sans antialiased`}
       >
         <Analytics />
         <Header />

@@ -48,6 +48,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        logo: ['var(--font-josefin)', 'system-ui', 'sans-serif'],
+        montserrat: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'h1': ['2.5rem', { lineHeight: '1.2', fontWeight: '700' }],

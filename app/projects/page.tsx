@@ -33,11 +33,11 @@ const projects = [
       "Planning & Scheduling",
     ],
     challenge:
-      "Koeberg Nuclear Power Station required two new borated water storage tanks to support its 20-year life extension programme. Each tank had to be manufactured and installed to the highest nuclear-grade standards within a live, tightly regulated nuclear environment — with zero tolerance for quality deviations.",
+      "Koeberg Nuclear Power Station required two new borated water storage tanks to support its 20-year life extension programme. Each tank had to be manufactured and installed to the highest nuclear standards within a live, tightly regulated nuclear environment — with zero tolerance for quality deviations.",
     scope:
-      "PC Quanti delivered end-to-end project management and NEC Option A contract administration from early design through final commissioning. Each tank was fabricated in SAF2205 Duplex Stainless Steel to ASME III code, with 100% radiographic weld examination required throughout. Installation involved the deployment of a 500-ton crawler crane for roof lifting operations and the precise integration of complex piping and services connections.",
+      "Delivered end-to-end project management and NEC Option A contract administration from early design through final commissioning. Each tank was fabricated in SAF2205 Duplex Stainless Steel to ASME III code, with 100% radiographic weld examination required throughout. Installation involved the deployment of a 500-ton crawler crane for lifting operations and the precise integration of complex piping and services connections.",
     outcome:
-      "The project was successfully delivered within the required nuclear quality assurance framework, contributing to Koeberg's continued safe and reliable operation. PC Quanti's structured contract administration and programme planning ensured all milestones were tracked, communicated, and met within the constraints of the nuclear environment.",
+      "The project was successfully delivered within the required nuclear quality assurance framework, contributing to Koeberg's continued safe and reliable operation. Structured contract administration and programme planning ensured all milestones were tracked, communicated, and met within the constraints of the nuclear environment.",
     images: [
       {
         src: "/projects/ptr/1-ptr-tank-internal-view-koeberg.webp",
@@ -65,17 +65,22 @@ const projects = [
     contract: "NEC3 Option A",
     location: "Koeberg, South Africa",
     services: [
+      "NEC Option A",
       "Project Management",
-      "Contract & Construction Management",
-      "Subcontractor Coordination",
-      "Project Controls & Planning",
+      "Contract Administration",
+      "Construction Oversight",
+      "Planning & Scheduling",
+      "Quantity Surveying",
+      "Commercial Management",
+      "Construction Management",
+      "Risk Management",
     ],
     challenge:
-      "Replacing six steam generators — three per operating unit, each weighing approximately 350 tons — required meticulous multi-year coordination across manufacturing, heavy transport, rigging, and nuclear-grade installation within live plant outage windows.",
+      "Replacing six steam generators — three per operating unit, each weighing approximately 350 tons — required meticulous multi-year coordination of site implementation phase across heavy transport, rigging, and nuclear quality installation within live plant and outage windows.",
     scope:
-      "PC Quanti provided comprehensive project management and NEC3 Option A contract and construction management throughout the project lifecycle. Services included subcontractor coordination across multiple specialist firms, detailed outage scheduling for precision welding operations, and ongoing project controls and planning to maintain programme integrity against stringent nuclear safety and quality standards.",
+      "PC Quanti provided comprehensive project management and NEC3 Option A contract and construction management to the plant OEM, throughout the complete implementation phase. Services included subcontractor coordination across multiple specialist firms, detailed outage scheduling for precision welding operations, and ongoing project controls and planning to maintain programme integrity against stringent nuclear safety and quality standards.",
     outcome:
-      "The Steam Generator Replacement was completed as a critical enabler of Koeberg's 20-year life extension — one of the most technically complex projects undertaken at the station. PC Quanti's structured approach to contract management, risk identification, and programme planning delivered the project within the required quality, safety, and schedule parameters.",
+      "The Steam Generator Replacement was completed as a critical enabler of Koeberg's 20-year life extension — one of the most technically complex projects undertaken at the station. PC Quanti's structured approach to contract management, risk identification, and planning as an integrated delivery team, within the required quality, safety, cost, and schedule parameters.",
     images: [
       {
         src: "/projects/knps/1-koeberg-steam-generator-project.webp",
@@ -241,12 +246,13 @@ export default function ProjectsPage() {
                 its steam generator replacement — the same landmark project
                 detailed in our Steam Generator Replacement case study above.
                 Unit 2 went on to achieve 365 days of uninterrupted operation at
-                946 MW with a 99.4% energy availability factor (EAF), and Eskom
-                publicly praised the quality of the steam generator installation.
-                PC Quanti provided project management and contract administration
-                services throughout the programme, contributing directly to this
-                major milestone in Koeberg&apos;s 20-year lifecycle extension
-                programme.
+                946 MW with a 99.4% energy availability factor (EAF), and the
+                client publicly praised the quality of the steam generator
+                installation. PC Quanti provided project management, contract
+                administration, and contract management services throughout the
+                implementation programme, to the OEM, contributing directly to
+                this major milestone in Koeberg&apos;s 20-year lifecycle
+                extension programme.
               </p>
               {/* Source: Engineering News, 10 March 2026 — reports the 365-day/99.4% EAF performance milestone */}
               <a

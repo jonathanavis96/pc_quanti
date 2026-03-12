@@ -1,7 +1,16 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+
+const BRAND_TEXT = 'PC QUANTI';
+const TYPE_SPEED = 330; // ms per character (1/3 speed)
+const JITTER = 50; // ±ms random variation
+const INITIAL_DELAY = 800; // ms before typing starts
+
+function jitter(base: number): number {
+  return base + Math.floor(Math.random() * JITTER * 2) - JITTER;
+}
 
 // Speed multiplier: 1 = normal, 2 = 2x faster, 0.5 = half speed
 const SPEED_MULTIPLIER = 8;
@@ -17,6 +26,31 @@ const detailTransition = {
 };
 
 export function BlueprintHeroArt() {
+  const [charCount, setCharCount] = useState(0);
+  const [cursorVisible, setCursorVisible] = useState(true);
+  const [typingComplete, setTypingComplete] = useState(false);
+
+  useEffect(() => {
+    if (charCount >= BRAND_TEXT.length) {
+      const timeout = setTimeout(() => {
+        setTypingComplete(true);
+        setCursorVisible(false);
+      }, 800);
+      return () => clearTimeout(timeout);
+    }
+    const delay = charCount === 0 ? INITIAL_DELAY : jitter(TYPE_SPEED);
+    const timeout = setTimeout(() => setCharCount((prev) => prev + 1), delay);
+    return () => clearTimeout(timeout);
+  }, [charCount]);
+
+  useEffect(() => {
+    if (typingComplete) return;
+    const interval = setInterval(() => setCursorVisible((prev) => !prev), 530);
+    return () => clearInterval(interval);
+  }, [typingComplete]);
+
+  const displayedText = BRAND_TEXT.slice(0, charCount);
+
   return (
     <div className="relative aspect-[4/3] w-full max-w-xl">
       <svg
@@ -364,48 +398,48 @@ export function BlueprintHeroArt() {
         >
           3. Deliver with control
         </motion.text>
-        <motion.path
-          d="M360 50C390 30 430 30 460 50"
-          stroke="rgba(196, 162, 26, 0.35)"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 1 }}
-          transition={{ ...detailTransition, delay: 1.5 / SPEED_MULTIPLIER }}
-        />
-        <motion.circle
-          cx="360"
-          cy="50"
-          r="6"
-          fill="rgba(196, 162, 26, 0.2)"
-          stroke="rgba(196, 162, 26, 0.5)"
-          strokeWidth="1.2"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.4 / SPEED_MULTIPLIER, delay: 0.9 / SPEED_MULTIPLIER, ease: [0.2, 0.8, 0.2, 1] }}
-        />
-        <motion.circle
-          cx="410"
-          cy="35"
-          r="5"
-          fill="rgba(196, 162, 26, 0.2)"
-          stroke="rgba(196, 162, 26, 0.5)"
-          strokeWidth="1.2"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.4 / SPEED_MULTIPLIER, delay: 0.95 / SPEED_MULTIPLIER, ease: [0.2, 0.8, 0.2, 1] }}
-        />
-        <motion.circle
-          cx="460"
-          cy="50"
-          r="6"
-          fill="rgba(196, 162, 26, 0.2)"
-          stroke="rgba(196, 162, 26, 0.5)"
-          strokeWidth="1.2"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.4 / SPEED_MULTIPLIER, delay: 1.0 / SPEED_MULTIPLIER, ease: [0.2, 0.8, 0.2, 1] }}
-        />
+        {/* PC QUANTI typewriter — replaces the 3-dot arc, top-right corner */}
+        <foreignObject x="318" y="20" width="192" height="50">
+          <div
+            // @ts-expect-error xmlns is valid on SVG foreignObject children
+            xmlns="http://www.w3.org/1999/xhtml"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              height: '100%',
+              paddingLeft: '4px',
+            }}
+          >
+            <span
+              style={{
+                fontFamily: 'var(--font-poppins), Poppins, system-ui, sans-serif',
+                fontWeight: 700,
+                fontSize: '19px',
+                color: 'rgba(196, 162, 26, 0.9)',
+                letterSpacing: '4px',
+                whiteSpace: 'nowrap',
+                userSelect: 'none',
+              }}
+              aria-label="PC QUANTI"
+            >
+              {displayedText}
+            </span>
+            {!typingComplete && (
+              <span
+                style={{
+                  display: 'inline-block',
+                  width: '2px',
+                  height: '16px',
+                  marginLeft: '2px',
+                  backgroundColor: 'rgba(196, 162, 26, 0.9)',
+                  opacity: cursorVisible ? 1 : 0,
+                  verticalAlign: 'middle',
+                }}
+                aria-hidden="true"
+              />
+            )}
+          </div>
+        </foreignObject>
       </svg>
     </div>
   );
