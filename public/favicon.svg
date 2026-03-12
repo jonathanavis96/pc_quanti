@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <circle cx="256" cy="256" r="256" fill="#171717"/>
+  <!--
+    dominant-baseline="central" is correct for browser SVG rendering.
+    PNG variants are generated using ImageMagick -gravity Center (which
+    ignores dominant-baseline in SVG) — see public/favicon-*.png.
+  -->
   <text
     x="256"
     y="256"
@@ -7,7 +12,7 @@
     text-anchor="middle"
     font-family="Helvetica, Arial, sans-serif"
     font-weight="900"
-    font-size="420"
+    font-size="390"
     fill="#C4A21A"
   >Q</text>
 </svg>
