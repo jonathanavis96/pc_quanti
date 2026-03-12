@@ -1,4 +1,5 @@
 # PC Quanti Website — Meeting Notes
+
 **Date:** 2026-03-12
 **Participants:** Phil, Jono
 **Purpose:** Website copy & UX review — changes to implement
@@ -57,17 +58,21 @@
 > **Note:** Tiles marked *Good* retain existing copy. Only tiles with explicit replacements are listed.
 
 #### Planning
+
 > Structured and strategic planning on NEC, FIDIC, JBCC, and GCC contracts — including critical path scheduling, earned value management, resource loading, forensic delay analysis, look-ahead programmes, and outage and shutdown scheduling.
 
 #### Construction Management
+
 > Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary project execution in the fields of nuclear and coal-fire power generation, petrochemical/oil and gas, solar and wind energy, infrastructure development, including outage and shutdown construction activities.
 
 #### Quantity Surveying
+
 > Detailed quantity surveying from variation analysis and compensation event assessment to certification and payment management — dovetailing with contract administration and management to ensure value is maintained.
 
 *(Services page icon for Quantity Surveying must match the homepage icon — ensure consistency.)*
 
 #### Dispute Resolution
+
 > Specialist advice and representation across all dispute resolution forums, including claims preparation, adjudication, arbitration, and negotiation to achieve efficient and preferable outcomes.
 
 ---
@@ -149,6 +154,7 @@
 > Tiles marked *Good* retain existing copy.
 
 #### Construction Management
+
 **Current:**
 > Proven track record of delivering complex projects in challenging environments, including multidisciplinary project execution in operational nuclear and petrochemical facilities. We manage main contractor and subcontractor activities, including outage and shutdown construction.
 
@@ -156,6 +162,7 @@
 > Proven track record of delivering complex projects in challenging environments, including multidisciplinary project execution in operational facilities. We manage clients, main contractor or subcontractor activities, including outage and shutdown works.
 
 #### Contract Management
+
 **Current:**
 > Comprehensive contract lifecycle support including advisory on compliance, risk allocation, payment certification, variation management, and extension of time assessments across all major procurement forms.
 
