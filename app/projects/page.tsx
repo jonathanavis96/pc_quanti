@@ -226,6 +226,40 @@ export default function ProjectsPage() {
             ))}
           </div>
 
+          {/* In the News */}
+          <section className="mt-20 md:mt-28 rounded-xl bg-pc-neutral-900 p-10 md:p-14">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-gold mb-3">
+              In the News
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              Koeberg Unit 2 Returns to Service
+            </h2>
+            <div className="max-w-3xl">
+              <p className="text-pc-neutral-400 leading-relaxed mb-4">
+                In early 2025, Koeberg Nuclear Power Station&apos;s Unit 2 was
+                reconnected to the South African grid following the completion of
+                its steam generator replacement — the same landmark project
+                detailed in our Steam Generator Replacement case study above.
+                Unit 2 went on to achieve 365 days of uninterrupted operation at
+                946 MW with a 99.4% energy availability factor (EAF), and Eskom
+                publicly praised the quality of the steam generator installation.
+                PC Quanti provided project management and contract administration
+                services throughout the programme, contributing directly to this
+                major milestone in Koeberg&apos;s 20-year lifecycle extension
+                programme.
+              </p>
+              <a
+                href="https://www.engineeringnews.co.za/article/koeberg-unit-2-reconnected-to-grid-after-steam-generator-replacement-2025-02-07"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-pc-gold hover:text-pc-gold-dark transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 focus:ring-offset-pc-neutral-900 rounded-sm"
+              >
+                Read the full article on Engineering News
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-20 md:mt-28 text-center rounded-xl bg-pc-neutral-50 p-10 md:p-14">
             <h2 className="text-2xl md:text-3xl font-semibold text-pc-neutral-900 mb-4">

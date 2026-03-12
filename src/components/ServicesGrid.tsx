@@ -50,7 +50,7 @@ const services = [
   {
     title: 'Construction Management',
     description:
-      'Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary execution in operational nuclear and petrochemical plants, including outage and shutdown construction activities.',
+      'Proven track record of delivering complex projects in the most challenging environments — managing multidisciplinary project execution in operational nuclear and petrochemical facilities, including outage and shutdown construction activities.',
     href: '/services/construction-management',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -69,7 +69,7 @@ const services = [
   {
     title: 'Contract Administration',
     description:
-      'Comprehensive written project communication, timely notices, and proper documentation of progress and commercial administration under NEC, FIDIC, GCC and JBCC contract forms.',
+      'Timely contractual notices, structured reporting, and disciplined commercial administration under NEC, FIDIC, GCC and JBCC contract forms.',
     href: '/services/contract-administration',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -116,7 +116,7 @@ const services = [
   {
     title: 'Quantity Surveying',
     description:
-      'Detailed quantity surveying from variation analysis and compensation event assessment to managing payment processes — dovetailing with contract management to ensure value is maintained.',
+      'Detailed quantity surveying from variation analysis and compensation event assessment to certification and payment management — dovetailing with contract management to ensure value is maintained.',
     href: '/services/quantity-surveying',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -195,7 +195,7 @@ export function ServicesGrid() {
             Services
           </p>
           <h2 className="text-3xl font-bold text-pc-neutral-900 mt-3 mb-4">
-            Professional services across the full project life cycle
+            Professional services across the full project lifecycle
           </h2>
           <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
             Extensive experience in NEC3, NEC4, FIDIC, GCC and JBCC contracts with a proven track record of delivering complex major EPC projects.

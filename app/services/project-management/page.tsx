@@ -6,13 +6,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Project Management",
-  description: "Comprehensive project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
+  description: "Comprehensive project management services across the full project lifecycle — from initial design and engineering development through on-site execution and project close-out.",
   alternates: {
     canonical: "/services/project-management",
   },
   openGraph: {
     title: "Project Management | PC Quanti",
-    description: "Comprehensive project management services across the full project life cycle — from initial design and engineering development through on-site execution and project close-out.",
+    description: "Comprehensive project management services across the full project lifecycle — from initial design and engineering development through on-site execution and project close-out.",
     url: "/services/project-management",
   },
 };

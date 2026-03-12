@@ -11,7 +11,7 @@ export function Footer() {
             {/* Company Info */}
             <div>
               <p className="text-pc-neutral-200">
-                Engineering and construction management consultancy delivering professional services across the full project life cycle — from planning through execution and close-out — for nuclear, mining, infrastructure, and energy sectors across South Africa and the United Kingdom.
+                Engineering and construction management consultancy delivering professional services across the full project lifecycle — from planning through execution and close-out — for nuclear, mining, infrastructure, and energy sectors across South Africa and the United Kingdom.
               </p>
               <div className="mt-6 space-y-2 text-pc-neutral-200">
                 <p>
