@@ -62,14 +62,14 @@ export default function Home() {
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {[
                 { name: "Phil Coleman", role: "Managing Director", image: "/team/phil.jpg" },
-                { name: "Tyrone Juul", role: "Project, Construction & Contract Manager", image: "/team/tyrone.jpg" },
-                { name: "Heleene Schreuder", role: "Attorney at Law", image: "/team/heleene.jpg" },
-                { name: "Francois Venter", role: "Planning Engineer", image: "/team/francois.jpg" },
-                { name: "Jonathan Ely", role: "Adjudicator & Arbitrator", image: "/team/jonathan.jpg" },
+                { name: "Tyrone Juul", role: "Project, Construction & Contract Management", image: "/team/tyrone.jpg" },
+                { name: "Heleene Schreuder", role: "Legal", image: "/team/heleene.jpg" },
+                { name: "Francois Venter", role: "Planning", image: "/team/francois.jpg" },
+                { name: "Jonathan Ely", role: "Adjudication & Arbitration", image: "/team/jonathan.jpg" },
               ].map((member) => (
                 <div key={member.name} className="text-center">
                   <div className="relative mx-auto w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-pc-neutral-200">
-                    <Image src={member.image} alt={member.name} fill className="object-cover object-top" sizes="128px" />
+                    <Image src={member.image} alt={member.name} fill className="object-cover object-[center_20%] scale-[1.25]" sizes="128px" />
                   </div>
                   <h3 className="font-semibold text-pc-neutral-900">{member.name}</h3>
                   <p className="text-sm text-pc-gold mt-1">{member.role}</p>
@@ -81,7 +81,7 @@ export default function Home() {
                 href="/team"
                 className="inline-flex items-center justify-center rounded-lg border border-pc-neutral-300 px-6 py-3 text-sm font-semibold text-pc-neutral-900 hover:border-pc-gold hover:text-pc-gold transition-colors"
               >
-                Meet the full team →
+                Meet the management team →
               </Link>
             </div>
           </div>

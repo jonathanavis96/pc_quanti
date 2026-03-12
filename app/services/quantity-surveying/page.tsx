@@ -34,7 +34,7 @@ export default function QuantitySurveyingPage() {
               Quantity Surveying
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Detailed quantity surveying, variation analysis, and commercial management to ensure value is maintained across complex engineering and construction projects.
+              Detailed quantity surveying from measuring and quantification, bill of quantities preparation, and variations analysis to claims management and commercial oversight — ensuring value is maintained across complex engineering and construction projects.
             </p>
           </div>
 
@@ -45,13 +45,13 @@ export default function QuantitySurveyingPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                Administering the contract is supported by detailed quantity surveying, from variation analysis and compensation event assessment to certification and payment management. Our quantity surveying services dovetail with the work in progress and contract management to ensure value is maintained throughout the project lifecycle.
+                Our quantity surveying services encompass detailed measuring and quantification, bill of quantities preparation, performance and variations analysis, and claims management. From compensation event assessment through to certification and payment management, our quantity surveying dovetails with the work in progress and contract management to ensure value is maintained throughout the project lifecycle.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We also provide quantity surveying services in assessing claims, preparing claims, and supporting disputes and arbitrations. Our team brings rigorous cost control and commercial discipline to every engagement, ensuring accurate measurement, transparent reporting, and defensible commercial positions.
+                We support dispute and arbitration proceedings with rigorous commercial evidence and contractual review, ensuring defensible positions are maintained at every stage. Our team brings disciplined cost control and commercial oversight to every engagement, with accurate measurement, transparent reporting, and enforceable commercial positions.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                We provide full commercial management of projects to manage risks and maximise profitability. Our services include procurement planning and execution, estimating, tendering and tender analysis, award management, project cost and value analysis, risk management, and overall coordination of project resources to achieve the commercial success of the project.
+                We provide project commercial monitoring and risk management alongside full commercial management of projects to maximise value. Our services include project cost and value management, project cost reporting, and forecasting, as well as procurement planning and execution, estimating, tendering and tender analysis, award management, and overall coordination of project resources to achieve the commercial success of the project.
               </p>
             </Card>
           </div>
@@ -75,12 +75,12 @@ export default function QuantitySurveyingPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Cost Estimation & Planning
+                  Measuring & Quantification
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
+                  <li>• Detailed measuring and quantification</li>
+                  <li>• Bill of quantities (BoQ) preparation</li>
                   <li>• Pre-tender cost estimates</li>
-                  <li>• Bill of quantities preparation</li>
-                  <li>• Cost-benefit analysis</li>
                   <li>• Budget forecasting and tracking</li>
                 </ul>
               </Card>
@@ -99,25 +99,25 @@ export default function QuantitySurveyingPage() {
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Contract Administration
+                  Performance & Variations Analysis
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
+                  <li>• Performance and variations analysis</li>
                   <li>• Interim payment valuations</li>
-                  <li>• Variation assessment and pricing</li>
-                  <li>• Change order management</li>
-                  <li>• Cost reporting and forecasting</li>
+                  <li>• Contractual review</li>
+                  <li>• Project cost reporting and forecasting</li>
                 </ul>
               </Card>
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Final Account & Settlement
+                  Claims & Dispute Support
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Final account preparation</li>
-                  <li>• Claims assessment and negotiation</li>
+                  <li>• Claims management and assessment</li>
+                  <li>• Supporting dispute and arbitration proceedings</li>
+                  <li>• Final account preparation and negotiation</li>
                   <li>• Financial close-out documentation</li>
-                  <li>• Cost reconciliation reports</li>
                 </ul>
               </Card>
             </div>
@@ -132,26 +132,26 @@ export default function QuantitySurveyingPage() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Cost Management
+                    Cost & Value Management
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Rigorous cost control throughout project lifecycle, from initial estimates through to final account settlement and commercial close-out.
+                    Project cost and value management, project cost reporting, and forecasting throughout the project lifecycle — from initial estimates through to final account settlement and commercial close-out.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Contract Support
+                    Contractual Review & Support
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Expert support for NEC, FIDIC, and bespoke contract forms, including variation management and dispute avoidance strategies.
+                    Expert contractual review and support for NEC, FIDIC, and bespoke contract forms, including variation management, claims management, and dispute avoidance strategies.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                    Commercial Insight
+                    Commercial Monitoring & Risk Management
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Strategic commercial advice grounded in practical understanding of industrial project delivery and stakeholder dynamics.
+                    Project commercial monitoring and risk management grounded in practical understanding of industrial project delivery and stakeholder dynamics.
                   </p>
                 </div>
               </div>

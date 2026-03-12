@@ -27,7 +27,7 @@ const team = [
   },
   {
     name: "Tyrone Juul",
-    role: "Project, Construction and Contract Manager",
+    role: "Project, Construction & Contract Management",
     image: "/team/tyrone.jpg",
     bio: [
       "Tyrone is a construction and commercial management professional with over 23 years\u2019 industry experience across the public and private Engineering and Construction sector in South Africa and the Philippines. Tyrone has a background in mechanical engineering and extensive experience in project and contract management, risk, procurement, logistics, materials, people management, project planning, contractual claims, adjudication and arbitration.",
@@ -36,7 +36,7 @@ const team = [
   },
   {
     name: "Heleene Schreuder",
-    role: "Attorney at Law",
+    role: "Legal",
     image: "/team/heleene.jpg",
     bio: [
       "Heleene holds an LLB degree in Law from Stellenbosch University, is an admitted attorney of the High Court of South Africa and has over 15 years of experience in civil and commercial litigation, dispute resolution within the construction sector. Heleene\u2019s recent work has focused on contract management, contract administration, and dispute resolution on a major EPC project governed by NEC3 contract in the nuclear energy sector.",
@@ -46,7 +46,7 @@ const team = [
   },
   {
     name: "Francois Venter",
-    role: "Planning Engineer",
+    role: "Planning",
     image: "/team/francois.jpg",
     bio: [
       "In Francois\u2019s 30-year career which began in mechanical engineering, he has developed a passion for construction project management, with a keen focus on project planning, project controls and work management. With his experience in the Nuclear and Oil & Gas Industry sectors, Francois has overseen the planning and execution of countless shutdown/outage projects and major project implementations, from operational readiness planning, to implementation on site and work in progress management and reporting, Francois has experience in the full EPC/M cycle.",
@@ -55,7 +55,7 @@ const team = [
   },
   {
     name: "Jonathan Ely",
-    role: "Adjudicator and Arbitrator",
+    role: "Adjudication & Arbitration",
     image: "/team/jonathan.jpg",
     bio: [
       "Jonathan J. M. Ely is a seasoned arbitrator, adjudicator, and commercial consultant with a distinguished career bridging civil engineering and legal expertise. He holds a BSc in Civil Engineering from the University of the Witwatersrand, supplemented by an LLB and advanced certificates in construction law and adjudication \u2014 offering a rare combination of technical insight and legal acumen that makes him particularly effective in resolving complex contractual disputes.",

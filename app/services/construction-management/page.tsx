@@ -6,13 +6,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Construction Management — Complex Project Execution",
-  description: "Proven construction management expertise for the most challenging environments — multidisciplinary project execution in operational nuclear and petrochemical facilities, outage and shutdown management, main contractor and subcontractor oversight.",
+  description: "Proven construction management expertise for the most challenging environments — multidisciplinary project execution across nuclear, petrochemical, oil and gas, airport, stadia, and infrastructure projects, including outage and shutdown management.",
   alternates: {
     canonical: "/services/construction-management",
   },
   openGraph: {
     title: "Construction Management | PC Quanti",
-    description: "Proven construction management expertise for the most challenging environments — multidisciplinary project execution in operational nuclear and petrochemical facilities, outage and shutdown management, main contractor and subcontractor oversight.",
+    description: "Proven construction management expertise for the most challenging environments — multidisciplinary project execution across nuclear, petrochemical, oil and gas, airport, stadia, and infrastructure projects, including outage and shutdown management.",
     url: "/services/construction-management",
   },
 };
@@ -34,7 +34,7 @@ export default function ConstructionManagementPage() {
               Construction Management
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Proven track record of delivering the most complex projects in the most challenging environments — managing multidisciplinary project execution in operational nuclear and petrochemical facilities.
+              Proven track record of delivering the most complex projects in the most challenging environments — managing multidisciplinary project execution across operational facilities and major capital programmes.
             </p>
           </div>
 
@@ -45,10 +45,13 @@ export default function ConstructionManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti has a proven track record of delivering the most complex projects in the most challenging environments, including managing multidisciplinary project execution in operational nuclear and petrochemical facilities. Our construction management team brings the technical depth and operational rigour required to manage high-consequence environments safely and efficiently.
+                PC Quanti has a proven track record of delivering the most complex projects in the most challenging environments. Our construction management team brings the technical depth and operational rigour required to manage high-consequence environments safely and efficiently.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We manage both main contractor and subcontractor activities, providing clients with a single, accountable management layer that coordinates all disciplines — civil, structural, mechanical, electrical, and instrumentation — through to commissioning and handover.
+                Our experience spans nuclear and plant major projects and maintenance, petrochemical, oil and gas, airport projects, stadia, and large-scale infrastructure — delivering multidisciplinary project execution across operational facilities and major capital programmes.
+              </p>
+              <p className="text-pc-neutral-600 leading-relaxed mb-4">
+                We manage clients, main contractor or subcontractor activities, providing a single, accountable management layer that coordinates all disciplines — civil, structural, mechanical, electrical, and instrumentation — through to commissioning and handover.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
                 Our construction management capability includes specialist outage and shutdown execution — coordinating engineering, procurement, and construction activities to meet tight timeframe and budget targets in live industrial environments. We manage stakeholder interfaces, operational constraints, and readiness reviews to ensure plant availability is restored safely and on schedule.
@@ -135,7 +138,7 @@ export default function ConstructionManagementPage() {
                     High-Consequence Environments
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Deep experience managing construction activities in operational nuclear and petrochemical facilities — where safety, regulatory compliance, and zero-defect execution are non-negotiable.
+                    Deep experience managing construction activities in operational nuclear, petrochemical, oil and gas, airport, stadia, and infrastructure environments — where safety, regulatory compliance, and zero-defect execution are non-negotiable.
                   </p>
                 </div>
                 <div>
@@ -181,7 +184,7 @@ export default function ConstructionManagementPage() {
               Ready to Discuss Your Construction Management Needs?
             </h2>
             <p className="text-pc-neutral-600 mb-6 max-w-2xl mx-auto">
-              Get in touch to explore how PC Quanti can deliver expert construction management for your next engineering project — including complex outage and shutdown environments.
+              Get in touch to explore how PC Quanti can deliver expert construction management for your next project — across South Africa, the United Kingdom, and other international markets, including complex outage and shutdown environments.
             </p>
             <LinkButton href="/contact" size="lg">
               Contact Us

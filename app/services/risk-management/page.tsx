@@ -59,7 +59,7 @@ export default function RiskManagementPage() {
           {/* Service Image */}
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden mb-12">
             <Image
-              src="/services/risk-management.webp"
+              src="/services/services-risk-management-6.png"
               alt=""
               fill
               className="object-cover"
