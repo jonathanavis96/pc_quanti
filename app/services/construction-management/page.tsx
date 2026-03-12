@@ -6,13 +6,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Construction Management — Complex Project Execution",
-  description: "Proven construction management expertise for the most challenging environments — multidisciplinary execution in operational nuclear and petrochemical plants, outage and shutdown management, main contractor and subcontractor oversight.",
+  description: "Proven construction management expertise for the most challenging environments — multidisciplinary project execution in operational nuclear and petrochemical facilities, outage and shutdown management, main contractor and subcontractor oversight.",
   alternates: {
     canonical: "/services/construction-management",
   },
   openGraph: {
     title: "Construction Management | PC Quanti",
-    description: "Expert construction management for complex engineering environments — nuclear, petrochemical, and industrial sites with outage and shutdown delivery capability.",
+    description: "Proven construction management expertise for the most challenging environments — multidisciplinary project execution in operational nuclear and petrochemical facilities, outage and shutdown management, main contractor and subcontractor oversight.",
     url: "/services/construction-management",
   },
 };
@@ -34,7 +34,7 @@ export default function ConstructionManagementPage() {
               Construction Management
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Proven track record of delivering the most complex projects in the most challenging environments — managing multidisciplinary execution in operational nuclear and petrochemical plants.
+              Proven track record of delivering the most complex projects in the most challenging environments — managing multidisciplinary project execution in operational nuclear and petrochemical facilities.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function ConstructionManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti has a proven track record of delivering the most complex projects in the most challenging environments, including managing multidisciplinary complex execution in operational nuclear and petrochemical plants. Our construction management team brings the technical depth and operational rigour required to manage high-consequence environments safely and efficiently.
+                PC Quanti has a proven track record of delivering the most complex projects in the most challenging environments, including managing multidisciplinary project execution in operational nuclear and petrochemical facilities. Our construction management team brings the technical depth and operational rigour required to manage high-consequence environments safely and efficiently.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We manage both main contractor and subcontractor activities, providing clients with a single, accountable management layer that coordinates all disciplines — civil, structural, mechanical, electrical, and instrumentation — through to commissioning and handover.
@@ -135,7 +135,7 @@ export default function ConstructionManagementPage() {
                     High-Consequence Environments
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Deep experience managing construction activities in operational nuclear and petrochemical plants — where safety, regulatory compliance, and zero-defect execution are non-negotiable.
+                    Deep experience managing construction activities in operational nuclear and petrochemical facilities — where safety, regulatory compliance, and zero-defect execution are non-negotiable.
                   </p>
                 </div>
                 <div>
@@ -166,7 +166,7 @@ export default function ConstructionManagementPage() {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/services/project-management" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Project Management →</h3>
-                <p className="text-sm text-pc-neutral-600">Comprehensive project management across the full life cycle</p>
+                <p className="text-sm text-pc-neutral-600">Comprehensive project management across the full lifecycle</p>
               </Link>
               <Link href="/services/planning" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Planning →</h3>

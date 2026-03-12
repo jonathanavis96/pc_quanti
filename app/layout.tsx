@@ -47,17 +47,9 @@ export const metadata: Metadata = {
     description: "Engineering and construction management consultancy delivering professional services across nuclear, mining, oil and gas, and infrastructure sectors in South Africa and the UK.",
     images: [`${siteUrl}/og-image.png`],
   },
-  icons: {
-    icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-  },
+  // NOTE: Do NOT use metadata.icons here — Next.js does not apply basePath
+  // to icon URLs in static exports, causing favicons to 404 on GitHub Pages.
+  // Favicons are injected manually via <link> tags in RootLayout <head> below.
 };
 
 export default function RootLayout({
@@ -69,7 +61,21 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <StructuredData type="home" />
-        <link rel="manifest" href="/site.webmanifest" />
+        {/*
+          Favicon links are injected manually (not via metadata.icons) because
+          Next.js static export does NOT prepend basePath to metadata icon URLs.
+          On GitHub Pages the site is served from /pc_quanti/, so bare paths like
+          /favicon-32x32.png would resolve to the repo root and 404.
+          NEXT_PUBLIC_BASE_PATH is set in next.config.ts at build time:
+            - GitHub Pages (USE_GITHUB_PAGES=true): "/pc_quanti"
+            - Custom domain:                        ""
+        */}
+        <link rel="icon" type="image/x-icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon.ico`} />
+        <link rel="icon" type="image/png" sizes="32x32" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon-32x32.png`} />
+        <link rel="icon" type="image/png" sizes="16x16" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon-16x16.png`} />
+        <link rel="icon" type="image/svg+xml" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon.svg`} />
+        <link rel="apple-touch-icon" sizes="180x180" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/apple-touch-icon.png`} />
+        <link rel="manifest" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/site.webmanifest`} />
         <meta name="theme-color" content="#C4A21A" />
         {/* OG Image meta tags (explicit for static export) */}
         <meta property="og:image" content={`${siteUrl}/og-image.png`} />

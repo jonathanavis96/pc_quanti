@@ -3,20 +3,20 @@ import { Container } from './Container';
 
 const steps = [
   {
-    title: 'Planning & Development',
-    description: 'Define scope, schedule and risk frameworks across NEC, FIDIC, GCC and JBCC contract forms from initial design through engineering development.',
+    title: 'Discovery & Alignment',
+    description: 'Clarify scope, constraints, and success metrics with stakeholders and delivery teams.',
   },
   {
     title: 'Structured Mobilisation',
-    description: 'Implement programme management frameworks integrating schedule development, risk management, change control and stakeholder interface management.',
+    description: 'Build the right governance, controls, and reporting cadence to de-risk delivery early.',
   },
   {
-    title: 'On-Site Execution',
-    description: 'Manage construction delivery with disciplined project controls, commercial administration and rigorous oversight to protect time, cost and quality.',
+    title: 'Controlled Execution',
+    description: 'Track progress, manage change, and keep commercial outcomes protected.',
   },
   {
     title: 'Closeout & Handover',
-    description: 'Complete final reporting, contract close-out and a structured transition to operations, ensuring all obligations are met.',
+    description: 'Deliver final reporting, lessons learned, and a clean transition to operations.',
   },
 ];
 
@@ -28,7 +28,7 @@ export function ProcessTimeline() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pc-neutral-500">Process</p>
           <h2 className="text-3xl font-bold text-pc-neutral-900 mt-3 mb-4">How We Deliver</h2>
           <p className="text-lg text-pc-neutral-600 max-w-2xl mx-auto">
-            Professional services across the full project life cycle, combining technical excellence with commercial discipline.
+            A clear, repeatable delivery path that balances governance with practical execution.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2">

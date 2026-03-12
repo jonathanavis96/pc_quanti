@@ -45,7 +45,7 @@ export default function QuantitySurveyingPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                Administering the contract is supported by detailed quantity surveying, from performing variation analysis and compensation event quotation building or assessment to managing the payment assessment process. Our quantity surveying services dovetail with the work in progress and contract management to ensure value is maintained throughout the project lifecycle.
+                Administering the contract is supported by detailed quantity surveying, from variation analysis and compensation event assessment to certification and payment management. Our quantity surveying services dovetail with the work in progress and contract management to ensure value is maintained throughout the project lifecycle.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We also provide quantity surveying services in assessing claims, preparing claims, and supporting disputes and arbitrations. Our team brings rigorous cost control and commercial discipline to every engagement, ensuring accurate measurement, transparent reporting, and defensible commercial positions.

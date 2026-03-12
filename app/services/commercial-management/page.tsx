@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Commercial Management — Procurement, Estimating & Value Engineering",
-  description: "Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes across the project life cycle.",
+  description: "Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes across the project lifecycle.",
   alternates: {
     canonical: "/services/commercial-management",
   },
@@ -45,7 +45,7 @@ export default function CommercialManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provides full project commercial management services covering the complete commercial life cycle of engineering and construction projects. Our commercial management team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, and value engineering — providing clients with complete commercial visibility and control.
+                PC Quanti provides full project commercial management services covering the complete commercial lifecycle of engineering and construction projects. Our commercial management team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, and value engineering — providing clients with complete commercial visibility and control.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We work alongside project and construction management teams to align commercial strategy with project delivery objectives, ensuring that cost, value, and risk are actively managed from feasibility through to project close-out.
@@ -93,7 +93,7 @@ export default function CommercialManagementPage() {
                   <li>• Cost planning and cost-in-use analysis</li>
                   <li>• Value engineering and design optimisation</li>
                   <li>• Cost benchmarking and market analysis</li>
-                  <li>• Life cycle cost assessment</li>
+                  <li>• Lifecycle cost assessment</li>
                 </ul>
               </Card>
 
@@ -135,7 +135,7 @@ export default function CommercialManagementPage() {
                     End-to-End Oversight
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Integrated commercial management from project inception through to close-out — providing continuous commercial visibility and control across all phases of the project life cycle.
+                    Integrated commercial management from project inception through to close-out — providing continuous commercial visibility and control across all phases of the project lifecycle.
                   </p>
                 </div>
                 <div>

@@ -8,7 +8,7 @@ export const siteConfig = {
   company: {
     legalName: "PC Quanti",
     description:
-      "Engineering and construction management consultancy delivering professional services across the full project life cycle. Our multi-disciplinary team brings extensive experience in nuclear and coal-fired power generation, oil and gas, mining, and major infrastructure developments. We operate across NEC3, NEC4, FIDIC, GCC, and JBCC contract frameworks, providing Project Management, Planning, Construction Management, Contract Administration, Contract Management, Quantity Surveying, Commercial Management, Risk Management, and Dispute Resolution across South Africa, the United Kingdom, and other international markets.",
+      "Engineering and construction management consultancy delivering professional services across the full project lifecycle. Our multi-disciplinary team brings extensive experience in nuclear and coal-fired power generation, oil and gas, mining, and major infrastructure developments. We operate across NEC3, NEC4, FIDIC, GCC, and JBCC contract frameworks, providing Project Management, Planning, Construction Management, Contract Administration, Contract Management, Quantity Surveying, Commercial Management, Risk Management, and Dispute Resolution across South Africa, the United Kingdom, and other international markets.",
     foundingDate: "2020",
   },
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://pcquanti.co.za",
@@ -40,7 +40,7 @@ export const siteConfig = {
       slug: "construction-management",
       abbreviation: "Construction",
       description:
-        "Proven track record of delivering complex projects in challenging environments, including multidisciplinary execution in operational nuclear and petrochemical plants. We manage main contractor and subcontractor activities, including outage and shutdown construction, coordinating engineering, procurement, and construction to meet timeframe and budget targets.",
+        "Proven track record of delivering complex projects in challenging environments, including multidisciplinary project execution in operational nuclear and petrochemical facilities. We manage main contractor and subcontractor activities, including outage and shutdown construction, coordinating engineering, procurement, and construction to meet timeframe and budget targets.",
       url: "/services/construction-management",
     },
     {
@@ -48,7 +48,7 @@ export const siteConfig = {
       slug: "contract-administration",
       abbreviation: "Contract Admin",
       description:
-        "Disciplined contract administration across NEC, FIDIC, GCC, and JBCC frameworks, ensuring comprehensive written communication, timely notices, proper documentation, and effective commercial administration under all major contract forms.",
+        "Timely contractual notices, structured reporting, and disciplined commercial administration across NEC, FIDIC, GCC, and JBCC frameworks.",
       url: "/services/contract-administration",
     },
     {
@@ -64,7 +64,7 @@ export const siteConfig = {
       slug: "quantity-surveying",
       abbreviation: "QS",
       description:
-        "Detailed quantity surveying from variation analysis and compensation event assessment to managing the payment process, dovetailing with contract management to ensure cost certainty and value is maintained across the project life cycle.",
+        "Detailed quantity surveying from variation analysis and compensation event assessment to certification and payment management, dovetailing with contract management to ensure cost certainty and value is maintained across the project lifecycle.",
       url: "/services/quantity-surveying",
     },
     {
@@ -72,7 +72,7 @@ export const siteConfig = {
       slug: "commercial-management",
       abbreviation: "Commercial",
       description:
-        "Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes across the project life cycle.",
+        "Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes across the project lifecycle.",
       url: "/services/commercial-management",
     },
     {
