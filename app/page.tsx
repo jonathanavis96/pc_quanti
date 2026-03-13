@@ -54,7 +54,7 @@ export default function Home() {
                 construction and commercial professionals — combining technical expertise with disciplined
                 commercial management, always guided by integrity and accountability.
               </p>
-              <p className="text-base text-pc-neutral-500 max-w-2xl mx-auto mt-3">
+              <p className="text-lg text-pc-neutral-600 max-w-3xl mx-auto mt-3">
                 We operate on an expandable team model, scaling with vetted specialists and
                 associates to match the demands of each project.
               </p>
@@ -92,11 +92,11 @@ export default function Home() {
           items={[
             {
               question: "What sectors does PC Quanti serve?",
-              answer: "We have extensive experience in nuclear and coal-fired power generation, oil and gas, and major infrastructure developments including airport projects. Our multi-disciplinary team has successfully delivered services across these sectors, supporting complex and technically demanding environments throughout the full project lifecycle — from early concept and planning through execution, delivery, and hand-over."
+              answer: "Our multi-disciplinary team have extensive experience in nuclear and coal-fired power generation, oil and gas, and major infrastructure developments including airport projects. We have successfully delivered services across these sectors, supporting complex and technically demanding environments throughout the full project lifecycle — from early concept and planning through execution, delivery, and hand-over."
             },
             {
               question: "Which contract frameworks do you work with?",
-              answer: "We operate across a wide range of contract frameworks, including NEC3, NEC4, FIDIC, GCC, and JBCC. Our expertise spans project and engineering management, construction management, planning and scheduling, quantity surveying, cost and value management, risk management, contract and claims management, as well as dispute resolution, adjudication and arbitration — with a proven track record of delivering complex major EPC projects."
+              answer: "We operate across a wide range of contract frameworks, including NEC3, NEC4, FIDIC, GCC, and JBCC. Our expertise spans project and engineering management, construction management, planning and scheduling, quantity surveying, cost and value management, risk management, contract and claims management, as well as dispute resolution, adjudication and arbitration — with a proven track record of delivering complex major EPC and EPCM projects."
             },
             {
               question: "Do you work internationally?",
@@ -104,15 +104,15 @@ export default function Home() {
             },
             {
               question: "What is PC Quanti's approach to project delivery?",
-              answer: "Our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success. We believe the foundation of every great project lies in disciplined planning, rigorous risk and value management, clear communication and an unwavering commitment to quality at every stage of the project lifecycle. Our philosophy is rooted in adding measurable value through proactive problem-solving, ethical practice and collaboration with all stakeholders — ensuring projects are delivered safely, on time and within budget."
+              answer: "Our mission is to deliver engineering and construction management excellence that reliably translates technical capability into commercial success. We believe the foundation of every great project lies in disciplined planning, rigorous risk and value management, clear communication, effective documentation control, contemporaneous record keeping, and an unwavering commitment to quality at every stage of the project lifecycle. Our philosophy is rooted in adding measurable value through proactive problem-solving, ethical practice and collaboration with all stakeholders — ensuring projects are delivered safely, on time and within budget."
             },
             {
               question: "What qualifications and experience does your team bring?",
-              answer: "PC Quanti's strength lies in its highly qualified team of engineering, construction and commercial professionals. Our specialists bring extensive experience across power generation, oil and gas, and large-scale infrastructure projects, with backgrounds spanning project management, quantity surveying, planning, contract administration, construction management, and dispute resolution. Our team includes an admitted attorney of the High Court and accredited arbitrator and adjudicator — combining technical expertise with legal acumen to deliver disciplined execution and measurable value."
+              answer: "PC Quanti's strength lies in its highly qualified team of engineering, construction and commercial professionals. Our specialists bring extensive experience across power generation, oil and gas, and large-scale infrastructure projects, with backgrounds spanning project management, quantity surveying, planning, contract administration, construction management, and dispute resolution. Our team includes an admitted attorney of the High Court and accredited arbitrator and adjudicator — combining technical expertise with legal acumen to deliver disciplined execution, quick turnaround times and bringing value to our clients."
             },
             {
               question: "Do you provide dispute resolution services?",
-              answer: "Yes. While our primary focus is dispute avoidance through strong planning and contract administration, we provide specialist advice and representation across all formal and alternative dispute resolution forums when required. Our services include strategic guidance on contractual dispute procedures, preparation of statements of claim and defence for adjudication and arbitration proceedings, evidentiary preparation, coordination of expert input, and drafting enforceable settlement agreements designed to achieve efficient and sustainable outcomes."
+              answer: "Yes. While our primary focus is dispute avoidance through strong planning and contract administration, we provide specialist advice and representation across all formal and alternative dispute resolution forums when required. Our services include strategic guidance on contractual dispute procedures, preparation of statements of claim and defence for adjudication and arbitration proceedings, evidentiary preparation, coordination of expert input, and drafting enforceable settlement agreements designed to achieve efficient and sustainable outcomes. With dedicated legal professionals embedded in our team, clients benefit from immediate access to specialist expertise without the overhead of briefing external counsel from scratch — saving time, reducing cost, and achieving better outcomes."
             }
           ]}
           ctaText="Still have questions?"

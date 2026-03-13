@@ -111,13 +111,13 @@ export default function RiskManagementPage() {
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Specialised Risk Analysis
+                  Specialised Risk Analysis & Financial Security
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
                   <li>• Schedule risk analysis (Monte Carlo simulation)</li>
                   <li>• Cost risk modelling</li>
                   <li>• Safety and regulatory risk assessment</li>
-                  <li>• Stakeholder and reputational risk analysis</li>
+                  <li>• Managing and interact with bonds, guarantees, warranties and insurances.</li>
                 </ul>
               </Card>
             </div>
@@ -143,7 +143,7 @@ export default function RiskManagementPage() {
                     Commercial Risks
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Contract terms, procurement strategies, supply chain vulnerabilities, cost escalation, and claims exposure management.
+                    Contract terms, procurement strategies, supply chain vulnerabilities, cost escalation, claims management, and financial securities.
                   </p>
                 </div>
                 <div>

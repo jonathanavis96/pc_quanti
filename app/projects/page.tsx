@@ -35,7 +35,7 @@ const projects = [
     challenge:
       "Koeberg Nuclear Power Station required two new borated water storage tanks to support its 20-year life extension programme. Each tank had to be manufactured and installed to the highest nuclear standards within a live, tightly regulated nuclear environment — with zero tolerance for quality deviations.",
     scope:
-      "Delivered end-to-end project management and NEC Option A contract administration from early design through final commissioning. Each tank was fabricated in SAF2205 Duplex Stainless Steel to ASME III code, with 100% radiographic weld examination required throughout. Installation involved the deployment of a 500-ton crawler crane for lifting operations and the precise integration of complex piping and services connections.",
+      "Delivered end-to-end project management and NEC Option A contract administration from early design through final commissioning on behalf of Group Five Construction. Each tank was fabricated in SAF2205 Duplex Stainless Steel to ASME III code, with 100% radiographic weld examination required throughout. Installation involved the deployment of a 500-ton crawler crane for lifting operations and the precise integration of complex piping and services connections.",
     outcome:
       "The project was successfully delivered within the required nuclear quality assurance framework, contributing to Koeberg's continued safe and reliable operation. Structured contract administration and programme planning ensured all milestones were tracked, communicated, and met within the constraints of the nuclear environment.",
     images: [
