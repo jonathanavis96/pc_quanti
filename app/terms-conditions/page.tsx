@@ -306,10 +306,10 @@ export default function TermsConditionsPage() {
                 <p>
                   <strong className="text-pc-neutral-900">Phone:</strong>{" "}
                   <a
-                    href="tel:+27828632154"
+                    href="tel:+27662094919"
                     className="text-pc-gold-600 underline hover:text-pc-gold-700"
                   >
-                    +27 82 863 2154
+                    +27 66 209 4919
                   </a>
                 </p>
                 <p>
@@ -405,10 +405,10 @@ export default function TermsConditionsPage() {
                 <p>
                   Phone:{" "}
                   <a
-                    href="tel:+27828632154"
+                    href="tel:+27662094919"
                     className="text-pc-gold-600 underline hover:text-pc-gold-700"
                   >
-                    +27 82 863 2154
+                    +27 66 209 4919
                   </a>
                 </p>
               </div>
