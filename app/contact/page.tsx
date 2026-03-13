@@ -349,8 +349,8 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-pc-neutral-600 mb-1">Phone</p>
-                      <a href="tel:+27828632154" className="text-pc-neutral-900 hover:text-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
-                        +27 82 863 2154
+                      <a href="tel:+27662094919" className="text-pc-neutral-900 hover:text-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
+                        +27 66 209 4919
                       </a>
                     </div>
                   </div>
@@ -361,7 +361,7 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <p className="text-sm text-pc-neutral-600 mb-1">WhatsApp</p>
-                      <a href="https://wa.me/27828632154" target="_blank" rel="noopener noreferrer" className="text-pc-neutral-900 hover:text-[#25D366] transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
+                      <a href="https://wa.me/27662094919" target="_blank" rel="noopener noreferrer" className="text-pc-neutral-900 hover:text-[#25D366] transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 rounded-sm">
                         Message us on WhatsApp
                       </a>
                     </div>
