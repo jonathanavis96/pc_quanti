@@ -51,7 +51,7 @@ export default function DisputeResolutionPage() {
                 We assist clients with the formulation and presentation of construction-related claims, evidentiary preparation, and the coordination of expert input to ensure technically robust and commercially persuasive submissions. We also support and lead dispute resolution negotiations and draft clear, enforceable settlement agreements designed to achieve efficient and sustainable outcomes.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                While our primary focus is dispute avoidance through strong planning and administration, PC Quanti is highly experienced in construction claims, adjudication, arbitration, and formal dispute resolution proceedings when required. Our mission is to build long-term client relationships by consistently adding measurable value, strengthening project certainty, and delivering professional excellence across every engagement.
+                While our primary focus is dispute avoidance — built on disciplined documentation control, contemporaneous record keeping, and rigorous communication standards — PC Quanti is highly experienced in construction claims, adjudication, arbitration, and formal dispute resolution proceedings when required. This foundation ensures clients are always well-positioned, whatever the project demands.
               </p>
             </Card>
           </div>
@@ -111,13 +111,13 @@ export default function DisputeResolutionPage() {
 
               <Card>
                 <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
-                  Forensic Analysis
+                  Record Keeping & Documentation
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
+                  <li>• Contemporaneous record keeping</li>
+                  <li>• Documentation control</li>
                   <li>• Critical path delay analysis</li>
                   <li>• Programme impact assessments</li>
-                  <li>• Cost causation analysis</li>
-                  <li>• Document forensics and reconstruction</li>
                 </ul>
               </Card>
             </div>
@@ -129,7 +129,7 @@ export default function DisputeResolutionPage() {
               Key Capabilities
             </h2>
             <Card variant="elevated">
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
                     Forensic Rigour
@@ -152,6 +152,14 @@ export default function DisputeResolutionPage() {
                   </h3>
                   <p className="text-pc-neutral-600">
                     Proven track record in nuclear, mining, and industrial sectors, with deep understanding of complex project delivery challenges and contractual frameworks.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-pc-neutral-900 mb-3">
+                    Dispute Avoidance
+                  </h3>
+                  <p className="text-pc-neutral-600">
+                    By insuring good contemporaneous record keeping, documentation control, and proper communication, we ensure that we are prepared for the worst, but aim for the best.
                   </p>
                 </div>
               </div>
