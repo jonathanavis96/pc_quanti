@@ -168,7 +168,7 @@ const services = [
   {
     slug: 'planning',
     title: 'Planning',
-    description: 'Structured and strategic planning services on NEC, FIDIC, and GCC contracts — including critical path scheduling, earned value management, resource loading, forensic delay analysis, look-ahead programmes, and outage and shutdown scheduling.',
+    description: 'Structured and strategic planning services on NEC, FIDIC, GCC, and JBCC contracts — including critical path scheduling, earned value management, resource loading, forensic delay analysis, look-ahead programmes, and outage and shutdown scheduling.',
     Icon: PlanningIcon,
   },
   {

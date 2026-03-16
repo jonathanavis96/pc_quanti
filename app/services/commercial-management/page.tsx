@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Commercial Management — Procurement, Estimating & Value Engineering",
-  description: "Full project commercial oversight covering procurement, estimating, tender analysis, cost analysis, risk management, design development, and value engineering to protect and enhance commercial outcomes across the project lifecycle.",
+  description: "Full project commercial oversight covering procurement, estimating, tender analysis, cost control, value engineering, and works-in-progress execution management to protect and enhance commercial outcomes across the project lifecycle.",
   alternates: {
     canonical: "/services/commercial-management",
   },
@@ -34,7 +34,7 @@ export default function CommercialManagementPage() {
               Commercial Management
             </h1>
             <p className="text-xl md:text-2xl text-pc-neutral-600 max-w-3xl">
-              Full project commercial oversight — from procurement and estimating through tender analysis, cost control, and value engineering — to protect and enhance commercial outcomes.
+              Full project commercial oversight — from procurement and estimating through tender analysis, cost control, value engineering, and works-in-progress execution management — to protect and enhance commercial outcomes.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function CommercialManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti's commercial management team comprises specialist individuals with deep expertise across the complete commercial lifecycle of engineering and construction projects. Our team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, and value engineering — providing clients with complete commercial visibility and control.
+                PC Quanti's commercial management team comprises specialist individuals with deep expertise across the complete commercial lifecycle of engineering and construction projects. Our team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, value engineering, and works-in-progress execution management— providing clients with complete commercial visibility and control.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We work alongside project and construction management teams to align commercial strategy with project delivery objectives, ensuring that cost, value, and risk are actively managed from feasibility through to project close-out.
@@ -78,8 +78,7 @@ export default function CommercialManagementPage() {
                   Procurement &amp; Estimating
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Procurement strategy development</li>
-                  <li>• Cost estimating and budget preparation</li>
+                  <li>• Procurement strategy development, cost estimating and budget preparation</li>
                   <li>• Tender document preparation and management</li>
                   <li>• Tender analysis and contractor evaluation</li>
                   <li>• Detailed contract review and optimisation</li>
@@ -91,11 +90,10 @@ export default function CommercialManagementPage() {
                   Cost &amp; Value Management
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Cost planning and cost-in-use analysis</li>
+                  <li>• Cost planning</li>
                   <li>• Value engineering and design optimisation</li>
                   <li>• Cost benchmarking and market analysis</li>
-                  <li>• Life cycle cost assessment</li>
-                  <li>• Whole life cost analysis</li>
+                  <li>• Periodic reporting</li>
                 </ul>
               </Card>
 

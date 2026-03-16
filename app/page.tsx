@@ -61,19 +61,19 @@ export default function Home() {
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {[
-                { name: "Phil Coleman", role: "Managing Director", image: "/team/phil.jpg" },
-                { name: "Tyrone Juul", role: "Project, Construction & Contract Management", image: "/team/tyrone.jpg" },
-                { name: "Heleene Schreuder", role: "Legal", image: "/team/heleene.jpg" },
-                { name: "Francois Venter", role: "Planning", image: "/team/francois.jpg" },
-                { name: "Jonathan Ely", role: "Adjudication & Arbitration", image: "/team/jonathan.jpg" },
+                { name: "Phil Coleman", role: "Managing Director", image: "/team/phil.jpg", slug: "phil-coleman" },
+                { name: "Tyrone Juul", role: "Project & Construction Management", image: "/team/tyrone.jpg", slug: "tyrone-juul" },
+                { name: "Heleene Schreuder", role: "Legal & Contract Management", image: "/team/heleene.jpg", slug: "heleene-schreuder" },
+                { name: "Francois Venter", role: "Planning", image: "/team/francois.jpg", slug: "francois-venter" },
+                { name: "Jonathan Ely", role: "Adjudication & Arbitration", image: "/team/jonathan.jpg", slug: "jonathan-ely" },
               ].map((member) => (
-                <div key={member.name} className="text-center">
-                  <div className="relative mx-auto w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-pc-neutral-200">
+                <Link key={member.name} href={`/team#${member.slug}`} className="text-center group">
+                  <div className="relative mx-auto w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-pc-neutral-200 group-hover:border-pc-gold transition-colors">
                     <Image src={member.image} alt={member.name} fill className="object-cover object-[center_20%] scale-[1.25]" sizes="128px" />
                   </div>
-                  <h3 className="font-semibold text-pc-neutral-900">{member.name}</h3>
+                  <h3 className="font-semibold text-pc-neutral-900 group-hover:text-pc-gold transition-colors">{member.name}</h3>
                   <p className="text-sm text-pc-gold mt-1">{member.role}</p>
-                </div>
+                </Link>
               ))}
             </div>
             <div className="text-center mt-10">

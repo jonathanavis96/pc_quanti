@@ -45,13 +45,13 @@ export default function ContractAdministrationPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We believe that for a project to be truly successful, it is critical to implement proper and effective contract administration. PC Quanti ensures concise but comprehensive written project communication, serves the required notices on time, and properly documents the progress of the works and commercial administration required under the contract form, working with established document controls and EDMS systems to keep your important project documentation safe and audit-ready.
+                We believe that for a project to be truly successful, it is critical to implement proper and effective contract administration. PC Quanti ensures concise but comprehensive written project communication, serves the required notices on time, and properly documents the progress of the works and commercial administration required under the contract form, working with established document controls and EDMS systems to keep your important project documentation safe and auditable.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We provide comprehensive contract administration support throughout the lifecycle of nuclear, mining, and industrial construction and engineering projects. Our services include contractual compliance monitoring, notice management, payment certification, variation management, and extension of time assessments across NEC3, NEC4, FIDIC, GCC, and JBCC contract suites.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed">
-                Our approach is proactive and detail-driven, with a focus on protecting our clients&apos; commercial interests while maintaining project momentum. By ensuring clear record-keeping, structured decision-making, and timely contractual notices, we help mitigate risk and reduce the likelihood of disputes arising.
+                Our approach is proactive and detail-driven, with a focus on protecting our clients&apos; commercial interests while maintaining project momentum. By ensuring clear contemporaneous record-keeping, structured decision-making, and timely contractual notices, we help mitigate risk or loss of entitlement and reduce the likelihood of disputes arising.
               </p>
             </Card>
           </div>
@@ -92,8 +92,8 @@ export default function ContractAdministrationPage() {
                 <ul className="space-y-2 text-pc-neutral-600">
                   <li>• Contract correspondence registers</li>
                   <li>• Meeting minutes and action tracking</li>
-                  <li>• Document version control</li>
-                  <li>• As-built documentation</li>
+                  <li>• Administrating/tracking documentation updates and approvals</li>
+                  <li>• As-built documentation and record keeping</li>
                 </ul>
               </Card>
 
@@ -135,7 +135,7 @@ export default function ContractAdministrationPage() {
                     Contractual Expertise
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Deep knowledge of NEC3, NEC4, FIDIC, GCC, JBCC, and bespoke contract forms, with proven experience administering complex agreements in nuclear, mining, and industrial settings.
+                    Deep knowledge of NEC3, NEC4, FIDIC, GCC, JBCC, and bespoke contract forms, with proven experience administering complex industrial and commercial agreements.
                   </p>
                 </div>
                 <div>
@@ -170,7 +170,7 @@ export default function ContractAdministrationPage() {
               </Link>
               <Link href="/services/dispute-resolution" className="p-4 border border-pc-neutral-200 rounded-lg hover:border-pc-gold transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2">
                 <h3 className="font-semibold text-pc-neutral-900 mb-2">Dispute Resolution →</h3>
-                <p className="text-sm text-pc-neutral-600">Adjudication, arbitration, and claims preparation</p>
+                <p className="text-sm text-pc-neutral-600">Dispute avoidance strategies, clear and accurate claims preparation, adjudication, and arbitration</p>
               </Link>
             </div>
           </div>

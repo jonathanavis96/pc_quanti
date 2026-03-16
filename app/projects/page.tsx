@@ -29,8 +29,11 @@ const projects = [
     services: [
       "Project Management",
       "Contract Administration",
-      "Construction Oversight",
       "Planning & Scheduling",
+      "Quantity Surveying",
+      "Commercial Management",
+      "Risk Management",
+      "Construction Management",
     ],
     challenge:
       "Koeberg Nuclear Power Station required two new borated water storage tanks to support its 20-year life extension programme. Each tank had to be manufactured and installed to the highest nuclear standards within a live, tightly regulated nuclear environment — with zero tolerance for quality deviations.",

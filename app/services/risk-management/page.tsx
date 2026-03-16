@@ -45,7 +45,7 @@ export default function RiskManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti provides specialised risk management services tailored to the construction and engineering sector. We help developers, contractors, and project stakeholders identify, assess, and mitigate potential risks before they impact timelines, budgets, or compliance.
+                PC Quanti provides specialised risk management services tailored to the construction and engineering sector. We help developers, clients, contractors, and project stakeholders identify, assess, and mitigate potential risks before they impact timelines, budgets, or compliance.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 From project feasibility and cost exposure analysis to contractual, operational, and site-based risk evaluation, our structured approach ensures proactive decision-making and improved project certainty. By combining technical expertise with real-world industry experience, PC Quanti enables clients to minimise financial loss, manage uncertainty effectively, and deliver projects with greater confidence and control.
@@ -117,7 +117,7 @@ export default function RiskManagementPage() {
                   <li>• Schedule risk analysis (Monte Carlo simulation)</li>
                   <li>• Cost risk modelling</li>
                   <li>• Safety and regulatory risk assessment</li>
-                  <li>• Managing and interact with bonds, guarantees, warranties and insurances.</li>
+                  <li>• Raising, administering and manging bonds, guarantees, warranties and insurances.</li>
                 </ul>
               </Card>
             </div>

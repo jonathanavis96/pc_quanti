@@ -45,7 +45,7 @@ export default function DisputeResolutionPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                We aim to avoid disputes and manage your project around this core principle. Should a dispute be unavoidable, we provide specialist advice and representation in construction and engineering disputes across all formal and alternative dispute resolution forums. Our services include strategic and practical guidance on contractual dispute resolution procedures, the preparation of statements of claim, statements of defence and counterclaims for adjudication and arbitration proceedings, and comprehensive arbitration support from referral through to final award.
+                We aim to avoid disputes and manage your project around this core principle. Should a dispute be unavoidable, or if you have a dispute on your existing project, we provide specialist advice and representation in construction and engineering disputes across all formal and alternative dispute resolution forums. Our services include strategic and practical guidance on contractual dispute resolution procedures, the preparation of statements of claim, statements of defence and counterclaims for adjudication and arbitration proceedings, and comprehensive arbitration support from referral through to final award.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We assist clients with the formulation and presentation of construction-related claims, evidentiary preparation, and the coordination of expert input to ensure technically robust and commercially persuasive submissions. We also support and lead dispute resolution negotiations and draft clear, enforceable settlement agreements designed to achieve efficient and sustainable outcomes.
@@ -151,7 +151,7 @@ export default function DisputeResolutionPage() {
                     Industry Experience
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Proven track record in nuclear, mining, and industrial sectors, with deep understanding of complex project delivery challenges and contractual frameworks.
+                    Proven track record in nuclear, and other industrial sectors, with deep understanding of complex project delivery challenges and contractual frameworks.
                   </p>
                 </div>
                 <div>

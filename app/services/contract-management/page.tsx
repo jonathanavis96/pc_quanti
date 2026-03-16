@@ -93,7 +93,7 @@ export default function ContractManagementPage() {
                   <li>• Contract compliance, risk allocation, and monitoring</li>
                   <li>• Insurance covers, bonds &amp; guarantees, and works-in-progress oversight</li>
                   <li>• Payment certification, variation management, and compensation event assessment</li>
-                  <li>• Extension of time entitlement advice and compliance reporting</li>
+                  <li>• Extension of time entitlement and active tracking of milestones and key &amp; sectional completion dates</li>
                 </ul>
               </Card>
 
@@ -143,7 +143,7 @@ export default function ContractManagementPage() {
                     Commercial Protection
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Proactive identification and management of commercial risks — ensuring strategic protection of commercial rights and contemporaneous record keeping so that enforceable contractual positions are maintained and commercial exposure is minimised throughout project delivery.
+                    Proactive identification and management of commercial risks — ensuring strategic protection of commercial rights and contemporaneous record keeping so that enforceable contractual positions are maintained.
                   </p>
                 </div>
                 <div>

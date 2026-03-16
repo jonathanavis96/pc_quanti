@@ -146,7 +146,7 @@ export default function ProjectManagementPage() {
                     Oil &amp; Gas
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Petrochemical plants, oil and gas installations requiring rigorous project controls, stakeholder management, and operational readiness.
+                    Petrochemical plants/oil and gas installations requiring rigorous project controls, stakeholder management, and operational readiness.
                   </p>
                 </div>
                 <div>
