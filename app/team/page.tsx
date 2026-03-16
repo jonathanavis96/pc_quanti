@@ -21,22 +21,22 @@ const team = [
     image: "/team/phil.jpg",
     bio: [
       "After obtaining a B.Sc in Construction Management at the University of Pretoria, Phil spent 13 years in the United Kingdom working on major engineering and construction projects for global infrastructure leader Vinci SA, and its subsidiaries Norwest Holst and Vinci Construction (formally Taylor Woodrow Construction), excelling in the fields of Quantity Surveying, Commercial Management, Project Controls and Project Management.",
-      "After joining Group Five Nuclear in 2013 as part of their senior management team as Divisional Commercial Manager, Phil became Programme Manager of Group Five Nuclear Division in 2017, tasked with the successful implementation of the iconic PTR Tanks and Steam Generators Replacement Projects.",
+      "After joining Group Five Nuclear in 2013 as part of their senior management team as Divisional Commercial Manager, Phil became Programme Manager of Group Five Nuclear Division in 2017, tasked with the successful local implementation of the iconic PTR Tanks and Steam Generators Replacement Projects.",
       "In 2020, with years of major projects experience covering all aspects of the project lifecycle in South Africa and abroad, in the areas of civil structures, and mechanical / electrical service and infrastructure such as airports developments and nuclear construction at the highest level, Phil founded PC Quanti. As Managing Director, he leads the company\u2019s strategic direction and oversees all project delivery, assembling and directing specialist teams tailored to each engagement — ensuring that every project benefits from senior-level oversight, disciplined commercial management, and hands-on leadership.",
     ],
   },
   {
     name: "Tyrone Juul",
-    role: "Project, Construction & Contract Management",
+    role: "Project & Construction Management",
     image: "/team/tyrone.jpg",
     bio: [
       "Tyrone is a construction and commercial management professional with over 23 years\u2019 industry experience across the public and private Engineering and Construction sector in South Africa and the Philippines. Tyrone has a background in mechanical engineering and extensive experience in project and contract management, risk, procurement, logistics, materials, people management, project planning, contractual claims, adjudication and arbitration.",
-      "Recognised for a strong work ethic and a meticulous, delivery-focused approach, Tyrone thrives in high-pressure environments and has successfully led complex, multi-disciplinary major projects, specialising in NEC and FIDIC contract forms in the fields of oil & gas, nuclear, and coal-fired power generation. As head of PC Quanti\u2019s project, construction and contract management discipline, Tyrone oversees project delivery teams and ensures that every engagement is executed with the rigour and accountability the company is known for.",
+      "Recognised for a strong work ethic and a meticulous, delivery-focused approach, Tyrone thrives in high-pressure environments and has successfully led complex, multi-disciplinary major projects, specialising in NEC and FIDIC contract forms in the fields of oil & gas, nuclear, and coal-fired power generation. As head of PC Quanti\u2019s project, and construction management discipline, Tyrone oversees project delivery teams and ensures that every engagement is executed with the rigour and accountability the company is known for.",
     ],
   },
   {
     name: "Heleene Schreuder",
-    role: "Legal",
+    role: "Legal & Contract Management",
     image: "/team/heleene.jpg",
     bio: [
       "Heleene holds an LLB degree in Law from Stellenbosch University, is an admitted attorney of the High Court of South Africa and has over 15 years of experience in civil and commercial litigation, dispute resolution within the construction sector. Heleene\u2019s recent work has focused on contract management, contract administration, and dispute resolution on a major EPC project governed by NEC3 contract in the nuclear energy sector.",
@@ -50,7 +50,7 @@ const team = [
     image: "/team/francois.jpg",
     bio: [
       "In Francois\u2019s 30-year career which began in mechanical engineering, he has developed a passion for construction project management, with a keen focus on project planning, project controls and work management. With his experience in the Nuclear and Oil & Gas Industry sectors, Francois has overseen the planning and execution of countless shutdown/outage projects and major project implementations, from operational readiness planning, to implementation on site and work in progress management and reporting, Francois has experience in the full EPC/M cycle.",
-      "As head of PC Quanti\u2019s planning discipline, Francois oversees a team of seven or more planners across active engagements, ensuring consistent methodology and quality across all scheduling, delay analysis and project controls deliverables. Additionally, Francois has conceptualised, designed and developed procedures and implemented work management systems to ensure efficiency and contemporaneous record keeping that enables solid project and contract management. With his fluency in Primavera P6 Professional and delay analysis techniques and project controls, as well as overseeing multiple claim events and dispute resolution, Francois is highly regarded in the planning field.",
+      "As head of PC Quanti\u2019s planning discipline, Francois oversees a team of planners across active engagements, ensuring consistent methodology and quality across all scheduling, delay analysis and project controls deliverables. Additionally, Francois has conceptualised, designed and developed procedures and implemented work management systems to ensure efficiency and contemporaneous record keeping that enables solid project and contract management. With his fluency in Primavera P6 Professional and delay analysis techniques and project controls, as well as overseeing multiple claim events and dispute resolution, Francois is highly regarded in the planning field.",
     ],
   },
   {
@@ -82,12 +82,13 @@ export default function TeamPage() {
             construction and commercial professionals. Our specialists bring extensive experience
             across power generation, oil and gas, and large-scale infrastructure projects,
             combining technical expertise with disciplined commercial management. With backgrounds
-            spanning project management, quantity surveying, planning, contract administration and
+            spanning project management, construction management, mechanical engineering, quantity surveying, planning, contract administration and
             dispute resolution, our team works collaboratively to deliver disciplined execution,
             proactive risk management and measurable value — always guided by integrity and
             accountability.
           </p>
-          <p className="text-base text-pc-neutral-500 max-w-3xl mx-auto mt-4">
+          <h2 className="text-xl font-semibold text-pc-neutral-900 mt-8 mb-3">The Expandable Team Model</h2>
+          <p className="text-base text-pc-neutral-500 max-w-3xl mx-auto">
             We operate on an expandable team model: our core management professionals are
             supported by a wider network of vetted specialists and associates who are brought
             on board as projects demand. This allows us to scale efficiently, assembling the
@@ -99,7 +100,7 @@ export default function TeamPage() {
         {/* Team members */}
         <div className="divide-y divide-black">
           {team.map((member, idx) => (
-            <div key={member.name} className="py-16 first:pt-0">
+            <div key={member.name} id={member.name.toLowerCase().replace(/\s+/g, '-')} className="py-16 first:pt-0 scroll-mt-24">
               <TeamMemberCard
                 name={member.name}
                 role={member.role}

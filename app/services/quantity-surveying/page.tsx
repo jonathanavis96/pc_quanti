@@ -78,8 +78,8 @@ export default function QuantitySurveyingPage() {
                   Measuring & Quantification
                 </h3>
                 <ul className="space-y-2 text-pc-neutral-600">
-                  <li>• Detailed measuring and quantification</li>
-                  <li>• Bill of quantities (BoQ) preparation</li>
+                  <li>• Detailed measuring, quantification and re-measuring</li>
+                  <li>• Bill of quantities (BoQ) preparation, lump sum quantities</li>
                   <li>• Pre-tender cost estimates</li>
                   <li>• Budget forecasting and tracking</li>
                 </ul>

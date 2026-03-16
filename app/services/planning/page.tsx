@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Planning — Scheduling, Project Controls & Earned Value Management",
-  description: "Structured and strategic planning services on NEC, FIDIC, and GCC contracts. Expert project planning using Primavera P6, earned value management, critical path scheduling, and forensic delay analysis for engineering and construction projects — including outage and shutdown programmes.",
+  description: "Structured and strategic planning services on NEC, FIDIC, GCC, and JBCC contracts. Expert project planning using Primavera P6, earned value management, critical path scheduling, and forensic delay analysis for engineering and construction projects — including outage and shutdown programmes.",
   alternates: {
     canonical: "/services/planning",
   },
@@ -146,7 +146,7 @@ export default function PlanningPage() {
                     Industry Standards
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Adherence to recognised best practices including PMI, AACE, and GAO schedule guidelines, with proven application across NEC, FIDIC, and GCC contract environments.
+                    Adherence to recognised best practices including PMI, AACE, and GAO schedule guidelines, with proven application across NEC, FIDIC, GCC, and JBCC contract environments.
                   </p>
                 </div>
                 <div>
@@ -154,7 +154,7 @@ export default function PlanningPage() {
                     Expert Analysis
                   </h3>
                   <p className="text-pc-neutral-600">
-                    Deep analytical expertise in critical path methods, earned value management, Monte Carlo simulation, and forensic delay analysis techniques for accurate forecasting and claims support.
+                    Deep analytical expertise in critical path methods, earned value management, Monte Carlo simulation, and forensic delay analysis techniques for accurate forecasting and extention of time claims.
                   </p>
                 </div>
               </div>
