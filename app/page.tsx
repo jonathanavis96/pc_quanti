@@ -65,7 +65,7 @@ export default function Home() {
                 { name: "Tyrone Juul", role: "Project & Construction Management", image: "/team/tyrone.jpg", slug: "tyrone-juul" },
                 { name: "Heleene Schreuder", role: "Legal & Contract Management", image: "/team/heleene.jpg", slug: "heleene-schreuder" },
                 { name: "Francois Venter", role: "Planning", image: "/team/francois.jpg", slug: "francois-venter" },
-                { name: "Jonathan Ely", role: "Adjudication & Arbitration", image: "/team/jonathan.jpg", slug: "jonathan-ely" },
+                { name: "Jonathan Ely", role: "Adjudication & Arbitration", image: "/team/jonathan.webp", slug: "jonathan-ely" },
               ].map((member) => (
                 <Link key={member.name} href={`/team#${member.slug}`} className="text-center group">
                   <div className="relative mx-auto w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-pc-neutral-200 group-hover:border-pc-gold transition-colors">

@@ -56,7 +56,7 @@ const team = [
   {
     name: "Jonathan Ely",
     role: "Adjudication & Arbitration",
-    image: "/team/jonathan.jpg",
+    image: "/team/jonathan.webp",
     bio: [
       "Jonathan J. M. Ely is a seasoned arbitrator, adjudicator, and commercial consultant with a distinguished career bridging civil engineering and legal expertise. He holds a BSc in Civil Engineering from the University of the Witwatersrand, supplemented by an LLB and advanced certificates in construction law and adjudication \u2014 offering a rare combination of technical insight and legal acumen that makes him particularly effective in resolving complex contractual disputes.",
       "With over forty-five years of experience, Ely has worked across the full spectrum of construction and engineering environments, serving clients, consultants, contractors, and project management firms across power, mining, and infrastructure sectors, both locally in South Africa and internationally.",
