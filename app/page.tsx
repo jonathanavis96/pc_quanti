@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {[
-                { name: "Phil Coleman", role: "Managing Director", image: "/team/phil.jpg", slug: "phil-coleman" },
+                { name: "Phil Coleman", role: "Director", subtitle: "Programme and Project Management, Commercial Management, Quantity Surveying", image: "/team/phil.jpg", slug: "phil-coleman" },
                 { name: "Tyrone Juul", role: "Project & Construction Management", image: "/team/tyrone.jpg", slug: "tyrone-juul" },
                 { name: "Heleene Schreuder", role: "Legal & Contract Management", image: "/team/heleene.jpg", slug: "heleene-schreuder" },
                 { name: "Francois Venter", role: "Planning", image: "/team/francois.jpg", slug: "francois-venter" },
@@ -73,6 +73,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-semibold text-pc-neutral-900 group-hover:text-pc-gold transition-colors">{member.name}</h3>
                   <p className="text-sm text-pc-gold mt-1">{member.role}</p>
+                  {member.subtitle && <p className="text-xs text-pc-neutral-500 mt-0.5">{member.subtitle}</p>}
                 </Link>
               ))}
             </div>
