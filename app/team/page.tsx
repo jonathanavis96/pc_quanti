@@ -17,8 +17,7 @@ export const metadata: Metadata = {
 const team = [
   {
     name: "Phil Coleman",
-    role: "Director",
-    subtitle: "Programme and Project Management, Commercial Management, Quantity Surveying",
+    role: "Programme & Project Management, Commercial Management and Quantity Surveying",
     image: "/team/phil.jpg",
     bio: [
       "After obtaining a B.Sc in Construction Management at the University of Pretoria, Phil spent 13 years in the United Kingdom working on major engineering and construction projects for global infrastructure leader Vinci SA, and its subsidiaries Norwest Holst and Vinci Construction (formally Taylor Woodrow Construction), excelling in the fields of Quantity Surveying, Commercial Management, Project Controls and Project Management.",
@@ -105,7 +104,7 @@ export default function TeamPage() {
               <TeamMemberCard
                 name={member.name}
                 role={member.role}
-                subtitle={member.subtitle}
+
                 image={member.image}
                 bio={member.bio}
                 reverse={idx % 2 === 1}
