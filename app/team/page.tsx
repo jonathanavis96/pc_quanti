@@ -17,12 +17,13 @@ export const metadata: Metadata = {
 const team = [
   {
     name: "Phil Coleman",
-    role: "Managing Director",
+    role: "Director",
+    subtitle: "Programme and Project Management, Commercial Management, Quantity Surveying",
     image: "/team/phil.jpg",
     bio: [
       "After obtaining a B.Sc in Construction Management at the University of Pretoria, Phil spent 13 years in the United Kingdom working on major engineering and construction projects for global infrastructure leader Vinci SA, and its subsidiaries Norwest Holst and Vinci Construction (formally Taylor Woodrow Construction), excelling in the fields of Quantity Surveying, Commercial Management, Project Controls and Project Management.",
       "After joining Group Five Nuclear in 2013 as part of their senior management team as Divisional Commercial Manager, Phil became Programme Manager of Group Five Nuclear Division in 2017, tasked with the successful local implementation of the iconic PTR Tanks and Steam Generators Replacement Projects.",
-      "In 2020, with years of major projects experience covering all aspects of the project lifecycle in South Africa and abroad, in the areas of civil structures, and mechanical / electrical service and infrastructure such as airports developments and nuclear construction at the highest level, Phil founded PC Quanti. As Managing Director, he leads the company\u2019s strategic direction and oversees all project delivery, assembling and directing specialist teams tailored to each engagement — ensuring that every project benefits from senior-level oversight, disciplined commercial management, and hands-on leadership.",
+      "In 2020, with years of major projects experience covering all aspects of the project lifecycle in South Africa and abroad, in the areas of civil structures, and mechanical / electrical service and infrastructure such as airports developments and nuclear construction at the highest level, Phil founded PC Quanti. As Director, he leads the company\u2019s strategic direction and oversees all project delivery, assembling and directing specialist teams tailored to each engagement — ensuring that every project benefits from senior-level oversight, disciplined commercial management, and hands-on leadership.",
     ],
   },
   {
@@ -104,6 +105,7 @@ export default function TeamPage() {
               <TeamMemberCard
                 name={member.name}
                 role={member.role}
+                subtitle={member.subtitle}
                 image={member.image}
                 bio={member.bio}
                 reverse={idx % 2 === 1}
