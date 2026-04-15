@@ -46,6 +46,13 @@ undefined:/Users/
 # Windows download metadata (can appear in WSL)
 *:Zone.Identifier
 
-# Ralph runtime verifier outputs (local-only)
-brain/workers/ralph/.verify/run_id.txt
-brain/workers/ralph/.verify/latest.txt
+# AI/agent scaffolding (local-only, not shared to GitHub)
+/brain/
+/CLAUDE.md
+/PLAN1.md
+/Plan2.md
+/.verify/
+/.marker
+
+# Dev tooling artifacts (local-only)
+/.playwright-mcp/

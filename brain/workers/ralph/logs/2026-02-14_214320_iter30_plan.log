@@ -1,7 +1,0 @@
-:::ITER_START::: iter=30 run_id=run-1771093004-13819 ts=1771098200369
-:::CACHE_CONFIG::: mode=off scope=verify,read exported=1 iter=30 ts=1771098200371
-:::TOOL_START::: id=89208860-b31f-4e40-95da-cfad5da3222e tool=pre-commit cache_key=pre-commit|cfa082b git_sha=cfa082b ts=2026-02-14T19:43:20Z
-:::TOOL_END::: id=89208860-b31f-4e40-95da-cfad5da3222e result=PASS exit=0 duration_ms=162 ts=2026-02-14T19:43:20Z
-:::TOOL_START::: id=230844d5-f38b-4397-a378-69c1c8b34e6a tool=verifier cache_key=verifier-pre-build|cfa082b git_sha=cfa082b ts=2026-02-14T19:43:20Z
-:::TOOL_END::: id=230844d5-f38b-4397-a378-69c1c8b34e6a result=PASS exit=0 duration_ms=252 ts=2026-02-14T19:43:20Z
-:::PHASE_START::: iter=30 phase=build run_id=run-1771093004-13819 ts=1771098200878

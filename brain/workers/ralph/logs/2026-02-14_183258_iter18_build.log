@@ -1,8 +1,0 @@
-Script started on 2026-02-14 18:32:58+02:00 [COMMAND="cat "/tmp/rovodev_prompt_with_mode_13512_18.md" | acli rovodev run --config-file /tmp/rovodev_config_13512_1771084389.yml --yolo 2> >(bash /home/grafe/code/pc-quanti/workers/shared/filter_acli_errors.sh >&2)" TERM="xterm-256color" TTY="/dev/pts/21" COLUMNS="103" LINES="54"]
-bash: /home/grafe/code/pc-quanti/workers/shared/filter_acli_errors.sh: No such file or directory
-]11;?\[6nc^C^C
-Script done on 2026-02-14 18:32:59+02:00 [COMMAND_EXIT_CODE="130"]
-:::TOOL_END::: id=f39a5617-22d8-4426-9e6d-e083af071ef4 result=PASS exit=0 duration_ms=571 ts=2026-02-14T16:32:59Z
-:::VERIFIER_ENV::: iter=18 ts=1771086779 run_id=1771086779-13512
-:::PHASE_END::: iter=18 phase=build status=ok run_id=run-1771084390-13512 ts=1771086779610
-:::ITER_END::: iter=18 run_id=run-1771084390-13512 ts=1771086779612
