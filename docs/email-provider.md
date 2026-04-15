@@ -204,17 +204,17 @@ The contact form currently uses **Formspree** (see `docs/formspree-setup.md`) fo
 
 ### Option 4: Direct SMTP (e.g., via Nodemailer)
 
-**Best for:** Using existing email hosting (Afrihost, Microsoft 365, Google Workspace)
+**Best for:** Using existing email hosting (Zoho Mail, Microsoft 365, Google Workspace)
 
 **Setup:**
 1. Get SMTP credentials from your email host (see `docs/email-forwarding.md`)
 
 2. Set environment variables:
    ```bash
-   SMTP_HOST=mail.pcquanti.co.za
-   SMTP_PORT=587
+   SMTP_HOST=smtppro.zoho.com
+   SMTP_PORT=465
    SMTP_USER=info@pcquanti.co.za
-   SMTP_PASS=your_password_here
+   SMTP_PASS=your_zoho_app_password_here
    ```
    **⚠️ NEVER commit credentials to Git**
 
@@ -346,11 +346,11 @@ MAILGUN_DOMAIN=mg.pcquanti.co.za
 # Option 3: Resend
 RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
 
-# Option 4: SMTP
-SMTP_HOST=mail.pcquanti.co.za
-SMTP_PORT=587
+# Option 4: SMTP (via Zoho Mail Pro)
+SMTP_HOST=smtppro.zoho.com
+SMTP_PORT=465
 SMTP_USER=info@pcquanti.co.za
-SMTP_PASS=your_password_here
+SMTP_PASS=your_zoho_app_password_here
 
 # Current (Formspree)
 NEXT_PUBLIC_FORMSPREE_FORM_ID=xxxxxxxxxx
