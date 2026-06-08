@@ -136,6 +136,17 @@ export function Footer() {
             <p className="text-center text-pc-neutral-300 text-sm">
               © {new Date().getFullYear()} PC Quanti. All rights reserved.
             </p>
+            <p className="text-center text-pc-neutral-400 text-xs">
+              Built and maintained by{" "}
+              <a
+                href="https://alldonesites.com"
+                target="_blank"
+                rel="noopener"
+                className="hover:text-pc-gold underline-offset-2 hover:underline transition-colors focus:outline-none focus:ring-2 focus:ring-pc-gold focus:ring-offset-2 focus:ring-offset-[#171717] rounded-sm"
+              >
+                All Done Sites
+              </a>
+            </p>
           </div>
         </div>
       </Container>
