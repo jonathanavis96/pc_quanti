@@ -14,9 +14,9 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://pcquanti.co.za",
   contact: {
     email: "info@pcquanti.co.za",
-    phone: "+27 82 863 2154",
-    phoneInternational: "+27828632154",
-    whatsapp: "https://wa.me/27828632154",
+    phone: "+27 66 209 4919",
+    phoneInternational: "+27662094919",
+    whatsapp: "https://wa.me/27662094919",
   },
   services: [
     {
