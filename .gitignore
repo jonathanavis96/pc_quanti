@@ -56,3 +56,6 @@ undefined:/Users/
 
 # Dev tooling artifacts (local-only)
 /.playwright-mcp/
+
+# Generated invoice PDFs (output of docs/invoices/generate_*.py; not source assets)
+docs/invoices/*.pdf
