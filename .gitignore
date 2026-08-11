@@ -49,6 +49,7 @@ undefined:/Users/
 # AI/agent scaffolding (local-only, not shared to GitHub)
 /brain/
 /CLAUDE.md
+/AGENTS.md
 /PLAN1.md
 /Plan2.md
 /.verify/
