@@ -60,3 +60,15 @@ undefined:/Users/
 
 # Generated invoice PDFs (output of docs/invoices/generate_*.py; not source assets)
 docs/invoices/*.pdf
+
+# Client admin: registrar, hosting, billing and messaging drafts (local-only).
+# This repo is PUBLIC and Phil only receives the website at handover, so none of
+# this belongs in it. Keep working copies here; they are never committed.
+docs/afrihost-to-cloudflare-migration.md
+docs/handoff-pcquanti-migration.md
+docs/xneelo-support-nameserver-500.md
+docs/email-to-xneelo-support-*.md
+docs/whatsapp-to-phil-*.md
+docs/za-registrar-comparison.md
+docs/email-log-phil.md
+docs/scripts/cloudflare-*.sh
