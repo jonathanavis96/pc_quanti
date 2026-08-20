@@ -1,9 +1,15 @@
+# Superseded by Cloudflare Pages (project: pc-quanti) on 2026-08-20.
+# pcquanti.co.za and www.pcquanti.co.za are served from Cloudflare Pages, which
+# builds directly from this repository on every push to main.
+#
+# This workflow is retained for rollback only and no longer runs automatically.
+# To fall back to GitHub Pages: restore the DNS records below in Cloudflare, then
+# run this workflow manually from the Actions tab.
+#   A     @    185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+#   CNAME www  jonathanavis96.github.io
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
