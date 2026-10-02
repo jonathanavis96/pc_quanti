@@ -17,8 +17,13 @@ export default function siteImageLoader({
   quality?: number;
 }): string {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  // Avoid double-prefixing if src already starts with basePath
-  if (basePath && src.startsWith(basePath)) {
+  // Leave absolute, protocol-relative and data/blob URLs alone.
+  if (!src.startsWith('/') || src.startsWith('//')) {
+    return src;
+  }
+  // Avoid double-prefixing if src is already under basePath (a path segment
+  // match, so "/pc_quanti-logo.webp" is still prefixed).
+  if (basePath && (src === basePath || src.startsWith(`${basePath}/`))) {
     return src;
   }
   return `${basePath}${src}`;
