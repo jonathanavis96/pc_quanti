@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { hasCarouselImages } from '@/src/lib/carousel';
 
 interface CarouselImage {
   src: string;
@@ -43,6 +44,9 @@ export function ProjectImageCarousel({ images, priority = false }: ProjectImageC
     const timer = setInterval(next, 6000);
     return () => clearInterval(timer);
   }, [paused, next, images.length]);
+
+  // Hooks above must run on every render; bail out only after them.
+  if (!hasCarouselImages(images)) return null;
 
   return (
     <div
