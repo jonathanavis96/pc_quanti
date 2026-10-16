@@ -27,11 +27,11 @@ export const unlistedRoutes = [
   "/services/claims-management", // client-side redirect to /services/dispute-resolution
 ] as const;
 
-const legalPrefixes = ["/privacy", "/terms", "/disclaimer"];
+const legalRoutes = new Set(["/privacy-policy", "/terms-conditions", "/disclaimer"]);
 
 export function sitemapPriority(route: string): number {
   if (route === "") return 1;
   if (route === "/contact") return 0.9;
-  if (legalPrefixes.some((prefix) => route.startsWith(prefix))) return 0.3;
+  if (legalRoutes.has(route)) return 0.3;
   return 0.8;
 }
