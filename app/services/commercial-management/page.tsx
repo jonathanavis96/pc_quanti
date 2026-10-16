@@ -45,7 +45,7 @@ export default function CommercialManagementPage() {
                 Overview
               </h2>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
-                PC Quanti's commercial management team comprises specialist individuals with deep expertise across the complete commercial lifecycle of engineering and construction projects. Our team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, value engineering, and works-in-progress execution management— providing clients with complete commercial visibility and control.
+                PC Quanti&apos;s commercial management team comprises specialist individuals with deep expertise across the complete commercial lifecycle of engineering and construction projects. Our team delivers integrated oversight across procurement strategy, estimating, tender analysis, cost control, risk management, value engineering, and works-in-progress execution management— providing clients with complete commercial visibility and control.
               </p>
               <p className="text-pc-neutral-600 leading-relaxed mb-4">
                 We work alongside project and construction management teams to align commercial strategy with project delivery objectives, ensuring that cost, value, and risk are actively managed from feasibility through to project close-out.

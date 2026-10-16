@@ -107,7 +107,8 @@ export function ProjectImageCarousel({ images, priority = false }: ProjectImageC
               key={i}
               onClick={() => go(i, i > current ? 1 : -1)}
               aria-label={`Go to image ${i + 1}`}
-              className={`h-1.5 rounded-full transition-all duration-300 focus:outline-none ${
+              aria-current={i === current ? 'true' : undefined}
+              className={`h-1.5 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white ${
                 i === current ? 'w-6 bg-white' : 'w-1.5 bg-white/50 hover:bg-white/75'
               }`}
             />
@@ -122,6 +123,7 @@ export function ProjectImageCarousel({ images, priority = false }: ProjectImageC
             key={i}
             onClick={() => go(i, i > current ? 1 : -1)}
             aria-label={`View image ${i + 1}`}
+            aria-current={i === current ? 'true' : undefined}
             className={`relative h-14 flex-1 overflow-hidden rounded-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-pc-gold ${
               i === current
                 ? 'ring-2 ring-pc-gold ring-offset-1 opacity-100'
