@@ -5,6 +5,7 @@ import { Header, Footer } from "@/src/components";
 import { Analytics } from "@/src/components/Analytics";
 import { StructuredData } from "@/src/components/StructuredData";
 import { siteConfig } from "@/src/config/site";
+import { withBasePath } from "@/src/lib/basePath";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -91,12 +92,12 @@ export default function RootLayout({
             - GitHub Pages (USE_GITHUB_PAGES=true): "/pc_quanti"
             - Custom domain:                        ""
         */}
-        <link rel="icon" type="image/x-icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon.ico`} />
-        <link rel="icon" type="image/png" sizes="32x32" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon-32x32.png`} />
-        <link rel="icon" type="image/png" sizes="16x16" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon-16x16.png`} />
-        <link rel="icon" type="image/svg+xml" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon.svg`} />
-        <link rel="apple-touch-icon" sizes="180x180" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/apple-touch-icon.png`} />
-        <link rel="manifest" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/site.webmanifest`} />
+        <link rel="icon" type="image/x-icon" href={withBasePath('/favicon.ico')} />
+        <link rel="icon" type="image/png" sizes="32x32" href={withBasePath('/favicon-32x32.png')} />
+        <link rel="icon" type="image/png" sizes="16x16" href={withBasePath('/favicon-16x16.png')} />
+        <link rel="icon" type="image/svg+xml" href={withBasePath('/favicon.svg')} />
+        <link rel="apple-touch-icon" sizes="180x180" href={withBasePath('/apple-touch-icon.png')} />
+        <link rel="manifest" href={withBasePath('/site.webmanifest')} />
         <meta name="theme-color" content="#C4A21A" />
         {/* OG Image meta tags (explicit for static export) */}
         <meta property="og:image" content={`${siteUrl}/og-image.png`} />
